@@ -146,6 +146,8 @@ nav{
 .logo{
 	font-size: 35px;
 	font-family: Museo-700;
+	position: relative;
+	top: 10px;
 }
 
 .logo-change{
@@ -160,10 +162,42 @@ nav{
 	text-align: center;
 	font-size: 16px;
 	font-weight: 300;
+	line-height: 70px;
+	list-style: none;
 }
 
 .globe-nav:nth-child(2){
 	border-right: #3B97D2 1px solid;
+}
+
+/*
+.globe-nav a{
+	position: relative;
+	top: 20px;
+}
+*/
+
+.globe-nav:hover{
+	background: #34495E;
+}
+
+
+
+/* Content Styles */
+
+.content{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.cta-search{
+	height: 250px;
+	padding-top: 20px;
+}
+
+.cta-search h1{
+	text-align: center;
+	font-size: 50px;
 }
 
 

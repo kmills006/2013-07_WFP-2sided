@@ -89,9 +89,105 @@ textarea {
     padding: 0.2em 0;
 }
 
+
+
+
+
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+   ========================================================================== 
+
+	#3498DB - PETER RIVER
+	
+	#2980B9 - BELIZE HOLE
+	
+	#34495E - WET ASPHALT
+	
+	#2C3E50 - MIDNIGHT BLUE
+	
+	#ECF0F1 - CLOUDS
+	
+	#BDC3C7 - SILVER
+	
+	#E67E22 - CARROT
+	
+	#D35400 - PUMPKIN
+	
+	#3B97D2 - Navigation Boarder
+   
+*/
+
+
+/* General Page Styles */
+
+html{
+	background: #F2F2E2;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Navigation Styles */
+
+nav{
+	background: #2C3E50;
+}
+
+.nav-sizer{
+	width: 960px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+.nav-sizer a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.logo{
+	font-size: 35px;
+	font-family: Museo-700;
+}
+
+.logo-change{
+	color: #E67E22;
+}
+
+.globe-nav{
+	float: right;
+	width: 88px;
+	height: 70px;
+	border-left: #3B97D2 1px solid;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.globe-nav:nth-child(2){
+	border-right: #3B97D2 1px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

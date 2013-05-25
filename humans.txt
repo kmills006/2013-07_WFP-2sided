@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name> Kristy Miller </name>
+    <role> Lead Developer and Lead Designer </role>
+    <twitter> kmills006 </twitter>
+    <github> kmills006 </github>
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr

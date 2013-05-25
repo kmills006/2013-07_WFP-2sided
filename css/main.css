@@ -133,7 +133,7 @@ nav{
 }
 
 .nav-sizer{
-	width: 960px;
+	width: 940px;
 	height: 70px;
 	margin: 0 auto;
 }
@@ -147,7 +147,7 @@ nav{
 	font-size: 35px;
 	font-family: Museo-700;
 	position: relative;
-	top: 10px;
+	top: 13px;
 }
 
 .logo-change{
@@ -170,13 +170,6 @@ nav{
 	border-right: #3B97D2 1px solid;
 }
 
-/*
-.globe-nav a{
-	position: relative;
-	top: 20px;
-}
-*/
-
 .globe-nav:hover{
 	background: #34495E;
 }
@@ -185,19 +178,139 @@ nav{
 
 /* Content Styles */
 
-.content{
-	width: 960px;
-	margin: 0 auto;
-}
-
 .cta-search{
-	height: 250px;
-	padding-top: 20px;
+	width: 940px;
+	margin: 0 auto;
+	height: 300px;
+	padding-top: 50px;
 }
 
 .cta-search h1{
 	text-align: center;
 	font-size: 50px;
+}
+
+.cta-search form{
+	width: 780px;
+	margin: 0 auto;
+}
+
+.cta-search select{
+	width: 210px;
+	height: 44px;
+	border: #E67E22 solid 1px;
+/* 	-webkit-appearance: none; */
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding-left: 10px;	
+	background: #FFF;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.cta-search select:focus{
+	border: #E67E22 solid 2px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.cta-search form p{
+	display: inline;
+	padding: 0 10px;
+}
+
+.cta-search input{
+	width: 365px;
+	height: 40px;
+	border: #E67E22 solid 1px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding-left: 10px;
+	font-family: 'Open Sans', sans-serif;
+	margin-right: 10px;
+}
+
+.cta-search input:focus{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.cta-search button{
+	width: 130px;
+	height: 44px;
+	background: #E67e22;
+	border: 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	color: #FFF;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+.cta-search button:hover{
+	background: #D35400;
+}
+
+/* Landing About */
+
+.landing-about{
+	overflow: hidden;
+	background: #34495E;
+	padding: 30px 0;
+	color: #F2F2E2;
+}
+
+.about-sizer{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.landing-about section{
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+}
+
+.landing-about section:last-child{
+	margin-right: 0;
+}
+
+.landing-about section img{
+	display: block;
+	margin: 0 auto;
+}
+
+.landing-about section h2{
+	text-align: center;
+	font-weight: 500;
+	font-size: 26px;
+}
+
+.landing-about section p{
+	font-size: 14px;
+	text-align: left;
+}
+
+.landing-about section ul li{
+	list-style: none;
+	margin: 10px 0;
+	color: #F2F2E2;
+	text-align: center;
+	width: 240px;
+}
+
+/* Footer */
+
+footer{
+	clear: both;
+}
+
+footer a{
+	float: none;
 }
 
 

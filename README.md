@@ -6,6 +6,6 @@
 
 ### Contributors
 
-> Author: Kristy Miller
-> Email: miller.kristy06@gmail.com
-> Twitter: kmills006
+Author: Kristy Miller  
+Email: miller.kristy06@gmail.com  
+Twitter: kmills006  

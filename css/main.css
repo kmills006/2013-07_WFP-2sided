@@ -427,6 +427,15 @@ nav .active{
 	margin: 20px 0;
 }
 
+#register .content p a{
+	text-decoration: none;
+	color: #000;	
+}
+
+#register .content p a:hover{
+	color: #E67E22;
+}
+
 #register footer{
 	margin: 90px 0 0 0;
 }

@@ -312,12 +312,43 @@ footer{
 #footer-sizer{
 	width: 960px;
 	margin: 0 auto;
+	padding: 20px 10px 0 0;
 }
 
 footer a{
 	display: block;
 	text-decoration: none;
 	color: #000;
+	margin: 5px 0;
+}
+
+footer a:hover{
+	color: #E67E22;
+}
+
+.site-nav{
+	width: 220px;
+	float: left;
+}
+
+.site-nav p{
+	color: #E67E22;
+	font-weight: 700;
+}
+
+.site-nav:first-child{
+	margin: 0;
+}
+
+.site-info{
+	float: right;
+	width: 220px;
+}
+
+.copyright{
+	clear: both;
+	text-align: center;
+	padding: 20px 0;
 }
 
 

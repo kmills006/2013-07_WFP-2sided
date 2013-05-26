@@ -125,6 +125,23 @@ html{
 	font-family: 'Open Sans', sans-serif;
 }
 
+button{
+	width: 130px;
+	height: 44px;
+	background: #E67e22;
+	border: 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	color: #FFF;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+button:hover{
+	background: #D35400;
+}
+
 
 /* Navigation Styles */
 
@@ -170,6 +187,10 @@ nav{
 }
 
 .globe-nav:hover{
+	background: #34495E;
+}
+
+nav .active{
 	background: #34495E;
 }
 
@@ -237,22 +258,6 @@ nav{
 	border-radius: 3px;
 }
 
-.cta-search button{
-	width: 130px;
-	height: 44px;
-	background: #E67e22;
-	border: 0;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	color: #FFF;
-	font-size: 20px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-}
-
-.cta-search button:hover{
-	background: #D35400;
-}
 
 /* Landing About */
 

@@ -317,24 +317,10 @@ nav .active{
 	width: 240px;
 }
 
-
-/* Register*/
-#register .content{
-	width: 640px;
-	margin: 0 auto;
-}
-
-#register .content form input{
-	display: block;
-	width: 300px;
-	margin: 0 auto;
-}
-
-
 /* Social Media Buttons */
 .sm-btn{
 	width: 220px;
-	height: 36px;
+	height: 35px;
 	display: block;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -342,6 +328,7 @@ nav .active{
 	line-height: 36px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-right: 5px;
 }
 
 .sm-btn a{
@@ -389,11 +376,60 @@ nav .active{
 	background-position-x: 10px;
 }
 
+/* Register*/
+#register nav{
+	margin: 0 0 90px 0;
+}
 
+#register .content{
+	width: 640px;
+	height: 375px;
+	margin: 0 auto;
+}
 
+#register .content h1{
+	margin: 0 0 30px 0;
+	text-align: center;
+}
 
+#register .content p{
+	text-align: center;
+}
 
+.reg-or{
+	text-align: center;
+}
 
+#register .content form{
+	width: 300px;
+	margin: 0 auto;
+}
+
+#register .content form input{
+	display: block;
+	width: 300px;
+	height: 36px;
+	margin: 10px 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: #E67E22 solid 1px;
+	padding-left: 10px;
+}
+
+.login-{
+	text-decoration: none;
+	color: #E67E22;
+}
+
+#register button{
+	height: 36px;
+	margin: 20px 0;
+}
+
+#register footer{
+	margin: 90px 0 0 0;
+}
 
 
 

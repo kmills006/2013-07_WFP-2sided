@@ -318,6 +318,12 @@ nav .active{
 }
 
 /* General Register/Login Styles  */
+.content{
+	width: 640px;
+	height: 375px;
+	margin: 0 auto;
+}
+
 .content form{
 	width: 300px;
 	margin: 0 auto;
@@ -333,12 +339,6 @@ nav .active{
 	border-radius: 3px;
 	border: #E67E22 solid 1px;
 	padding-left: 10px;
-}
-
-.content{
-	width: 640px;
-	height: 375px;
-	margin: 0 auto;
 }
 
 #register nav, #login nav{
@@ -365,7 +365,7 @@ nav .active{
 }
 
 .sm-btn span{
-	margin: 0 0 0 40px;
+	margin: 0 0 0 50px;
 }
 
 .fb-btn{
@@ -406,11 +406,37 @@ nav .active{
 }
 
 /* Login */
+#login .content form input:first-child{
+	background-image: url("../img/icons/username.png");
+	background-position: right center;
+	background-size: 30px 38px;
+	background-repeat: no-repeat;
+}
+
+#login .content form input{
+	font-size: 400px;
+	background-image: url("../img/icons/password.png");
+	background-position: right center;
+	background-size: 30px 38px;
+	background-repeat: no-repeat;
+}
+
 #login .content form button{
 	width: 100px;
 	height: 36px;
 	margin: 20px 0;
 } 
+
+#login .content form button a{
+	text-decoration: none;
+	margin: 0;
+	font-size: 20px;
+	color: #FFF;
+}
+
+#login .content form button a:hover{
+	color: #FFF;
+}
 
 #login .content form a{
 	font-size: 12px;

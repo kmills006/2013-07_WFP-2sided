@@ -10,9 +10,14 @@
 	it will display a dropdown menu with links to their profile, dashboard, settings and
 	logout */
 	
-	$(".user-dd").hover(function(e){
-		var userDDMenu = $(".user-dd-menu");
+	$(".user-dd").on("mouseover", function(e){
+		var userDDMenu = $(".user-dd ul");
 		userDDMenu.css("display", "block");
+	});
+	
+	$(".user-dd").on("mouseout", function(e){
+		var userDDMenu = $(".user-dd ul");
+		userDDMenu.css("display", "none");
 	});
 		
 	

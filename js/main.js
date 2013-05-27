@@ -67,9 +67,6 @@
 		
 		// User dashboard tab click
 		$(".ud-tabs li").on("click", function(e){
-
-			console.log($(".ud-tab-active a"));
-			
 			// Removing the active class
 			var prevActiveTab = $(".ud-tab-active a");
 			switch(prevActiveTab.text()){
@@ -116,9 +113,6 @@
 					
 					break;
 				case "Achievements":
-					console.log("hereere");
-					
-					console.log(newActiveTab);
 					newActiveTab.css("background-image", "url(img/icons/active_achievement.png)");
 					newActiveTab.css("background-size", "35px 44px");
 					

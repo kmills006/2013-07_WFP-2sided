@@ -146,6 +146,10 @@ button:hover{
 	background: #D35400;
 }
 
+input{
+	font-family: "Open Sans" sans-serif;
+}
+
 
 /* 	Navigation Styles
 	-------------------
@@ -180,7 +184,7 @@ nav{
 
 .globe-nav{
 	float: right;
-	width: 88px;
+	padding: 0 15px;
 	height: 70px;
 	border-left: #3B97D2 1px solid;
 	text-align: center;
@@ -196,6 +200,7 @@ nav{
 
 .globe-nav:hover{
 	background: #34495E;
+	border-left: #3B97D2 1px solid;
 }
 
 nav .active{
@@ -203,6 +208,66 @@ nav .active{
 }
 
 
+/* Logged In Navigation Styles */
+
+nav form{
+	display: inline;
+}
+
+nav form input{
+	height: 30px;
+	width: 300px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: #E67E22 solid 1px;
+	background-image: url("../img/icons/search.png");
+	background-position: right center;
+	background-size: 40px 31px;
+	background-repeat: no-repeat;
+	margin: 8px 0 0 50px;
+	padding: 0 0 0 10px;
+	font-size: 14px;
+	vertical-align: middle;
+}
+
+.notifcation-count{
+	display: inline-block;
+	background: #E67E22;
+	border: 1px solid #FFF;
+	padding: 2px 6px;
+	margin: 0 0 0 10px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;	
+	line-height: normal;
+	font-size: 12px;
+}
+
+.user-dd{
+		border-right: #3B97D2 1px solid;
+}
+
+.user-dd img{
+	margin-right: 10px;
+}
+
+.user-dd-menu{
+	display: none;
+	background-color: #2C3E50;
+	width: 100%;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.user-dd-menu ul{
+	position: absolute;
+}
+
+.user-dd-menu ul li:hover{
+	background-color: #34495E;
+}
 
 /* 	Content Styles 
 	-------------------
@@ -318,18 +383,18 @@ nav .active{
 }
 
 /* General Register/Login Styles  */
-.content{
+#register .content, #login .content{
 	width: 640px;
 	height: 375px;
 	margin: 0 auto;
 }
 
-.content form{
+#register .content form, #login .content form{
 	width: 300px;
 	margin: 0 auto;
 }
 
-.content form input{
+#register .content form input, #login .content form input{
 	display: block;
 	width: 300px;
 	height: 36px;
@@ -414,7 +479,6 @@ nav .active{
 }
 
 #login .content form input{
-	font-size: 400px;
 	background-image: url("../img/icons/password.png");
 	background-position: right center;
 	background-size: 30px 38px;

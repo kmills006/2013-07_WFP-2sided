@@ -20,6 +20,10 @@
 		userDDMenu.css("display", "none");
 	});
 		
+		
+		
+		
+	$( "#tabs" ).tabs();
 	
 })(jQuery); // end private scope
 

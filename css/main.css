@@ -129,6 +129,11 @@ html{
 	font-family: 'Open Sans', sans-serif;
 }
 
+.content{
+	width: 940px;
+	margin: 0 auto;
+}
+
 button{
 	width: 130px;
 	height: 44px;
@@ -263,7 +268,6 @@ nav form input{
 	border-bottom-left-radius: 3px;
 	margin: 0;
 	padding: 0;
-	width: 100%;
 }
 
 .user-dd ul li{

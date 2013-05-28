@@ -577,6 +577,7 @@ nav form input{
 #user-dashboard .content h1{
 	color: #2C3E50;
 	font-size: 26px;
+	padding: 0 0 0 10px;
 }
 
 /* Tab Navigation */
@@ -643,7 +644,7 @@ nav form input{
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	padding: 55px;
+	padding: 20px 55px;
 }
 
 .recently-studied h3{
@@ -702,7 +703,7 @@ nav form input{
 	float: left;
 	font-size: 12px;
 	position: relative;
-	top: -5px;
+	top: -7px;
 }
 
 .your-decks button{

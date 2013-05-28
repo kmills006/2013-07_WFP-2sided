@@ -268,6 +268,8 @@ nav form input{
 	border-bottom-left-radius: 3px;
 	margin: 0;
 	padding: 0;
+	position: relative;
+	z-index: 1;
 }
 
 .user-dd ul li{
@@ -591,7 +593,6 @@ nav form input{
 }
 
 .ud-tabs li a{
-/* 	vertical-align: middle; */
 	text-decoration: none;
 	color: #000;
 	height: 100px;
@@ -624,7 +625,6 @@ nav form input{
 
 .ud-tab-active a{
 	font-weight: 700;
-/* 	background-image: url("../img/icons/active_user_globe.png"); */
 	background-repeat: no-repeat;
 	background-size: 36px 44px;
 	width: 100%;
@@ -646,11 +646,156 @@ nav form input{
 	padding: 20px;
 }
 
+.recently-studied h3{
+	float: left;
+}
+
+.recently-studied form select{
+	float: right;
+	height: 21px;
+	position: relative;
+	top: 20px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	border: #E67E22 solid 1px;
+	background-image: url("../img/icons/dropdown_arrow.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 16px 21px;
+	overflow: hidden;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100px;
+    padding-left: 5px;
+}
+
 .recently-studied p{
 	clear: both;
 }
 
+.rs-item span{
+	width: 90px;
+	font-size: 12px;
+	display: inline-block;
+}
 
+.rs-item a{
+	text-decoration: none;
+	font-weight: 700;
+	color: #E67E22;
+}
+
+.rs-item a:hover{
+	color: #2C3E50;
+}
+
+.your-decks{
+	clear: both;
+}
+
+.your-decks > p{
+	float: left;
+	font-size: 12px;
+	position: relative;
+	top: -5px;
+}
+
+.your-decks button{
+	float:left;
+	font-size: 12px;
+	height: 25px;
+	width: 100px;
+	margin: 0 5px;
+}
+
+.your-decks button:last-child{
+	width: 200px;
+}
+
+.create-new{
+	font-size: 20px;
+}
+
+.filters{
+	background: #666659;	
+}
+
+.filters:hover{
+	background: #54544D;
+}
+
+.activeFilter{
+	background: #34495E;
+}
+
+.activeFilter:hover{
+	background:	#2C3E50;
+}
+
+.deck{
+	clear: both;
+	width: 320px;
+/* 	height: 80px; */
+}
+
+.deck p:first-child a{
+	font-weight: 700;
+	text-decoration: none;
+	color: #E67E22;
+}
+
+.deck p{
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+}
+
+.deck p:first-child a:hover{
+	color: #2C3E50;
+}
+
+.deck-info{
+	float: left;
+}
+
+.deck-social{
+	float: right;
+	vertical-align: middle;
+}
+
+.deck-social p:nth-child(1), .deck-social p:nth-child(2){
+	display: inline-block;
+}
+
+.deck-social p:nth-child(1){
+	position: relative;
+	left: 15px;
+}
+
+.deck-social p:nth-child(2){
+	font-size: 24px;
+	font-weight: 700;
+	position: relative;
+	top: 5px;
+	left: 20px;
+} 
+
+.deck-social p:nth-child(3) a{
+	text-decoration: none;
+	color: #E67E22;
+	position: relative;
+	top: 10px;
+}
+
+.deck p:last-child{
+	clear: both;
+}
+
+.deck p:last-child a{
+	text-decoration: none;
+	color: #E67E22;
+}
 
 /* 	Footer 
 	-------------------

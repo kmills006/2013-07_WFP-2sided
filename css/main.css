@@ -638,12 +638,12 @@ nav form input{
 
 .ud-tab-content{
 	overflow: hidden;
-	width: 760px;
+	width: 690px;
 	background: #FFF;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	padding: 20px;
+	padding: 55px;
 }
 
 .recently-studied h3{
@@ -694,6 +694,10 @@ nav form input{
 	clear: both;
 }
 
+.clearfix{
+	clear:both;
+}
+
 .your-decks > p{
 	float: left;
 	font-size: 12px;
@@ -734,9 +738,13 @@ nav form input{
 }
 
 .deck{
-	clear: both;
 	width: 320px;
-/* 	height: 80px; */
+	float: left;
+	margin: 20px 50px 0 0;
+}
+
+.deck:nth-child(odd){
+	margin-right: 0;
 }
 
 .deck p:first-child a{
@@ -747,7 +755,7 @@ nav form input{
 
 .deck p{
 	padding: 0;
-	margin: 0;
+	margin: 5px;
 	font-size: 14px;
 }
 
@@ -778,21 +786,19 @@ nav form input{
 	font-weight: 700;
 	position: relative;
 	top: 5px;
-	left: 20px;
+	left: 10px;
 } 
 
 .deck-social p:nth-child(3) a{
 	text-decoration: none;
 	color: #E67E22;
-	position: relative;
-	top: 10px;
 }
 
 .deck p:last-child{
 	clear: both;
 }
 
-.deck p:last-child a{
+.deck :last-child a{
 	text-decoration: none;
 	color: #E67E22;
 }

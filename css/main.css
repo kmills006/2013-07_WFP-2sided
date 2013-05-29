@@ -427,7 +427,7 @@ nav form input{
 }
 
 #register nav, #login nav{
-	margin: 0 0 90px 0;
+	margin: 0 0 60px 0;
 }
 
 #register footer, #login footer{
@@ -438,7 +438,6 @@ nav form input{
 .sm-btns{
 	width: 460px;
 	margin: 0 auto;
-	padding: 0;
 }
 
 .sm-btn{
@@ -508,11 +507,47 @@ nav form input{
 }
 
 /* Login */
+#login .content div:nth-child(2){
+	text-align: center;
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+#login .content div:nth-child(2) span{
+	display: inline-block;
+	margin: 10px 0 0 0;
+}
+
+#login .content div:nth-child(2) span:before, #login .content div:nth-child(2) span:after{
+	border-top: 1px solid #8E8D83;
+	display: block;
+	height: 1px;
+	content: " ";
+	width: 300px;
+	position: absolute;
+	left: 0;
+	top: 208px;
+}
+
+#login .content div:nth-child(2) span:before{
+	left: 290px;
+	right: auto;
+}
+
+#login .content div:nth-child(2) span:after{
+	right: 290px;
+	left: auto;
+}
+
 #login .content form input:first-child{
 	background-image: url("../img/icons/username.png");
 	background-position: right center;
 	background-size: 30px 38px;
 	background-repeat: no-repeat;
+}
+
+#login .content form{
+	padding: 20px 0 0 0;
 }
 
 #login .content form input{
@@ -549,12 +584,19 @@ nav form input{
 	cursor: pointer;
 }
 
+#login .content div:nth-child(4){
+	width: 640px;
+	border-top: solid 1px #8E8D83;
+	margin-top: 20px;
+	text-align: center;
+}
+
 #login .content button:last-child{
 	width: 300px;
 	height: 35px;
 	line-height: 35px;
 	font-size: 16px;
-	margin: 60px auto 0 auto;
+	margin-top: 40px;
 }
 
 /* Register*/
@@ -731,12 +773,8 @@ nav form input{
 	margin: 0 5px;
 }
 
-.your-decks button:last-child{
-	width: 200px;
-}
-
-.create-new{
-	font-size: 20px;
+.your-decks button:nth-child(6){
+	float: right;
 }
 
 .filters{

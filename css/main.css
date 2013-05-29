@@ -404,7 +404,7 @@ nav form input{
 
 /* General Register/Login Styles  */
 #register .content, #login .content{
-	width: 640px;
+	width: 620px;
 	height: 375px;
 	margin: 0 auto;
 }
@@ -435,9 +435,16 @@ nav form input{
 }
 
 /* Social Media Buttons */
+.sm-btns{
+	width: 460px;
+	margin: 0 auto;
+	padding: 0;
+}
+
 .sm-btn{
 	width: 220px;
 	height: 40px;
+	position: relative;
 	display: inline-block;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -445,8 +452,18 @@ nav form input{
 	line-height: 40px;
 	cursor: pointer;
 	color: #FFF;
-	margin: 40px 10px 30px 0;
-	
+	padding: 0;
+	margin: 0;
+}
+
+.sm-btns p:first-child{
+	padding: 0;
+	margin: 0 20px 0 0;
+}
+
+.sm-btns p:last-child{
+	margin: 0;
+	padding: 0;
 }
 
 .sm-btn span{

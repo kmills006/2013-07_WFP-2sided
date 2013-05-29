@@ -530,12 +530,12 @@ nav form input{
 }
 
 #login .content div:nth-child(2) span:before{
-	left: 290px;
+	left: 400px;
 	right: auto;
 }
 
 #login .content div:nth-child(2) span:after{
-	right: 290px;
+	right: 400px;
 	left: auto;
 }
 
@@ -694,6 +694,7 @@ nav form input{
 #user-dashboard .content h2{
 	color: #2C3E50;
 	font-size: 20px;
+	padding: 0 0 10px 0;	
 }
 
 .ud-tab-content{
@@ -703,9 +704,12 @@ nav form input{
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	padding: 20px 55px;
+	padding: 5px 55px;
+	margin: 0;
 }
 
+
+/* Study Styles  */
 .recently-studied h3{
 	float: left;
 }
@@ -913,6 +917,62 @@ nav form input{
 .user-notification button:first-child{
 	margin: 0;
 	padding: 0;
+}
+
+/* User Settings */
+#settings form img{
+	float: left;
+	margin: 0 0 30px 0;
+}
+
+#settings form input{
+	display: block;
+	width: 677px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: #E67E22 solid 1px;
+	padding-left: 10px;
+	font-size: 12px;
+	height: 35px;
+	margin: 10px 0;
+}
+
+#settings form input:nth-child(2){
+	appearance: none;
+	width: 100px;
+	height: 30px;
+	border: none;
+	float: left;
+	margin: 80px 0 0 20px;
+}
+
+.fake-file{
+	height: 40px;
+	width: 100px;
+	background-color: #E67E22;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	position: relative;	
+	left: -100px;
+	top: 60px;
+	float: left;
+	cursor: pointer;
+}
+
+.fake-file p{
+	font-size: 12px;
+	color: #FFF;
+	text-align: center;
+}
+
+.fake-file:hover{
+	background-color: #D35400;
+}
+
+#settings form label{
+	
 }
 
 /* 	Footer 

@@ -519,7 +519,7 @@ nav form input{
 }
 
 #login .content div:nth-child(2) span:before, #login .content div:nth-child(2) span:after{
-	border-top: 1px solid #8E8D83;
+	border-top: 1px solid #C1C0AE;
 	display: block;
 	height: 1px;
 	content: " ";
@@ -586,7 +586,7 @@ nav form input{
 
 #login .content div:nth-child(4){
 	width: 640px;
-	border-top: solid 1px #8E8D83;
+	border-top: solid 1px #C1C0AE;
 	margin-top: 20px;
 	text-align: center;
 }

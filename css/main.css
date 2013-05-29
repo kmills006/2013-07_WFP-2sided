@@ -862,15 +862,15 @@ nav form input{
 /* Notifications Styles */
 .user-notification{
 	margin: 20px 0;
-	padding: 50px 0 0 0;
+	padding: 20px 0 30px 0;
+}
+
+.user-notification{
+	padding-top: 20px;
 }
 
 .user-notification:last-child{
 	padding-bottom: 50px;
-}
-
-.user-notification:first-child{
-	padding: 0;
 }
 
 .user-notification img{

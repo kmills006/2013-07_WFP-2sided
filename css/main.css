@@ -704,7 +704,7 @@ nav form input{
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	padding: 5px 55px;
+	padding: 5px 55px 40px;
 	margin: 0;
 }
 
@@ -945,6 +945,9 @@ nav form input{
 	border: none;
 	float: left;
 	margin: 80px 0 0 20px;
+	position: relative;
+	opacity: 0;
+	z-index: 4;
 }
 
 .fake-file{
@@ -971,8 +974,27 @@ nav form input{
 	background-color: #D35400;
 }
 
-#settings form label{
-	
+.change-password{
+	margin: 30px 0 10px 0;
+	font-weight: 700;
+}
+
+#settings form button{
+	margin: 20px 0;
+	float: left;
+}
+
+#settings form p a:last-child{
+	font-size: 12px;
+	text-decoration: none;
+	float: left;
+	position: relative;
+	top: 28px;
+	left: 20px;
+}
+
+#settings form p a:last-child:hover{
+	color: #E67E22;
 }
 
 /* 	Footer 

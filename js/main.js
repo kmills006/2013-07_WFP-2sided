@@ -23,6 +23,15 @@
 		var userDDMenu = $(".user-dd ul");
 		userDDMenu.css("display", "none");
 	});
+	
+	
+	$(".user-profile").on("click", function(e){
+		window.location.replace("/wfp_2sided/user_profile.html");
+	});
+	
+	$(".user-dashboard").on("click", function(e){
+		window.location.replace("/wfp_2sided/user_dashboard.html");
+	});
 		
 		
 		
@@ -129,7 +138,7 @@
 	
 			
 		}); // End of user dashboard tab
-	} 
+	} // End of user dashboard window.location
 	
 	
 	

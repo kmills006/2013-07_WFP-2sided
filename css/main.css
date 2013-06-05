@@ -1283,6 +1283,41 @@ nav form input{
 	margin-right: 30px;
 }
 
+.recent-activity h3{
+	margin-bottom: 0;
+}
+
+.recent-activity .activity{
+	overflow: hidden;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	border-bottom: #666659 solid 1px;
+	padding: 10px 0;
+}
+
+.recent-activity .activity:last-child{
+	border: none;
+}
+
+.recent-activity .activity p:first-child{
+	float: left;
+}
+
+.recent-activity .activity p:last-child{
+	float: right;
+}
+
+.recent-activity .activity a{
+	text-decoration: none;
+	color: #34495E;
+	font-weight: 700;
+}
+
+.recent-activity .activity a:hover{
+	color: #E67E22;
+}
+
 /* 	Footer 
 	-------------------
 	-------------------

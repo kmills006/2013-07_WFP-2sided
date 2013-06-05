@@ -259,7 +259,7 @@ nav form input{
 
 .user-dd ul{
 	display: none;
-	background-color: #2C3E50;
+	background-color: #34495E;
 	-webkit-border-bottom-right-radius: 3px;
 	-webkit-border-bottom-left-radius: 3px;
 	-moz-border-radius-bottomright: 3px;
@@ -277,10 +277,8 @@ nav form input{
 }
 
 .user-dd ul li:hover{
-	background: #34495E;
+	background:  #2C3E50;
 }
-
-
 
 /* 	Content Styles 
 	Not Logged In
@@ -768,6 +766,7 @@ nav form input{
 	font-size: 12px;
 	position: relative;
 	top: -7px;
+	margin: 10px;
 }
 
 .your-decks button{
@@ -987,13 +986,12 @@ nav form input{
 }
 
 .level-progress span:nth-child(2) span:first-child{
-	background-color: orange;
+	background-color:  orange;
 	width: 87%;
 	border: none;
 	border-radius: 0;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
-/* 	display: none; */
 }
 
 .level-progress span:nth-child(3){
@@ -1038,6 +1036,32 @@ nav form input{
 #achievements h3:nth-child(6){
 	clear: both;
 	margin: 40px 0;
+}
+
+.badges{
+	margin: 0 auto;
+	padding: 0 0 30px 0;
+}
+
+.badge{
+	width: 120px;
+	float: left;
+	margin: 0 15px 0 0;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.badge:nth-child(6){
+	margin: 0;
+}
+
+.badge:last-child{
+	margin: 0;
+}
+
+.badge p{
+	text-align: center;
+	font-weight: 600;
 }
 
 /* User Settings */
@@ -1117,6 +1141,76 @@ nav form input{
 #settings form p a:last-child:hover{
 	color: #E67E22;
 }
+
+
+
+/* User Profile  */
+#user-profile .content > a{
+	margin: 20px 0;	
+	display: block;
+	text-decoration: none;
+	color: #2C3E50;
+}
+
+#user-profile .content > a:hover{
+	color: 	#E67E22;
+}
+
+#user-profile aside{
+	width: 200px;
+	background: #FFF;
+	padding: 10px 10px;
+}
+
+#user-profile aside > p{
+	margin: 20px 0 0 0;
+	font-weight: 700;
+}
+
+#user-profile .level-progress{
+	width: 180px;
+}
+
+#user-profile .level-progress span:nth-child(4){
+	width: 38%;
+}
+
+#user-profile .level-progress span:nth-child(2) span{
+	width: 87%;
+}
+
+.friends-list h2{
+	float: left;
+	margin: 20px 0 20px; 0;
+	padding: 0;
+	
+}
+
+.friends-list h2:first-child{
+	margin-right: 80px;
+}
+
+.friend{
+	clear: both;
+}
+
+.friend img{
+	float: left;
+}
+
+.friend h3{
+	float: left;
+	font-weight: 600;
+	margin: 15px 0 0 20px;
+}
+
+.friend p:nth-child(3){
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+
+.
 
 /* 	Footer 
 	-------------------

@@ -1488,11 +1488,22 @@ nav form input{
 	top: 2px;
 }
 .study-content input{
-	margin: 0 5px 0 20px;
+	margin: 0 3px 0 20px;
 }
 
 .study-content label{
-	font-size: 14px;
+	font-size: 12px;
+}
+
+.flash-card{
+	width: 449px;
+	height: 248px;
+	border: 1px solid #000;
+	margin: 40px auto;
+	background-image: url("../img/flashcards/flashcard.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-y: 30px;
 }
 
 

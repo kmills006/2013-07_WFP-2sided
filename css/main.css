@@ -1496,6 +1496,11 @@ nav form input{
 }
 
 .flash-card{
+	width: 515px;
+	overflow: hidden;
+	margin: 30px auto;
+}
+.card{
 	width: 449px;
 	height: 248px;
 	border: 1px solid #000;
@@ -1504,9 +1509,77 @@ nav form input{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-position-y: 30px;
+	float: left;
+	margin: 0 auto;
+	padding: 0;
+	display: table;
+}	
+
+.card p{
+	margin: 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 30px;
+	font-weight: 700;
+	font-size: 22px;
+	
 }
 
+.flash-card img{
+	float: left;
+	position: relative;
+	top: 115px;
+/* 	vertical-align: middle; */
+}
 
+.flash-card img:first-child{
+	margin-right: 20px;
+}
+
+.flash-card img:last-child{
+	margin-left: 20px;
+}
+
+.practice-more, .mastered, .flip{
+	clear: both;
+}
+
+.practice-more, .mastered{
+	width: 50px;
+	height: 40px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.practice-more{
+	background-color: #951400;
+	background-image: url("../img/icons/practice_more.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 25px 25px;
+}
+
+.flip{
+	width: 60px;
+	height: 40px;
+	background-color: #E87C00;
+	background-image: url("../img/icons/flip.png");
+	background-position: center center;
+	background-size: 38px 31px;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.mastered{
+	background-color: #009245;
+	background-image: url("../img/icons/mastered.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 31px 26px;
+}
 
 /* 	Footer 
 	-------------------

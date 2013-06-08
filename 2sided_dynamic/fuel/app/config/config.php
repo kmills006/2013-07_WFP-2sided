@@ -24,7 +24,7 @@ return array(
 	 *
 	 * Set this to null to have it automatically detected.
 	 */
-	// 'base_url'  => null,
+	 'base_url'  => 'http://localhost:9999/wfp_2sided/2sided_dynamic/',
 
 	/**
 	 * url_suffix - Any suffix that needs to be added to

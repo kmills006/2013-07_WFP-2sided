@@ -8,7 +8,9 @@
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+<!--         <link rel="stylesheet" href="assets/css/main.css"> -->
+		<? echo Asset::css('normalize.css'); ?>
+		<? echo Asset::css('main.css'); ?>
         
         <!-- Web Fonts --> 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>

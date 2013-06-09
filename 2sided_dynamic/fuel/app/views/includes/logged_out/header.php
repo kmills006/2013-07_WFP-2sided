@@ -1,4 +1,4 @@
-      	<div id="wrapper">
+    	<div id="wrapper">
     		<nav>
     			<div id="nav-sizer">
 	    			<a class="logo" href="index.html"><span class="logo-change">2</span>SIDED</a>

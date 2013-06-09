@@ -6,6 +6,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -129,11 +130,6 @@ html{
 	font-family: 'Open Sans', sans-serif;
 }
 
-.content{
-	width: 940px;
-	margin: 0 auto;
-}
-
 button{
 	width: 130px;
 	height: 44px;
@@ -156,7 +152,6 @@ input{
 }
 
 
-
 /* 	Navigation Styles
 	-------------------
 	-------------------
@@ -165,6 +160,8 @@ input{
 
 nav{
 	background: #2C3E50;
+	padding: 0;
+	margin: 0;	
 }
 #nav-sizer{
 	width: 940px;
@@ -260,7 +257,7 @@ nav form input{
 
 .user-dd ul{
 	display: none;
-	background-color: #34495E;
+	background-color: #2C3E50;
 	-webkit-border-bottom-right-radius: 3px;
 	-webkit-border-bottom-left-radius: 3px;
 	-moz-border-radius-bottomright: 3px;
@@ -278,8 +275,10 @@ nav form input{
 }
 
 .user-dd ul li:hover{
-	background:  #2C3E50;
+	background: #34495E;
 }
+
+
 
 /* 	Content Styles 
 	Not Logged In
@@ -767,7 +766,6 @@ nav form input{
 	font-size: 12px;
 	position: relative;
 	top: -7px;
-	margin: 10px;
 }
 
 .your-decks button{
@@ -921,22 +919,7 @@ nav form input{
 }
 
 /* Acheivements  */
-#achievements p:nth-child(3){
-	float: left;
-	margin: 0 0 10px 0;
-	font-size: 14px;
-	
-}
-
-#achievements p:nth-child(4){
-	float: right;
-	margin: 0 10px 10px 0;
-	font-size: 14px;
-	font-weight: 600;
-}
-
 .level-progress{
-	clear: both;
 	margin: 20px 0 0 0;
 	height: 20px;
 	position: relative;
@@ -947,122 +930,25 @@ nav form input{
 	padding: 10px;
 }
 
-.level-progress span{
-	float: left;
+.level-progress > span{
+	width: 20%;
+	display: block;
+	height: 100%; 
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-topright: 8px;
+	-moz-border-radius-bottomright: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: #E67E22;
 	position: relative;
 	display: hidden;
-	height: 100%; 
-	display: block;
-	padding: 0;
-	margin: 0;
-	border-right: 1px solid #54544D;
-}
-
-.level-progress span:first-child{
-	width: 10%;
-	background-color: #FFF;
-	-webkit-border-top-left-radius: 20px;
-	-webkit-border-bottom-left-radius: 20px;
-	-moz-border-radius-topleft: 20px;
-	-moz-border-radius-bottomleft: 20px;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-}
-
-.level-progress span:first-child span:first-child{
-	background-color: green;
-	border: none;
-	width: 100%;
-	-webkit-border-top-left-radius: 20px;
-	-webkit-border-bottom-left-radius: 20px;
-	-moz-border-radius-topleft: 20px;
-	-moz-border-radius-bottomleft: 20px;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-}
-
-.level-progress span:nth-child(2){
-	background-color: #FFF;
-	width: 20%;
-}
-
-.level-progress span:nth-child(2) span:first-child{
-	background-color:  orange;
-	width: 87%;
-	border: none;
-	border-radius: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-}
-
-.level-progress span:nth-child(3){
-	background-color: #FFF;
-	width: 30%;
-}
-
-.level-progress span:nth-child(3) span:first-child{
-	background-color: blue;
-	width: 12%;
-	border: none;
-	border-radius: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	display: none;
-}
-
-.level-progress span:nth-child(4){
-	background-color: #FFF;
-	border: none;
-	width: 39%;
-	height: 100%;
-	-webkit-border-top-right-radius: 20px;
-	-webkit-border-bottom-right-radius: 20px;
-	-moz-border-radius-topright: 20px;
-	-moz-border-radius-bottomright: 20px;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-}
-
-.level-progress span:nth-child(4) span:first-child{
-	background-color: blue;
-	width: 89%%;
-	border: none;
-	border-radius: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	background-color: purple;
-	display: none;
-}
-
-#achievements h3:nth-child(6){
-	clear: both;
-	margin: 40px 0;
-}
-
-.badges{
-	margin: 0 auto;
-	padding: 0 0 30px 0;
-}
-
-.badge{
-	width: 120px;
-	float: left;
-	margin: 0 15px 0 0;
-	text-align: center;
-	padding: 20px 0;
-}
-
-.badge:nth-child(6){
-	margin: 0;
-}
-
-.badge:last-child{
-	margin: 0;
-}
-
-.badge p{
-	text-align: center;
-	font-weight: 600;
 }
 
 /* User Settings */
@@ -1141,453 +1027,6 @@ nav form input{
 
 #settings form p a:last-child:hover{
 	color: #E67E22;
-}
-
-
-/* Breadcrumbs */
-.back-to-dash{
-	margin: 20px 5px;	
-	display: block;
-	text-decoration: none;
-	color: #2C3E50;
-	font-size: 14px;
-}
-
-.back-to-dash:hover{
-	color: #E67E22;
-}
-
-
-/* User Profile  */
-#user-profile .content > a:hover{
-	color: 	#E67E22;
-}
-
-#user-profile aside{
-	width: 200px;
-	background: #FFF;
-	padding: 10px 10px;
-	overflow: hidden;
-	float: left;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-}
-
-#user-profile aside > p{
-	font-weight: 700;
-	font-size: 14px;
-}
-
-#user-profile aside > p span{
-	float: right;
-}
-
-#user-profile .level-progress{
-	width: 180px;
-}
-
-#user-profile .level-progress span:nth-child(4){
-	width: 38%;
-}
-
-#user-profile .level-progress span:nth-child(2) span{
-	width: 87%;
-}
-
-.friends-list h2{
-	float: left;
-	margin: 10px 0 20px; 0;
-	padding: 0;
-	
-}
-
-.friends-list h2:first-child{
-/* 	margin-right: 80px; */
-}
-
-.friend{
-	clear: both;
-	overflow: hidden;
-	padding: 0;
-	margin: 20px 0;
-/*
-	background-image: url("../img/icons/award.png");
-	background-size: 15px 15px;
-	background-repeat: no-repeat;
-	background-position: right center;
-*/
-	font-size: 12px;
-}
-
-.friend img{
-	float: left;
-}
-
-.friend h3{
-	font-weight: 600;
-	margin: 5px 0 0 20px;
-	display: inline-block;
-}
-
-.friend h3 a{
-	text-decoration: none;
-	color: #000;
-}
-
-.friend h3 a:hover{
-	color: #E67E22;
-}
-
-.friend p{
-	display: inline-block;
-	padding: 0;
-	margin: 0;
-	margin: 5px 0 0 20px;
-}
-
-.friends-list p:last-child a{
-	float: right;
-	text-decoration: none;
-	color: #000;
-}
-
-.friends-list p:last-child a:hover{
-	color: #E67E22;
-}
-
-.profile{
-	overflow: hidden;
-	width: 700px;
-	background: #FFF;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	margin: 0;
-	float: right;
-}
-
-.user-info{
-	padding: 0 20px 20px 20px;
-}
-
-.user-info h2{
-	float: left;
-}
-
-.user-info button:nth-child(2){
-	width: 100px;
-	height: 30px;
-	font-size: 14px;
-	float: right;
-	margin: 20px 20px 0 0;
-}
-
-.user-info .your-decks{
-	clear: both;
-	overflow: hidden;
-}
-
-.user-info .your-decks .deck{
-	width: 300px;
-	margin-right: 30px;
-}
-
-.recent-activity h3{
-	margin-bottom: 0;
-}
-
-.recent-activity .activity{
-	overflow: hidden;
-	font-size: 14px;
-	padding: 0;
-	margin: 0;
-	border-bottom: #666659 solid 1px;
-	padding: 10px 0;
-}
-
-.recent-activity .activity:last-child{
-	border: none;
-}
-
-.recent-activity .activity p:first-child{
-	float: left;
-}
-
-.recent-activity .activity p:last-child{
-	float: right;
-}
-
-.recent-activity .activity a{
-	text-decoration: none;
-	color: #34495E;
-	font-weight: 700;
-}
-
-.recent-activity .activity a:hover{
-	color: #E67E22;
-}
-
-
-/* Study Decks Styles */
-#study-deck aside{
-	margin: 0 0 20px 0;
-	overflow: auto;
-	width: 220px;
-	background: #fff;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	float: left;
-}
-
-#study-deck .header{
-	overflow: auto;
-	background-color: #54544D;
-	color: #F2F2E2;
-	padding: 0 5px;
-}
-
-#study-deck .header h2{
-	margin: 0;
-	padding: 10px;
-	float: left;
-	font-size: 18px;
-	font-weight: 500;
-}
-
-#study-deck .header p{
-	float: right;
-	margin-right: 10px;
-	vertical-align: middle;
-	line-height: 100%;
-}
-
-#study-deck .header p img{
-	margin-right: 5px;
-}
-
-#study-deck .header:nth-child(3){
-	margin: 20px 0 0 0;
-}
-
-.sd-deck-info, .challenge, .quiz-stats{
-	padding: 0 10px;
-}
-
-.sd-deck-info a{
-	text-decoration: none;
-	color: #E67E22;
-	font-weight: 600;
-	font-size: 14px;
-}
-
-.sd-deck-info a:hover{
-	color: #34495E;
-}
-
-.sd-deck-info p{
-	font-size: 14px;
-	margin: 5px 0;
-}
-
-.sd-deck-info h3{
-	font-size: 18px;
-	margin: 20px 0 5px 0;
-}
-
-.sd-deck-info button{
-	width: auto;
-	height: auto;
-	font-size: 12px;
-	margin: 5px 0;
-	font-weight: 600;
-	letter-spacing: 1.3px;
-}
-
-.quiz-stats, .challenge{
-	font-size: 14px;
-}
-
-.quiz-stats h3{
-	font-size: 22px;
-	margin: 5px 0;
-}
-
-.quiz-stats a, .challenge a{
-	font-weight: 700;
-	text-decoration: none;
-	color: #E67E22;
-	font-size: 14px;
-}
-
-.quiz-stats a:hover, .challenge a:hover{
-	color: #34495E;
-}
-
-.study-content{
-	width: 700px;
-	float: right;
-	background: #FFF;
-}
-
-.study-content .header{
-	-webkit-border-top-left-radius: 03px;
-	-webkit-border-top-right-radius: 03px;
-	-moz-border-radius-topleft: 03px;
-	-moz-border-radius-topright: 03px;
-	border-top-left-radius: 03px;
-	border-top-right-radius: 03px;
-	height: 40px;
-	margin-bottom: 20px;
-}
-
-.study-content .header a{
-	text-decoration: none;
-	color: #FFF;
-/* 	font-weight: 300; */
-	line-height: 40px;
-	border-right: 1px solid #F2F2E2;
-	display: inline-block;
-	padding-right: 15px;
-	margin: 0 0 0 10px;
-	font-size: 14px;
-}
-
-.active-study-tab{
-	font-weight: 600;
-}
-
-.study-content button{
-	height: 25px;
-	width: auto;
-	font-size: 12px;
-	margin-left: 20px;
-}
-
-.study-content button:nth-child(2), .study-content button:nth-child(3){
-	background-color: #54544D;
-}
-
-/* NOT WORKING! */
-.card-sort-active button{
-	background-color: #2C3E50;
-}
-
-.study-content button:nth-child(6), .study-content button:nth-child(7){
-	float: right;
-	margin-right: 20px;
-}
-
-.study-content button:nth-child(7){
-	display: none;
-}
-
-.study-content input, .study-content label{
-	position: relative;
-	top: 2px;
-}
-.study-content input{
-	margin: 0 3px 0 20px;
-}
-
-.study-content label{
-	font-size: 12px;
-}
-
-.flash-card{
-	width: 515px;
-	overflow: hidden;
-	margin: 30px auto;
-}
-
-.card{
-	width: 449px;
-	height: 248px;
-	border: 1px solid #000;
-	margin: 40px auto;
-	background-image: url("../img/flashcards/flashcard.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-position-y: 30px;
-	float: left;
-	margin: 0 auto;
-	padding: 0;
-/* 	display: table; */
-}	
-
-.card p{
-	margin: 0 auto;
-/* 	display: table-cell; */
-	vertical-align: middle;
-	padding: 0 30px;
-	font-weight: 700;
-	font-size: 22px;
-	
-}
-
-.card p:last-child{
-/* 	clear: both; */
-	font-size: 12px;
-}
-
-.flash-card .control{
-	float: left;
-	position: relative;
-	top: 115px;
-/* 	vertical-align: middle; */
-}
-
-.flash-card img:first-child{
-	margin-right: 20px;
-}
-
-.flash-card img:nth-child(3){
-	margin-left: 20px;
-}
-
-.practice-more, .mastered, .flip{
-	float: left;
-	margin-top: 30px;
-}
-
-.practice-more, .mastered{
-	width: 50px;
-	height: 40px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-}
-
-.practice-more{
-	background-color: #951400;
-	background-image: url("../img/icons/practice_more.png");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 25px 25px;
-}
-
-.flip{
-	width: 60px;
-	height: 40px;
-	background-color: #E87C00;
-	background-image: url("../img/icons/flip.png");
-	background-position: center center;
-	background-size: 38px 31px;
-	background-repeat: no-repeat;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	margin-left: 170px;
-}
-
-.mastered{
-	background-color: #009245;
-	background-image: url("../img/icons/mastered.png");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 31px 26px;
-	float: right;
 }
 
 /* 	Footer 

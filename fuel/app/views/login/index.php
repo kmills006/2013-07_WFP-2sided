@@ -10,7 +10,7 @@
     				echo Form::open('authentication/check_user');
     				
     				echo Form::input('username', '', array('id' => 'username', 'placeholder' => 'Username or Email'));
-    				echo Form::input('password', '', array('id' => 'password', 'placeholder' => 'Password'));
+    				echo Form::input('password', '', array('id' => 'password', 'placeholder' => 'Password', 'type' => 'password'));
     				
     				echo Form::button('login_btn', 'Submit');
     				

@@ -401,17 +401,18 @@ nav form input{
 }
 
 /* General Register/Login Styles  */
-.login{
+.login, .signup{
 	width: 620px;
 	margin: 0 auto;
+	padding: 30px;
 }
 
-.login form{
+.login form, .signup form{
 	width: 300px;
 	margin: 0 auto;
 }
 
-.login form input{
+.login form input, .signup form input{
 	display: block;
 	width: 300px;
 	height: 36px;
@@ -423,42 +424,11 @@ nav form input{
 	padding-left: 10px;
 	
 }
-/* #register .content, #login .content{
-	width: 620px;
-	height: 375px;
-	margin: 0 auto;
-}
-
-#register .content form, #login .content form{
-	width: 300px;
-	margin: 0 auto;
-}
-
-#register .content form input, #login .content form input{
-	display: block;
-	width: 300px;
-	height: 36px;
-	margin: 10px 0;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	border: #E67E22 solid 1px;
-	padding-left: 10px;
-}
-
-#register nav, #login nav{
-	margin: 0 0 60px 0;
-}
-
-#register footer, #login footer{
-	margin: 90px 0 0 0;
-} */
 
 /* Social Media Buttons */
 .sm-btns{
 	width: 460px;
 	margin: 0 auto;
-	padding: 30px 0 0 0;
 }
 
 .sm-btn{
@@ -612,26 +582,26 @@ nav form input{
 }
 
 /* Register*/
-#register .content h1{
+.signup h1{
 	margin: 0 0 30px 0;
 	text-align: center;
 }
 
-#register .content p{
+.signup p{
 	text-align: center;
 }
 
-#register button{
+.signup button{
 	height: 36px;
 	margin: 20px 0;
 }
 
-#register .content p a{
+.signupp a{
 	text-decoration: none;
 	color: #000;	
 }
 
-#register .content p a:hover{
+.signup p a:hover{
 	color: #E67E22;
 }
 

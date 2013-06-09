@@ -9,3 +9,6 @@ ERROR - 2013-06-09 01:37:25 --> Error - date_default_timezone_set(): Timezone ID
 ERROR - 2013-06-09 00:11:24 --> Error - ViewModel "\View_Landing_404" could not be found. in /Applications/MAMP/htdocs/2sided/fuel/core/classes/viewmodel.php on line 70
 ERROR - 2013-06-09 12:47:08 --> Notice - Undefined variable: subnav in /Applications/MAMP/htdocs/2sided/fuel/app/views/login/index.php on line 2
 ERROR - 2013-06-09 12:51:34 --> Notice - Array to string conversion in /Applications/MAMP/htdocs/2sided/fuel/core/classes/form/instance.php on line 203
+ERROR - 2013-06-09 13:35:08 --> Notice - Undefined variable: subnav in /Applications/MAMP/htdocs/2sided/fuel/app/views/signup/index.php on line 2
+ERROR - 2013-06-09 13:35:17 --> Notice - Undefined variable: subnav in /Applications/MAMP/htdocs/2sided/fuel/app/views/signup/index.php on line 2
+ERROR - 2013-06-09 13:49:48 --> Parsing Error - syntax error, unexpected 'l' (T_STRING), expecting ',' or ';' in /Applications/MAMP/htdocs/2sided/fuel/app/classes/controller/signup.php on line 17

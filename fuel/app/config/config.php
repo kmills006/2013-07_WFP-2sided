@@ -18,10 +18,11 @@ return array(
 	 * MUST contain a trailing slash (/)
 	 *
 	 * You can set this to a full or relative URL:
-	 *
-	 *     'base_url' => '/foo/',
-	 *     'base_url' => 'http://foo.com/'
-	 *
+	 * */
+	
+	 // 'base_url' => 'http://localhost:9999/2sided/',
+	
+	 /*
 	 * Set this to null to have it automatically detected.
 	 */
 	// 'base_url'  => null,

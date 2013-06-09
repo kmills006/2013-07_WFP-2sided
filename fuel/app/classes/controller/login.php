@@ -1,13 +1,15 @@
 <?php
 
-class Controller_Login extends Controller{
-
-	public function action_index(){
-/*
-		$data["subnav"] = array('index'=> 'active' );
-		$this->template->title = 'Login &raquo; Index';
-		$this->template->content = View::forge('login/index', $data);
-*/
+	class Controller_Login extends Controller{
+	
+		public function action_index(){
+			$view = View::forge('layout');
+			
+			$view->head = View::forge('includes/head');
+			$view->header = View::forge('includes/logged_out/header');
+			$view->content = View::forge('login/index');
+			$view->footer = View::forge('includes/footer');
+			
+			return $view;
+		}
 	}
-
-}

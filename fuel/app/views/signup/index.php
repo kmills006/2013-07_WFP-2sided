@@ -2,7 +2,7 @@
     			<h1>Sign up and start studying today</h1>
     	
     			<?
-    				echo Form::open('signup/new_user');
+    				echo Form::open('authentication/sign_up');
     				
     				echo Form::input('username', '', array('placeholder' => 'Username'));
     				echo Form::input('email', '', array('placeholder' => 'Email'));

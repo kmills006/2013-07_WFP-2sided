@@ -4,5 +4,6 @@
 		'_root_'  => 'landing/index',
 		
 		'landing'   => 'landing/index',
-	    'login'     => 'login/index'
+	    'login'     => 'login/index',
+	    'signup'    => 'signup/index'
 	);

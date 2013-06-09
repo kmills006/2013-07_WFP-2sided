@@ -12,10 +12,4 @@ class Controller_Signup extends Controller{
 		
 		return $view;
 	}
-	
-	// New User Registration
-	public function action_new_user(){
-		echo "New Users";
-	}
-
 }

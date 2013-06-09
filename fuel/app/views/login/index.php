@@ -20,6 +20,6 @@
     			?>
     			
     			
-    			<div><? echo Form::button('authentication/sign_up', 'Join Now'); ?></div>
+    			<div><button><? echo Html::anchor('signup/index', 'Join Now'); ?></button></div>
     			
     		</div> <!-- end of content -->

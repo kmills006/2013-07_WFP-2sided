@@ -29,7 +29,7 @@
 	    			<div class="about-sizer">
 		    			<section>
 		    				<div>
-		    					<img src="img/icons/globe.png" alt="Globe icon to describe studying" />
+								<? echo Asset::img('icons/globe.png', array('alt' => 'Globe icon to describe studying')); ?>
 		    				</div>
 		    				
 		    				<h2>Study Anywhere</h2>
@@ -40,7 +40,7 @@
 		    			
 		    			<section>
 		    				<div>
-		    					<img src="img/icons/challenge.png" alt="Sword icon representing challenging friends" />
+		    					<? echo Asset::img('icons/challenge.png', array('alt' => 'Sword icon representing challenging friends')); ?>
 		    				</div>
 		    				
 		    				<h2>Challenge Your Friends</h2>
@@ -51,7 +51,7 @@
 		    			
 		    			<section>
 		    				<div>
-		    					<img src="img/icons/medal.png" alt="Medal icon to describe earning achievements" />
+		    					<? echo Asset::img('icons/medal.png', array('alt' => 'Medal icon to describe earning achievements')); ?>
 		    				</div>
 		    				
 		    				<h2>Earn Achievements</h2>

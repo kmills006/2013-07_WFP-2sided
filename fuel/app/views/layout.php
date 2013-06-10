@@ -11,4 +11,11 @@
         <?php echo $content; ?>
         <?php echo $footer; ?>
     </body>
+    
+<!--         <script src="js/vendor/jquery-1.10.0.min.js"></script> -->
+<!--         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.0.min.js"><\/script>')</script> -->
+<!--         <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
+        <? echo Asset::js('vendor/jquery-1.10.0.min.js'); ?>
+        <? echo Asset::js('plugins.js'); ?>
+		<? echo Asset::js('main.js'); ?>
 </html>

@@ -1,13 +1,16 @@
 <?php
 
-class Controller_Dashboard extends Controller_Template
-{
+class Controller_Dashboard extends Controller{
 
-	public function action_index()
-	{
-		$data["subnav"] = array('index'=> 'active' );
-		$this->template->title = 'Dashboard &raquo; Index';
-		$this->template->content = View::forge('dashboard/index', $data);
+	public function action_index(){
+		$view = View::forge('layout');
+			
+		$view->head = View::forge('includes/head');
+		$view->header = View::forge('includes/logged_in/header');
+		$view->content = View::forge('dashboard/index');
+		$view->footer = View::forge('includes/footer');
+		
+		return $view;
 	}
 
 }

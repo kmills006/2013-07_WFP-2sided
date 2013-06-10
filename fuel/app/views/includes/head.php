@@ -7,8 +7,6 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="css/normalize.css">
-<!--         <link rel="stylesheet" href="assets/css/main.css"> -->
 		<? echo Asset::css('normalize.css'); ?>
 		<? echo Asset::css('main.css'); ?>
         
@@ -19,4 +17,4 @@
 		<script type="text/javascript" src="//use.typekit.net/vom7rdq.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<? echo Asset::js('vendor/modernizr-2.6.2.min.js'); ?>

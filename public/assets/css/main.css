@@ -620,7 +620,7 @@ nav form input{
 	------------------- */
 	
 /* User Dashboard Styles */
-#user-dashboard .content h1{
+.user-dashboard h1{
 	color: #2C3E50;
 	font-size: 26px;
 	padding: 0 0 0 10px;
@@ -639,8 +639,7 @@ nav form input{
 	font-size: 14px;
 }
 
-.ud-tabs li a{
-	text-decoration: none;
+.ud-tabs li{
 	color: #000;
 	height: 100px;
 	text-align: center;
@@ -649,15 +648,19 @@ nav form input{
 	background-position: center top;
 	background-position-y: 10px;
 	background-repeat: no-repeat;
+	font-weight: 600;
+	cursor: pointer;
 }
 
-.ud-tabs li a:hover{
+.ud-tabs li:hover{
 	color: #E67E22;
 }
 
-.ud-tabs li a:active{
+/*
+.ud-tabs li:active{
 	color: #000;
 }
+*/
 
 .ud-tab-active{
 	background-color: #FFF;
@@ -678,7 +681,11 @@ nav form input{
 }
 
 /* Content */
-#user-dashboard .content h2{
+.content{
+	width: 940px;
+	margin: 0 auto;
+}
+.user-dashboard h2{
 	color: #2C3E50;
 	font-size: 20px;
 	padding: 0 0 10px 0;
@@ -941,12 +948,12 @@ nav form input{
 }
 
 /* User Settings */
-#settings form img{
+.ud-tab-content form img{
 	float: left;
 	margin: 20px 0 20px 0;
 }
 
-#settings form input{
+.ud-tab-content form input{
 	display: block;
 	width: 677px;
 	-webkit-border-radius: 3px;
@@ -959,7 +966,7 @@ nav form input{
 	margin: 10px 0;
 }
 
-#settings form input:nth-child(2){
+.ud-tab-content form input:nth-child(2){
 	appearance: none;
 	width: 100px;
 	height: 30px;
@@ -1000,12 +1007,12 @@ nav form input{
 	font-weight: 700;
 }
 
-#settings form button{
+.ud-tab-content form button{
 	margin: 20px 0;
 	float: left;
 }
 
-#settings form p a:last-child{
+.ud-tab-content form p a:last-child{
 	font-size: 12px;
 	text-decoration: none;
 	float: left;
@@ -1014,7 +1021,7 @@ nav form input{
 	left: 20px;
 }
 
-#settings form p a:last-child:hover{
+.ud-tab-content form p a:last-child:hover{
 	color: #E67E22;
 }
 

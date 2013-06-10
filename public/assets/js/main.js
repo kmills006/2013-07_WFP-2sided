@@ -40,7 +40,7 @@
 	------------------
 	----------------*/
 	
-	if(window.location.pathname == "/wfp_2sided/user_dashboard.html"){
+	if(window.location.pathname == "/wfp_2sided/dashboard"){
 		/* On the user dashboard, tabs are used on the left side to control
 		what information is being displayed */
 		$( "#tabs" ).tabs();

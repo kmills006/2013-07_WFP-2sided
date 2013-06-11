@@ -15,14 +15,16 @@
 	logout */
 	
 	$(".user-dd").on("mouseover", function(e){
-		var userDDMenu = $(".user-dd ul");
+		var userDDMenu = $(".dd-menu");
 		userDDMenu.css("display", "block");
 	});
 	
+/*
 	$(".user-dd").on("mouseout", function(e){
-		var userDDMenu = $(".user-dd ul");
+		var userDDMenu = $(".dd-menu");
 		userDDMenu.css("display", "none");
 	});
+*/
 	
 	
 	/* $(".user-profile").on("click", function(e){

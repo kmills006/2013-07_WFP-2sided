@@ -19,12 +19,10 @@
 		userDDMenu.css("display", "block");
 	});
 	
-/*
 	$(".user-dd").on("mouseout", function(e){
 		var userDDMenu = $(".dd-menu");
 		userDDMenu.css("display", "none");
 	});
-*/
 	
 	
 	/* $(".user-profile").on("click", function(e){
@@ -34,6 +32,13 @@
 	$(".user-dashboard").on("click", function(e){
 		window.location.replace("/wfp_2sided/user_dashboard.html");
 	}); */
+	
+	if(window.location.pathname == "/2sided/public/study"){
+/* 		$('.card').rotate3Di(180, 3000); */
+		$('.card').click(function(){
+			$(this).rotate3Di('toggle', 1000);
+		});
+	};
 		
 		
 		

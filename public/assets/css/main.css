@@ -1370,8 +1370,12 @@ nav form input{
 	width: 180px;
 }
 
+.user-profile .level-progress span{
+	margin: 0;
+}
+
 .user-profile .level-progress span:nth-child(4){
-	width: 38%;
+	width: 28%;
 }
 
 .user-profile .level-progress span:nth-child(2) span{

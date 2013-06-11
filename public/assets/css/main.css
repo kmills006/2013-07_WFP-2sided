@@ -267,20 +267,19 @@ nav form input{
 	border: none;
 	margin: 0;
 	padding: 0;
-	position: absolute;
-/* 	position: relative; */
-	width: 100px;
+/* 	position: absolute; */
+	position: relative;
 	z-index: 1;
 }
 
 .dd-menu a{
-/* 	font-size: 14px; */
+	font-size: 14px;
 	font-weight: 200;
-/* 	padding: 20px; */
+	padding: 20px;
 	border: none;
 }
 
-.dd-menu a:hover{
+.dd-menu li:hover{
 	background: #34495E;
 }
 

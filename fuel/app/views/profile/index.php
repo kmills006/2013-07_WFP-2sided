@@ -1,4 +1,4 @@
-			<div class="content">
+			<div class="content user-profile">
     			<a href="user_dashboard.html" class="back-to-dash">Back to Dashboard</a>
     			
     			<aside>
@@ -85,7 +85,7 @@
 					  				</section>
 						  				
 						  			<section class="deck-social">
-						  				<p><img src="img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
+						  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
 						  				<p>3</p>
 						  			</section>
 					  			</section>
@@ -98,7 +98,7 @@
 					  				</section>
 						  				
 						  			<section class="deck-social">
-						  				<p><img src="img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
+						  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
 						  				<p>3</p>
 						  			</section>
 					  			</section>
@@ -111,7 +111,7 @@
 					  				</section>
 						  				
 						  			<section class="deck-social">
-						  				<p><img src="img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
+						  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
 						  				<p>3</p>
 						  			</section>
 					  			</section>
@@ -124,7 +124,7 @@
 					  				</section>
 						  				
 						  			<section class="deck-social">
-						  				<p><img src="img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
+						  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
 						  				<p>3</p>
 						  			</section>
 					  			</section>
@@ -137,7 +137,7 @@
 					  				</section>
 						  				
 						  			<section class="deck-social">
-						  				<p><img src="img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
+						  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
 						  				<p>3</p>
 						  			</section>
 					  			</section>
@@ -150,7 +150,7 @@
 					  				</section>
 						  				
 						  			<section class="deck-social">
-						  				<p><img src="img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
+						  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
 						  				<p>3</p>
 						  			</section>
 					  			</section>
@@ -163,7 +163,7 @@
 					  				</section>
 						  				
 						  			<section class="deck-social">
-						  				<p><img src="img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
+						  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
 						  				<p>3</p>
 						  			</section>
 					  			</section>

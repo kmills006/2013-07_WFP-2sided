@@ -1051,18 +1051,20 @@ nav form input{
 }
 
 .study-deck .header{
-	overflow: auto;
+/* 	overflow: auto; */
 	background-color: #54544D;
-	color: #F2F2E2;
 	padding: 0 5px;
+	height: 40px;
+	color: #FFF:
 }
 
 .study-deck .header h2{
 	margin: 0;
 	padding: 10px;
 	float: left;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
+	color: #FFF;
 }
 
 .study-deck .header p{
@@ -1070,6 +1072,7 @@ nav form input{
 	margin-right: 10px;
 	vertical-align: middle;
 	line-height: 100%;
+	color: #FFF;
 }
 
 .study-deck .header p img{
@@ -1137,7 +1140,9 @@ nav form input{
 .study-content{
 	width: 700px;
 	float: right;
-	overflow: auto;
+	overflow: hidden;
+	background-color: #FFF;
+/* 	height: 100%; */
 }
 
 .study-content .header{
@@ -1153,7 +1158,6 @@ nav form input{
 .study-content .header a{
 	text-decoration: none;
 	color: #FFF;
-/* 	font-weight: 300; */
 	line-height: 40px;
 	border-right: 1px solid #F2F2E2;
 	display: inline-block;
@@ -1171,6 +1175,7 @@ nav form input{
 	width: auto;
 	font-size: 12px;
 	margin-left: 20px;
+	margin-top: 20px;
 }
 
 .study-content button:nth-child(2), .study-content button:nth-child(3){
@@ -1203,12 +1208,12 @@ nav form input{
 	font-size: 14px;
 }
 
-
 .flash-card{
-	width: 515px;
-	overflow: hidden;
-	margin: 30px auto;
+	width: 520px;
+	height: 248px;
+	margin: 60px auto;
 }
+
 .card{
 	width: 449px;
 	height: 248px;
@@ -1216,15 +1221,14 @@ nav form input{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-position-y: 30px;
+	background-image: url("../img/flashcards/flashcard.png");
 	float: left;
 	margin: 0 auto;
 	padding: 0;
-	display: table;
 }	
 
 .card p{
 	margin: 0 auto;
-	display: table-cell;
 	vertical-align: middle;
 	padding: 0 30px;
 	font-weight: 700;
@@ -1232,18 +1236,28 @@ nav form input{
 	
 }
 
-.flash-card img{
-	float: left;
-	position: relative;
-	top: 115px;
-/* 	vertical-align: middle; */
+.card p:last-child{
+	font-size: 12px;
+	color: #484C4C;
+	font-weight: 600;
 }
 
-.flash-card img:first-child{
+.card p:last-child img{
+	vertical-align: middle;
+}
+
+.controls{
+	position: relative;
+	top: 100px;
+}
+
+.left-arrow{
+	float: left;
 	margin-right: 20px;
 }
 
-.flash-card img:last-child{
+.right-arrow{
+	float: left;
 	margin-left: 20px;
 }
 

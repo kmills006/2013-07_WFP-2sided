@@ -64,9 +64,9 @@
     				<!-- if you are looking at someone else's deck, this button gives you the option to upvote that deck -->
     				<button>Like Deck</button>
     				
-  
+    				
     				<div class="flash-card">
-	    				<img src="assets/img/flashcards/left_arrow.png" alt="Left Arrow to switch flashcard" class="control left-arrow"/>
+	    				<img src="assets/img/flashcards/left_arrow.png" alt="Left Arrow to switch flashcard" class="controls left-arrow"/>
 	    				
 	    				<div class="card">
 		    					<p>US HISTORY: Only state carried by George McGovern in '72 election</p>
@@ -74,12 +74,12 @@
 		    					<p><img src="assets/img/icons/keyboard_shortcuts.png" alt="Keyboard Shortcuts" /> Keyboard Shortcuts</p>
 	    				</div>
 	    				
-	    				<img src="assets/img/flashcards/right_arrow.png" alt="Right Arrow to switch flashcard" class="control right-arrow"/>
-	    				
-	    				<div class="practice-more"></div>
-	    				<div class="flip"></div>
-	    				<div class="mastered"></div>
+	    				<img src="assets/img/flashcards/right_arrow.png" alt="Right Arrow to switch flashcard" class="controls right-arrow"/>
     				</div>
+    				    				
+    				<div class="practice-more"></div>
+	    			<div class="flip"></div>
+	    			<div class="mastered"></div>
     			</div>
 				
     		</div> <!-- end of content -->

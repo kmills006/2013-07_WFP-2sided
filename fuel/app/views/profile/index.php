@@ -2,7 +2,7 @@
     			<a href="user_dashboard.html" class="back-to-dash">Back to Dashboard</a>
     			
     			<aside>
-    				<img src="img/profile_placeholders/kmills006_profile-placeholder.png" alt="Profile Image" width="200" height="200" />
+    				<img src="assets/img/profile_placeholders/kmills006_profile-placeholder.png" alt="Profile Image" width="200" height="200" />
     				
     				<div class="level-progress">
 				 		<span><span></span></span>
@@ -18,7 +18,7 @@
 					 	<h2>Friends / 24</h2>
 					 	
 					 	<section class="friend">
-							<img src="img/profile_placeholders/brittany_conrad.jpg" alt="Profile Picture" />
+							<img src="assets/img/profile_placeholders/brittany_conrad.jpg" alt="Profile Picture" />
 							
 							<h3><a href="#">brittsuzanne</a></h3>
 							<p>395 Points</p>
@@ -26,31 +26,31 @@
 					 	</section>
 					 	
 					 	<section class="friend">
-							<img src="img/profile_placeholders/george_olsen.jpg" alt="Profile Picture" />
+							<img src="assets/img/profile_placeholders/george_olsen.jpg" alt="Profile Picture" />
 							<h3><a href="#">georgeolsen</a></h3>
 							<p>395 Points</p>
 					 	</section>
 					 	
 					 	<section class="friend">
-							<img src="img/profile_placeholders/catie_miller.jpg" alt="Profile Picture" width="50" height="50" />
+							<img src="assets/img/profile_placeholders/catie_miller.jpg" alt="Profile Picture" width="50" height="50" />
 							<h3><a href="#">catiem16</a></h3>
 							<p>395 Points</p>
 					 	</section>
 					 	
 					 	<section class="friend">
-							<img src="img/profile_placeholders/lauren_borkovich.jpg" alt="Profile Picture" width="50" height="50" />
+							<img src="assets/img/profile_placeholders/lauren_borkovich.jpg" alt="Profile Picture" width="50" height="50" />
 							<h3><a href="#">lalashley</a></h3>
 							<p>395 Points</p>
 					 	</section>
 					 	
 					 	<section class="friend">
-							<img src="img/profile_placeholders/sara_englishbee.jpg" alt="Profile Picture" width="50" height="50" />
+							<img src="assets/img/profile_placeholders/sara_englishbee.jpg" alt="Profile Picture" width="50" height="50" />
 							<h3><a href="#">bumblebizzle86</a></h3>
 							<p>395 Points</p>
 					 	</section>
 					 	
 					 	<section class="friend">
-							<img src="img/profile_placeholders/tara_manus.jpg" alt="Profile Picture" width="50" height="50" />
+							<img src="assets/img/profile_placeholders/tara_manus.jpg" alt="Profile Picture" width="50" height="50" />
 							<h3><a href="#">tarman</a></h3>
 							<p>395 Points</p>
 					 	</section>

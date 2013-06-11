@@ -75,11 +75,10 @@
 	    				</div>
 	    				
 	    				<img src="assets/img/flashcards/right_arrow.png" alt="Right Arrow to switch flashcard" class="controls right-arrow"/>
+	    				<div class="practice-more"></div>
+	    				<div class="flip"></div>
+	    				<div class="mastered"></div>
     				</div>
-    				    				
-    				<div class="practice-more"></div>
-	    			<div class="flip"></div>
-	    			<div class="mastered"></div>
     			</div>
 				
     		</div> <!-- end of content -->

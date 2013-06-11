@@ -1142,7 +1142,6 @@ nav form input{
 	float: right;
 	overflow: hidden;
 	background-color: #FFF;
-/* 	height: 100%; */
 }
 
 .study-content .header{
@@ -1233,6 +1232,8 @@ nav form input{
 	padding: 0 30px;
 	font-weight: 700;
 	font-size: 22px;
+	position: relative;
+	top: 75px;
 	
 }
 
@@ -1240,10 +1241,14 @@ nav form input{
 	font-size: 12px;
 	color: #484C4C;
 	font-weight: 600;
+	top: 160px;
+	right: 15px;
 }
 
 .card p:last-child img{
-	vertical-align: middle;
+	position: relative;
+	bottom: 2px;
+	right: 2px;
 }
 
 .controls{
@@ -1263,6 +1268,9 @@ nav form input{
 
 .practice-more, .mastered, .flip{
 	clear: both;
+	display: inline-block;
+	margin: 20px 0 40px 0;
+	cursor: pointer;
 }
 
 .practice-more, .mastered{
@@ -1279,6 +1287,13 @@ nav form input{
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 25px 25px;
+	margin-left: 32px;
+}
+
+/* Practice more selected color #C11200 */
+
+.practice-more:hover{
+	background-color: #720B00;
 }
 
 .flip{
@@ -1292,6 +1307,11 @@ nav form input{
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+	margin-left: 140px;
+}
+
+.flip:hover{
+	background-color: #D35400;
 }
 
 .mastered{
@@ -1300,6 +1320,14 @@ nav form input{
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 31px 26px;
+	float: right;
+	margin-right: 37px;
+}
+
+/* Mastered selected color #00B753 */
+
+.mastered:hover{
+	background-color: #007233;
 }
 
 

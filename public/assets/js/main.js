@@ -24,17 +24,7 @@
 		userDDMenu.css("display", "none");
 	});
 	
-	
-	/* $(".user-profile").on("click", function(e){
-		window.location.replace("/wfp_2sided/user_profile.html");
-	});
-	
-	$(".user-dashboard").on("click", function(e){
-		window.location.replace("/wfp_2sided/user_dashboard.html");
-	}); */
-	
 	if(window.location.pathname == "/2sided/public/study"){
-/* 		$('.card').rotate3Di(180, 3000); */
 		$('.card').click(function(){
 			$(this).rotate3Di('toggle', 1000);
 		});
@@ -153,7 +143,7 @@
 	
 		
 			// Adding the active class to the clicked tab
-			$(this).attr("class", "ud-tab-active")
+			$(this).attr("class", "ud-tab-active");
 			
 			var newActiveTab = $(".ud-tab-active a");
 			// Setting the new active icon

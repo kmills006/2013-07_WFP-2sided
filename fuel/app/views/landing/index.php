@@ -1,4 +1,4 @@
-    		<div class="content">
+    		<div class="content landing">
     	
 	    		<div class="cta-search">
 	    			<h1>What do you want to study today?</h1>

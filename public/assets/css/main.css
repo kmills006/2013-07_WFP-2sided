@@ -296,8 +296,7 @@ nav form input{
 /* Landing */
 
 .landing .content{
-	/*width: 100%;*/
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 }
 
 .cta-search{
@@ -361,7 +360,6 @@ nav form input{
 }
 
 .landing-about{
-	width: 100%;
 	overflow: hidden;
 	background: #34495E;
 	padding: 30px 0;
@@ -521,18 +519,18 @@ nav form input{
 	display: block;
 	height: 1px;
 	content: " ";
-	width: 300px;
+	width: 280px;
 	position: absolute;
 	top: 180px;
 }
 
 .login div:nth-child(2) span:before{
-	left: 250px;
+	left: 390px;
 	right: auto;
 }
 
 .login div:nth-child(2) span:after{
-	right: 250px;
+	right: 390px;
 	left: auto;
 }
 
@@ -688,10 +686,11 @@ nav form input{
 }
 
 /* Content */
-.content{
+.user-dashboard, .study-deck{
 	width: 940px;
 	margin: 0 auto;
 }
+
 .user-dashboard h2{
 	color: #2C3E50;
 	font-size: 20px;

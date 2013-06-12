@@ -1,7 +1,7 @@
 		<div id="wrapper">
     		<nav>
     			<div id="nav-sizer">
-	    			<a class="logo" href="index.html"><span class="logo-change">2</span>SIDED</a>
+	    			<?= Html::anchor('landing', "<span class='logo-change'>2</span>SIDED", array('class' => 'logo')); ?>
 	    			
 	    			<form>
 	    				<input type="text" name="search" placeholder="Search by title, tags or subject" />

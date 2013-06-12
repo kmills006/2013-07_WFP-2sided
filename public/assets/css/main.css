@@ -250,13 +250,15 @@ nav form input{
 
 .user-dd{
 		border-right: #3B97D2 1px solid;
+		position: relative;
+		display: none;
 }
 
 .user-dd img{
 	margin-right: 10px;
 }
 
-.dd-menu{
+.user-dd a{
 	display: none;
 	background-color: #2C3E50;
 	-webkit-border-bottom-right-radius: 3px;
@@ -268,8 +270,9 @@ nav form input{
 	border: none;
 	margin: 0;
 	padding: 0;
-/* 	position: absolute; */
-	position: relative;
+ 	position: absolute; 
+	/*position: relative;*/
+	width: 100%;
 	z-index: 1;
 }
 

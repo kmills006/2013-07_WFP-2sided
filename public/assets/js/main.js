@@ -14,15 +14,15 @@
 	it will display a dropdown menu with links to their profile, dashboard, settings and
 	logout */
 	
-	$(".user-dd").on("mouseover", function(e){
-		var userDDMenu = $(".dd-menu");
-		userDDMenu.css("display", "block");
-	});
+	// $(".user-dd").on("mouseover", function(e){
+	// 	var userDDMenu = $(".dd-menu");
+	// 	userDDMenu.css("display", "block");
+	// });
 	
-	$(".user-dd").on("mouseout", function(e){
-		var userDDMenu = $(".dd-menu");
-		userDDMenu.css("display", "none");
-	});
+	// $(".user-dd").on("mouseout", function(e){
+	// 	var userDDMenu = $(".dd-menu");
+	// 	userDDMenu.css("display", "none");
+	// });
 	
 	if(window.location.pathname == "/2sided/public/study"){
 		$('.card').click(function(){

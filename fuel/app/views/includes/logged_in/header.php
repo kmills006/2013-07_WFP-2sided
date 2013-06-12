@@ -8,19 +8,24 @@
 	    			</form>
 	    			
 	    			<!-- Profile picture and username dropdown -->
-	    			<a class="globe-nav user-dd" href="#"><? echo Asset::img('profile_placeholders/kmills006_placeholder.png'); ?>kmills006
-	    			
-		    			<ul class="dd-menu">
-		    				<li><!-- <? echo Html::anchor('profile', 'View Profile'); ?> -->View Profile</li>
-		    				<li><!-- <? echo Html::anchor('dashboard', 'Dashboard'); ?> -->Dashboard</li>
-		    				<li><!-- <? echo Html::anchor('settings', 'Settings'); ?> -->Settings</li>
-		    				<li><!-- <? echo Html::anchor('logout', 'Logout'); ?> -->Logout</li>
-		    			</ul>
-		    	
-	    			</a>
+	    			<? echo Html::anchor('dashboard', Asset::img('profile_placeholders/kmills006_placeholder.png').' kmills006', array('class' => 'globe-nav')); ?> 
+	    			<div class='user-dd'>
+	    				<? echo Html::anchor('profile', 'View Profile'); ?>
+	    				<? echo Html::anchor('dashboard', 'Dashboard'); ?>
+	    				<? echo Html::anchor('settings', 'Settings'); ?>
+	    				<? echo Html::anchor('logout', 'Logout'); ?>
+	    			</div>
 
-<!-- 					<? echo Html::anchor('dashboard', 'kmills006', array('class' => 'globe-nav')); echo Asset::img('profile_placeholders/kmills006_placeholder.png'); ?> -->
+	    			<!-- <a class="globe-nav user-dd" href="#"><? echo Asset::img('profile_placeholders/kmills006_placeholder.png'); ?>kmills006 -->
 	    			
+		    	<!-- 		<ul class="dd-menu">
+		    				<li>View Profile</li>
+		    				<li>Dashboard</li>
+		    				<li>Settings</li>
+		    				<li>Logout</li>
+		    			</ul> -->
+		    	
+	    			<!-- </a> -->
 	    			<a class="globe-nav" href="#"><? echo Asset::img('icons/new_notifications.png', array('width' => '30', 'height' => '21')); ?><span class="notifcation-count">18</span></a>
 	    			<a class="globe-nav" href="#">Browse</a>
     			</div>

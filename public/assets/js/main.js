@@ -37,7 +37,7 @@
 	------------------
 	----------------*/
 	
-	if(window.location.pathname == "/2sided/public/dashboard"){
+	if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard'){
 		/* On the user dashboard, tabs are used on the left side to control
 		what information is being displayed */
 /* 		$( "#tabs" ).tabs(); */

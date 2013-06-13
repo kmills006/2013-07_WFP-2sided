@@ -1,4 +1,4 @@
-		<div id="wrapper">
+		<div id="wrapper" class="logged-in">
     		<nav>
     			<div id="nav-sizer">
 	    			<?= Html::anchor('landing', "<span class='logo-change'>2</span>SIDED", array('class' => 'logo')); ?>
@@ -16,16 +16,6 @@
 	    				<? echo Html::anchor('logout', 'Logout'); ?>
 	    			</div>
 
-	    			<!-- <a class="globe-nav user-dd" href="#"><? echo Asset::img('profile_placeholders/kmills006_placeholder.png'); ?>kmills006 -->
-	    			
-		    	<!-- 		<ul class="dd-menu">
-		    				<li>View Profile</li>
-		    				<li>Dashboard</li>
-		    				<li>Settings</li>
-		    				<li>Logout</li>
-		    			</ul> -->
-		    	
-	    			<!-- </a> -->
 	    			<a class="globe-nav" href="#"><? echo Asset::img('icons/new_notifications.png', array('width' => '30', 'height' => '21')); ?><span class="notifcation-count">18</span></a>
 	    			<a class="globe-nav" href="#">Browse</a>
     			</div>

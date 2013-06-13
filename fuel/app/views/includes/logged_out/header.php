@@ -1,4 +1,4 @@
-    	<div id="wrapper">
+    	<div id="wrapper" class="logged-out">
     		<nav>
     			<div id="nav-sizer">
 	    			<?= Html::anchor('landing', "<span class='logo-change'>2</span>SIDED", array('class' => 'logo')); ?>

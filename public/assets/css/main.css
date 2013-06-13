@@ -200,7 +200,11 @@ nav{
 	list-style: none;
 }
 
-.globe-nav:nth-child(3){
+.logged-in .globe-nav:nth-child(3){
+	border-right: #3B97D2 1px solid;
+}
+
+.logged-out .globe-nav:nth-child(2){
 	border-right: #3B97D2 1px solid;
 }
 
@@ -647,9 +651,6 @@ nav form input{
 .ud-tabs li{
 	list-style: none;
 	font-size: 14px;
-}
-
-.ud-tabs li{
 	color: #000;
 	height: 100px;
 	text-align: center;
@@ -660,7 +661,13 @@ nav form input{
 	background-repeat: no-repeat;
 	font-weight: 600;
 	cursor: pointer;
+	margin-top: 20px;
 }
+
+.ud-tabs li:first-child{
+	margin-top: 0;
+}
+
 
 .ud-tabs li:hover{
 	color: #E67E22;

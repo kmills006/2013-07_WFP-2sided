@@ -37,3 +37,12 @@ ERROR - 2013-06-13 14:23:22 --> 23000 - SQLSTATE[23000]: Integrity constraint vi
 ERROR - 2013-06-13 14:25:55 --> Warning - Email address already exists in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/auth/classes/auth/login/simpleauth.php on line 222
 ERROR - 2013-06-13 14:27:02 --> Warning - Email address already exists in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/auth/classes/auth/login/simpleauth.php on line 222
 ERROR - 2013-06-13 14:28:15 --> Warning - Email address already exists in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/auth/classes/auth/login/simpleauth.php on line 222
+ERROR - 2013-06-13 15:08:21 --> Error - Call to undefined method Fuel\Core\Session::get_user_id() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 8
+ERROR - 2013-06-13 15:08:46 --> Parsing Error - syntax error, unexpected '{', expecting identifier (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 4
+ERROR - 2013-06-13 15:09:19 --> Parsing Error - syntax error, unexpected '`', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 8
+ERROR - 2013-06-13 15:09:59 --> Parsing Error - syntax error, unexpected '`', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 13
+ERROR - 2013-06-13 15:10:04 --> Parsing Error - syntax error, unexpected '}', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 14
+ERROR - 2013-06-13 15:15:39 --> Parsing Error - syntax error, unexpected '}', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 41
+ERROR - 2013-06-13 15:16:24 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 13
+ERROR - 2013-06-13 15:22:00 --> Error - Invalid method call.  Method get_users_decks does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-06-13 15:23:15 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 40

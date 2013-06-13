@@ -8,7 +8,6 @@ class Model_User extends \Orm\Model
 		'username',
 		'password',
 		'email',
-		'date_of_registration',
 		'last_login',
 		'login_hash',
 		'profile_image',

@@ -5,6 +5,8 @@ class Controller_Authentication extends Controller{
 	public function action_check_user(){
 		$username = Input::post('username');
 		$password = Input::post('password');
+
+		echo "here";
 	}
 	
 	

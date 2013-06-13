@@ -1,15 +1,13 @@
 <?php
 
-	class Controller_Login extends Controller{
+	class Controller_Login extends Controller_Template
+	{
 	
-		public function action_index(){
-			$view = View::forge('layout');
-			
-			$view->head = View::forge('includes/head');
-			$view->header = View::forge('includes/logged_out/header');
-			$view->content = View::forge('login/index');
-			$view->footer = View::forge('includes/footer');
-			
-			return $view;
+		public function action_index()
+		{
+			$this->template->head    = View::forge('includes/head');
+			$this->template->header  = View::forge('includes/logged_out/header');
+			$this->template->content = View::forge('login/index');
+			$this->template->footer  = View::forge('includes/footer');
 		}
 	}

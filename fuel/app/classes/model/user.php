@@ -7,11 +7,9 @@ class Model_User extends \Orm\Model
 		'id',
 		'username',
 		'password',
-		'group',
 		'email',
 		'date_of_registration',
 		'last_login',
-		'login_hash',
 		'profile_image',
 		'facebook_id',
 		'twitter_id',
@@ -29,6 +27,7 @@ class Model_User extends \Orm\Model
 			'mysql_timestamp' => false,
 		),
 	);
+
 	protected static $_table_name = 'users';
 
 }

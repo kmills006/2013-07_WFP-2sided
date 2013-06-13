@@ -204,7 +204,7 @@ nav{
 	border-right: #3B97D2 1px solid;
 }
 
-.logged-out .globe-nav:nth-child(2){
+.logged-out .globe-nav:nth-child(2
 	border-right: #3B97D2 1px solid;
 }
 
@@ -1434,6 +1434,11 @@ nav form input{
 
 
 /* User Profile */
+.user-profile{
+	width: 940px;
+	margin: 0 auto;
+}
+
 .user-profile .content > a{
 	margin: 20px 0;	
 	display: block;

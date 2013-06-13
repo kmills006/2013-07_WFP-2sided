@@ -10,7 +10,9 @@
 				  </ul>
 				  
 				  <div id="study" class="ud-tab-content">
-				  	<h2>Welcome back kmills006!</h2>
+				  	<? if(isset($username)): ?>
+				  	<h2>Welcome back <?= $username; ?>!</h2>
+				  	<? endif; ?>
 				  	
 				  		<div class="recently-studied">
 				  			<h3>Recently Studied</h3>

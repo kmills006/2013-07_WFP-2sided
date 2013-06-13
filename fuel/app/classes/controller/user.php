@@ -14,7 +14,12 @@ class Controller_User extends Controller{
 			{
 				$user['user_id'] = Auth::get_user_id()[1];
 				$user['username'] = Auth::get('username');
-				var_dump($user);
+				
+				$session = Session::set(array(
+								'user_id'  => $user['user_id'],
+								'username' => $user['username'],
+				));
+
 				// If successful login, direct users to their dashboard
 				Response::redirect('dashboard');
 			}

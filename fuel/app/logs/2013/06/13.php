@@ -23,3 +23,4 @@ ERROR - 2013-06-13 13:12:38 --> Error - Call to undefined function redirect() in
 ERROR - 2013-06-13 13:12:48 --> Error - Call to undefined method Controller_User::redirect() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/user.php on line 20
 ERROR - 2013-06-13 13:12:52 --> Error - Call to undefined method Controller_User::redirect() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/user.php on line 20
 ERROR - 2013-06-13 13:17:30 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/user.php on line 15
+ERROR - 2013-06-13 13:52:45 --> Parsing Error - syntax error, unexpected ':' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/includes/logged_in/header.php on line 12

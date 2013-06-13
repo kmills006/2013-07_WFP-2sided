@@ -30,4 +30,10 @@ class Model_User extends \Orm\Model
 
 	protected static $_table_name = 'users';
 
+	public static function check_user($username, $password)
+	{
+		// $user = $query->where('username', $username);
+		return static::find()->where('username', '=', $username);
+	}
+
 }

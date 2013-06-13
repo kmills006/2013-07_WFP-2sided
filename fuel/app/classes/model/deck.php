@@ -36,11 +36,26 @@ class Model_Deck extends \Orm\Model
 
 	protected static $_table_name = 'decks';
 
-	public static function get_users_decks($user_id){
-		return $query->find('all', array(
+
+
+	public static function get_users_decks($user_id)
+	{
+
+		return static::query()->get('all', array(
 			'where' => array(
 				'user_id' => $user_id
 			)
 		));
+		
+
+		
+
+	}
+
+
+
+	public function date($format = "m/d/Y h:m a")
+	{
+		return date($format, $this->created_at);
 	}
 }

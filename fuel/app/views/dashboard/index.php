@@ -51,11 +51,13 @@
 				  			<button>Create New</button>
 				  			<div class="clearfix"></div>
 				  			
+
+				  			<? foreach($decks as $deck): ?>
 				  			<section class="deck">
 				  				<section class="deck-info">
-					  				<p><a href="study_deck.html">AP History 101</a></p>
+					  				<p><a href="study_deck.html"><?= $deck->title; ?></a></p>
 					  				<p>Total Cards: 57</p>
-					  				<p>Created on: May 20th, 2013</p>
+					  				<p>Created on: <?= $deck->created_at; ?></p>
 				  				</section>
 					  				
 					  			<section class="deck-social">
@@ -66,7 +68,8 @@
 					  				
 					  			<p><a href="#">Edit Deck</a>
 				  			</section>
-				  			
+				  			<? endforeach; ?>
+
 				  			<section class="deck">
 				  				<section class="deck-info">
 					  				<p><a href="study_deck.html">AP History 101</a></p>

@@ -13,7 +13,7 @@
 	    				<? echo Html::anchor('profile', 'View Profile'); ?>
 	    				<? echo Html::anchor('dashboard', 'Dashboard'); ?>
 	    				<? echo Html::anchor('settings', 'Settings'); ?>
-	    				<? echo Html::anchor('logout', 'Logout'); ?>
+	    				<? echo Html::anchor('user/logout', 'Logout'); ?>
 	    			</div>
 
 	    			<a class="globe-nav" href="#"><? echo Asset::img('icons/new_notifications.png', array('width' => '30', 'height' => '21')); ?><span class="notifcation-count">18</span></a>

@@ -7,25 +7,16 @@ class Controller_User extends Controller{
 	 */
 	public function action_login()
 	{
-		// $username = Input::post('username');
-		// $password = Input::post('password');
 
-		// $user = Model_User::check_user($username, $password);
-
-		// echo '<pre>';
-		// print_r($user);
-		// echo '</pre>';
-		// 
-		
 		if(Input::post())
 		{
-
-			var_dump(md5(Input::post('password')));
-			echo uniqid();
-
 			if(Auth::login())
 			{
-				echo "Login Success";
+				$user['user_id'] = Auth::get_user_id()[1];
+				$user['username'] = Auth::get('username');
+				var_dump($user);
+				// If successful login, direct users to their dashboard
+				Response::redirect('dashboard');
 			}
 			else
 			{
@@ -50,4 +41,13 @@ class Controller_User extends Controller{
 	
 	}
 
+
+	/**
+	 * Log out the current user
+	 */
+	public function action_logout()
+	{
+		Auth::logout();
+		Response::redirect('landing');
+	}
 }

@@ -12,7 +12,7 @@ class Controller_User extends Controller{
 		{
 			if(Auth::login())
 			{
-				$user['user_id'] = Auth::get_user_id()[1];
+				$user['user_id']  = Auth::get_user_id()[1];
 				$user['username'] = Auth::get('username');
 				
 				$session = Session::set(array(
@@ -25,7 +25,9 @@ class Controller_User extends Controller{
 			}
 			else
 			{
-				echo "Login Failed";
+				// If login failed, return user to login screen
+				// and display error message
+				Response::redirect('login');
 			}
 		}
 	}
@@ -36,13 +38,35 @@ class Controller_User extends Controller{
 	 */
 	public function action_signup()
 	{
-	
-		$new_user = Auth::create_user(
-							'blazer',
-							'blazer',
-							'blazer@gmail.com',
+		if(Input::post())
+		{
+			$new_user = Auth::create_user(
+							Input::post('username'),
+							Input::post('password'),
+							Input::post('email'),
 							1
-		);
+			);
+
+			if(!$new_user)
+			{
+				// User could not be added to the database
+			}
+			else
+			{
+				if(Auth::login(Input::post('username'), Input::post('password')))	
+				{
+					$user['user_id']  = Auth::get_user_id()[1];
+					$user['username'] = Auth::get('username');
+
+					$session = Session::set(array(
+									'user_id'  => $user['user_id'],
+									'username' => $user['username'],
+					));
+
+					Response::redirect('dashboard');
+				};
+			}
+		}
 	
 	}
 

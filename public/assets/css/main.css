@@ -254,18 +254,17 @@ nav form input{
 	font-size: 12px;
 }
 
-.user-dd{
-		border-right: #3B97D2 1px solid;
-		position: relative;
-		display: none;
-}
-
 .user-dd img{
 	margin-right: 10px;
 }
 
+.user-dd{
+	display: none;
+}
+
 .user-dd a{
 	display: none;
+	/*display: block;*/
 	background-color: #2C3E50;
 	-webkit-border-bottom-right-radius: 3px;
 	-webkit-border-bottom-left-radius: 3px;
@@ -276,9 +275,10 @@ nav form input{
 	border: none;
 	margin: 0;
 	padding: 0;
- 	position: absolute; 
+ 	/*position: absolute; */
 	/*position: relative;*/
-	width: 100%;
+	width: 100px;
+	padding: 20px;
 	z-index: 1;
 }
 

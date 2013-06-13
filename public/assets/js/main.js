@@ -5,15 +5,15 @@
 
 (function($){
 
-	/* Global Navigation
-	--------------------
-	--------------------
-	------------------*/
-	
-	/* In the global navigation, when a user hovers over their profile image and username
-	it will display a dropdown menu with links to their profile, dashboard, settings and
-	logout */
-	
+
+	/**
+	 * Global Navigation
+	 *
+	 *  In the global navigation, when a user hovers over their profile image and username
+		it will display a dropdown menu with links to their profile, dashboard, settings and
+		logout 
+	 */
+
 	// $(".user-dd").on("mouseover", function(e){
 	// 	var userDDMenu = $(".dd-menu");
 	// 	userDDMenu.css("display", "block");
@@ -32,11 +32,15 @@
 		
 		
 		
-	/* User Dashboard 
-	------------------
-	------------------
-	----------------*/
-	
+
+
+	/**
+	 * User Dashboard
+	 * Creating the tab functionality
+	 * with icons being switched
+	 * depending on which tab the
+	 * user is currently on
+	 */
 	if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard'){
 		/* On the user dashboard, tabs are used on the left side to control
 		what information is being displayed */

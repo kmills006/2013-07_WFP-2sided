@@ -8,7 +8,6 @@
 	    			</form>
 	    			
 	    			<!-- Profile picture and username dropdown -->
-
 	    			<? if(isset($username)):?>
 	    			<? echo Html::anchor('dashboard', Asset::img('profile_placeholders/kmills006_placeholder.png').' '.$username, array('class' => 'globe-nav')); ?> 
 	    			<? endif; ?>

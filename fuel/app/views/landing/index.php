@@ -5,7 +5,7 @@
 	    				
 	    				<form>
 	    					<select class="top-cat">
-	    						<option value="default">Top Categories</option>
+	    						<option value="default">Top Tags</option>
 	    						<option value="arts">Arts</option>
 	    						<option value="literature">Literature</option>
 	    						<option value="vocabulary">Vocabulary</option>

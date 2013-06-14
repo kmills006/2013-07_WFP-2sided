@@ -153,6 +153,10 @@ input{
 	font-family: "Open Sans" sans-serif;
 }
 
+.opensans{
+	font-family: 'Open Sans', sans-serif;
+}
+
 
 /* 	Navigation Styles
 	-------------------
@@ -1632,15 +1636,54 @@ nav form input{
 
 .new-deck-info{
 	overflow: hidden;
-	width: 700px;
+	width: 660px;
 	background: #FFF;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	margin: 0;
 	float: right;
+	padding: 20px;
 }
 
+.new-deck-info form input{
+	display: inline-block;
+	padding: 5px;
+	margin: 0 20px 20px 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: #E67E22 solid 1px;
+}
+
+#form_title{
+	width: 300px;
+}
+
+.new-deck-info .deck-info label{
+	display: block;
+}
+
+.terms{
+	clear: both;
+}
+
+.term label{
+	margin-right: 20px;
+}
+.term input{
+	width: 225px;
+}
+
+.term textarea{
+	width: 350px;
+	margin: 0 0 20px 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: #E67E22 solid 1px;
+	padding: 5px;
+}
 
 /* 	Footer 
 	-------------------

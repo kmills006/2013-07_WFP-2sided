@@ -1,6 +1,7 @@
 			<div class="content create-deck">
-    			<a href="user_dashboard.html" class="back-to-dash">Back to Dashboard</a>
-    			
+    			<!-- <a href="user_dashboard.html" class="back-to-dash">Back to Dashboard</a> -->
+				<?= Html::anchor('dashboard', 'Back to Dashboard', array('class' => 'back-to-dash')); ?>
+
     			<aside>
 				 	<h3>Create New Deck</h3>
 
@@ -10,42 +11,59 @@
     			  <div class="new-deck-info">
     			  	<h3>About Your New Flash Card Set</h3>
 
-	    			  	<?  echo Form::open('deck/save');
+	    			  	<? echo Form::open('deck/save'); ?>
 
-		    			  	echo Form::input('title', '', array('placeholder' => 'Title'));
+	    			  		<div class="deck-info">
 
-		    			  	echo Form::label('Public', 'privacy');
-		    			  	echo Form::radio('privacy', 'Public', true);
+							<?  echo Form::input('title', '', array('placeholder' => 'Title'));
 
-		    			  	echo Form::label('Private', 'privacy');
-		    			  	echo Form::radio('privacy', 'Private');
+								echo Form::input('tags', '', array('placeholder' => 'Tags'));
 
-		    			  	echo Form::input('subjects', '', array('placeholder' => 'Subjects'));
+								echo Form::label('Public', 'privacy');
+								echo Form::radio('privacy', 'Public', true);
 
-		    			  	echo Form::input('tags', '', array('placeholder' => 'Tags')); ?>
+								echo Form::label('Private', 'privacy');
+								echo Form::radio('privacy', 'Private'); ?>
 
-		    			  	<h3>Enter Terms</h3>
+							</div> <!-- end of deck-info -->
 
-		    			  
+							<div class="terms">
+								<h3>Enter Terms</h3>
 
-		    			  <? 
-		    			  	 echo Form::label('1.', 'term');
-		    			  	 echo Form::input('term', 'Term'); 
-		    			  	 echo Form::textarea('definition', 'Definition');
+								<div class="term">
 
-		    			  	 echo Form::label('2.', 'term');
-		    			  	 echo Form::input('term', 'Term'); 
-		    			  	 echo Form::textarea('definition', 'Definition');
+								<?  echo Form::label('1.', 'term');
+									echo Form::input('term', '', array('placeholder' => 'Term')); 
+									echo Form::textarea('definition', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
+								</div>
 
-		    			  	 echo Form::label('3.', 'term');
-		    			  	 echo Form::input('term', 'Term'); 
-		    			  	 echo Form::textarea('definition', 'Definition');
+								<div class="term">
 
-		    			  	 echo Form::label('4.', 'term');
-		    			  	 echo Form::input('term', 'Term'); 
-		    			  	 echo Form::textarea('definition', 'Definition');
-		    			  ?>
+								<?  echo Form::label('2.', 'term');
+									echo Form::input('term', '', array('placeholder' => 'Term')); 
+									echo Form::textarea('definition', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
+								</div>
 
+								<div class="term">
 
-		    			  	<? echo Form::close(); ?>
+								<?  echo Form::label('3.', 'term');
+									echo Form::input('term', '', array('placeholder' => 'Term')); 
+									echo Form::textarea('definition', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
+								</div>
+
+								<div class="term">
+
+								<?  echo Form::label('4.', 'term');
+									echo Form::input('term', '', array('placeholder' => 'Term')); 
+									echo Form::textarea('definition', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
+								</div>
+
+								<? echo Html::anchor('#', Asset::img('icons/add_card.png')." Add another term by either clicking here or pressing TAB on the last input box.");
+
+								echo Form::button('submit', 'Submit');
+
+								echo Form::close(); ?>
+
+							</div> <!-- end of terms -->
+						</div><!-- end of deck-info -->
 				  </div> <!-- end of profile -->

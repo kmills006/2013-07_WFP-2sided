@@ -44,16 +44,23 @@ class Model_Card extends \Orm\Model
 	 */
 	public static function save_cards($cards)
 	{
+
 		foreach($cards as $card)
 		{
 
-			$card = static::forge(array(
-						'deck_id'	 => $cards['deck_id'],
-						'term'       => $card[0],
-						'definition' => $card[1],
-			));
+			
+			if($card[0] == "" && $card[1] == "") 
+			{
+				echo "Blank";
+			}else{
+				$card = static::forge(array(
+							'deck_id'	 => $cards['deck_id'],
+							'term'       => $card[0],
+							'definition' => $card[1],
+				));
 
-			$card->save();
+				$card->save();
+			}
 		}
 	}
 

@@ -1,7 +1,7 @@
 <? 
-    // echo '<pre>';
-    // var_dump($deck_info->title);
-    // echo '</pre>';
+    echo '<pre>';
+    var_dump($cards);
+    echo '</pre>';
 ?>			
 
             <div class="content study-deck">

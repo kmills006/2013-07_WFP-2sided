@@ -28,3 +28,22 @@ ERROR - 2013-06-14 14:59:40 --> Notice - Trying to get property of non-object in
 ERROR - 2013-06-14 14:59:40 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
 ERROR - 2013-06-14 14:59:41 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
 ERROR - 2013-06-14 14:59:41 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 15:07:44 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 15:07:44 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 15:07:44 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 15:07:56 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 15:07:56 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 15:07:56 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 15:08:28 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 15:08:28 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 15:08:28 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 15:08:41 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 15:08:41 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 15:08:41 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 15:08:41 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 15:08:41 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 15:08:41 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 16:01:42 --> Notice - Undefined variable: sliced in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 39
+ERROR - 2013-06-14 16:01:50 --> Notice - Uninitialized string offset: 0 in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 58
+ERROR - 2013-06-14 16:07:10 --> 23000 - SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`WFP_2sided`.`cards`, CONSTRAINT `cards_ibfk_1` FOREIGN KEY (`deck_id`) REFERENCES `decks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) with query: "INSERT INTO `cards` (`deck_id`, `term`, `definition`, `created_at`, `updated_at`) VALUES ('51bb77eea3d53', 'term', 'skdfj', 1371240430, null)" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-06-14 16:07:34 --> 23000 - SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`WFP_2sided`.`cards`, CONSTRAINT `cards_ibfk_1` FOREIGN KEY (`deck_id`) REFERENCES `decks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) with query: "INSERT INTO `cards` (`deck_id`, `term`, `definition`, `created_at`, `updated_at`) VALUES ('51bb7806c557b', 'term', 'skdfj', 1371240454, null)" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208

@@ -34,6 +34,11 @@ class Controller_Deck extends Controller_Template{
 
 
 			$sliced = array_slice(Input::post(), 3);
+
+			// echo '<pre>';
+			// print_r($cards);
+			// echo '</pre>';
+
 			$cards  = array_chunk($sliced, 2);
 
 			// Removing the empy array value from the end of $cards

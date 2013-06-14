@@ -58,6 +58,13 @@
 									echo Form::textarea('definition4', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
 								</div>
 
+								<div class="term">
+
+								<?  echo Form::label('5.', 'term');
+									echo Form::input('term5', '', array('placeholder' => 'Term')); 
+									echo Form::textarea('definition5', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
+								</div>
+
 							</div> <!-- end of terms -->
 
 							<? echo Html::anchor('#', Asset::img('icons/add_card.png')." Add another term by either clicking here or pressing TAB on the last input box.");

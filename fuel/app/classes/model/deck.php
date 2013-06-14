@@ -34,10 +34,24 @@ class Model_Deck extends \Orm\Model
 	    )
 	);
 
+	protected static $_has_many = array(
+	    'cards' => array(
+	        'key_from' => 'deck_id',
+	        'model_to' => 'Model_Card',
+	        'key_to' => 'id',
+	        'cascade_save' => true,
+	        'cascade_delete' => false,
+	    )
+	);
+
 	protected static $_table_name = 'decks';
 
 
-
+	/**
+	 * Get Users Decks
+	 * 
+	 * Returns all of the users decks
+	 */
 	public static function get_users_decks($user_id)
 	{
 
@@ -45,6 +59,11 @@ class Model_Deck extends \Orm\Model
 
 	}
 
+	/**
+	 * Get Total Decks
+	 *
+	 * Returns the total count of the users decks
+	 */
 	public static function get_total_decks($user_id)
 	{
 
@@ -52,6 +71,12 @@ class Model_Deck extends \Orm\Model
 
 	}
 
+
+	/** 
+	 * Save Deck
+	 *
+	 * Saves users newly created deck into the database
+	 */
 	public static function save_deck($new_deck)
 	{
 		if($new_deck['privacy'] == 'Private')
@@ -65,20 +90,10 @@ class Model_Deck extends \Orm\Model
 		
 		$deck = static::forge(array(
 					'user_id' => Session::get('user_id'),
+					'id' 	  => $new_deck['id'],
 					'title'   => $new_deck['title'],
 					'privacy' => $privacy,
 		));
-
-		// $this->title = $new_deck['title'];
-
-		// if($new_deck['privacy'] == 'Private')
-		// {
-		// 	$this->privacy = 1;
-		// }
-		// else
-		// {
-		// 	$this->privacy = 0;
-		// }
 		
 		$deck->save();
 	}

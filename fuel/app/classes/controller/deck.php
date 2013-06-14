@@ -25,14 +25,23 @@ class Controller_Deck extends Controller_Template{
 
 		if(Input::post())
 		{
-			// echo '<pre>';
-			// var_dump(Input::post());
-			// echo '</pre>';
 
-			$deck_info['title'] = Input::post('title');
+			$deck_info['id'] 	  = uniqid();
+			$deck_info['title']   = Input::post('title');
 			$deck_info['privacy'] = Input::post('privacy');
 
 			$new_deck = Model_Deck::save_deck($deck_info);
+
+
+			$sliced = array_slice(Input::post(), 3);
+			$cards  = array_chunk($sliced, 2);
+
+			// Removing the empy array value from the end of $cards
+			$removed  = array_pop($cards);
+
+			$cards['deck_id'] = $deck_info['id'];
+
+			$new_cards = Model_Card::save_cards($cards);
 		}
 
 

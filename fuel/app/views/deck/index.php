@@ -17,13 +17,13 @@
 
 							<?  echo Form::input('title', '', array('placeholder' => 'Title'));
 
-								echo Form::input('tags', '', array('placeholder' => 'Tags'));
+								echo Form::input('tags', '', array('placeholder' => 'Tags ex. History, Game Shows'));
 
-								echo Form::label('Public', 'privacy');
 								echo Form::radio('privacy', 'Public', true);
+								echo Form::label('Public', 'privacy');
 
-								echo Form::label('Private', 'privacy');
-								echo Form::radio('privacy', 'Private'); ?>
+								echo Form::radio('privacy', 'Private');
+								echo Form::label('Private', 'privacy'); ?>
 
 							</div> <!-- end of deck-info -->
 
@@ -58,12 +58,13 @@
 									echo Form::textarea('definition', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
 								</div>
 
-								<? echo Html::anchor('#', Asset::img('icons/add_card.png')." Add another term by either clicking here or pressing TAB on the last input box.");
-
-								echo Form::button('submit', 'Submit');
-
-								echo Form::close(); ?>
-
 							</div> <!-- end of terms -->
+
+							<? echo Html::anchor('#', Asset::img('icons/add_card.png')." Add another term by either clicking here or pressing TAB on the last input box.");
+
+							echo Form::button('submit', 'Submit');
+
+							echo Form::close(); ?>
+							
 						</div><!-- end of deck-info -->
 				  </div> <!-- end of profile -->

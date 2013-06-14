@@ -1656,12 +1656,31 @@ nav form input{
 	border: #E67E22 solid 1px;
 }
 
+.new-deck-info .deck-info{
+	width: 660px;
+	margin: 0 0 20px 0;
+	padding-bottom: 20px;
+}
+
 #form_title{
-	width: 300px;
+	width: 330px;
+}
+
+#form_tags{
+	width: 265px;
+}
+
+.new-deck-info .deck-info input[type="radio"]{
+	/*clear: both;*/
+	display: block;
 }
 
 .new-deck-info .deck-info label{
-	display: block;
+	/*float: left;*/
+}
+
+.new-deck-info .deck-info{
+	border-bottom: 1px solid #000;
 }
 
 .terms{
@@ -1683,6 +1702,25 @@ nav form input{
 	border-radius: 3px;
 	border: #E67E22 solid 1px;
 	padding: 5px;
+}
+
+.new-deck-info a{
+	font-size: 12px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+}
+
+.new-deck-info a img{
+	position: relative;
+	top: -2px;
+	margin-right: 5px;
+}
+
+.new-deck-info button{
+	display: block;
+	margin: 30px 0 0 0;
 }
 
 /* 	Footer 

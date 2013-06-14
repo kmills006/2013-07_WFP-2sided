@@ -16,8 +16,9 @@ class Controller_User extends Controller{
 				$user['username'] = Auth::get('username');
 				
 				$session = Session::set(array(
-								'user_id'  => $user['user_id'],
-								'username' => $user['username'],
+								'user_id'      => $user['user_id'],
+								'username'     => $user['username'],
+								'is_logged_in' => 1,
 				));
 
 				// If successful login, direct users to their dashboard
@@ -77,6 +78,7 @@ class Controller_User extends Controller{
 	public function action_logout()
 	{
 		Auth::logout();
+		Session::destroy();
 		Response::redirect('landing');
 	}
 }

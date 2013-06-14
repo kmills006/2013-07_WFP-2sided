@@ -1616,6 +1616,31 @@ nav form input{
 	color: #E67E22;
 }
 
+/* Create Deck */
+.create-deck{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.create-deck aside{
+	width: 200px;
+	background: #FFF;
+	padding: 10px 10px;
+	overflow: hidden;
+	float: left;
+}
+
+.new-deck-info{
+	overflow: hidden;
+	width: 700px;
+	background: #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 0;
+	float: right;
+}
+
 
 /* 	Footer 
 	-------------------

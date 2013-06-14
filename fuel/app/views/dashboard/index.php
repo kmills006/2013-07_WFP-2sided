@@ -50,7 +50,7 @@
 				  			<button class="filters activeFilter">Newest</button>
 				  			<button class="filters">Oldest</button>
 				  			<button class="filters">Highest Rating</button>
-				  			<button>Create New</button>
+				  			<button><?= Html::anchor('deck/create', 'Create New'); ?></button>
 				  			<div class="clearfix"></div>
 				  			
 

@@ -57,6 +57,16 @@ class Model_Card extends \Orm\Model
 		}
 	}
 
+	/**
+	 * Get All Cards
+	 *
+	 * Returns all the cards in a particular deck
+	 */
+	public static function get_all_cards($deck_id)
+	{
+		return static::query()->where(array('deck_id' => $deck_id))->get();
+	}
+
 
 
 }

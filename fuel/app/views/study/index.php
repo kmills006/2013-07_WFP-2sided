@@ -1,17 +1,27 @@
-			<div class="content study-deck">
+<? 
+    // echo '<pre>';
+    // var_dump($deck_info->title);
+    // echo '</pre>';
+?>			
+
+            <div class="content study-deck">
     			<a href="user_dashboard.html" class="back-to-dash">Back to Dashboard</a>
     			
     			<aside>
     			
     				<div class="header">
-						<h2>Jeopardy</h2>
-						<p><img src="assets/img/icons/check_mark_white.png" alt="Rating Check Mark Icon" width="25" height="20"/>  237</p>
+
+                        <? if(isset($deck_info->title)): ?>
+						<h2><?= $deck_info->title ?></h2>
+                        <? endif?>
+
+						<!-- <p><img src="assets/img/icons/check_mark_white.png" alt="Rating Check Mark Icon" width="25" height="20"/>  237</p> -->
 					</div>
 					
     				<div class="sd-deck-info">
    						<p><a href="#">kmills006</a></p>
-						<p>Total Cards: 24</p>
-						<p>Created on Mar 1st, 2013</p>
+						<p>Total Cards: <?= $card_count; ?></p>
+						<p>Created on <?= $deck_info->created_at; ?></p>
 						
 						<h3>Tags</h3>
 						

@@ -99,6 +99,17 @@ class Model_Deck extends \Orm\Model
 	}
 
 
+	/**
+	 * Get Deck
+	 *
+	 * Return individual deck information 
+	 */
+	public static function get_deck($deck_id)
+	{
+		return static::query()->where(array('id' => $deck_id))->limit(1)->get_one();
+	}
+
+
 
 	public function date($format = "m/d/Y h:m a")
 	{

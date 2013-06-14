@@ -58,7 +58,7 @@
 				  			<? foreach($decks as $deck): ?>
 				  			<section class="deck">
 				  				<section class="deck-info">
-					  				<p><a href="study_deck.html"><?= $deck->title; ?></a></p>
+					  				<p><?= Html::anchor('study/cards/'.$deck->id, $deck->title); ?></p>
 					  				<p>Total Cards: 57</p>
 					  				<p>Created on: <?= $deck->created_at; ?></p>
 				  				</section>

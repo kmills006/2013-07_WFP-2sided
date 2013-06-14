@@ -41,14 +41,14 @@ class Model_Deck extends \Orm\Model
 	public static function get_users_decks($user_id)
 	{
 
-		return static::query()->get('all', array(
-			'where' => array(
-				'user_id' => $user_id
-			)
-		));
-		
+		return static::query()->where(array('user_id' => $user_id))->get();
 
-		
+	}
+
+	public static function get_total_decks($user_id)
+	{
+
+		return static::query()->where('user_id', $user_id)->count();
 
 	}
 

@@ -9,10 +9,7 @@ class Controller_Dashboard extends Controller_Template
 		$data['username'] = Session::get('username');
 		
 		$data['decks']    = Model_Deck::get_users_decks($user_id);
-		 
-		// echo '<pre>';
-		// var_dump($test);
-		// echo '</pre>';
+		$data['total_decks'] = Model_Deck::get_total_decks($user_id);
 
 		$this->template->head    = View::forge('includes/head');
 		$this->template->header  = View::forge('includes/logged_in/header', $data);

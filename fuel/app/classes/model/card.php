@@ -48,11 +48,13 @@ class Model_Card extends \Orm\Model
 		foreach($cards as $card)
 		{
 
-			
-			if($card[0] == "" && $card[1] == "") 
+			if($card[0] == "" || $card[1] == "") 
 			{
-				echo "Blank";
-			}else{
+				// If either the term or definition is blank,
+				// do not add it to the database.
+			}
+			else
+			{
 				$card = static::forge(array(
 							'deck_id'	 => $cards['deck_id'],
 							'term'       => $card[0],

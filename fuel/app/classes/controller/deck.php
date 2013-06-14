@@ -33,17 +33,16 @@ class Controller_Deck extends Controller_Template{
 			$new_deck = Model_Deck::save_deck($deck_info);
 
 
+			// Removing the deck title, privacy and tags
 			$sliced = array_slice(Input::post(), 3);
 
-			// echo '<pre>';
-			// print_r($cards);
-			// echo '</pre>';
-
+			// Dividing the array into term/definition paris
 			$cards  = array_chunk($sliced, 2);
 
 			// Removing the empy array value from the end of $cards
 			$removed  = array_pop($cards);
 
+			// Setting the deck_id for the cards table
 			$cards['deck_id'] = $deck_info['id'];
 
 			$new_cards = Model_Card::save_cards($cards);

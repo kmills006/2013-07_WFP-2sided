@@ -52,6 +52,37 @@ class Model_Deck extends \Orm\Model
 
 	}
 
+	public static function save_deck($new_deck)
+	{
+		if($new_deck['privacy'] == 'Private')
+		{
+			$privacy = 1;
+		}
+		else
+		{
+			$privacy = 0;
+		}
+		
+		$deck = static::forge(array(
+					'user_id' => Session::get('user_id'),
+					'title'   => $new_deck['title'],
+					'privacy' => $privacy,
+		));
+
+		// $this->title = $new_deck['title'];
+
+		// if($new_deck['privacy'] == 'Private')
+		// {
+		// 	$this->privacy = 1;
+		// }
+		// else
+		// {
+		// 	$this->privacy = 0;
+		// }
+		
+		$deck->save();
+	}
+
 
 
 	public function date($format = "m/d/Y h:m a")

@@ -33,29 +33,29 @@
 								<div class="term">
 
 								<?  echo Form::label('1.', 'term');
-									echo Form::input('term', '', array('placeholder' => 'Term')); 
-									echo Form::textarea('definition', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
+									echo Form::input('term1', '', array('placeholder' => 'Term')); 
+									echo Form::textarea('definition1', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
 								</div>
 
 								<div class="term">
 
 								<?  echo Form::label('2.', 'term');
-									echo Form::input('term', '', array('placeholder' => 'Term')); 
-									echo Form::textarea('definition', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
+									echo Form::input('term2', '', array('placeholder' => 'Term')); 
+									echo Form::textarea('definition2', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
 								</div>
 
 								<div class="term">
 
 								<?  echo Form::label('3.', 'term');
-									echo Form::input('term', '', array('placeholder' => 'Term')); 
-									echo Form::textarea('definition', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
+									echo Form::input('term3', '', array('placeholder' => 'Term')); 
+									echo Form::textarea('definition3', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
 								</div>
 
 								<div class="term">
 
 								<?  echo Form::label('4.', 'term');
-									echo Form::input('term', '', array('placeholder' => 'Term')); 
-									echo Form::textarea('definition', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
+									echo Form::input('term4', '', array('placeholder' => 'Term')); 
+									echo Form::textarea('definition4', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
 								</div>
 
 							</div> <!-- end of terms -->
@@ -65,6 +65,6 @@
 							echo Form::button('submit', 'Submit');
 
 							echo Form::close(); ?>
-							
+
 						</div><!-- end of deck-info -->
 				  </div> <!-- end of profile -->

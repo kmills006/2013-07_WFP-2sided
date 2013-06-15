@@ -227,3 +227,20 @@ ERROR - 2013-06-14 22:44:44 --> Warning - Creating default object from empty val
 ERROR - 2013-06-14 22:44:44 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 110
 ERROR - 2013-06-14 22:44:44 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 110
 ERROR - 2013-06-14 22:44:44 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 110
+ERROR - 2013-06-14 22:58:04 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 116
+ERROR - 2013-06-14 22:58:04 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 116
+ERROR - 2013-06-14 22:58:04 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 116
+ERROR - 2013-06-14 22:59:30 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 116
+ERROR - 2013-06-14 22:59:30 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 116
+ERROR - 2013-06-14 22:59:30 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 116
+ERROR - 2013-06-14 22:59:30 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 116
+ERROR - 2013-06-14 22:59:30 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 116
+ERROR - 2013-06-14 22:59:30 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 116
+ERROR - 2013-06-14 23:00:21 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 119
+ERROR - 2013-06-14 23:00:21 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 119
+ERROR - 2013-06-14 23:00:21 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 119
+ERROR - 2013-06-14 23:00:21 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 119
+ERROR - 2013-06-14 23:00:21 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 119
+ERROR - 2013-06-14 23:00:21 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 119
+ERROR - 2013-06-14 23:00:22 --> Error - Call to undefined function data() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 60
+ERROR - 2013-06-14 23:00:26 --> Warning - Attempt to assign property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 60

@@ -1,7 +1,7 @@
 <? 
-    echo '<pre>';
-    var_dump($deck_info->created_at);
-    echo '</pre>';
+    // echo '<pre>';
+    // var_dump($deck_info->created_at);
+    // echo '</pre>';
 ?>			
 
             <div class="content study-deck">

@@ -51,13 +51,20 @@ class Model_Deck extends \Orm\Model
 	/**
 	 * [get_users_decks description]
 	 * @param  integer $user_id [description]
-	 * @return array            [description]
+	 * @return array   $decks   [description]
 	 */
 	public static function get_users_decks($user_id)
 	{
 
-		return static::query()->where(array('user_id' => $user_id))->get();
-	
+		$decks = static::query()->where(array('user_id' => $user_id))->get();
+		
+		// Formating the date created on each deck
+		foreach($decks as $deck)
+		{
+			$deck->created_at = date('M d, Y');
+		}
+
+		return $decks;
 	}
 
 
@@ -113,6 +120,8 @@ class Model_Deck extends \Orm\Model
 	{
 
 		$deck = static::query()->where(array('id' => $deck_id))->get_one();
+
+		// Formating the date created
 		$deck->created_at = date('M d, Y');
 
 		return $deck;

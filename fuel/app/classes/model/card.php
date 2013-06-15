@@ -38,9 +38,8 @@ class Model_Card extends \Orm\Model
 
 
 	/**
-	 * Save Cards
-	 *
-	 * Saves all new flash cards when a new deck is created
+	 * [save_cards description]
+	 * @param  array $cards [description]
 	 */
 	public static function save_cards($cards)
 	{
@@ -66,22 +65,26 @@ class Model_Card extends \Orm\Model
 		}
 	}
 
+
+
 	/**
-	 * Get All Cards
-	 *
-	 * Returns all the cards in a particular deck
+	 * [get_all_cards description]
+	 * @param  integer $deck_id [description]
+	 * @return array            [description]
 	 */
 	public static function get_all_cards($deck_id)
 	{
+	
 		return static::query()->where(array('deck_id' => $deck_id))->get();
+	
 	}
 
 
 
 	/**
 	 * [get_card_count description]
-	 * @param  [type] $deck_id [description]
-	 * @return [type]          [description]
+	 * @param  integer $deck_id [description]
+	 * @return integer          [description]
 	 */
 	public static function get_card_count($deck_id)
 	{

@@ -36,9 +36,9 @@ class Model_Deck extends \Orm\Model
 
 	protected static $_has_many = array(
 	    'cards' => array(
-	        'key_from' => 'deck_id',
+	        'key_from' => 'id',
 	        'model_to' => 'Model_Card',
-	        'key_to' => 'id',
+	        'key_to' => 'deck_id',
 	        'cascade_save' => true,
 	        'cascade_delete' => false,
 	    )
@@ -62,6 +62,12 @@ class Model_Deck extends \Orm\Model
 		foreach($decks as $deck)
 		{
 			$deck->created_at = date('M d, Y');
+
+			// $deck_count = static::query()->related('cards')->where(array('cards.deck_id' => $deck->id))->count();
+			
+			// echo '<pre>';
+			// var_dump($deck_count);
+			// echo '</pre>';
 		}
 
 		return $decks;

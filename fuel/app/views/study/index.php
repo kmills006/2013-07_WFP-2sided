@@ -77,15 +77,15 @@
     				
     				
     				<div class="flash-card">
-	    				<img src="assets/img/flashcards/left_arrow.png" alt="Left Arrow to switch flashcard" class="controls left-arrow"/>
+                        <?= Asset::img('flashcards/left_arrow.png', array('alt' => 'Left arrow to switch flashcard', 'class' => 'controls left-arrow')); ?>
 	    				
 	    				<div class="card">
 		    					<p>US HISTORY: Only state carried by George McGovern in '72 election</p>
 		    					
-		    					<p><img src="assets/img/icons/keyboard_shortcuts.png" alt="Keyboard Shortcuts" /> Keyboard Shortcuts</p>
+                                <p><?= Asset::img('icons/keyboard_shortcuts.png', array('alt' => 'Keyboard Shortcuts')); ?> Keyboard Shortcuts</p>
 	    				</div>
 	    				
-	    				<img src="assets/img/flashcards/right_arrow.png" alt="Right Arrow to switch flashcard" class="controls right-arrow"/>
+                        <?= Asset::img('flashcards/right_arrow.png', array('alt' => 'Right arrow to switch flashcard', 'class' => 'controls right-arrow')); ?>
 	    				<div class="practice-more"></div>
 	    				<div class="flip"></div>
 	    				<div class="mastered"></div>

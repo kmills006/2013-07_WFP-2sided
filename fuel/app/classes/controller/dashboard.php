@@ -9,8 +9,6 @@ class Controller_Dashboard extends Controller_Template
 	
 		if(Session::get('is_logged_in') == 1)
 		{
-			$user_id = Session::get('user_id');
-
 			// Setting up views
 			$this->template->head    = View::forge('includes/head');
 
@@ -20,8 +18,8 @@ class Controller_Dashboard extends Controller_Template
 
 
 			$this->template->content = View::forge('dashboard/index', array(
-												'decks'       => Model_Deck::get_users_decks($user_id),
-												'total_decks' => Model_Deck::get_total_decks($user_id),
+												'decks'       => Model_Deck::get_users_decks(Session::get('user_id')),
+												'total_decks' => Model_Deck::get_total_decks(Session::get('user_id')),
 			));
 
 			$this->template->footer  = View::forge('includes/footer');
@@ -34,3 +32,4 @@ class Controller_Dashboard extends Controller_Template
 	}
 
 }
+

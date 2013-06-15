@@ -3,9 +3,8 @@
 class Controller_Study extends Controller_Template
 {
 
-	public function action_cards($deck_id)
+	public function get_cards($deck_id)
 	{
-
 
 		$deck = Model_Deck::get_deck($deck_id);
 		$deck_owner = $deck->users->username;
@@ -14,9 +13,16 @@ class Controller_Study extends Controller_Template
 		// Setting up views
 		$this->template->head    = View::forge('includes/head');
 
-		$this->template->header  = View::forge('includes/logged_in/header', array(
-											'username' => Session::get('username'),
-		));
+		if(!isset($is_logged_in))
+		{
+			$this->template->header  = View::forge('includes/logged_out/header');
+		}
+		else
+		{
+			$this->template->header  = View::forge('includes/logged_in/header', array(
+												'username' => Session::get('username'),
+			));
+		}
 
 		$this->template->content = View::forge('study/index', array(
 											'deck_info'  => Model_Deck::get_deck($deck_id),

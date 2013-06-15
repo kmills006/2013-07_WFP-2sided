@@ -18,8 +18,9 @@
 			}
 			else
 			{
-				$data['username'] = Session::get('username');
-				$this->template->header  = View::forge('includes/logged_in/header', $data);
+				$this->template->header  = View::forge('includes/logged_in/header', array(
+													'username' => Session::get('username'),
+				));
 			}
 
 			$this->template->content = View::forge('landing/index');

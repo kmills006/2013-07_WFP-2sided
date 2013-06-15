@@ -1325,6 +1325,7 @@ nav form input{
 	float: left;
 	margin: 0 auto;
 	padding: 0;
+	display: none;
 }	
 
 .card p{
@@ -1335,7 +1336,13 @@ nav form input{
 	font-size: 22px;
 	position: relative;
 	top: 75px;
+	text-align: center;
+	width: auto;
 	
+}
+
+.definition{
+	display: none;
 }
 
 .card p:last-child{
@@ -1344,6 +1351,7 @@ nav form input{
 	font-weight: 600;
 	top: 160px;
 	right: 15px;
+	text-align: left;
 }
 
 .card p:last-child img{

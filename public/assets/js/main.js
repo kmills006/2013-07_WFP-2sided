@@ -42,15 +42,9 @@
 	 * user is currently on
 	 */
 	if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard'){
-		/* On the user dashboard, tabs are used on the left side to control
-		what information is being displayed */
-/* 		$( "#tabs" ).tabs(); */
-
 		// Setting the global navigation tab icons
 		$(".ud-tabs li").each(function(i){
 			var udTabItem = $(this);
-			
-			console.log(udTabItem);
 			
 			switch(udTabItem.text()){
 				case "Study":
@@ -180,7 +174,60 @@
 			
 		}); // End of user dashboard tab
 	} // End of user dashboard window.location
+
+
+
+
+
+
+	/**
+	 * Card Functionality
+	 *
+	 * 
+	 */
 	
+
+	var initCards = function(){
+
+		$('.card').first().addClass('active-card').css('display', 'block');
+
+		var activeCard = $('.active-card'); 
+		
+		
+		// Card click to change term
+		$('.card p').on('click', function(e){
+
+			if($(e.currentTarget).hasClass('term'))
+			{
+				$('.card .term').css('display', 'none');
+				$('.card .definition').css('display', 'block');
+			}
+			if($(e.currentTarget).hasClass('definition'))
+			{
+				$('.card .definition').css('display', 'none');
+				$('.card .term').css('display', 'block');
+			};
+
+		}); // end of card click
+
+
+		// Right Arrow Click
+		$('.right-arrow').on('click', function(e){
+			
+			console.log($('.active-card').next().length);
+
+			if($('active-card').next())
+			{
+				$('.active-card').removeClass('active-card').css('display', 'none').next().addClass('active-card').css('display', 'block');
+			}
+			// $('.active-card').removeClass('active-card').css('display', 'none');
+		});
+
+	};
+
+
+	initCards();
+
 	
 	
 	

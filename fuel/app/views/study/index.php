@@ -1,6 +1,6 @@
 <? 
     // echo '<pre>';
-    // var_dump($deck_info->created_at);
+    // var_dump($cards);
     // echo '</pre>';
 ?>			
 
@@ -79,11 +79,14 @@
     				<div class="flash-card">
                         <?= Asset::img('flashcards/left_arrow.png', array('alt' => 'Left arrow to switch flashcard', 'class' => 'controls left-arrow')); ?>
 	    				
-	    				<div class="card">
-		    					<p>US HISTORY: Only state carried by George McGovern in '72 election</p>
-		    					
-                                <p><?= Asset::img('icons/keyboard_shortcuts.png', array('alt' => 'Keyboard Shortcuts')); ?> Keyboard Shortcuts</p>
-	    				</div>
+                        <? foreach($cards as $card): ?>
+    	    				<div class="card">
+    		    					<p class='term'><?= $card->term; ?></p>
+                                    <p class='definition'><?= $card->definition; ?></p>
+    		    					
+                                    <p><?= Asset::img('icons/keyboard_shortcuts.png', array('alt' => 'Keyboard Shortcuts')); ?> Keyboard Shortcuts</p>
+    	    				</div>
+                        <? endforeach; ?>
 	    				
                         <?= Asset::img('flashcards/right_arrow.png', array('alt' => 'Right arrow to switch flashcard', 'class' => 'controls right-arrow')); ?>
 	    				<div class="practice-more"></div>

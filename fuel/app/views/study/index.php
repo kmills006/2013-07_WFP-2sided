@@ -1,7 +1,7 @@
 <? 
-    // echo '<pre>';
-    // var_dump($cards);
-    // echo '</pre>';
+    echo '<pre>';
+    var_dump($deck_info->created_at);
+    echo '</pre>';
 ?>			
 
             <div class="content study-deck">
@@ -20,7 +20,7 @@
 					</div>
 					
     				<div class="sd-deck-info">
-   						<p><a href="#">kmills006</a></p>
+   						<p><a href="#"><?= $deck_owner; ?></a></p>
 						<p>Total Cards: <?= $card_count; ?></p>
 						<p>Created on <?= $deck_info->created_at; ?></p>
 						

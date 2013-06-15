@@ -29,7 +29,7 @@ class Model_Card extends \Orm\Model
 	        'model_to' => 'Model_Deck',
 	        'key_to' => 'deck_id',
 	        'cascade_save' => true,
-	        'cascade_delete' => false,
+	        'cascade_delete' => true,
 	    )
 	);
 

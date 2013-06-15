@@ -8,7 +8,7 @@
 
 			$is_logged_in = Session::get('is_logged_in');
 			
-
+			// Setting up views
 			$this->template->head    = View::forge('includes/head');
 
 			// Determining which header to be displayed

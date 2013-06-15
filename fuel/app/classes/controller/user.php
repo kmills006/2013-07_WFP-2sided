@@ -16,6 +16,8 @@ class Controller_User extends Controller_Template{
 	}
 
 	/**
+	 * Check Login
+	 * 
 	 * Checking the user login information
 	 */
 	public function post_login()
@@ -39,7 +41,7 @@ class Controller_User extends Controller_Template{
 		{
 			// If login failed, return user to login screen
 			// and display error message
-			Response::redirect('login');
+			$this->get_login();
 		}
 
 	}
@@ -75,6 +77,7 @@ class Controller_User extends Controller_Template{
 		if(!$new_user)
 		{
 			// User could not be added to the database
+			// Show error message
 		}
 		else
 		{
@@ -97,9 +100,11 @@ class Controller_User extends Controller_Template{
 
 
 	/**
+	 * Logout
+	 * 
 	 * Log out the current user
 	 */
-	public function action_logout()
+	public function get_logout()
 	{
 		Auth::logout();
 		Session::destroy();

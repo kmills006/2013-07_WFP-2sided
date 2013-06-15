@@ -26,9 +26,9 @@ class Model_Deck extends \Orm\Model
 
 	protected static $_belongs_to = array(
 	    'users' => array(
-	        'key_from' => 'id',
+	        'key_from' => 'user_id',
 	        'model_to' => 'Model_User',
-	        'key_to' => 'user_id',
+	        'key_to' => 'id',
 	        'cascade_save' => true,
 	        'cascade_delete' => false,
 	    )
@@ -47,38 +47,42 @@ class Model_Deck extends \Orm\Model
 	protected static $_table_name = 'decks';
 
 
+
 	/**
-	 * Get Users Decks
-	 * 
-	 * Returns all of the users decks
+	 * [get_users_decks description]
+	 * @param  integer $user_id [description]
+	 * @return array            [description]
 	 */
 	public static function get_users_decks($user_id)
 	{
 
 		return static::query()->where(array('user_id' => $user_id))->get();
-
+	
 	}
 
+
+
 	/**
-	 * Get Total Decks
-	 *
-	 * Returns the total count of the users decks
+	 * [get_total_decks description]
+	 * @param  integer  $user_id [description]
+	 * @return integer          [description]
 	 */
 	public static function get_total_decks($user_id)
 	{
-
-		return static::query()->where('user_id', $user_id)->count();
-
+	
+		 return static::query()->where('user_id', $user_id)->count();
+	
 	}
 
 
-	/** 
-	 * Save Deck
-	 *
-	 * Saves users newly created deck into the database
+
+	/**
+	 * [save_deck description]
+	 * @param  array $new_deck [description]
 	 */
 	public static function save_deck($new_deck)
 	{
+
 		if($new_deck['privacy'] == 'Private')
 		{
 			$privacy = 1;
@@ -99,18 +103,29 @@ class Model_Deck extends \Orm\Model
 	}
 
 
+
 	/**
-	 * Get Deck
-	 *
-	 * @return individual deck information 
+	 * [get_deck description]
+	 * @param  string $deck_id [description]
+	 * @return object $deck    [description]
 	 */
 	public static function get_deck($deck_id)
 	{
-		return static::query()->where(array('id' => $deck_id))->get_one();
+
+		$deck = static::query()->where(array('id' => $deck_id))->get_one();
+		$deck->created_at = date('M d, Y');
+
+		return $deck;
+	
 	}
 
 
 
+	/**
+	 * [date description]
+	 * @param  string $format [description]
+	 * @return string         [description]
+	 */
 	public function date($format = "m/d/Y h:m a")
 	{
 		return date($format, $this->created_at);

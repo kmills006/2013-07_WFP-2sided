@@ -214,7 +214,7 @@
 		// Right Arrow Click
 		$('.right-arrow').on('click', function(e){
 			
-			console.log($('.active-card').next().length);
+			console.log($('.active-card').next()	);
 
 			if($('active-card').next())
 			{

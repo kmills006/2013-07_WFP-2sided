@@ -60,7 +60,7 @@
 				  				<section class="deck-info">
 					  				<p><?= Html::anchor('study/cards/'.$deck->id, $deck->title); ?></p>
 					  				<p>Total Cards: 57</p>
-					  				<p>Created on: <?= $deck->created_at; ?></p>
+					  				<p>Created on: <?= $deck->date(); ?></p>
 				  				</section>
 					  				
 					  			<section class="deck-social">

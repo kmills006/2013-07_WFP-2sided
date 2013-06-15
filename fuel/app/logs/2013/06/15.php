@@ -38,3 +38,8 @@ ERROR - 2013-06-15 11:54:19 --> Warning - Creating default object from empty val
 ERROR - 2013-06-15 13:14:11 --> Error - Could not find asset: img/flashcards/left_arrow.png in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
 ERROR - 2013-06-15 13:14:25 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 131
 ERROR - 2013-06-15 13:14:25 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 131
+ERROR - 2013-06-15 15:54:27 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 131
+ERROR - 2013-06-15 15:54:34 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 131
+ERROR - 2013-06-15 15:54:50 --> Error - Call to undefined function format_date() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 131
+ERROR - 2013-06-15 15:58:04 --> Error - Call to a member function data() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 25
+ERROR - 2013-06-15 15:58:08 --> Error - Call to a member function date() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 25

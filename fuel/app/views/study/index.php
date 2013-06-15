@@ -22,7 +22,7 @@
     				<div class="sd-deck-info">
    						<p><a href="#"><?= $deck_owner; ?></a></p>
 						<p>Total Cards: <?= $card_count; ?></p>
-						<p>Created on <?= $deck_info->created_at; ?></p>
+						<p>Created on <?= $deck_info->date(); ?></p>
 						
 						<h3>Tags</h3>
 						

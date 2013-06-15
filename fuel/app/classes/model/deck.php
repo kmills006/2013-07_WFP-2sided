@@ -102,11 +102,11 @@ class Model_Deck extends \Orm\Model
 	/**
 	 * Get Deck
 	 *
-	 * Return individual deck information 
+	 * @return individual deck information 
 	 */
 	public static function get_deck($deck_id)
 	{
-		return static::query()->where(array('id' => $deck_id))->limit(1)->get_one();
+		return static::query()->where(array('id' => $deck_id))->get_one();
 	}
 
 

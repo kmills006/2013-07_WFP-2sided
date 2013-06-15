@@ -78,4 +78,16 @@ class Model_Card extends \Orm\Model
 
 
 
+	/**
+	 * [get_card_count description]
+	 * @param  [type] $deck_id [description]
+	 * @return [type]          [description]
+	 */
+	public static function get_card_count($deck_id)
+	{
+		return static::query()->where(array('deck_id' => $deck_id))->count();
+	}
+
+
+
 }

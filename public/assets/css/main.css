@@ -208,7 +208,7 @@ nav{
 	border-right: #3B97D2 1px solid;
 }
 
-.logged-out .globe-nav:nth-child(2
+.logged-out .globe-nav:nth-child(2){
 	border-right: #3B97D2 1px solid;
 }
 
@@ -291,10 +291,6 @@ nav form input{
 	font-weight: 200;
 	padding: 20px;
 	border: none;
-}
-
-.dd-menu li:hover{
-	background: #34495E;
 }
 
 

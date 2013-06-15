@@ -1,11 +1,12 @@
 <? 
-    echo '<pre>';
-    var_dump($cards);
-    echo '</pre>';
+    // echo '<pre>';
+    // var_dump($cards);
+    // echo '</pre>';
 ?>			
 
             <div class="content study-deck">
-    			<a href="user_dashboard.html" class="back-to-dash">Back to Dashboard</a>
+    			<!-- <a href="user_dashboard.html" class="back-to-dash">Back to Dashboard</a> -->
+                <?= Html::anchor('dashboard', 'Back to Dashboard', array('class' => 'back-to-dash')); ?>
     			
     			<aside>
     			

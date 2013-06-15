@@ -47,3 +47,33 @@ ERROR - 2013-06-14 16:01:42 --> Notice - Undefined variable: sliced in /Users/kr
 ERROR - 2013-06-14 16:01:50 --> Notice - Uninitialized string offset: 0 in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 58
 ERROR - 2013-06-14 16:07:10 --> 23000 - SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`WFP_2sided`.`cards`, CONSTRAINT `cards_ibfk_1` FOREIGN KEY (`deck_id`) REFERENCES `decks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) with query: "INSERT INTO `cards` (`deck_id`, `term`, `definition`, `created_at`, `updated_at`) VALUES ('51bb77eea3d53', 'term', 'skdfj', 1371240430, null)" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
 ERROR - 2013-06-14 16:07:34 --> 23000 - SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`WFP_2sided`.`cards`, CONSTRAINT `cards_ibfk_1` FOREIGN KEY (`deck_id`) REFERENCES `decks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) with query: "INSERT INTO `cards` (`deck_id`, `term`, `definition`, `created_at`, `updated_at`) VALUES ('51bb7806c557b', 'term', 'skdfj', 1371240454, null)" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-06-14 17:30:58 --> Error - Call to protected method Auth\Auth_Login_Simpleauth::perform_check() from context 'Controller_App' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/app.php on line 32
+ERROR - 2013-06-14 17:47:51 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 17:47:51 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 17:47:51 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:48:39 --> Parsing Error - syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 82
+ERROR - 2013-06-14 20:48:50 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:48:50 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:48:50 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:49:03 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:49:03 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:49:03 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:49:08 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:49:08 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:49:08 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:51:53 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:51:53 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:51:53 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:51:53 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:51:53 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:51:53 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 20:51:56 --> Error - Call to protected method Auth\Auth_Login_Simpleauth::perform_check() from context 'Controller_App' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/app.php on line 32
+ERROR - 2013-06-14 21:03:57 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 21:03:57 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 21:03:57 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 21:04:52 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 21:04:52 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 21:04:52 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 21:04:58 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 24
+ERROR - 2013-06-14 21:05:59 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 25
+ERROR - 2013-06-14 21:37:59 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/user.php on line 39

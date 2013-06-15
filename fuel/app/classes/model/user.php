@@ -31,4 +31,15 @@ class Model_User extends \Orm\Model
 
 	protected static $_table_name = 'users';
 
+
+	/**
+	 * [get_by_id description]
+	 * @param  [type] $user_id [description]
+	 * @return [type]          [description]
+	 */
+	public static function get_by_id($user_id)
+	{
+		return static::query()->where(array('user_id' => $user_id))->get();
+	}
+
 }

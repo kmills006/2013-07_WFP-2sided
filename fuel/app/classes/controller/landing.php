@@ -7,6 +7,7 @@
 		{
 
 			$is_logged_in = Session::get('is_logged_in');
+			
 
 			$this->template->head    = View::forge('includes/head');
 

@@ -5,7 +5,7 @@
 				  <ul class="ud-tabs">
 				    <li class="ud-tab-active">Study</li>
 				    <li>Notifications</li>
-				    <li>Achievements</a></li>
+				    <li>Achievements</li>
 				    <li>Settings</li>
 				  </ul>
 				  
@@ -50,7 +50,7 @@
 				  			<button class="filters activeFilter">Newest</button>
 				  			<button class="filters">Oldest</button>
 				  			<button class="filters">Highest Rating</button>
-				  			<button><?= Html::anchor('deck/create', 'Create New'); ?></button>
+				  			<?= Html::anchor('deck/create', 'Create New'); ?>
 				  			<div class="clearfix"></div>
 				  			
 

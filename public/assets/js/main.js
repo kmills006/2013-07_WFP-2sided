@@ -169,7 +169,8 @@
 					break;
 			};
 	
-	
+
+			return false;
 	
 			
 		}); // End of user dashboard tab
@@ -208,6 +209,8 @@
 				$('.card .term').css('display', 'block');
 			};
 
+			return false;
+
 		}); // end of card click
 
 
@@ -221,11 +224,47 @@
 				$('.active-card').removeClass('active-card').css('display', 'none').next().addClass('active-card').css('display', 'block');
 			}
 			// $('.active-card').removeClass('active-card').css('display', 'none');
+			
+
+			return false;
 		});
 
 	};
 
 
+	/**
+	 *
+	 * Add New Term Functionality
+	 * 
+	 */
+	var initAddTerm = function()
+	{
+
+		counter = $('.terms').children().length -1;
+
+		$('.add-another-term').on('click', function(e){
+
+			counter = counter + 1;
+
+			// <div class="term">
+
+			// <?  echo Form::label('4.', 'term');
+			// 	echo Form::input('term4', '', array('placeholder' => 'Term')); 
+			// 	echo Form::textarea('definition4', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
+			// </div>
+
+			var newFields = '<div class="terms"><label for="term' + counter + '">' + counter + '.</label><input type="text" placeholder="Term" name="term' + counter + '"/><textarea class="opensans" placeholder="Definition"></textarea></div>';
+
+			$('.terms').append(newFields);
+
+			return false;
+
+		});
+
+	}
+
+
+	initAddTerm();
 	initCards();
 
 	

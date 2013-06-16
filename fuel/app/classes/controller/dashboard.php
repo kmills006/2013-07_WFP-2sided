@@ -26,7 +26,7 @@ class Controller_Dashboard extends Controller_Template
 		}
 		else
 		{
-			Response::redirect('login');
+			Response::redirect('user/login');
 		}
 		
 	}

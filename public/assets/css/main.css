@@ -1625,12 +1625,12 @@ nav form input{
 }
 
 /* Create Deck */
-.create-deck{
+.create-deck, .edit-deck{
 	width: 940px;
 	margin: 0 auto;
 }
 
-.create-deck aside{
+.create-deck aside, .edit-deck aside{
 	width: 200px;
 	background: #FFF;
 	padding: 10px 10px;

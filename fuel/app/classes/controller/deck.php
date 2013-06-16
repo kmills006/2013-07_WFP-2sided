@@ -64,4 +64,20 @@ class Controller_Deck extends Controller_Template{
 	}
 
 
+
+	public function get_edit()
+	{
+		// Setting up views
+		$this->template->head    = View::forge('includes/head');
+
+		$this->template->header  = View::forge('includes/logged_in/header', array(
+											'username' => Session::get('username'),
+		));
+
+		$this->template->content = View::forge('deck/edit');
+
+		$this->template->footer  = View::forge('includes/footer');
+	}
+
+
 }

@@ -1,6 +1,6 @@
 <? 
     // echo '<pre>';
-    // var_dump($cards);
+    // var_dump($deck_info);
     // echo '</pre>';
 ?>			
 
@@ -69,11 +69,18 @@
     				<input type="checkbox" name="both-sides"/>
     				<label for="both-sides">Both Sides</label>
     				
-    				<!-- if you are looking at your own deck, this button gives you the option to edit the deck -->
-    				<button>Edit Deck</button>
     				
-    				<!-- if you are looking at someone else's deck, this button gives you the option to upvote that deck -->
-    				<button>Like Deck</button>
+                    <? if($deck_info->user_id == Session::get('user_id'))
+                    {
+                        // if you are looking at your own deck, this button gives you the option to edit the deck
+                        echo Html::anchor('deck/edit', 'Edit Deck');
+                    }
+                    else
+                    {
+                        // if you are looking at someone else's deck, this button gives you the option to upvote that deck
+                        echo Html::anchor('deck/like', 'Like Deck');
+                    } ?>
+    				
     				
     				
     				<div class="flash-card">

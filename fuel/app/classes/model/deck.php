@@ -126,9 +126,6 @@ class Model_Deck extends \Orm\Model
 
 		$deck = static::query()->where(array('id' => $deck_id))->get_one();
 
-		// Formating the date created
-		// $deck->created_at = date('M d, Y');
-
 		return $deck;
 	
 	}

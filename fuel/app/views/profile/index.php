@@ -1,8 +1,15 @@
+<? 
+	// echo '<pre>';
+	// var_dump($user_info);
+	// echo '</pre>';
+?>			
+
 			<div class="content user-profile">
     			<a href="user_dashboard.html" class="back-to-dash">Back to Dashboard</a>
     			
     			<aside>
-    				<img src="assets/img/profile_placeholders/kmills006_profile-placeholder.png" alt="Profile Image" width="200" height="200" />
+    				<!-- <img src="assets/img/profile_placeholders/kmills006_profile-placeholder.png" alt="Profile Image" width="200" height="200" /> -->
+    				<?= Asset::img('profile_photos/'.$user_info->profile_image, array('alt' => $user_info->username.' profile image')); ?>
     				
     				<div class="level-progress">
 				 		<span><span></span></span>

@@ -244,6 +244,8 @@
 
 		$('.add-another-term').on('click', function(e){
 
+			console.log(counter);
+			
 			counter = counter + 1;
 
 			// <div class="term">
@@ -253,7 +255,7 @@
 			// 	echo Form::textarea('definition4', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
 			// </div>
 
-			var newFields = '<div class="terms"><label for="term' + counter + '">' + counter + '.</label><input type="text" placeholder="Term" name="term' + counter + '"/><textarea class="opensans" placeholder="Definition"></textarea></div>';
+			var newFields = '<div class="terms"><label for="term' + counter + '">' + counter + '.</label><input type="text" placeholder="Term" name="term' + counter + '"/><textarea class="opensans" placeholder="Definition" name="definition' + counter + '"></textarea></div>';
 
 			$('.terms').append(newFields);
 

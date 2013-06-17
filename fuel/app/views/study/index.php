@@ -1,6 +1,6 @@
 <? 
     // echo '<pre>';
-    // var_dump($deck_info);
+    // var_dump($deck_info->user_id);
     // echo '</pre>';
 ?>			
 
@@ -20,7 +20,7 @@
 					</div>
 					
     				<div class="sd-deck-info">
-   						<p><a href="#"><?= $deck_owner; ?></a></p>
+   						<p><?= Html::anchor('profile/view/'.$deck_info->user_id, $deck_owner); ?></p>
 						<p>Total Cards: <?= $card_count; ?></p>
 						<p>Created on <?= $deck_info->date(); ?></p>
 						

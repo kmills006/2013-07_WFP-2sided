@@ -49,7 +49,8 @@ class Model_User extends \Orm\Model
 	 */
 	public static function get_by_id($user_id)
 	{
-		return static::query()->where(array('user_id' => $user_id))->get();
+		return static::query()->where(array('id' => $user_id))->get_one();
 	}
+
 
 }

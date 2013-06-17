@@ -72,96 +72,23 @@
 <!-- 					  			<button>Add Friend</button> -->
 					  			<div class="clearfix"></div>
 					  			
+					  			<? foreach($decks as $deck): ?>
 					  			<section class="deck">
 					  				<section class="deck-info">
-						  				<p><a href="#">AP History 101</a></p>
+						  				<p><?= Html::anchor('study/cards/'.$deck->id, $deck->title); ?></p>
 						  				<p>Total Cards: 57</p>
-						  				<p>Created on: May 20th, 2013</p>
+						  				<p>Created on: <?= $deck->date(); ?></p>
 					  				</section>
 						  				
 						  			<section class="deck-social">
-						  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
+						  				<p><?= Asset::img('icons/check_mark.png', array('alt' => 'Decking rating', 'width' => '25', 'height' => '20')); ?></p>
 						  				<p>3</p>
+						  				<p><a href="#">Share Deck</a></p>
 						  			</section>
-					  			</section>
-					  			
-					  			<section class="deck">
-					  				<section class="deck-info">
-						  				<p><a href="#">AP History 101</a></p>
-						  				<p>Total Cards: 57</p>
-						  				<p>Created on: May 20th, 2013</p>
-					  				</section>
 						  				
-						  			<section class="deck-social">
-						  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
-						  				<p>3</p>
-						  			</section>
+						  			<p><a href="#">Edit Deck</a>
 					  			</section>
-					  			
-					  			<section class="deck">
-					  				<section class="deck-info">
-						  				<p><a href="#">AP History 101</a></p>
-						  				<p>Total Cards: 57</p>
-						  				<p>Created on: May 20th, 2013</p>
-					  				</section>
-						  				
-						  			<section class="deck-social">
-						  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
-						  				<p>3</p>
-						  			</section>
-					  			</section>
-					  			
-					  			<section class="deck">
-					  				<section class="deck-info">
-						  				<p><a href="#">AP History 101</a></p>
-						  				<p>Total Cards: 57</p>
-						  				<p>Created on: May 20th, 2013</p>
-					  				</section>
-						  				
-						  			<section class="deck-social">
-						  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
-						  				<p>3</p>
-						  			</section>
-					  			</section>
-					  			
-					  			<section class="deck">
-					  				<section class="deck-info">
-						  				<p><a href="#">AP History 101</a></p>
-						  				<p>Total Cards: 57</p>
-						  				<p>Created on: May 20th, 2013</p>
-					  				</section>
-						  				
-						  			<section class="deck-social">
-						  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
-						  				<p>3</p>
-						  			</section>
-					  			</section>
-					  			
-					  			<section class="deck">
-					  				<section class="deck-info">
-						  				<p><a href="#">AP History 101</a></p>
-						  				<p>Total Cards: 57</p>
-						  				<p>Created on: May 20th, 2013</p>
-					  				</section>
-						  				
-						  			<section class="deck-social">
-						  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
-						  				<p>3</p>
-						  			</section>
-					  			</section>
-					  			
-					  			<section class="deck">
-					  				<section class="deck-info">
-						  				<p><a href="#">AP History 101</a></p>
-						  				<p>Total Cards: 57</p>
-						  				<p>Created on: May 20th, 2013</p>
-					  				</section>
-						  				
-						  			<section class="deck-social">
-						  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
-						  				<p>3</p>
-						  			</section>
-					  			</section>
+					  			<? endforeach; ?>
 					  			
 					  		</div> <!-- end of your-decks -->
 					  		

@@ -60,8 +60,10 @@ class Model_Deck extends \Orm\Model
 		{
 			// Viewing someone else's profile page
 			$decks = static::query()
-								->where(array('user_id' => $user_id))
-								->where(array('privacy', 0))
+								->where(array(
+									'user_id' => $user_id,
+									'privacy' => 1,
+								))
 								->order_by('created_at', 'desc')
 								->get();		
 		}

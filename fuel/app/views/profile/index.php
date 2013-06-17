@@ -1,7 +1,7 @@
 <? 
-	echo '<pre>';
-	var_dump($decks);
-	echo '</pre>';
+	// echo '<pre>';
+	// var_dump($decks);
+	// echo '</pre>';
 ?>			
 
 			<div class="content user-profile">
@@ -69,7 +69,6 @@
 					  			<button class="filters activeFilter">Newest</button>
 					  			<button class="filters">Oldest</button>
 					  			<button class="filters">Highest Rating</button>
-<!-- 					  			<button>Add Friend</button> -->
 					  			<div class="clearfix"></div>
 					  			
 					  			<? foreach($decks as $deck): ?>
@@ -83,7 +82,7 @@
 						  			<section class="deck-social">
 						  				<p><?= Asset::img('icons/check_mark.png', array('alt' => 'Decking rating', 'width' => '25', 'height' => '20')); ?></p>
 						  				<p>3</p>
-						  				<p><a href="#">Share Deck</a></p>
+						  				<p><a href="#" class="share">Share Deck</a></p>
 						  			</section>
 						  				
 						  			<p><a href="#">Edit Deck</a>
@@ -96,32 +95,7 @@
 					  			<h3>Recent Activity</h3>
 					  			
 					  				<div class="activity">
-					  					<p>kmills006 is now friends with <a href="#">bumblebuzzle86</a></p>
-					  					<p>March 20th, 2013</p>
-					  				</div>
-					  				
-					  				<div class="activity">
-					  					<p>kmills006 is now friends with <a href="#">brittsuzanne</a></p>
-					  					<p>March 20th, 2013</p>
-					  				</div>
-					  				
-					  				<div class="activity">
-					  					<p>kmills006 studied <a href="#">AP History 101</a></p>
-					  					<p>March 20th, 2013</p>
-					  				</div>
-					  				
-					  				<div class="activity">
-					  					<p>kmills006 studied <a href="#">Bio Chem Midterm</a></p>
-					  					<p>March 20th, 2013</p>
-					  				</div>
-					  				
-					  				<div class="activity">
-					  					<p>kmills006 is now friends with <a href="#">tarman</a></p>
-					  					<p>March 20th, 2013</p>
-					  				</div>
-					  				
-					  				<div class="activity">
-					  					<p>kmills006 created <a href="#">Game of Thrones Trivia</a></p>
+					  					<p><?= $user_info->username; ?> is now friends with <a href="#">bumblebuzzle86</a></p>
 					  					<p>March 20th, 2013</p>
 					  				</div>
 					  		</div> <!-- end of recent-activity -->

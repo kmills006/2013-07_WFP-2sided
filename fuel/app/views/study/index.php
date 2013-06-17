@@ -73,12 +73,12 @@
                     <? if($deck_info->user_id == Session::get('user_id'))
                     {
                         // if you are looking at your own deck, this button gives you the option to edit the deck
-                        echo Html::anchor('deck/edit', 'Edit Deck');
+                        echo Html::anchor('deck/edit', 'Edit Deck', array('class' => 'small-btn'));
                     }
                     else
                     {
                         // if you are looking at someone else's deck, this button gives you the option to upvote that deck
-                        echo Html::anchor('deck/like', 'Like Deck');
+                        echo Html::anchor('deck/like', 'Like Deck', array('class' => 'small-btn'));
                     } ?>
     				
     				

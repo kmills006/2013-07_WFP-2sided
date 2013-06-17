@@ -13,7 +13,7 @@ class Controller_Study extends Controller_Template
 		// Setting up views
 		$this->template->head    = View::forge('includes/head');
 
-		if(!isset($is_logged_in))
+		if(Session::get('is_logged_in') != 1)
 		{
 			$this->template->header  = View::forge('includes/logged_out/header');
 		}

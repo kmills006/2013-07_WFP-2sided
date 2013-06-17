@@ -58,11 +58,13 @@ class Model_Deck extends \Orm\Model
 
 		if($user_id != Session::get('user_id'))
 		{
+			echo "Someone else";
+
 			// Viewing someone else's profile page
 			$decks = static::query()
 								->where(array(
 									'user_id' => $user_id,
-									'privacy' => 1,
+									'privacy' => 0,
 								))
 								->order_by('created_at', 'desc')
 								->get();		
@@ -74,20 +76,21 @@ class Model_Deck extends \Orm\Model
 			// if the two uses are friends
 			$decks = static::query()->where(array('user_id' => $user_id))->order_by('created_at', 'desc')->get();
 
-		}
-
-		$decks = static::query()->where(array('user_id' => $user_id))->order_by('created_at', 'desc')->get();
-		
+		}		
 
 		// Attempting to get the card count of each deck
 		foreach($decks as $deck)
-		{
-
-			// $deck_count = static::query()->related('cards')->where(array('cards.deck_id' => $deck->id))->count();
+		{			
+			$cards = DB::select()
+								->from('cards')
+								->join('decks')
+								->on('cards.deck_id', '=', 'decks.id')
+								->where('cards.deck_id', $deck->id)
+								->as_object()->execute();  					
 			
-			// echo '<pre>';
-			// var_dump($deck_count);
-			// echo '</pre>';
+			$card_count = count($cards);
+
+			$deck->card_count = $card_count;
 		}
 
 		return $decks;
@@ -148,7 +151,6 @@ class Model_Deck extends \Orm\Model
 		$deck = static::query()->where(array('id' => $deck_id))->get_one();
 
 		return $deck;
-	
 	}
 
 

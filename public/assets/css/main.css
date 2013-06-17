@@ -790,9 +790,24 @@ nav form input{
 	margin: 0 5px;
 }
 
-.your-decks button:nth-child(6){
+.small-btn{
 	float: right;
+	font-size: 12px;
+	padding: 5px 10px;
+	margin: 0 5px;
+	text-decoration: none;
+	background: #E67e22;
+	border: 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	color: #FFF;
+
 }
+
+.small-btn:hover{
+	background: #D35400;
+}
+
 
 .filters{
 	background: #666659;	
@@ -862,18 +877,18 @@ nav form input{
 	left: 10px;
 } 
 
-.deck-social p:nth-child(3) a{
-	text-decoration: none;
-	color: #E67E22;
-}
-
 .deck p:last-child{
 	clear: both;
 }
 
-.deck :last-child a{
+.deck p:last-child a{
 	text-decoration: none;
-	color: #E67E22;
+	color: #2C3E50;
+	font-size: 12px;
+}
+
+.share{
+	font-size: 30px;
 }
 
 /* Notifications Styles */

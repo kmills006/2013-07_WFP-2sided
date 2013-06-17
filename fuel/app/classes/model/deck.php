@@ -58,8 +58,6 @@ class Model_Deck extends \Orm\Model
 
 		if($user_id != Session::get('user_id'))
 		{
-			echo "Someone else";
-
 			// Viewing someone else's profile page
 			$decks = static::query()
 								->where(array(

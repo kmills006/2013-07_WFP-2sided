@@ -1,7 +1,8 @@
 <? 
+
 	// echo '<pre>';
-	// var_dump($decks);
-	// echo '</pre>';
+	// // var_dump($friends);
+	// // echo '</pre>';
 ?>			
 
 			<div class="content user-profile">
@@ -42,13 +43,26 @@
 									 	} ?></h2>
 					 	
 
-					 	<section class="friend">
-							<img src="assets/img/profile_placeholders/brittany_conrad.jpg" alt="Profile Picture" />
-							
-							<h3><a href="#">brittsuzanne</a></h3>
-							<p>395 Points</p>
-							
-					 	</section>
+
+						<? foreach($friends as $friend): ?>
+						 	<section class="friend">
+								<!-- <img src="assets/img/profile_placeholders/brittany_conrad.jpg" alt="Profile Picture" /> -->
+								<? 
+									if($friend->profile_image != NULL)
+									{
+										echo Asset::img('profile_photos/thumbs/'.$friend->profile_image, array('alt' => $friend->username.' profile image'));
+									}
+									else
+									{
+										echo Asset::img('profile_photos/thumbs/thumb_profile_placeholder.gif', array('alt', $friend->username.' profile image'));
+									}
+								?>
+								
+								<h3><?= Html::anchor('profile/view/'.$friend->id, $friend->username); ?></h3>
+								<p>395 Points</p>
+								
+						 	</section>
+					 	<? endforeach; ?>
 					 	
 					 	<p><a href="#">View All</a></p>
 					 
@@ -75,7 +89,7 @@
 					  			<section class="deck">
 					  				<section class="deck-info">
 						  				<p><?= Html::anchor('study/cards/'.$deck->id, $deck->title); ?></p>
-						  				<p>Total Cards: 57</p>
+						  				<p>Total Cards: <?= $deck->card_count; ?></p>
 						  				<p>Created on: <?= $deck->date(); ?></p>
 					  				</section>
 						  				

@@ -74,7 +74,11 @@
     			  	<div class="user-info">
 					  	<h2><?= $user_info->username; ?></h2>	
 					  	
-					  	<button>Add Friend</button>	
+					  	<? if($user_info->id == Session::get('user_id')):?>
+					  			
+					  	<? else: ?>
+					  		<button>Add Friend</button>	
+					  	<? endif; ?>
 					  		
 					  		<div class="your-decks">
 					  			<h3>Decks / <?= $deck_count; ?></h3>

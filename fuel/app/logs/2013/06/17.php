@@ -742,3 +742,4 @@ ERROR - 2013-06-17 16:17:10 --> Notice - Undefined variable: friend in /Users/kr
 ERROR - 2013-06-17 16:17:10 --> Notice - Undefined variable: friend in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/includes/logged_in/header.php on line 13
 ERROR - 2013-06-17 16:17:25 --> Notice - Undefined variable: user in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/includes/logged_in/header.php on line 13
 ERROR - 2013-06-17 16:17:41 --> Error - Could not find asset: profile_photos/kmills006_placeholder.png in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-17 17:23:08 --> Parsing Error - syntax error, unexpected ':' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 77

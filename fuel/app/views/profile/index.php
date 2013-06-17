@@ -1,7 +1,7 @@
 <? 
-	// echo '<pre>';
-	// var_dump($user_info);
-	// echo '</pre>';
+	echo '<pre>';
+	var_dump($decks);
+	echo '</pre>';
 ?>			
 
 			<div class="content user-profile">
@@ -9,7 +9,17 @@
     			
     			<aside>
     				<!-- <img src="assets/img/profile_placeholders/kmills006_profile-placeholder.png" alt="Profile Image" width="200" height="200" /> -->
-    				<?= Asset::img('profile_photos/'.$user_info->profile_image, array('alt' => $user_info->username.' profile image')); ?>
+    				<? 
+    					if($user_info->profile_image != NULL)
+    					{
+    						echo Asset::img('profile_photos/'.$user_info->profile_image, array('alt' => $user_info->username.' profile image'));
+    					}
+    					else
+    					{
+							echo Asset::img('profile_photos/profile_placeholder.gif', array('alt' => $user_info->username.' profile image'));
+    					}
+    				?>
+    				
     				
     				<div class="level-progress">
 				 		<span><span></span></span>
@@ -22,44 +32,22 @@
 					
 				 	
 				 	<div class="friends-list">
-					 	<h2>Friends / 24</h2>
+					 	<h2>Friends / <? if(count($friends) > 0)
+									 	{
+									 		echo count($friends);
+									 	}
+									 	else
+									 	{
+									 		?>0<?
+									 	} ?></h2>
 					 	
+
 					 	<section class="friend">
 							<img src="assets/img/profile_placeholders/brittany_conrad.jpg" alt="Profile Picture" />
 							
 							<h3><a href="#">brittsuzanne</a></h3>
 							<p>395 Points</p>
 							
-					 	</section>
-					 	
-					 	<section class="friend">
-							<img src="assets/img/profile_placeholders/george_olsen.jpg" alt="Profile Picture" />
-							<h3><a href="#">georgeolsen</a></h3>
-							<p>395 Points</p>
-					 	</section>
-					 	
-					 	<section class="friend">
-							<img src="assets/img/profile_placeholders/catie_miller.jpg" alt="Profile Picture" width="50" height="50" />
-							<h3><a href="#">catiem16</a></h3>
-							<p>395 Points</p>
-					 	</section>
-					 	
-					 	<section class="friend">
-							<img src="assets/img/profile_placeholders/lauren_borkovich.jpg" alt="Profile Picture" width="50" height="50" />
-							<h3><a href="#">lalashley</a></h3>
-							<p>395 Points</p>
-					 	</section>
-					 	
-					 	<section class="friend">
-							<img src="assets/img/profile_placeholders/sara_englishbee.jpg" alt="Profile Picture" width="50" height="50" />
-							<h3><a href="#">bumblebizzle86</a></h3>
-							<p>395 Points</p>
-					 	</section>
-					 	
-					 	<section class="friend">
-							<img src="assets/img/profile_placeholders/tara_manus.jpg" alt="Profile Picture" width="50" height="50" />
-							<h3><a href="#">tarman</a></h3>
-							<p>395 Points</p>
 					 	</section>
 					 	
 					 	<p><a href="#">View All</a></p>
@@ -70,12 +58,12 @@
     			
     			  <div class="profile">
     			  	<div class="user-info">
-					  	<h2>kmills006</h2>	
+					  	<h2><?= $user_info->username; ?></h2>	
 					  	
 					  	<button>Add Friend</button>	
 					  		
 					  		<div class="your-decks">
-					  			<h3>Decks / 22</h3>
+					  			<h3>Decks / <?= $deck_count; ?></h3>
 					  			
 					  			<p>Filter by:</p>
 					  			<button class="filters activeFilter">Newest</button>

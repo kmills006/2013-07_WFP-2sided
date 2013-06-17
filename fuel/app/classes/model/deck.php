@@ -56,9 +56,28 @@ class Model_Deck extends \Orm\Model
 	public static function get_users_decks($user_id)
 	{
 
+		if($user_id != Session::get('user_id'))
+		{
+			// Viewing someone else's profile page
+			$decks = static::query()
+								->where(array('user_id' => $user_id))
+								->where(array('privacy', 0))
+								->order_by('created_at', 'desc')
+								->get();		
+		}
+		else
+		{
+			// Viewing your own profile page
+			// Will need to update to include
+			// if the two uses are friends
+			$decks = static::query()->where(array('user_id' => $user_id))->order_by('created_at', 'desc')->get();
+
+		}
+
 		$decks = static::query()->where(array('user_id' => $user_id))->order_by('created_at', 'desc')->get();
 		
-		// Formating the date created on each deck
+
+		// Attempting to get the card count of each deck
 		foreach($decks as $deck)
 		{
 

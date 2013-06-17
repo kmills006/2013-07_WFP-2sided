@@ -81,3 +81,435 @@ ERROR - 2013-06-16 22:10:06 --> Notice - Trying to get property of non-object in
 ERROR - 2013-06-16 22:10:06 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
 ERROR - 2013-06-16 22:10:06 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
 ERROR - 2013-06-16 22:10:06 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:25:13 --> Parsing Error - syntax error, unexpected 'get_friends' (T_STRING), expecting variable (T_VARIABLE) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 55
+ERROR - 2013-06-16 22:25:23 --> Parsing Error - syntax error, unexpected 'functionget_friends' (T_STRING), expecting variable (T_VARIABLE) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 55
+ERROR - 2013-06-16 22:25:23 --> Parsing Error - syntax error, unexpected 'functionget_friends' (T_STRING), expecting variable (T_VARIABLE) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 55
+ERROR - 2013-06-16 22:25:24 --> Parsing Error - syntax error, unexpected 'functionget_friends' (T_STRING), expecting variable (T_VARIABLE) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 55
+ERROR - 2013-06-16 22:25:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:25:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:25:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:25:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:25:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:25:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:25:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:26:17 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:26:17 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:26:17 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:26:17 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:26:17 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:26:17 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:26:17 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:26:39 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:21 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:21 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:22 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:22 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:22 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:56 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:56 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:56 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:57 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:57 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:57 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:57 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:58 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:58 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:58 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:58 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:59 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:59 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:59 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:59 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:27:59 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:00 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:26 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:26 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:26 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:26 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:26 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:27 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:27 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:27 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:27 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:28 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:28 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:28 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:28 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:28 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:29 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:29 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:29 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:48 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:48 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:48 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:48 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:48 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:49 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:49 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:49 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:49 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:50 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:50 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:50 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:50 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:50 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:51 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:51 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:51 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:51 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:51 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:52 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:52 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:52 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:52 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:53 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:53 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:53 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:53 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:53 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:28:54 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:29:52 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:30:56 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:30:56 --> Compile Error - Cannot redeclare Model_User::$_has_many in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 50
+ERROR - 2013-06-16 22:41:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:41:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:41:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:41:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:41:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:41:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:41:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:41:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:41:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:41:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:41:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:41:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:41:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:41:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:41:36 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:42:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:42:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:42:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:42:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:42:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:42:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:42:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:42:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:42:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:42:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:42:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:42:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:42:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:42:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 12
+ERROR - 2013-06-16 22:44:45 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:44:51 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:44:52 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:44:52 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:44:52 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:47:01 --> Parsing Error - syntax error, unexpected '<' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 15
+ERROR - 2013-06-16 22:47:01 --> Parsing Error - syntax error, unexpected '<' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 15
+ERROR - 2013-06-16 22:47:01 --> Parsing Error - syntax error, unexpected '<' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 15
+ERROR - 2013-06-16 22:47:02 --> Parsing Error - syntax error, unexpected '<' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 15
+ERROR - 2013-06-16 22:47:02 --> Parsing Error - syntax error, unexpected '<' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 15
+ERROR - 2013-06-16 22:47:09 --> Parsing Error - syntax error, unexpected '<' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 15
+ERROR - 2013-06-16 22:47:19 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:47:19 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:47:19 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:47:48 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:47:48 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:47:54 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:47:54 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:48:19 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:48:19 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:48:23 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:48:23 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:48:24 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-16 22:49:47 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:49:47 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:49:47 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:49:47 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:49:47 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:49:47 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:49:47 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:49:47 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:50:40 --> Notice - Undefined variable: profile_placeholder in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 19
+ERROR - 2013-06-16 22:51:29 --> Notice - Undefined variable: profile_placeholder in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 19
+ERROR - 2013-06-16 22:52:33 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:33 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:33 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:33 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:33 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:33 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:33 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:33 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:33 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:33 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:52:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:57:47 --> Error - Invalid method call.  Method get_deck_count does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-06-16 22:58:02 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:58:02 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:58:02 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:58:02 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:58:02 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:58:02 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:58:02 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:58:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:58:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:58:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:58:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:58:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:58:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 22:58:27 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:36 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:36 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:36 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:36 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:36 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:36 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:36 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:37 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:37 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:37 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:37 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:37 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:37 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:37 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:37 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:03:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:08 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:09 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:09 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:09 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:09 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:09 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:09 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:13 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:13 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:13 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:13 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:13 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:13 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:13 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:16 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:16 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:16 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:16 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:16 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:16 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:04:16 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:07:58 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:07:58 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:07:58 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:07:58 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:07:58 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:07:58 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:07:58 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:08:17 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:24 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:25 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:25 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:25 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:25 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:25 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:26 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:26 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:26 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:56 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:56 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:57 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:57 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:57 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:57 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:58 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:58 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:58 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:58 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:59 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:59 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:59 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:08:59 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:00 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:00 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:00 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:00 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:00 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:01 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:01 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:01 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:01 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:02 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:02 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:13 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:13 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:13 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:14 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:14 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:14 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:14 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:15 --> Error - Call to undefined function get() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 42
+ERROR - 2013-06-16 23:09:20 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:20 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:20 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:20 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:20 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:20 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:20 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:21 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:21 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:21 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:21 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:21 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:21 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:21 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:42 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:42 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:42 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:42 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:42 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:42 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:42 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:51 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:51 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:51 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:51 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:51 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:51 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:51 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:53 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:53 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:53 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:53 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:53 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:53 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:09:53 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:18 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:18 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:18 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:18 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:18 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:18 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:18 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:19 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:19 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:19 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:19 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:19 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:19 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:19 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:19 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:19 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:19 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:19 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:23 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:23 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:23 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:23 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:23 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:23 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:15:24 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:16:12 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:16:12 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:16:12 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:16:12 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:16:12 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:16:12 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:16:12 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:16:18 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:16:18 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:16:18 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:16:18 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:16:18 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:16:18 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:16:18 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:40 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:40 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:40 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:40 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:40 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:40 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:40 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:40 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:45 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:45 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:45 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:45 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:45 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:45 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:45 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:50 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:50 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:50 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:50 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:50 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:50 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:50 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:17:50 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:18:57 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:18:57 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:18:57 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:18:57 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:18:57 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:18:57 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:18:57 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:21:00 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:21:00 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:21:00 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:21:00 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:21:00 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:21:00 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:21:00 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:21:00 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:21:04 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:21:04 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:21:04 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:21:04 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:21:04 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:21:04 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:21:04 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:23:08 --> Parsing Error - syntax error, unexpected '}' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 42
+ERROR - 2013-06-16 23:23:14 --> Parsing Error - syntax error, unexpected '}' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 42
+ERROR - 2013-06-16 23:23:27 --> Parsing Error - syntax error, unexpected '}' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 42
+ERROR - 2013-06-16 23:23:29 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:23:29 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:23:29 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:23:29 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:23:29 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:23:30 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:23:30 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:23:30 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:23:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:23:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:23:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:23:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:23:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:23:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:23:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:44:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:44:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:44:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:44:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:44:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:44:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:44:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-06-16 23:59:46 --> Parsing Error - syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 52
+ERROR - 2013-06-16 23:59:55 --> Parsing Error - syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 52

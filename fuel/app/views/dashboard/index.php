@@ -3,13 +3,14 @@
     			
 				<div id="tabs">
 				  <ul class="ud-tabs">
-				    <li class="ud-tab-active">Study</li>
-				    <li>Notifications</li>
-				    <li>Achievements</li>
-				    <li>Settings</li>
+				    <li class="ud-tab-active"><?= Html::anchor('dashboard', 'Study'); ?></li>
+				    <li><?= Html::anchor('dashboard/notifications', 'Notifications'); ?></li>
+				    <li><?= Html::anchor('dashboard/achievements', 'Achievements'); ?></li>
+				    <li><?= Html::anchor('dashboard/settings', 'Settings'); ?></li>
 				  </ul>
 				  
 				  <div id="study" class="ud-tab-content">
+
 				  	<? if(isset($username)): ?>
 				  	<h2>Welcome back <?= $username; ?>!</h2>
 				  	<? else:?>

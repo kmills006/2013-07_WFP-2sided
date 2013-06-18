@@ -8,14 +8,24 @@
 	    			</form>
 	    			
 	    			<!-- Profile picture and username dropdown -->
-	    			<? if(isset($username)):?>
-	    			<? echo Html::anchor('dashboard', Asset::img('profile_placeholders/kmills006_placeholder.png').' '.$username, array('class' => 'globe-nav')); ?> 
-	    			<? endif; ?>
+	    			<?
+	    				if(isset($username))
+	    				{
+	    					if(isset($profile_image) && $profile_image != null)
+	    					{
+	    						echo Html::anchor('dashboard', Asset::img('profile_photos/thumbs/'.$profile_image).' '.$username, array('class' => 'globe-nav'));
+	    					}
+	    					else
+	    					{
+	    						echo Html::anchor('dashboard', Asset::img('profile_photos/thumbs/thumb_profile_placeholder.gif').' '.$username, array('class' => 'globe-nav'));
+	    					}
+	    				}
+	    			?>
 
 	    			<div class='user-dd'>
-	    				<? echo Html::anchor('profile', 'View Profile'); ?>
+	    				<? echo Html::anchor('profile/view/'.Session::get('user_id'), 'View Profile'); ?>
 	    				<? echo Html::anchor('dashboard', 'Dashboard'); ?>
-	    				<? echo Html::anchor('settings', 'Settings'); ?>
+	    				<? echo Html::anchor('dashboard/settings', 'Settings'); ?>
 	    				<? echo Html::anchor('user/logout', 'Logout'); ?>
 	    			</div>
 

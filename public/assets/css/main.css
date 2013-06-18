@@ -264,11 +264,12 @@ nav form input{
 
 .user-dd{
 	display: none;
+	position: absolute;
 }
 
 .user-dd a{
-	display: none;
-	/*display: block;*/
+	/*display: none;*/
+	display: block;
 	background-color: #2C3E50;
 	-webkit-border-bottom-right-radius: 3px;
 	-webkit-border-bottom-left-radius: 3px;
@@ -279,18 +280,13 @@ nav form input{
 	border: none;
 	margin: 0;
 	padding: 0;
- 	/*position: absolute; */
-	/*position: relative;*/
 	width: 100px;
 	padding: 20px;
 	z-index: 1;
 }
 
-.dd-menu a{
-	font-size: 14px;
-	font-weight: 200;
-	padding: 20px;
-	border: none;
+.user-dd a:hover{
+	background-color: #34495E;
 }
 
 

@@ -24,11 +24,11 @@
 	// 	userDDMenu.css("display", "none");
 	// });
 	
-	if(window.location.pathname == "/2sided/public/study"){
-		$('.card').click(function(){
-			$(this).rotate3Di('toggle', 1000);
-		});
-	};
+	// if(window.location.pathname == "/2sided/public/study"){
+	// 	$('.card').click(function(){
+	// 		$(this).rotate3Di('toggle', 1000);
+	// 	});
+	// };
 		
 		
 		
@@ -41,7 +41,7 @@
 	 * depending on which tab the
 	 * user is currently on
 	 */
-	if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard'){
+	/* if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard'){
 		// Setting the global navigation tab icons
 		$(".ud-tabs li").each(function(i){
 			var udTabItem = $(this);

@@ -75,7 +75,7 @@
 					  	<h2><?= $user_info->username; ?></h2>	
 					  	
 					  	<? if($user_info->id == Session::get('user_id')):?>
-					  			
+					  			<!-- looking at your profile; check will be added if you have already added this friend --> 
 					  	<? else: ?>
 					  		<button>Add Friend</button>	
 					  	<? endif; ?>

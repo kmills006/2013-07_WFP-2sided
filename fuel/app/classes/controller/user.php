@@ -25,13 +25,14 @@ class Controller_User extends Controller_Template{
 		
 		if(Auth::login())
 		{
-			$user['user_id']  = Auth::get_user_id()[1];
-			$user['username'] = Auth::get('username');
+			$user['user_id']       = Auth::get_user_id()[1];
+			$user['username']      = Auth::get('username');
+			
 			
 			$session = Session::set(array(
-							'user_id'      => $user['user_id'],
-							'username'     => $user['username'],
-							'is_logged_in' => 1,
+						'user_id'      => $user['user_id'],
+						'username'     => $user['username'],
+						'is_logged_in' => 1,
 			));
 
 			// If successful login, direct users to their dashboard

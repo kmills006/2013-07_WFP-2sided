@@ -64,4 +64,66 @@ class Model_User extends \Orm\Model
 	}
 
 
+	public static function update_user($user_info)
+	{
+		// echo '<pre>';
+		// var_dump($user_info['user']->username);
+		// echo '</pre>';
+
+		$user = $user_info['user'];
+
+
+		// Checking if they have updated their name
+		if($user->name != $user_info['new_info']['name'])
+		{
+			$user->name = $user_info['new_info']['name'];
+		}
+		else
+		{
+			// No change
+		}
+
+
+		// Checking if they have updated their email
+		if($user->email != $user_info['new_info']['email'])
+		{
+			$user->email = $user_info['new_info']['email'];
+		}
+		else
+		{
+			// No change
+		}
+
+
+		// Checking if they have updated their username
+		if($user->username != $user_info['new_info']['username'])
+		{
+			$check_username = static::query()
+										->select('username')
+										->where('username', $user_info['new_info']['username'])	
+										->get_one();
+
+			if(isset($check_username))
+			{
+				// I want to change this to check on keyup when they are typing in the
+				// desired username. 
+				echo 'Username taken, throw error message to have them select another one.';
+			}
+			else
+			{
+				$user->username = $user_info['new_info']['username'];
+			}
+		}
+		else
+		{
+			// Not updating username
+		}
+
+
+		echo '<pre>';
+		var_dump($user);
+		echo '</pre>';
+	}
+
+
 }

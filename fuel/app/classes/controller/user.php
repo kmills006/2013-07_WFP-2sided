@@ -108,7 +108,20 @@ class Controller_User extends Controller_Template{
 	 */
 	public function post_settings()
 	{
-		var_dump(Input::post());
+
+		$updated_info['user']     = Model_User::get_by_id(Session::get('user_id'));
+		$updated_info['new_info'] = Input::post();
+
+		$update_user = Model_User::update_user($updated_info);
+		
+		// var_dump(Input::post('name'));
+		
+		// $user = Auth::update_user(array(
+		// 					'email' => Input::post('email'),
+		// 					'name' => Input::post('name'),
+		// ));
+
+		// var_dump(Auth::get_profile_fields());
 
 		$this->template->head    = View::forge('includes/head');
 		$this->template->header  = View::forge('includes/logged_out/header');

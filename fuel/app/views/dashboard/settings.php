@@ -3,10 +3,10 @@
     			
 				<div class="ud-tabs">
 					<?	
-						echo Html::anchor('dashboard', 'Study');
-						echo Html::anchor('dashboard/notifications', 'Notifications');
-						echo Html::anchor('dashboard/achievements', 'Achievements');
-						echo Html::anchor('dashboard/settings', 'Settings', array('class' => 'ud-tab-active'));
+						echo Html::anchor('dashboard', 'Study', array('class' => 'study'));
+						echo Html::anchor('dashboard/notifications', 'Notifications', array('class' => 'notifications'));
+						echo Html::anchor('dashboard/achievements', 'Achievements', array('class' => 'achievements'));
+						echo Html::anchor('dashboard/settings', 'Settings', array('class' => 'ud-tab-active settings'));
 					?>
 				</div>
 

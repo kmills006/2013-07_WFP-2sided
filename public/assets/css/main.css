@@ -674,40 +674,45 @@ nav form input{
 	color: #E67E22;
 }
 
-/*.ud-tabs li{
-	list-style: none;
-	font-size: 14px;
-	color: #000;
-	height: 100px;
-	text-align: center;
-	display: block;
-	line-height: 140px;
-	background-position: center top;
-	background-position-y: 10px;
-	background-repeat: no-repeat;
-	font-weight: 600;
-	cursor: pointer;
-	margin-top: 20px;
+.study{
+	background-image: url('../img/icons/user_globe.png');
+	background-size: 36px 45px;
 }
 
-.ud-tabs li:first-child{
-	margin-top: 0;
+.ud-tab-active.study{
+	background-image: url('../img/icons/active_user_globe.png');
+	background-size: 36px 45px;
 }
 
-.ud-tabs li a{
-	text-decoration: none;
-	color: #2C3E50;
+.notifications{
+	background-image: url('../img/icons/notifications.png');
+	background-size: 35px 25px;
 }
 
-.ud-tabs li a:hover{
-	color: #E67E22;
-}*/
-
-/*
-.ud-tabs li:active{
-	color: #000;
+.ud-tab-active.notifications{
+	background-image: url('../img/icons/active_notifications.png');
+	background-size: 35px 25px;
 }
-*/
+
+.achievements{
+	background-image: url('../img/icons/achievement.png');
+	background-size: 35px 44px;
+}
+
+.ud-tab-active.achievements{
+	background-image: url('../img/icons/active_achievement.png');
+	background-size: 35px 44px;
+}
+
+.settings{
+	background-image: url('../img/icons/settings.png');
+	background-size: 50px 35px;
+}
+
+.ud-tab-active.settings{
+	background-image: url('../img/icons/active_settings.png');
+	background-size: 50px 35px;
+}
 
 .ud-tab-active{
 	background-color: #FFF;

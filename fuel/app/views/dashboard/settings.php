@@ -1,3 +1,12 @@
+<? 
+	
+	// echo '<pre>';
+	// var_dump($user_info);
+	// echo '</pre>';
+
+?>			
+
+
 			<div class="content user-dashboard">
     			<h1>Dashboard</h1>
     			
@@ -28,7 +37,7 @@
 				  		<?
 				  		
 				  			echo Form::label('Name', 'name');
-				  			echo Form::input('name', null, array('type' => 'text', 'class' => 'settings-name'));
+				  			echo Form::input('name', $user_info->name, array('type' => 'text', 'class' => 'settings-name'));
 
 
 				  			echo Form::label('Email Address', 'email');

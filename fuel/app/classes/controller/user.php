@@ -114,21 +114,21 @@ class Controller_User extends Controller_Template{
 
 		$update_user = Model_User::update_user($updated_info);
 		
-		// var_dump(Input::post('name'));
+		// // var_dump(Input::post('name'));
 		
-		// $user = Auth::update_user(array(
-		// 					'email' => Input::post('email'),
-		// 					'name' => Input::post('name'),
-		// ));
+		// // $user = Auth::update_user(array(
+		// // 					'email' => Input::post('email'),
+		// // 					'name' => Input::post('name'),
+		// // ));
 
-		// var_dump(Auth::get_profile_fields());
+		// // var_dump(Auth::get_profile_fields());
 
-		$this->template->head    = View::forge('includes/head');
-		$this->template->header  = View::forge('includes/logged_out/header');
-		$this->template->content = View::forge('signup/index');
-		$this->template->footer  = View::forge('includes/footer');
+		// $this->template->head    = View::forge('includes/head');
+		// $this->template->header  = View::forge('includes/logged_out/header');
+		// $this->template->content = View::forge('signup/index');
+		// $this->template->footer  = View::forge('includes/footer');
 		// On successful update, reload user dashbord on settings page
-		//Response::redirect('dashboard/settings');
+		Response::redirect('dashboard/settings');
 	}
 
 

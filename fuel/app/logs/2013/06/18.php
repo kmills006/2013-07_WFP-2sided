@@ -26,3 +26,9 @@ ERROR - 2013-06-18 17:56:59 --> Notice - Use of undefined constant console - ass
 ERROR - 2013-06-18 18:06:47 --> Notice - Undefined variable:  in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 74
 ERROR - 2013-06-18 18:07:45 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 76
 ERROR - 2013-06-18 18:07:47 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 76
+ERROR - 2013-06-18 19:22:29 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 120
+ERROR - 2013-06-18 19:22:31 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 120
+ERROR - 2013-06-18 19:26:59 --> Warning - trim() expects parameter 1 to be string, array given in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/auth/classes/auth/login/simpleauth.php on line 276
+ERROR - 2013-06-18 19:27:05 --> Warning - trim() expects parameter 1 to be string, array given in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/auth/classes/auth/login/simpleauth.php on line 276
+ERROR - 2013-06-18 19:28:54 --> Notice - Undefined index: old-password in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 124
+ERROR - 2013-06-18 19:33:05 --> Notice - Undefined variable: updated_pass in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 126

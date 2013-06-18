@@ -66,9 +66,6 @@ class Model_User extends \Orm\Model
 
 	public static function update_user($user_info)
 	{
-		// echo '<pre>';
-		// var_dump($user_info['user']->username);
-		// echo '</pre>';
 
 		$user = $user_info['user'];
 
@@ -119,10 +116,26 @@ class Model_User extends \Orm\Model
 			// Not updating username
 		}
 
+		// Checking if they are updating their password
+		if($user_info['new_info']['o-password'] != null)
+		{
+			if($user_info['new_info']['new-password'] == $user_info['new_info']['c-password'])
+			{
+				$update_pass = Auth::change_password($user_info['new_info']['o-password'], $user_info['new_info']['new-password'], $user->username);
 
-		echo '<pre>';
-		var_dump($user);
-		echo '</pre>';
+				if(!$update_pass)
+				{
+					echo 'Old password is incorrect, show error message on form.';
+				}	
+			}
+			else
+			{
+				echo 'New password and confirm password are incorrect, show error message on form.';
+			}
+		}
+
+
+		$user->save();
 	}
 
 

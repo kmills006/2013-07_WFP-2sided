@@ -108,7 +108,27 @@ class Controller_User extends Controller_Template{
 	 */
 	public function post_settings()
 	{
-		Response::redirect('dashboard/settings');
+		var_dump(Input::post());
+
+		$this->template->head    = View::forge('includes/head');
+		$this->template->header  = View::forge('includes/logged_out/header');
+		$this->template->content = View::forge('signup/index');
+		$this->template->footer  = View::forge('includes/footer');
+		// On successful update, reload user dashbord on settings page
+		//Response::redirect('dashboard/settings');
+	}
+
+
+	/**
+	 *
+	 * check_username
+	 *
+	 * ajax 
+	 * 
+	 */
+	public function check_username($new_username)
+	{
+		var_dump($new_username);
 	}
 
 

@@ -644,7 +644,37 @@ nav form input{
 	margin: 0;
 }
 
-.ud-tabs li{
+.ud-tabs a{
+	display: block;
+	list-style: none;
+	font-size: 14px;
+	color: #000;
+	height: 100px;
+	text-align: center;
+	display: block;
+	line-height: 140px;
+	background-position: center top;
+	background-position-y: 10px;
+	background-repeat: no-repeat;
+	font-weight: 600;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.ud-tabs a:first-child{
+	margin-top: 0;
+}
+
+.ud-tabs a{
+	text-decoration: none;
+	color: #2C3E50;
+}
+
+.ud-tabs a:hover{
+	color: #E67E22;
+}
+
+/*.ud-tabs li{
 	list-style: none;
 	font-size: 14px;
 	color: #000;
@@ -671,7 +701,7 @@ nav form input{
 
 .ud-tabs li a:hover{
 	color: #E67E22;
-}
+}*/
 
 /*
 .ud-tabs li:active{

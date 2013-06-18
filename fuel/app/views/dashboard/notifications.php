@@ -1,13 +1,14 @@
     		<div class="content user-dashboard">
     			<h1>Dashboard</h1>
-    			
-				<div id="tabs">
-				  <ul class="ud-tabs">
-				    <li><?= Html::anchor('dashboard', 'Study'); ?></li>
-				    <li class="ud-tab-active"><?= Html::anchor('dashboard/notifications', 'Notifications'); ?></li>
-				    <li><?= Html::anchor('dashboard/achievements', 'Achievements'); ?></li>
-				    <li><?= Html::anchor('dashboard/settings', 'Settings'); ?></li>
-				  </ul>
+
+				<div class="ud-tabs">
+					<?	
+						echo Html::anchor('dashboard', 'Study');
+						echo Html::anchor('dashboard/notifications', 'Notifications', array('class' => 'ud-tab-active'));
+						echo Html::anchor('dashboard/achievements', 'Achievements');
+						echo Html::anchor('dashboard/settings', 'Settings');
+					?>
+				</div>
 				  
 				  <div id="notifications" class="ud-tab-content">
 				  	<h2>kmills006 New Notifications</h2>

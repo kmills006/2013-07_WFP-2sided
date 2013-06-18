@@ -1186,3 +1186,4 @@ ERROR - 2013-06-17 22:23:42 --> Notice - Array to string conversion in /Users/kr
 ERROR - 2013-06-17 22:42:24 --> Parsing Error - syntax error, unexpected '<' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 91
 ERROR - 2013-06-17 23:04:39 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
 ERROR - 2013-06-17 23:06:13 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
+ERROR - 2013-06-17 23:16:15 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7

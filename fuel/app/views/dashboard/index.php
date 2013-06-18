@@ -1,15 +1,16 @@
     		<div class="content user-dashboard">
     			<h1>Dashboard</h1>
     			
-				<div id="tabs">
-				  <ul class="ud-tabs">
-				    <li class="ud-tab-active"><?= Html::anchor('dashboard', 'Study'); ?></li>
-				    <li><?= Html::anchor('dashboard/notifications', 'Notifications'); ?></li>
-				    <li><?= Html::anchor('dashboard/achievements', 'Achievements'); ?></li>
-				    <li><?= Html::anchor('dashboard/settings', 'Settings'); ?></li>
-				  </ul>
+ 				<div class="ud-tabs">
+					<?	
+						echo Html::anchor('dashboard', 'Study', array('class' => 'ud-tab-active'));
+						echo Html::anchor('dashboard/notifications', 'Notifications');
+						echo Html::anchor('dashboard/achievements', 'Achievements');
+						echo Html::anchor('dashboard/settings', 'Settings');
+					?>
+				</div>
 				  
-				  <div id="study" class="ud-tab-content">
+				<div id="study" class="ud-tab-content">
 
 				  	<? if(isset($username)): ?>
 				  	<h2>Welcome back <?= $username; ?>!</h2>
@@ -76,7 +77,7 @@
 				  			
 
 				  		</div>
-				  </div> <!-- end of ud-tab-content -->				  
+				    </div> <!-- end of ud-tab-content -->				  
 			</div>
 				
     		</div> <!-- end of content -->

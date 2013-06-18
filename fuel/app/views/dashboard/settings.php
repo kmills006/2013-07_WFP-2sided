@@ -1,13 +1,14 @@
 			<div class="content user-dashboard">
     			<h1>Dashboard</h1>
     			
-				<div id="tabs">
-				  <ul class="ud-tabs">
-				    <li><?= Html::anchor('dashboard', 'Study'); ?></li>
-				    <li><?= Html::anchor('dashboard/notifications', 'Notifications'); ?></li>
-				    <li><?= Html::anchor('dashboard/achievements', 'Achievements'); ?></li>
-				    <li class="ud-tab-active"><?= Html::anchor('dashboard/settings', 'Settings'); ?></li>
-				  </ul>
+				<div class="ud-tabs">
+					<?	
+						echo Html::anchor('dashboard', 'Study');
+						echo Html::anchor('dashboard/notifications', 'Notifications');
+						echo Html::anchor('dashboard/achievements', 'Achievements');
+						echo Html::anchor('dashboard/settings', 'Settings', array('class' => 'ud-tab-active'));
+					?>
+				</div>
 
 				<div id="settings" class="ud-tab-content">
 				  	<h2>User Settings</h2>
@@ -27,7 +28,7 @@
 				  		<?
 				  		
 				  			echo Form::label('Name', 'name');
-				  			echo Form::input('name', null, array('type' => 'text'));
+				  			echo Form::input('name', null, array('type' => 'text', 'class' => 'settings-name'));
 
 
 				  			echo Form::label('Email Address', 'email');

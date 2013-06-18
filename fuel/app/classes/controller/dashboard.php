@@ -86,6 +86,9 @@ class Controller_Dashboard extends Controller_Template
 	}
 
 
+	/**
+	 * [get_settings description]
+	 */
 	public function get_settings()
 	{
 		if(Session::get('is_logged_in') == 1)
@@ -100,7 +103,7 @@ class Controller_Dashboard extends Controller_Template
 
 
 				$this->template->content = View::forge('dashboard/settings', array(
-													'username'    => Session::get('username'),
+													'user_info' => Model_User::get_by_id(Session::get('user_id')),
 				));
 
 				$this->template->footer  = View::forge('includes/footer');

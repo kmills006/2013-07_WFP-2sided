@@ -11,37 +11,54 @@
 
 				<div id="settings" class="ud-tab-content">
 				  	<h2>User Settings</h2>
-				  	
-				  		<form>
-				  			<img src="img/profile_placeholders/100x100_kmills006_placeholder.png" alt="Profile Image" width="100" height="100" />
-				  			
-				  			<input class="update-picture" type="file" name="upload-profile-image"/>
-				  			<div class="fake-file"><p>Change Image</p></div>
-				  			
-				  			
-				  			<div class="clearfix"></div>
-				  			<label for="name">Name</label>
-				  			<input type="text" name="name" value="Kristy" />
-				  			
-				  			<label for="email">Email Address</label>
-				  			<input type="text" name="email" value="miller.kristy06@gmail.com" />
-				  			
-				  			<label for="username">Username</label>
-				  			<input type="text" name="username" value="kmills006" />
-				  			
-				  			<p class="change-password"> Change Password </p>
-				  			<label for="o-password">Old Password</label>
-				  			<input type="text" name="o-password" />
-				  			
-				  			<label for="password">New Password</label>
-				  			<input type="password" name="Password" />
-				  			
-				  			<label for="c-password">New Confirm Password</label>
-				  			<input type="password" name="c-password" />
-				  			
-				  			
-				  			<button>Save</button>
+				
+				  		<?
+				  			echo Form::open('user/settings');
+
+				  			echo Asset::img('profile_photos/'.$user_info->profile_image, array('width' => 100, 'height' => 100, 'alt' => $user_info->username.' profile image'));
+
+				  			echo Form::input('picture', null, array('type' => 'file'));
+				  		?>
+
+				  			<div class='fake-file'><p>Change Image</p></div>
+
+				  			<div class='clearfix'></div>
+
+				  		<?
+				  		
+				  			echo Form::label('Name', 'name');
+				  			echo Form::input('name', null, array('type' => 'text'));
+
+
+				  			echo Form::label('Email Address', 'email');
+				  			echo Form::input('email', $user_info->email, array('type' => 'text'));
+
+
+				  			echo Form::label('Username', 'username');
+				  			echo Form::input('username', $user_info->username, array('type' => 'text'));
+
+				  			echo html_tag('p', array(
+				  								'class' => 'change-password',
+				  			), 'Change Password');
+
+				  			echo Form::label('Old Password', 'o-password');
+				  			echo Form::input('o-password', null, array('type' => 'password'));
+
+				  			echo Form::label('New Password', 'new-password');
+				  			echo Form::input('new-password', null, array('type' => 'password'));
+
+				  			echo Form::label('Confirm New Password', 'c-password');
+				  			echo Form::input('c-password', null, array('type' => 'password'));
+
+				  			echo Form::button('submit', 'Save');
+
+				  		?>
+
 				  			<p><a href="#">Cancel</a></p>
-				  		</form>
+
+				  		<?
+
+				  			echo Form::close();
+				  		?>
 				  </div>
 			</div>

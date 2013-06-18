@@ -101,6 +101,18 @@ class Controller_User extends Controller_Template{
 
 
 	/**
+	 * post_settings
+	 *
+	 * Updating the database with the users 
+	 * changed information
+	 */
+	public function post_settings()
+	{
+		Response::redirect('dashboard/settings');
+	}
+
+
+	/**
 	 * Logout
 	 * 
 	 * Log out the current user

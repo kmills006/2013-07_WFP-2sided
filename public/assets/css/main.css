@@ -664,8 +664,12 @@ nav form input{
 	margin-top: 0;
 }
 
+.ud-tabs li a{
+	text-decoration: none;
+	color: #2C3E50;
+}
 
-.ud-tabs li:hover{
+.ud-tabs li a:hover{
 	color: #E67E22;
 }
 
@@ -691,6 +695,7 @@ nav form input{
 	background-repeat: no-repeat;
 	background-size: 36px 44px;
 	width: 100%;
+	text-decoration: none;
 }
 
 /* Content */

@@ -10,6 +10,7 @@ class Model_User extends \Orm\Model
 		'email',
 		'last_login',
 		'login_hash',
+		'name',
 		'profile_image',
 		'facebook_id',
 		'twitter_id',

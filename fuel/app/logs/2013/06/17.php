@@ -1178,3 +1178,11 @@ ERROR - 2013-06-17 20:07:44 --> Notice - Undefined variable: decks in /Users/kri
 ERROR - 2013-06-17 20:07:45 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/notifications.php on line 59
 ERROR - 2013-06-17 20:07:45 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/notifications.php on line 59
 ERROR - 2013-06-17 20:07:45 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/notifications.php on line 59
+ERROR - 2013-06-17 22:13:43 --> Error - Could not find asset: profile_photos3.png in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-17 22:23:14 --> Parsing Error - syntax error, unexpected ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 52
+ERROR - 2013-06-17 22:23:14 --> Parsing Error - syntax error, unexpected ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 52
+ERROR - 2013-06-17 22:23:18 --> Parsing Error - syntax error, unexpected ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 52
+ERROR - 2013-06-17 22:23:42 --> Notice - Array to string conversion in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/form/instance.php on line 203
+ERROR - 2013-06-17 22:42:24 --> Parsing Error - syntax error, unexpected '<' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 91
+ERROR - 2013-06-17 23:04:39 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
+ERROR - 2013-06-17 23:06:13 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7

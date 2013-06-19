@@ -13,13 +13,13 @@ class Controller_Dashboard extends Controller_Template
 			$this->template->head    = View::forge('includes/head');
 
 			$this->template->header  = View::forge('includes/logged_in/header', array(
-												'username'      => Session::get('username'),
+												'username'      => Model_User::get_by_id(Session::get('user_id'))->username,
 												'profile_image' => Model_User::get_by_id(Session::get('user_id'))->profile_image,
 			));
 
 
 			$this->template->content = View::forge('dashboard/index', array(
-												'username'    => Session::get('username'),
+												'username'    => Model_User::get_by_id(Session::get('user_id'))->username,
 												'decks'       => Model_Deck::get_users_decks(Session::get('user_id')),
 												'total_decks' => Model_Deck::get_total_decks(Session::get('user_id')),
 			));
@@ -42,7 +42,7 @@ class Controller_Dashboard extends Controller_Template
 				$this->template->head    = View::forge('includes/head');
 
 				$this->template->header  = View::forge('includes/logged_in/header', array(
-													'username'      => Session::get('username'),
+													'username'      => Model_User::get_by_id(Session::get('user_id'))->username,
 													'profile_image' => Model_User::get_by_id(Session::get('user_id'))->profile_image,
 				));
 
@@ -68,7 +68,7 @@ class Controller_Dashboard extends Controller_Template
 				$this->template->head    = View::forge('includes/head');
 
 				$this->template->header  = View::forge('includes/logged_in/header', array(
-													'username'      => Session::get('username'),
+													'username'      => Model_User::get_by_id(Session::get('user_id'))->username,
 													'profile_image' => Model_User::get_by_id(Session::get('user_id'))->profile_image,
 				));
 
@@ -97,7 +97,7 @@ class Controller_Dashboard extends Controller_Template
 				$this->template->head    = View::forge('includes/head');
 
 				$this->template->header  = View::forge('includes/logged_in/header', array(
-													'username'      => Session::get('username'),
+													'username'      => Model_User::get_by_id(Session::get('user_id'))->username,
 													'profile_image' => Model_User::get_by_id(Session::get('user_id'))->profile_image,
 				));
 

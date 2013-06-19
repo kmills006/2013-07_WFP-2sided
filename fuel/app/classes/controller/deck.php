@@ -14,7 +14,9 @@ class Controller_Deck extends Controller_Template{
 		$this->template->head    = View::forge('includes/head');
 		
 		$this->template->header  = View::forge('includes/logged_in/header', array(
-											'username' => Session::get('username'),
+											'username'      => Model_User::get_by_id(Session::get('user_id'))->username,
+											'profile_image' => Model_User::get_by_id(Session::get('user_id'))->profile_image,
+
 		));
 		
 		$this->template->content = View::forge('deck/index');
@@ -55,7 +57,8 @@ class Controller_Deck extends Controller_Template{
 		$this->template->head    = View::forge('includes/head');
 
 		$this->template->header  = View::forge('includes/logged_in/header', array(
-											'username' => Session::get('username'),
+											'username'      => Model_User::get_by_id(Session::get('user_id'))->username,
+											'profile_image' => Model_User::get_by_id(Session::get('user_id'))->profile_image,
 		));
 
 		$this->template->content = View::forge('deck/save');
@@ -76,7 +79,7 @@ class Controller_Deck extends Controller_Template{
 		$this->template->head    = View::forge('includes/head');
 
 		$this->template->header  = View::forge('includes/logged_in/header', array(
-											'username' => Session::get('username'),
+											'username'      => Model_User::get_by_id(Session::get('user_id'))->username,
 											'profile_image' => Model_User::get_by_id(Session::get('user_id'))->profile_image,
 		));
 

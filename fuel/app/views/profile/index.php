@@ -99,10 +99,10 @@
 						  			<section class="deck-social">
 						  				<p><?= Asset::img('icons/check_mark.png', array('alt' => 'Decking rating', 'width' => '25', 'height' => '20')); ?></p>
 						  				<p>3</p>
-						  				<p><a href="#" class="share">Share Deck</a></p>
+						  				<!-- <p><a href="#" class="share">Share Deck</a></p> -->
 						  			</section>
 						  				
-						  			<p><a href="#">Edit Deck</a>
+						  			<!-- <p><a href="#">Edit Deck</a> -->
 					  			</section>
 					  			<? endforeach; ?>
 					  			
@@ -112,7 +112,7 @@
 					  			<h3>Recent Activity</h3>
 					  			
 					  				<div class="activity">
-					  					<p><?= $user_info->username; ?> is now friends with <a href="#">bumblebuzzle86</a></p>
+					  					<p><?= $user_info->username; ?> is now friends with <?= Html::anchor('profile/view/3', 'bumblebizzle86'); ?></p>
 					  					<p>March 20th, 2013</p>
 					  				</div>
 					  		</div> <!-- end of recent-activity -->

@@ -78,7 +78,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+    resize: none;
 }
 
 /* ==========================================================================
@@ -1735,7 +1735,7 @@ nav form input{
 }
 
 .new-deck-info .deck-info label{
-	/*float: left;*/
+/*	font-size: 12px;*/
 }
 
 .new-deck-info .deck-info{
@@ -1748,6 +1748,7 @@ nav form input{
 
 .term label{
 	margin-right: 20px;
+	font-size: 14px;
 }
 .term input{
 	width: 225px;

@@ -67,7 +67,7 @@
 
 							</div> <!-- end of terms -->
 
-							<? echo Html::anchor('#', Asset::img('icons/add_card.png')." Add another term by either clicking here or pressing TAB on the last input box.");
+							<? echo Html::anchor('#', Asset::img('icons/add_card.png')." Add another term by either clicking here or pressing TAB on the last input box.", array('class' => 'add-another-term'));
 
 							echo Form::button('submit', 'Submit');
 

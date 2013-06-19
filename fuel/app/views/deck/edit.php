@@ -12,13 +12,13 @@
 				<?= Html::anchor('dashboard', 'Back to Dashboard', array('class' => 'back-to-dash')); ?>
 
     			<aside>
-				 	<h3>Create New Deck</h3>
+				 	<h3>Edit</h3>
 
 				 	<p>Bulbasaur Ivysaur Venusaur Charmander Charmeleon Charizard Squirtle Wartortle Blastoise Caterpie Metapod Butterfree Weedle Kakuna Beedrill Pidgey Pidgeotto Pidgeot Rattata Raticate Spearow Fearow Ekans Arbok Pikachu Raichu Sandshrew Sandslash Nidoran Nidorina Nidoqueen Nidoran Nidorino Nidoking Clefairy Clefable Vulpix Ninetales Jigglypuff Wigglytuff Zubat Golbat Oddish Gloom Vileplume Paras Parasect Venonat Venomoth Diglett Dugtrio Meowth Persian Psyduck Golduck Mankey Primeape Growlithe Arcanine </p>
     			</aside>
     			
     			  <div class="new-deck-info">
-    			  	<h3>About Your New Flash Card Set</h3>
+    			  	<h3>Edit <?= $deck_info->title; ?></h3>
 
 	    			  	<? echo Form::open('deck/update', array('id' => $deck_info->id)); ?>
 

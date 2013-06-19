@@ -517,3 +517,10 @@ ERROR - 2013-06-19 02:48:27 --> Notice - Trying to get property of non-object in
 ERROR - 2013-06-19 02:55:59 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 145
 ERROR - 2013-06-19 02:56:57 --> Error - Call to a member function save() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 172
 ERROR - 2013-06-19 03:00:28 --> Error - Call to a member function save() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 172
+ERROR - 2013-06-19 03:19:05 --> Parsing Error - syntax error, unexpected end of file, expecting function (T_FUNCTION) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 134
+ERROR - 2013-06-19 03:19:31 --> Warning - Missing argument 1 for Controller_Deck::get_edit() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 72
+ERROR - 2013-06-19 03:19:44 --> Warning - Missing argument 1 for Controller_Deck::get_edit() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 72
+ERROR - 2013-06-19 14:46:14 --> Parsing Error - syntax error, unexpected ']', expecting function (T_FUNCTION) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 224
+ERROR - 2013-06-19 14:46:23 --> Runtime Notice - Non-static method Model_Deck::delete_deck() should not be called statically, assuming $this from incompatible context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 142
+ERROR - 2013-06-19 14:46:39 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
+ERROR - 2013-06-19 14:48:32 --> Error - Call to a member function delete() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 224

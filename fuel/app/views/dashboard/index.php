@@ -71,7 +71,7 @@
 					  				<p><a href="#" class="share">Share Deck</a></p>
 					  			</section>
 					  				
-					  			<p><?= Html::anchor('deck/edit/'.$deck->id, 'Edit Deck'); ?></p>
+					  			<p><?= Html::anchor('deck/delete/'.$deck->id, 'Delete Deck'); ?></p>
 				  			</section>
 				  			<? endforeach; ?>
 				  			

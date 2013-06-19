@@ -211,6 +211,17 @@ class Model_Deck extends \Orm\Model
 	}
 
 
+	public static function delete_deck($deck_id)
+	{
+		$deck = static::query()
+							->where('id', $deck_id)
+							->get_one();
+
+		$deck->delete();
+
+	}
+
+
 
 	/**
 	 * [date description]

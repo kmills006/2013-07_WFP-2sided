@@ -77,6 +77,7 @@ class Controller_Deck extends Controller_Template{
 
 		$this->template->header  = View::forge('includes/logged_in/header', array(
 											'username' => Session::get('username'),
+											'profile_image' => Model_User::get_by_id(Session::get('user_id'))->profile_image,
 		));
 
 		$this->template->content = View::forge('deck/edit', array(
@@ -125,21 +126,25 @@ class Controller_Deck extends Controller_Template{
 		$updated_cards = Model_Card::update_cards($cards);
 		
 
+		// On successful update, reload user dashboard on settings page
+		// Show success notification
+		Response::redirect('dashboard');
 
-
-
-		// Setting up views
-		$this->template->head    = View::forge('includes/head');
-
-		$this->template->header  = View::forge('includes/logged_in/header', array(
-											'username' => Session::get('username'),
-		));
-
-		$this->template->content = View::forge('signup/index');
-
-		$this->template->footer  = View::forge('includes/footer');
 	}
 
 
+	/**
+	 * [get_delete description]
+	 * @param  [type] $deck_id [description]
+	 * @return [type]          [description]
+	 */
+	public function get_delete($deck_id)
+	{
+		$deck = Model_Deck::delete_deck($deck_id);
+
+		// On succesful delete, reload user dashboard study page
+		// Show success notification
+		Response::redirect('dashboard');
+	}
 
 }

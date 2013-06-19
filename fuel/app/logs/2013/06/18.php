@@ -61,3 +61,5 @@ ERROR - 2013-06-18 23:08:58 --> Error - Class 'Model_Cards' not found in /Users/
 ERROR - 2013-06-18 23:15:34 --> 4096 - Argument 3 passed to Fuel\Core\Form::label() must be of the type array, boolean given, called in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/deck/edit.php on line 40 and defined in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/form.php on line 270
 ERROR - 2013-06-18 23:23:45 --> Parsing Error - syntax error, unexpected end of file in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/deck/edit.php on line 73
 ERROR - 2013-06-18 23:27:15 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/deck/edit.php on line 57
+ERROR - 2013-06-18 23:53:53 --> Warning - array_pop() expects parameter 1 to be array, object given in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 63
+ERROR - 2013-06-18 23:59:27 --> Notice - Undefined index: deck_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 70

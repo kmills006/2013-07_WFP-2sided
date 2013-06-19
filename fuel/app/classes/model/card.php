@@ -44,6 +44,9 @@ class Model_Card extends \Orm\Model
 	public static function save_cards($cards)
 	{
 
+		// Removing the deck id from the array
+		$deck_id = array_pop($cards);
+
 		foreach($cards as $card)
 		{
 
@@ -54,8 +57,9 @@ class Model_Card extends \Orm\Model
 			}
 			else
 			{
+				
 				$card = static::forge(array(
-							'deck_id'	 => $cards['deck_id'],
+							'deck_id'	 => $deck_id,
 							'term'       => $card[0],
 							'definition' => $card[1],
 				));

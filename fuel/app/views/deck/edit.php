@@ -1,8 +1,8 @@
 <?
 
-	// echo '<pre>';
-	// var_dump($cards);
-	// echo '</pre>';
+	echo '<pre>';
+	var_dump($cards);
+	echo '</pre>';
 
 ?>
 

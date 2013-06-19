@@ -6,7 +6,6 @@
 ?>			
 
 			<div class="content user-profile">
-    			<a href="user_dashboard.html" class="back-to-dash">Back to Dashboard</a>
     			
     			<aside>
     				<!-- <img src="assets/img/profile_placeholders/kmills006_profile-placeholder.png" alt="Profile Image" width="200" height="200" /> -->

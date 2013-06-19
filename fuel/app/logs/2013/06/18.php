@@ -32,3 +32,32 @@ ERROR - 2013-06-18 19:26:59 --> Warning - trim() expects parameter 1 to be strin
 ERROR - 2013-06-18 19:27:05 --> Warning - trim() expects parameter 1 to be string, array given in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/auth/classes/auth/login/simpleauth.php on line 276
 ERROR - 2013-06-18 19:28:54 --> Notice - Undefined index: old-password in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 124
 ERROR - 2013-06-18 19:33:05 --> Notice - Undefined variable: updated_pass in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 126
+ERROR - 2013-06-18 23:08:12 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:22 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:22 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:22 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:23 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:23 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:23 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:23 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:24 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:24 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:24 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:24 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:25 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:25 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:25 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:25 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:26 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:26 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:26 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:26 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:26 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:27 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:27 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:27 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:27 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:08:58 --> Error - Class 'Model_Cards' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 79
+ERROR - 2013-06-18 23:15:34 --> 4096 - Argument 3 passed to Fuel\Core\Form::label() must be of the type array, boolean given, called in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/deck/edit.php on line 40 and defined in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/form.php on line 270
+ERROR - 2013-06-18 23:23:45 --> Parsing Error - syntax error, unexpected end of file in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/deck/edit.php on line 73
+ERROR - 2013-06-18 23:27:15 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/deck/edit.php on line 57

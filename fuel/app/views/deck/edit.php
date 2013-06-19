@@ -1,3 +1,12 @@
+<?
+
+	// echo '<pre>';
+	// var_dump($cards);
+	// echo '</pre>';
+
+?>
+
+
 			<div class="content edit-deck">
     			<!-- <a href="user_dashboard.html" class="back-to-dash">Back to Dashboard</a> -->
 				<?= Html::anchor('dashboard', 'Back to Dashboard', array('class' => 'back-to-dash')); ?>
@@ -11,59 +20,47 @@
     			  <div class="new-deck-info">
     			  	<h3>About Your New Flash Card Set</h3>
 
-	    			  	<? echo Form::open('deck/save'); ?>
+	    			  	<? echo Form::open('deck/edit'); ?>
 
 	    			  		<div class="deck-info">
 
-							<?  echo Form::input('title', '', array('placeholder' => 'Title'));
+							<?  echo Form::input('title', $deck_info->title, array('placeholder' => 'Title'));
 
 								echo Form::input('tags', '', array('placeholder' => 'Tags ex. History, Game Shows'));
 
-								echo Form::radio('privacy', 'Public', true);
-								echo Form::label('Public', 'privacy');
+								switch($deck_info->privacy)
+								{
+									case 0:
+										echo Form::radio('privacy', 'Public', true);
+										echo Form::label('Public', 'privacy');
 
-								echo Form::radio('privacy', 'Private');
-								echo Form::label('Private', 'privacy'); ?>
+										echo Form::radio('privacy', 'Private');
+										echo Form::label('Private', 'privacy');
+
+										break;
+									case 1:
+										echo Form::radio('privacy', 'Public');
+										echo Form::label('Public', 'privacy');
+
+										echo Form::radio('privacy', 'Private', true);
+										echo Form::label('Private', 'privacy');
+
+										break;
+								}
+							 ?>
 
 							</div> <!-- end of deck-info -->
 
 							<div class="terms">
 								<h3>Enter Terms</h3>
 
-								<div class="term">
-
-								<?  echo Form::label('1.', 'term');
-									echo Form::input('term1', '', array('placeholder' => 'Term')); 
-									echo Form::textarea('definition1', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
-								</div>
-
-								<div class="term">
-
-								<?  echo Form::label('2.', 'term');
-									echo Form::input('term2', '', array('placeholder' => 'Term')); 
-									echo Form::textarea('definition2', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
-								</div>
-
-								<div class="term">
-
-								<?  echo Form::label('3.', 'term');
-									echo Form::input('term3', '', array('placeholder' => 'Term')); 
-									echo Form::textarea('definition3', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
-								</div>
-
-								<div class="term">
-
-								<?  echo Form::label('4.', 'term');
-									echo Form::input('term4', '', array('placeholder' => 'Term')); 
-									echo Form::textarea('definition4', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
-								</div>
-
-								<div class="term">
-
-								<?  echo Form::label('5.', 'term');
-									echo Form::input('term5', '', array('placeholder' => 'Term')); 
-									echo Form::textarea('definition5', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
-								</div>
+								<? foreach($cards as $card): ?>
+									<div class="term">
+										<?  echo Form::label($card->position.'.', 'term');
+											echo Form::input('term'.$card->position, $card->term, array('placeholder' => 'Term')); 
+											echo Form::textarea('definition'.$card->position, $card->definition, array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
+									</div>
+								<? endforeach; ?>
 
 							</div> <!-- end of terms -->
 

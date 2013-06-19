@@ -5,7 +5,6 @@
 ?>			
 
             <div class="content study-deck">
-    			<!-- <a href="user_dashboard.html" class="back-to-dash">Back to Dashboard</a> -->
                 <?= Html::anchor('dashboard', 'Back to Dashboard', array('class' => 'back-to-dash')); ?>
     			
     			<aside>
@@ -73,7 +72,7 @@
                     <? if($deck_info->user_id == Session::get('user_id'))
                     {
                         // if you are looking at your own deck, this button gives you the option to edit the deck
-                        echo Html::anchor('deck/edit', 'Edit Deck', array('class' => 'small-btn'));
+                        echo Html::anchor('deck/edit/'.$deck_info->id, 'Edit Deck', array('class' => 'small-btn'));
                     }
                     else
                     {

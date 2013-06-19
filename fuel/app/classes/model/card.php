@@ -75,7 +75,27 @@ class Model_Card extends \Orm\Model
 	public static function get_all_cards($deck_id)
 	{
 	
-		return static::query()->where(array('deck_id' => $deck_id))->get();
+		// return static::query()->where(array('deck_id' => $deck_id))->get();
+		
+		$cards = static::query()
+							->where(array(
+								'deck_id' => $deck_id,
+							))
+							->get();
+
+		// Setting the position depending
+		// on the number of cards in 
+		// the deck
+		$counter = 0;
+
+		foreach($cards as $card)
+		{
+			$counter = $counter + 1;
+
+			$card->position = $counter;
+		}
+
+		return $cards;
 	
 	}
 

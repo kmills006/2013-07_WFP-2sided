@@ -65,8 +65,8 @@ class Controller_Deck extends Controller_Template{
 
 
 
-	public function get_edit()
-	{
+	public function get_edit($deck_id)
+	{		
 		// Setting up views
 		$this->template->head    = View::forge('includes/head');
 
@@ -74,7 +74,10 @@ class Controller_Deck extends Controller_Template{
 											'username' => Session::get('username'),
 		));
 
-		$this->template->content = View::forge('deck/edit');
+		$this->template->content = View::forge('deck/edit', array(
+											'deck_info' => Model_Deck::get_deck($deck_id),
+											'cards'     => Model_Card::get_all_cards($deck_id),
+		));
 
 		$this->template->footer  = View::forge('includes/footer');
 	}

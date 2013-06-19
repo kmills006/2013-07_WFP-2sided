@@ -208,6 +208,10 @@ nav{
 	border-right: #3B97D2 1px solid;
 }
 
+.logged-in .globe-nav:nth-child(3) img{
+	padding-right: 5px;
+}
+
 .logged-out .globe-nav:nth-child(2){
 	border-right: #3B97D2 1px solid;
 }

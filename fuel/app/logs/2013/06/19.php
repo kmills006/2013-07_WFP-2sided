@@ -496,3 +496,23 @@ ERROR - 2013-06-19 00:55:40 --> Error - Invalid method call.  Method update_deck
 ERROR - 2013-06-19 00:56:01 --> Error - Invalid method call.  Method update_deck does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
 ERROR - 2013-06-19 01:04:38 --> Notice - Undefined variable: deck_info in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 106
 ERROR - 2013-06-19 01:07:10 --> Notice - Undefined index: orig_deck in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 162
+ERROR - 2013-06-19 01:59:38 --> Parsing Error - syntax error, unexpected 'update_cards' (T_STRING), expecting variable (T_VARIABLE) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 119
+ERROR - 2013-06-19 02:00:34 --> Notice - Undefined variable: deck_info in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 123
+ERROR - 2013-06-19 02:05:45 --> Error - "input" is not a valid input type. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/form/instance.php on line 210
+ERROR - 2013-06-19 02:06:06 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 169
+ERROR - 2013-06-19 02:06:08 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 169
+ERROR - 2013-06-19 02:06:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 169
+ERROR - 2013-06-19 02:06:41 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 169
+ERROR - 2013-06-19 02:06:43 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 169
+ERROR - 2013-06-19 02:07:45 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 169
+ERROR - 2013-06-19 02:07:48 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 169
+ERROR - 2013-06-19 02:07:49 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 169
+ERROR - 2013-06-19 02:26:10 --> Notice - Undefined variable: deck_info in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 127
+ERROR - 2013-06-19 02:32:18 --> Warning - Attempt to assign property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 153
+ERROR - 2013-06-19 02:32:23 --> Warning - Attempt to assign property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 153
+ERROR - 2013-06-19 02:33:06 --> Warning - Attempt to assign property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 153
+ERROR - 2013-06-19 02:33:34 --> Warning - Attempt to assign property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 144
+ERROR - 2013-06-19 02:41:15 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 145
+ERROR - 2013-06-19 02:48:27 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 145
+ERROR - 2013-06-19 02:55:59 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 145
+ERROR - 2013-06-19 02:56:57 --> Error - Call to a member function save() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 172

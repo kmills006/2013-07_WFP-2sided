@@ -124,14 +124,19 @@
 			
 			counter = counter + 1;
 
-			// <div class="term">
-
-			// <?  echo Form::label('4.', 'term');
-			// 	echo Form::input('term4', '', array('placeholder' => 'Term')); 
-			// 	echo Form::textarea('definition4', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
-			// </div>
-
 			var newFields = '<div class="term"><label for="term' + counter + '">' + counter + '.</label><input type="text" placeholder="Term" name="term' + counter + '"/><textarea class="opensans" placeholder="Definition" name="definition' + counter + '"></textarea></div>';
+
+			$('.terms').append(newFields);
+
+			return false;
+
+		});
+
+		$('.edit-add-another-term').on('click', function(e){
+
+			counter = counter + 1;
+
+			var newFields = '<div class="term"><label for="term' + counter + '">' + counter + '.</label><input type="hidden" name="' + counter + '" value="' + counter + '"/><input type="text" placeholder="Term" name="term' + counter + '"/><textarea class="opensans" placeholder="Definition" name="definition' + counter + '"></textarea></div>';
 
 			$('.terms').append(newFields);
 

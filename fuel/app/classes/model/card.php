@@ -104,7 +104,6 @@ class Model_Card extends \Orm\Model
 	}
 
 
-
 	/**
 	 * [get_card_count description]
 	 * @param  integer $deck_id [description]
@@ -113,6 +112,66 @@ class Model_Card extends \Orm\Model
 	public static function get_card_count($deck_id)
 	{
 		return static::query()->where(array('deck_id' => $deck_id))->count();
+	}
+
+
+
+	public static function update_cards($cards_info)
+	{
+
+		$deck_id = array_pop($cards_info);
+
+		// echo '<pre>';
+		// var_dump($cards_info);
+		// echo '</pre>';
+		
+		foreach($cards_info as $card)
+		{
+			// echo '<pre>';
+			// var_dump($card);
+			// echo '</pre>';
+			
+			$user_card = static::query()
+									->where('id', $card[0])
+									->get_one();
+
+
+			if(!$user_card)
+			{
+				echo 'no record found';
+			}
+			else
+			{
+				// Checking if the term has been updated
+				if($user_card->term != $card[1])
+				{
+					$user_card->term = $card[1];
+				}
+				else
+				{
+					echo 'Term stays the same';
+				}
+
+				// Checking if the definition has been updated
+				if($user_card->definition != $card[2])
+				{
+					$user_card->definition = $card[2];
+				}
+				else
+				{
+					echo 'Term stays the same';
+				}
+
+			}
+
+			
+			echo '<pre>';
+			var_dump($user_card);
+			echo '</pre>';
+
+			$user_card->save();
+		}
+
 	}
 
 

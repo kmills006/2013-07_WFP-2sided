@@ -110,19 +110,19 @@ class Controller_Deck extends Controller_Template{
 		$sliced = array_slice(Input::post(), 4);
 
 		// Dividing the array into term/definition paris
-		$cards  = array_chunk($sliced, 2);
+		$cards  = array_chunk($sliced, 3);
 
 		// // Removing the empy array value from the end of $cards
 		$removed  = array_pop($cards);
 
-		// echo '<pre>';
-		// var_dump($cards);
-		// echo '</pre>';
+		echo '<pre>';
+		var_dump($cards);
+		echo '</pre>';
 
 		// // Setting the deck_id for the cards table
-		// $cards['deck_id'] = $deck_info['id'];
+		$cards['deck_id'] = $updated_info['id'];
 
-		// $new_cards = Model_Card::save_cards($cards);
+		$updated_cards = Model_Card::update_cards($cards);
 		
 
 

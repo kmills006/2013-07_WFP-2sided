@@ -56,7 +56,13 @@
 
 								<? foreach($cards as $card): ?>
 									<div class="term">
-										<?  echo Form::label($card->position.'.', 'term');
+										<?  
+											// echo '<pre>';
+											// var_dump($card->id);
+											// echo '</pre>';
+
+											echo Form::label($card->position.'.', 'term');
+											echo Form::input('card_id'.$card->id, $card->id, array('type' => 'hidden'));
 											echo Form::input('term'.$card->position, $card->term, array('placeholder' => 'Term')); 
 											echo Form::textarea('definition'.$card->position, $card->definition, array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
 									</div>
@@ -64,7 +70,7 @@
 
 							</div> <!-- end of terms -->
 
-							<? echo Html::anchor('#', Asset::img('icons/add_card.png')." Add another term by either clicking here or pressing TAB on the last input box.", array('class' => 'add-another-term'));
+							<? echo Html::anchor('#', Asset::img('icons/add_card.png')." Add another term by either clicking here or pressing TAB on the last input box.", array('class' => 'edit-add-another-term'));
 
 							echo Form::button('submit', 'Submit');
 

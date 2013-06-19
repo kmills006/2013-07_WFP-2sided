@@ -152,12 +152,16 @@ class Model_Deck extends \Orm\Model
 	}
 
 
-
+	/**
+	 * [update_deck description]
+	 * @param  [type] $deck_info [description]
+	 * @return [type]            [description]
+	 */
 	public static function update_deck($deck_info)
 	{
-		echo '<pre>';
-		var_dump($deck_info);
-		echo '</pre>';
+		// echo '<pre>';
+		// var_dump($deck_info);
+		// echo '</pre>';
 
 		$deck = $deck_info['orig_info'];
 
@@ -168,7 +172,7 @@ class Model_Deck extends \Orm\Model
 		}	
 		else
 		{
-			echo "No change!";
+			// Title doesn't change
 		}
 
 		// Checking if the privacy was updated

@@ -1,8 +1,8 @@
 <?
 
-	echo '<pre>';
-	var_dump($cards);
-	echo '</pre>';
+	// echo '<pre>';
+	// var_dump($cards);
+	// echo '</pre>';
 
 ?>
 
@@ -20,7 +20,7 @@
     			  <div class="new-deck-info">
     			  	<h3>About Your New Flash Card Set</h3>
 
-	    			  	<? echo Form::open('deck/edit'); ?>
+	    			  	<? echo Form::open('deck/update', array('id' => $deck_info->id)); ?>
 
 	    			  		<div class="deck-info">
 

@@ -153,6 +153,61 @@ class Model_Deck extends \Orm\Model
 
 
 
+	public static function update_deck($deck_info)
+	{
+		echo '<pre>';
+		var_dump($deck_info);
+		echo '</pre>';
+
+		$deck = $deck_info['orig_info'];
+
+		// Check if the deck title was updated
+		if($deck->title != $deck_info['title'])
+		{
+			$deck->title = $deck_info['title'];
+		}	
+		else
+		{
+			echo "No change!";
+		}
+
+		// Checking if the privacy was updated
+		if($deck->privacy == 0)
+		{
+			if($deck_info['privacy'] == 'Public')
+			{
+				// Deck privacy is staying public
+				// no change needed
+			}
+			else
+			{
+				// Deck privacy is changing to private
+				$deck->privacy = 1;
+			}
+		}
+		else
+		{
+			if($deck_info['privacy'] == 'Private')
+			{
+				// Deck privacy is staying private
+				// no change needed
+			}
+			else
+			{
+				// Deck privacy is changing to public
+				$deck->privacy = 0;
+			}
+		}
+
+		// echo '<pre>';
+		// var_dump($deck);
+		// echo '</pre>';
+		
+		$deck->save();
+	}
+
+
+
 	/**
 	 * [date description]
 	 * @param  string $format [description]

@@ -38,6 +38,10 @@ class Controller_Dashboard extends Controller_Template
 	{
 		if(Session::get('is_logged_in') == 1)
 			{
+
+
+				// $notifications = Model_Notification::get_notifications(Session::get('user_id'));
+
 				// Setting up views
 				$this->template->head    = View::forge('includes/head');
 
@@ -48,7 +52,8 @@ class Controller_Dashboard extends Controller_Template
 
 
 				$this->template->content = View::forge('dashboard/notifications', array(
-													'username'    => Session::get('username'),
+													'username'      => Session::get('username'),
+													'notifications' => Model_Notification::get_notifications(Session::get('user_id')),
 				));
 
 				$this->template->footer  = View::forge('includes/footer');

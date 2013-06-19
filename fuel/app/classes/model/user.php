@@ -40,15 +40,25 @@ class Model_User extends \Orm\Model
 	//     )
 	// );
 
-	protected static $_has_many = array(
-	    'decks' => array(
-	        'key_from' => 'id',
-	        'model_to' => 'Model_Friend',
-	        'key_to' => 'user_id',
-	        'cascade_save' => true,
-	        'cascade_delete' => false,
-	    )
-	);
+	// protected static $_has_many = array(
+	//     'decks' => array(
+	//         'key_from' => 'id',
+	//         'model_to' => 'Model_Friend',
+	//         'key_to' => 'user_id',
+	//         'cascade_save' => true,
+	//         'cascade_delete' => false,
+	//     )
+	// );
+	
+	// protected static $_has_many = array(
+	//     'notifications' => array(
+	//         'key_from' => 'id',
+	//         'model_to' => 'Model_Notification',
+	//         'key_to' => 'friend_id',
+	//         'cascade_save' => true,
+	//         'cascade_delete' => false,
+	//     )
+	// );
 
 	protected static $_table_name = 'users';
 

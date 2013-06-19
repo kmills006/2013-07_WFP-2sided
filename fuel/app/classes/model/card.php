@@ -126,19 +126,23 @@ class Model_Card extends \Orm\Model
 		// echo '</pre>';
 		
 		foreach($cards_info as $card)
-		{
-			// echo '<pre>';
-			// var_dump($card);
-			// echo '</pre>';
-			
+		{			
 			$user_card = static::query()
 									->where('id', $card[0])
 									->get_one();
 
 
+			// If record does not exist
+			// add new card to deck
 			if(!$user_card)
 			{
-				echo 'no record found';
+				$new_card = static::forge(array(
+								'deck_id'    => $deck_id,
+								'term'       => $card[1],
+								'definition' => $card[2],
+				));
+
+				$new_card->save();
 			}
 			else
 			{
@@ -149,7 +153,7 @@ class Model_Card extends \Orm\Model
 				}
 				else
 				{
-					echo 'Term stays the same';
+					// echo 'Term stays the same';
 				}
 
 				// Checking if the definition has been updated
@@ -159,17 +163,11 @@ class Model_Card extends \Orm\Model
 				}
 				else
 				{
-					echo 'Term stays the same';
+					// echo 'Definition stays the same';
 				}
 
+				$user_card->save();
 			}
-
-			
-			echo '<pre>';
-			var_dump($user_card);
-			echo '</pre>';
-
-			$user_card->save();
 		}
 
 	}

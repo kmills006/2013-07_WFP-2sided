@@ -516,3 +516,4 @@ ERROR - 2013-06-19 02:41:15 --> Notice - Trying to get property of non-object in
 ERROR - 2013-06-19 02:48:27 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 145
 ERROR - 2013-06-19 02:55:59 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 145
 ERROR - 2013-06-19 02:56:57 --> Error - Call to a member function save() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 172
+ERROR - 2013-06-19 03:00:28 --> Error - Call to a member function save() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 172

@@ -115,9 +115,9 @@ class Controller_Deck extends Controller_Template{
 		// // Removing the empy array value from the end of $cards
 		$removed  = array_pop($cards);
 
-		echo '<pre>';
-		var_dump($cards);
-		echo '</pre>';
+		// echo '<pre>';
+		// var_dump($cards);
+		// echo '</pre>';
 
 		// // Setting the deck_id for the cards table
 		$cards['deck_id'] = $updated_info['id'];

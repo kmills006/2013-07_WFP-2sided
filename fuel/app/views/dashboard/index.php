@@ -51,29 +51,29 @@
 				  			<h3>My Decks / <? if(isset($total_decks)): echo $total_decks; else: echo "0"; endif; ?></h3>
 				  			
 				  			<p>Filter by:</p>
-				  			<button class="filters activeFilter">Newest</button>
+				  			<button class="filters active-filter">Newest</button>
 				  			<button class="filters">Oldest</button>
 				  			<button class="filters">Highest Rating</button>
-				  			<?= Html::anchor('deck/create', 'Create New', array('class' => 'small-btn')); ?>
+				  			<button class="create-new-btn"><?= Html::anchor('deck/create', 'Create New'); ?></button>
 				  			<div class="clearfix"></div>
 				  			
 
 				  			<!-- Looping through all the users decks -->
 				  			<? foreach($decks as $deck): ?>
 				  			<section class="deck">
-				  				<section class="deck-info">
+				  				<div class="deck-info">
 					  				<p><?= Html::anchor('study/cards/'.$deck->id, $deck->title); ?></p>
 					  				<p>Total Cards: <?= $deck->card_count; ?></p>
 					  				<p>Created on: <?= $deck->date(); ?></p>
-				  				</section>
+				  				</div>
 					  				
-					  			<section class="deck-social">
+					  			<div class="deck-social">
 					  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
 					  				<p>3</p>
 					  				<p><a href="#" class="share">Share Deck</a></p>
-					  			</section>
+					  			</div>
 					  				
-					  			<p><?= Html::anchor('deck/delete/'.$deck->id, 'Delete Deck'); ?></p>
+					  			<p class="delect-deck"><?= Html::anchor('deck/delete/'.$deck->id, 'Delete Deck'); ?></p>
 				  			</section>
 				  			<? endforeach; ?>
 				  			

@@ -117,7 +117,10 @@ textarea {
 	#D35400 - PUMPKIN
 	
 	#3B97D2 - Navigation Boarder
-   
+
+	#66665a - Non Active Filter  
+
+	#54544e - Non Active Hover 
 */
 
 
@@ -216,6 +219,10 @@ nav{
 .logged-in .global-nav:nth-child(3){
 	border-right: 1px solid #3B97D2;
 	margin-right: 20px;
+}
+
+.logged-in .global-nav:nth-child(3) img{
+	margin-right: 5px;
 }
 
 nav form{
@@ -760,6 +767,122 @@ nav input{
 	color: #2C3E50;
 }
 
+.your-decks p{
+	padding: 0;
+	margin: 0;
+}
+
+.your-decks > p{
+	font-size: 14x;
+	float: left;
+	margin-right: 20px;
+}
+
+.your-decks button{
+	font-size: 14px;
+	height: 25px;
+	width: auto;
+	margin-right: 10px;
+	background-color: #66665a;
+	letter-spacing: 1.1px;
+	margin: 0;
+}
+
+.your-decks button:hover{
+	background-color: #54544e;
+}
+
+/* NOT WORKING! */
+.active-filter{
+	background-color: #2C3E50;
+}
+
+.your-decks .create-new-btn{
+	float: right;
+	background-color: #E67E22;
+}
+
+.your-decks .create-new-btn:hover{
+		background-color: #D35400;
+}
+
+.your-decks .create-new-btn a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+.deck{
+	width: 320px;
+	float: left;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.deck:nth-child(odd){
+	margin-right: 0;
+	float: right;
+}
+
+.deck .deck-info{
+	font-size: 14px;
+	float: left;
+}
+
+.deck .deck-info p{
+	margin: 5px 0;
+}
+
+.deck .deck-info p:first-child a{
+	text-decoration: none;
+	color: #E67E22;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.deck .deck-info p:first-child a:hover{
+	color: #2C3E50;
+}
+
+.deck .deck-social{
+	float: right;
+	margin: 10px 0;
+}
+
+.deck .deck-social p:nth-child(2){
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.deck .deck-social p img{
+	float: left;
+	margin-top: 8px;
+	margin-right: 20px;
+}
+
+.deck .deck-social p:nth-child(3) a{
+	font-size: 14px;
+	text-decoration: none;
+	color: #E67E22;
+}
+
+.deck .deck-social p:nth-child(3) a:hover{
+	color: #2C3E50;
+}
+
+.deck p:last-child{
+	clear: both;
+}
+
+/* Delete Deck */
+.delect-deck a{
+	text-decoration: none;
+	font-size: 12px;
+	color: #000;
+}
+
+.deck p:last-child a:hover{
+	color: #E67E22;
+}
 
 /* ==========================================================================
    Footer Styles
@@ -921,6 +1044,7 @@ footer .sizer p:nth-child(3){
 
 .clearfix {
     *zoom: 1;
+    clear: both;
 }
 
 /* ==========================================================================

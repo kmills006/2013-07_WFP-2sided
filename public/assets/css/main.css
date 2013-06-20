@@ -259,9 +259,9 @@ nav input{
 
 
 .cta-search{
-	height: 200px;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	height: 300px;
+	padding-top: 90px;
+	margin-bottom: 10px;
 }
 
 .cta-search h1{

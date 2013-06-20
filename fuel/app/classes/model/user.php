@@ -149,4 +149,16 @@ class Model_User extends \Orm\Model
 	}
 
 
+
+	/**
+	 * [date description]
+	 * @param  string $format [description]
+	 * @return string         [description]
+	 */
+	public function date($format = "M d, Y")
+	{
+		return date($format, $this->created_at);
+	}
+
+
 }

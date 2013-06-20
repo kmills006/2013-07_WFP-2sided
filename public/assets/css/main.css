@@ -885,9 +885,74 @@ nav input{
 }
 
 /* ==========================================================================
+   User Dashboard Notification Tab Styles
+   ========================================================================== 
+*/
+
+.user-notification{
+	margin: 20px 0;
+	padding: 20px 0 30px 0;
+}
+
+.user-notification{
+	padding-top: 20px;
+}
+
+.user-notification:last-child{
+	padding-bottom: 50px;
+}
+
+.user-notification img{
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+.user-notification p{
+	margin: 0;
+	padding: 0;
+}
+
+.user-notification p:nth-child(2){
+	font-size: 12px;
+	padding: 5px 0 0 0;
+}
+
+.user-notification p:nth-child(3){
+	float: left;
+	margin: 5px 0 0 0;
+}
+
+.user-notification p a{
+	text-decoration: none;
+	color: #E67E22;
+}
+
+.user-notification p a:hover{
+	color: #D35400;
+}
+
+.user-notification button{
+	font-size: 12px;
+	width: 70px;
+	height: 25px;
+	float: right;
+	margin: 0 10px 0 0;
+}
+
+.user-notification button:first-child{
+	margin: 0;
+	padding: 0;
+}
+
+
+/* ==========================================================================
    Footer Styles
    ========================================================================== 
 */
+
+footer{
+	clear: both;
+}
 
 footer .sizer{
 	font-size: 12px;

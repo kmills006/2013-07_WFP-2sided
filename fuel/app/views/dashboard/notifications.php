@@ -5,8 +5,7 @@
 	// echo '</pre>';
 
 ?>
-
-    		<div class="content user-dashboard sizer">
+			<div class="content user-dashboard sizer">
     			<h1>Dashboard</h1>
 
 				<div class="ud-tabs">
@@ -34,7 +33,7 @@
 						  			   		echo Asset::img('profile_photos/thumbs/thumb_profile_placeholder.gif', array('alt' => $notification->username.' profile image'));
 						  			   } ?>
 							  			<!-- <img src="img/profile_placeholders/sara_englishbee.jpg" alt="User profile thumbnail" width="50" width="50"/> -->
-							  			<p><?= $notification->created_at; ?></p>
+							  			<p><?= $notification->date(); ?></p>
 							  			<p><a href="#"><?= $notification->username; ?></a> <?= $notification->message; ?></p>
 							  			
 							  			<button>Reject</button>

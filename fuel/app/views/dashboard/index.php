@@ -32,17 +32,17 @@
 				  			</form>
 				  			
 				  			
-				  			<section class="rs-item">
+				  			<div class="rs-item">
 				  				<p><span>2 days ago</span><a href="#">Civil War Midterm</a></p>
-				  			</section>
+				  			</div>
 				  			
-				  			<section class="rs-item">
+				  			<div class="rs-item">
 				  				<p><span>8 days ago</span><a href="#">Cooking Terminology</a></p>
-				  			</section>
+				  			</div>
 				  			
-				  			<section class="rs-item">
+				  			<div class="rs-item">
 				  				<p><span>21 days ago</span><a href="#">First Year Spanish</a></p>
-				  			</section>
+				  			</div>
 				  			
 				  		</div>
 				  		

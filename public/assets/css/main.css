@@ -593,6 +593,11 @@ nav input{
 	/*padding: 0 0 0 10px;*/
 }
 
+/* ==========================================================================
+   User Dashboard Tab Navigation Styles
+   ========================================================================== 
+*/
+
 .ud-tabs{
 	float: left;
 	width: 140px;
@@ -684,6 +689,11 @@ nav input{
 	text-decoration: none;
 }
 
+/* ==========================================================================
+   User Dashboard Content Styles
+   ========================================================================== 
+*/
+
 .ud-tab-content{
 	overflow: hidden;
 	width: 680px;
@@ -694,6 +704,62 @@ nav input{
 	padding: 5px 55px 40px;
 	margin: 0;
 }
+
+.ud-tab-content h2{
+	color: #2C3E50;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.ud-tab-content h3{
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0 0 20px 0;
+}
+
+/* ==========================================================================
+   User Dashboard Study Tab Styles
+   ========================================================================== 
+*/
+
+.recently-studied{
+	margin-bottom: 30px;
+}
+
+.recently-studied h3{
+	float: left;
+}
+
+.recently-studied select{
+	float: right;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	border: 1px solid #E67E22;
+	font-size: 12px
+}
+
+.recently-studied div{
+	clear: both;
+	font-size: 14px;
+}
+
+.recently-studied div p span{
+	display: inline-block;
+	width: 100px;
+	margin-right: 20px;
+}
+
+.recently-studied div a{
+	text-decoration: none;
+	color: #E67E22;
+	font-weight: 600;
+}
+
+.recently-studied div a:hover{
+	color: #2C3E50;
+}
+
 
 /* ==========================================================================
    Footer Styles

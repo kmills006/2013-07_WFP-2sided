@@ -1,4 +1,4 @@
-    		<div class="content user-dashboard">
+    		<div class="content user-dashboard sizer">
     			<h1>Dashboard</h1>
     			
  				<div class="ud-tabs">
@@ -12,10 +12,12 @@
 				  
 				<div id="study" class="ud-tab-content">
 
-				  	<? if(isset($username)): ?>
-				  	<h2>Welcome back <?= $username; ?>!</h2>
-				  	<? else:?>
-				  	<h2>Welcome back</h2>
+				  	<? if(isset($name)): ?>
+				  	<h2>Welcome back <?= $name; ?>!</h2>
+				  	<? elseif(isset($username)):?>
+				  	<h2>Welcome back <?= $username; ?></h2>
+				 	<? else:?>
+				 	<h2>Welcome back</h2>
 				  	<? endif; ?>
 				  	
 				  		<div class="recently-studied">

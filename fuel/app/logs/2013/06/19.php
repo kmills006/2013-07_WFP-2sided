@@ -853,3 +853,5 @@ ERROR - 2013-06-19 19:47:06 --> Parsing Error - syntax error, unexpected '$notif
 ERROR - 2013-06-19 19:50:09 --> Notice - Undefined variable: notifications in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 91
 ERROR - 2013-06-19 19:50:10 --> Notice - Undefined variable: notifications in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 91
 ERROR - 2013-06-19 19:50:10 --> Notice - Undefined variable: notifications in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 91
+ERROR - 2013-06-19 23:53:57 --> Error - Could not find asset: icons/facebook-login.png in /Users/kristymiller/Sites/2013-07_WFP-2sided_v2/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-19 23:53:57 --> Error - Could not find asset: icons/facebook-login.png in /Users/kristymiller/Sites/2013-07_WFP-2sided_v2/fuel/core/classes/asset/instance.php on line 249

@@ -1,6 +1,6 @@
     		<div class="content landing">
     	
-	    		<div class="cta-search">
+	    		<div class="cta-search sizer">
 	    			<h1>What do you want to study today?</h1>
 	    				
 	    				<form>
@@ -20,14 +20,14 @@
 	    					
 	    					<input type="text" placeholder="Search by title, tags or subjects" />
 	    					
-	    					<button class="search-btn">Search</button>
+	    					<button class="search-btn opensans">Search</button>
 	    				</form>
 	    		</div> <!-- end of cta-search -->
 	    		
 	    		
-	    		<div class="landing-about">
-	    			<div class="about-sizer">
-		    			<section>
+	    		<div class="about">
+	    			<div class="sizer">
+		    			<div>
 		    				<div>
 								<? echo Asset::img('icons/globe.png', array('alt' => 'Globe icon to describe studying')); ?>
 		    				</div>
@@ -36,9 +36,9 @@
 		    				
 		    				<p>Caramels croissant toffee applicake brownie carrot cake. Candy canes lemon drops lemon drops pudding lemon drops jujubes toffee cookie. Jujubes applicake chocolate cake. Apple pie faworki icing tootsie roll liquorice.</p>
 		    				
-		    			</section>
+		    			</div>
 		    			
-		    			<section>
+		    			<div>
 		    				<div>
 		    					<? echo Asset::img('icons/challenge.png', array('alt' => 'Sword icon representing challenging friends')); ?>
 		    				</div>
@@ -47,9 +47,9 @@
 		    				
 		    				<p>Gummi bears powder macaroon jelly beans chocolate bar chocolate. Donut wafer chocolate faworki jujubes topping tootsie roll halvah apple pie. Gummies cookie candy. Cookie candy canes jelly marshmallow cotton candy applicake cake.</p>
 		    				
-		    			</section>
+		    			</div>
 		    			
-		    			<section>
+		    			<div>
 		    				<div>
 		    					<? echo Asset::img('icons/medal.png', array('alt' => 'Medal icon to describe earning achievements')); ?>
 		    				</div>
@@ -58,8 +58,8 @@
 		    				
 		    				<p>Bear claw biscuit lollipop marzipan marzipan croissant. Pudding marzipan cupcake topping biscuit apple pie. Candy danish jujubes toffee wypas. Dessert chocolate jelly beans marshmallow faworki.</p>
 		    				
-		    			</section>
+		    			</div>
 		    			
-	    			</div> <!-- end of about-sizer -->
-	    		</div> <!-- end of landing-about -->
+	    			</div> <!-- end of sizer -->
+	    		</div> <!-- end of about -->
     		</div> <!-- end of content -->

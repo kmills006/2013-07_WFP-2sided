@@ -7,7 +7,7 @@
 ?>			
 
 
-			<div class="content user-dashboard">
+			<div class="content user-dashboard sizer">
     			<h1>Dashboard</h1>
     			
 				<div class="ud-tabs">

@@ -4,9 +4,9 @@
     			<?
     				echo Form::open('user/signup');
     				
-    				echo Form::input('username', '', array('placeholder' => 'Username'));
-    				echo Form::input('email', '', array('placeholder' => 'Email'));
-    				echo Form::input('password', '', array('placeholder' => 'Password', 'type' => 'password'));
+    				echo Form::input('username', '', array('placeholder' => 'Username', 'class' => 'opensans'));
+    				echo Form::input('email', '', array('placeholder' => 'Email', 'class' => 'opensans'));
+    				echo Form::input('password', '', array('placeholder' => 'Password', 'type' => 'password', 'class' => 'opensans'));
     				
     				echo Form::button('Submit');
     				

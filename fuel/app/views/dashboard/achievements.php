@@ -16,7 +16,7 @@
 					 	<h3>StudyPoints</h3>
 					 	
 					 	<p>Total Points: <span>123</span></p>
-					 	<p>49 StudyPoints needed to reach level 3</p>
+					 	<p>49 points needed to reach level 3</p>
 					 	
 					 	<div class="level-progress">
 					 		<span><span></span></span>

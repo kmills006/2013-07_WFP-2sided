@@ -25,14 +25,17 @@
 				  		<?
 				  			echo Form::open('user/settings');
 
-				  			echo Asset::img('profile_photos/'.$user_info->profile_image, array('width' => 100, 'height' => 100, 'alt' => $user_info->username.' profile image'));
-
+				  			echo Asset::img('profile_photos/'.$user_info->profile_image, array('width' => 150, 'height' => 150, 'alt' => $user_info->username.' profile image'));
 				  			echo Form::input('picture', null, array('type' => 'file'));
 				  		?>
 
 				  			<div class='fake-file'><p>Change Image</p></div>
 
-				  			<div class='clearfix'></div>
+				  			<div class="sm-btns">
+			    				<p class="sm-btn fb-btn"><span>Link to Facebook</span></p><p class="sm-btn twitter-btn"><span>Link to Twitter</span></p>
+			    			</div>
+
+			    			<div class='clearfix'></div>
 
 				  		<?
 				  		

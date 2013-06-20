@@ -531,18 +531,18 @@ nav input{
 	display: block;
 	height: 1px;
 	content: " ";
-	width: 240px;
+	width: 250px;
 	position: absolute;
 	top: 200px;
 }
 
 .login div:nth-child(2) span:before{
-	left: 390px;
+	left: 420px;
 	right: auto;
 }
 
 .login div:nth-child(2) span:after{
-	right: 390px;
+	right: 420px;
 	left: auto;
 }
 
@@ -943,6 +943,281 @@ nav input{
 	margin: 0;
 	padding: 0;
 }
+
+
+/* ==========================================================================
+   User Dashbord Achievements Styles
+   ========================================================================== 
+*/
+
+#achievements h3{
+	margin-bottom: 0;
+}
+
+#achievements > p{
+	font-size: 14px;
+}
+
+
+#achievements > p:nth-child(3){
+	float: left;
+	/*font-size: 30px;*/
+}
+
+#achievements > p:nth-child(4){
+	float: right;
+	/*font-size: 30px;*/
+}
+
+.level-progress{
+	clear: both;
+	margin: 20px 0 0 0;
+	height: 20px;
+	position: relative;
+	background: #54544D;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+.level-progress span{
+	float: left;
+	position: relative;
+	display: hidden;
+	height: 100%; 
+	display: block;
+	padding: 0;
+	margin: 0;
+	border-right: 1px solid #54544D;
+}
+
+.level-progress span:first-child{
+	width: 10%;
+	background-color: #FFF;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.level-progress span:first-child span:first-child{
+	background-color: green;
+	border: none;
+	width: 100%;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.level-progress span:nth-child(2){
+	background-color: #FFF;
+	width: 20%;
+}
+
+.level-progress span:nth-child(2) span:first-child{
+	background-color: orange;
+	width: 87%;
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+/* 	display: none; */
+}
+
+.level-progress span:nth-child(3){
+	background-color: #FFF;
+	width: 30%;
+}
+
+.level-progress span:nth-child(3) span:first-child{
+	background-color: blue;
+	width: 12%;
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	display: none;
+}
+
+.level-progress span:nth-child(4){
+	background-color: #FFF;
+	border: none;
+	width: 39%;
+	height: 100%;
+	-webkit-border-top-right-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-moz-border-radius-topright: 20px;
+	-moz-border-radius-bottomright: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.level-progress span:nth-child(4) span:first-child{
+	background-color: blue;
+	width: 89%%;
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	background-color: purple;
+	display: none;
+}
+
+.badges h3{
+	margin-top: 30px;
+	padding-bottom: 30px;
+}
+
+.badge{
+	width: 170px;
+	float: left;
+	margin: 20px 0;
+}
+
+.badge img{
+	display: block;
+	margin: auto;
+}
+
+.badge p{
+	font-size: 14px;
+	text-align: center;
+}
+
+/* ==========================================================================
+   User Dashboard Settings Styles
+   ========================================================================== 
+*/
+
+#settings .sm-btns{
+	float: right;
+	margin: 0;
+	padding: 0;
+	width: 150px;
+}
+
+#settings .sm-btn{
+	width: 150px;
+	height: 40px;
+	display: block;
+	position: relative;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	line-height: 40px;
+	cursor: pointer;
+	color: #FFF;
+	padding: 0;
+	margin: 10px 0;
+	font-size: 12px;
+}
+
+#settings .sm-btn:first-child{
+	margin-top: 0;
+}
+
+#settings .sm-btns p:first-child{
+	padding: 0;
+	/*margin: 0 20px 0 0;*/
+}
+
+#settings .sm-btns p:last-child{
+	margin: 0;
+	padding: 0;
+}
+
+#settings .sm-btn span{
+	margin: 0 0 0 50px;
+}
+
+.ud-tab-content form img{
+	float: left;
+	margin: 0 0 40px 0;
+}
+
+.ud-tab-content form input{
+	display: block;
+	width: 677px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	border: #E67E22 solid 1px;
+	padding-left: 10px;
+	font-size: 12px;
+	height: 35px;
+	margin: 10px 0;
+}
+
+.ud-tab-content form input:nth-child(2){
+	appearance: none;
+	width: 150px;
+	height: 30px;
+	border: none;
+	float: left;
+	margin: 80px 0 0 20px;
+	position: absolute;
+	opacity: 0;
+	z-index: 4;
+	margin: 120px 0 0 0;
+	padding: 0;
+	/*bottom: 0;*/
+	background-color: #E67E22;
+}
+
+.fake-file{
+	height: 40px;
+	width: 150px;
+	background-color: #E67E22;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	position: relative;	
+	left: -150px;
+	top: 120px;
+	float: left;
+	cursor: pointer;
+}
+
+.fake-file p{
+	font-size: 12px;
+	color: #FFF;
+	text-align: center;
+}
+
+.fake-file:hover{
+	background-color: #D35400;
+}
+
+.change-password{
+	margin: 30px 0 10px 0;
+	font-weight: 700;
+}
+
+.ud-tab-content form button{
+	margin: 20px 0;
+	float: left;
+}
+
+.ud-tab-content form p a:last-child{
+	font-size: 12px;
+	text-decoration: none;
+	float: left;
+	position: relative;
+	top: 28px;
+	left: 20px;
+	color: #000;
+}
+
+.ud-tab-content form p a:last-child:hover{
+	color: #E67E22;
+}
+
 
 
 /* ==========================================================================

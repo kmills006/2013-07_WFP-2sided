@@ -44,7 +44,7 @@
 
 
 						<? foreach($friends as $friend): ?>
-						 	<section class="friend">
+						 	<div class="friend">
 								<!-- <img src="assets/img/profile_placeholders/brittany_conrad.jpg" alt="Profile Picture" /> -->
 								<? 
 									if($friend->profile_image != NULL)
@@ -60,7 +60,7 @@
 								<h3><?= Html::anchor('profile/view/'.$friend->id, $friend->username); ?></h3>
 								<p>395 Points</p>
 								
-						 	</section>
+						 	</div>
 					 	<? endforeach; ?>
 					 	
 					 	<p><a href="#">View All</a></p>
@@ -89,21 +89,21 @@
 					  			<div class="clearfix"></div>
 					  			
 					  			<? foreach($decks as $deck): ?>
-					  			<section class="deck">
-					  				<section class="deck-info">
+					  			<div class="deck">
+					  				<div class="deck-info">
 						  				<p><?= Html::anchor('study/cards/'.$deck->id, $deck->title); ?></p>
 						  				<p>Total Cards: <?= $deck->card_count; ?></p>
 						  				<p>Created on: <?= $deck->date(); ?></p>
-					  				</section>
+					  				</div>
 						  				
-						  			<section class="deck-social">
+						  			<div class="deck-social">
 						  				<p><?= Asset::img('icons/check_mark.png', array('alt' => 'Decking rating', 'width' => '25', 'height' => '20')); ?></p>
 						  				<p>3</p>
 						  				<!-- <p><a href="#" class="share">Share Deck</a></p> -->
-						  			</section>
+						  			</div>
 						  				
 						  			<!-- <p><a href="#">Edit Deck</a> -->
-					  			</section>
+					  			</div>
 					  			<? endforeach; ?>
 					  			
 					  		</div> <!-- end of your-decks -->

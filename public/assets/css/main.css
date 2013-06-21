@@ -1231,6 +1231,7 @@ nav input{
 	margin-right: 20px;
 	padding: 0 10px;
 	overflow: hidden;
+	float: left;
 }
 
 .user-profile aside > img{
@@ -1312,6 +1313,79 @@ nav input{
 }
 
 .friends-list p:last-child a:hover{
+	color: #E67E22;
+}
+
+.profile{
+	float: right;
+	width: 680px;
+	background-color: #FFF;
+	padding: 0 10px;
+}
+
+.user-info{
+	padding: 0 20px 20px 20px;
+}
+
+.user-info h2{
+	float: left;
+}
+
+.user-info button:nth-child(2){
+	width: 100px;
+	height: 30px;
+	font-size: 14px;
+	float: right;
+	margin: 20px 0 0 0;
+}
+
+.profile .your-decks{
+	clear: both;
+	margin-bottom: 40px;
+}
+
+.profile .deck{
+	margin: 20px 0 0 0 ;
+}
+
+.recent-activity {
+	clear: both;
+	padding-top: 30px;
+}
+
+.recent-activity h3{
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.recent-activity .activity{
+	overflow: hidden;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	border-bottom: #666659 solid 1px;
+	padding: 10px 0;
+}
+
+.recent-activity .activity:last-child{
+	border: none;
+}
+
+.recent-activity .activity p:first-child{
+	float: left;
+}
+
+.recent-activity .activity p:last-child{
+	float: right;
+}
+
+.recent-activity .activity a{
+	text-decoration: none;
+	color: #34495E;
+	font-weight: 700;
+}
+
+.recent-activity .activity a:hover{
 	color: #E67E22;
 }
 

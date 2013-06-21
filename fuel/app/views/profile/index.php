@@ -5,7 +5,7 @@
 	// // echo '</pre>';
 ?>			
 
-			<div class="content user-profile">
+			<div class="content user-profile sizer">
     			
     			<aside>
     				<!-- <img src="assets/img/profile_placeholders/kmills006_profile-placeholder.png" alt="Profile Image" width="200" height="200" /> -->

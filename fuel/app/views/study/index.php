@@ -4,7 +4,7 @@
     // echo '</pre>';
 ?>			
 
-            <div class="content study-deck">
+            <div class="content study-deck sizer">
                 <?= Html::anchor('dashboard', 'Back to Dashboard', array('class' => 'back-to-dash')); ?>
     			
     			<aside>
@@ -72,12 +72,12 @@
                     <? if($deck_info->user_id == Session::get('user_id'))
                     {
                         // if you are looking at your own deck, this button gives you the option to edit the deck
-                        echo Html::anchor('deck/edit/'.$deck_info->id, 'Edit Deck', array('class' => 'small-btn'));
+                        echo Form::button('edit', Html::anchor('deck/edit/'.$deck_info->id, 'Edit Deck', array('class' => 'small-btn')));
                     }
                     else
                     {
                         // if you are looking at someone else's deck, this button gives you the option to upvote that deck
-                        echo Html::anchor('deck/like', 'Like Deck', array('class' => 'small-btn'));
+                        echo Form::button('like', Html::anchor('deck/like', 'Like Deck', array('class' => 'small-btn')));
                     } ?>
     				
     				

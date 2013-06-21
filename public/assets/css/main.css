@@ -1219,6 +1219,23 @@ nav input{
 }
 
 /* ==========================================================================
+   Breadcrumbs Styles
+   ========================================================================== 
+*/
+
+.back-to-dash{
+	margin: 20px 5px;	
+	display: block;
+	text-decoration: none;
+	color: #2C3E50;
+	font-size: 14px;
+}
+
+.back-to-dash:hover{
+	color: #E67E22;
+}
+
+/* ==========================================================================
    Profile Styles
    ========================================================================== 
 */
@@ -1387,6 +1404,314 @@ nav input{
 
 .recent-activity .activity a:hover{
 	color: #E67E22;
+}
+
+/* ==========================================================================
+   Study Styles
+   ========================================================================== 
+*/
+
+.study-deck aside{
+	margin: 0 0 20px 0;
+	overflow: auto;
+	width: 220px;
+	background: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	float: left;
+}
+
+.study-deck .header{
+ 	overflow: auto; 
+	background-color: #54544D;
+	padding: 0 5px;
+	height: 40px;
+	color: #FFF:
+}
+
+.study-deck .header h2{
+	margin: 0;
+	padding: 10px;
+	float: left;
+	font-size: 16px;
+	font-weight: 500;
+	color: #FFF;
+}
+
+.study-deck .header p{
+	float: right;
+	margin-right: 10px;
+	vertical-align: middle;
+	line-height: 100%;
+	color: #FFF;
+}
+
+.study-deck .header p img{
+	margin-right: 5px;
+}
+
+.study-deck .header:nth-child(3){
+	margin: 20px 0 0 0;
+}
+
+.sd-deck-info, .challenge, .quiz-stats{
+	padding: 0 10px;
+}
+
+.sd-deck-info a{
+	text-decoration: none;
+	color: #E67E22;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.sd-deck-info a:hover{
+	color: #34495E;
+}
+
+.sd-deck-info p{
+	font-size: 14px;
+	margin: 5px 0;
+}
+
+.sd-deck-info h3{
+	font-size: 18px;
+	margin: 20px 0 5px 0;
+}
+
+.sd-deck-info button{
+	width: auto;
+	height: auto;
+	font-size: 12px;
+	margin: 5px 0;
+	/*font-weight: 600;*/
+	letter-spacing: 1.3px;
+}
+
+.quiz-stats, .challenge{
+	font-size: 14px;
+}
+
+.quiz-stats h3{
+	font-size: 22px;
+	margin: 5px 0;
+}
+
+.quiz-stats a, .challenge a{
+	font-weight: 700;
+	text-decoration: none;
+	color: #E67E22;
+	font-size: 14px;
+}
+
+.quiz-stats a:hover, .challenge a:hover{
+	color: #34495E;
+}
+
+.study-content{
+	width: 700px;
+	float: right;
+	overflow: hidden;
+	background-color: #FFF;
+}
+
+.study-content .header{
+	-webkit-border-top-left-radius: 03px;
+	-webkit-border-top-right-radius: 03px;
+	-moz-border-radius-topleft: 03px;
+	-moz-border-radius-topright: 03px;
+	border-top-left-radius: 03px;
+	border-top-right-radius: 03px;
+	height: 40px;
+}
+
+.study-content .header a{
+	text-decoration: none;
+	color: #FFF;
+	line-height: 40px;
+	border-right: 1px solid #F2F2E2;
+	display: inline-block;
+	padding-right: 15px;
+	margin: 0 0 0 10px;
+	font-size: 14px;
+}
+
+.active-study-tab{
+	font-weight: 600;
+}
+
+.study-content button{
+	height: 25px;
+	width: auto;
+	font-size: 12px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.study-content button:nth-child(2), .study-content button:nth-child(3){
+	background-color: #54544D;
+}
+/* NOT WORKING! */
+.card-sort-active button{
+	background-color: #2C3E50;
+}
+
+.study-content button:nth-child(6), .study-content button:nth-child(7){
+	float: right;
+	margin-right: 20px;
+}
+
+.study-content button:nth-child(6) a, .study-content button:nth-child(7) a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+.study-content button:nth-child(7){
+	display: none;
+}
+
+.study-content input, .study-content label{
+	position: relative;
+	top: 2px;
+}
+.study-content input{
+	margin: 0 5px 0 20px;
+}
+
+.study-content label{
+	font-size: 14px;
+}
+
+.flash-card{
+	width: 520px;
+	height: 248px;
+	margin: 60px auto;
+}
+
+.card{
+	width: 449px;
+	height: 248px;
+	border: 1px solid #000;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-y: 30px;
+	background-image: url("../img/flashcards/flashcard.png");
+	float: left;
+	margin: 0 auto;
+	padding: 0;
+	display: none;
+}	
+
+.card p{
+	margin: 0 auto;
+	vertical-align: middle;
+	padding: 0 30px;
+	font-weight: 700;
+	font-size: 22px;
+	position: relative;
+	top: 75px;
+	text-align: center;
+	width: auto;
+	
+}
+
+.definition{
+	display: none;
+}
+
+.card p:last-child{
+	font-size: 12px;
+	color: #484C4C;
+	font-weight: 600;
+	top: 160px;
+	right: 15px;
+	text-align: left;
+}
+
+.card p:last-child img{
+	position: relative;
+	bottom: 2px;
+	right: 2px;
+}
+
+.controls{
+	position: relative;
+	top: 100px;
+}
+
+.left-arrow{
+	float: left;
+	margin-right: 20px;
+}
+
+.right-arrow{
+	float: left;
+	margin-left: 20px;
+}
+
+.practice-more, .mastered, .flip{
+	clear: both;
+	display: inline-block;
+	margin: 20px 0 40px 0;
+	cursor: pointer;
+}
+
+.practice-more, .mastered{
+	width: 50px;
+	height: 40px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.practice-more{
+	background-color: #951400;
+	background-image: url("../img/icons/practice_more.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 25px 25px;
+	margin-left: 32px;
+}
+
+/* Practice more selected color #C11200 */
+
+.practice-more:hover{
+	background-color: #720B00;
+}
+
+.flip{
+	width: 60px;
+	height: 40px;
+	background-color: #E87C00;
+	background-image: url("../img/icons/flip.png");
+	background-position: center center;
+	background-size: 38px 31px;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	margin-left: 140px;
+}
+
+.flip:hover{
+	background-color: #D35400;
+}
+
+.mastered{
+	background-color: #009245;
+	background-image: url("../img/icons/mastered.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 31px 26px;
+	float: right;
+	margin-right: 37px;
+}
+
+/* Mastered selected color #00B753 */
+
+.mastered:hover{
+	background-color: #007233;
 }
 
 /* ==========================================================================

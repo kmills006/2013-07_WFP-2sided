@@ -54,7 +54,7 @@
 				  			<button class="filters active-filter">Newest</button>
 				  			<button class="filters">Oldest</button>
 				  			<button class="filters">Highest Rating</button>
-				  			<button class="create-new-btn"><?= Html::anchor('deck/create', 'Create New'); ?></button>
+				  			<button class="create-new-btn right-btn"><?= Html::anchor('deck/create', 'Create New'); ?></button>
 				  			<div class="clearfix"></div>
 				  			
 

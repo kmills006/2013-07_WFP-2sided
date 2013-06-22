@@ -1,6 +1,6 @@
-			<div class="content create-deck">
+			<div class="content create-deck sizer">
     			<!-- <a href="user_dashboard.html" class="back-to-dash">Back to Dashboard</a> -->
-				<?= Html::anchor('dashboard', 'Back to Dashboard', array('class' => 'back-to-dash')); ?>
+				<?= Html::anchor('dashboard', 'Back', array('class' => 'back')); ?>
 
     			<aside>
 				 	<h3>Create New Deck</h3>
@@ -33,35 +33,35 @@
 								<div class="term">
 
 								<?  echo Form::label('1.', 'term');
-									echo Form::input('term1', '', array('placeholder' => 'Term')); 
+									echo Form::textarea('term1', '', array('placeholder' => 'Term')); 
 									echo Form::textarea('definition1', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
 								</div>
 
 								<div class="term">
 
 								<?  echo Form::label('2.', 'term');
-									echo Form::input('term2', '', array('placeholder' => 'Term')); 
+									echo Form::textarea('term2', '', array('placeholder' => 'Term')); 
 									echo Form::textarea('definition2', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
 								</div>
 
 								<div class="term">
 
 								<?  echo Form::label('3.', 'term');
-									echo Form::input('term3', '', array('placeholder' => 'Term')); 
+									echo Form::textarea('term3', '', array('placeholder' => 'Term')); 
 									echo Form::textarea('definition3', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
 								</div>
 
 								<div class="term">
 
 								<?  echo Form::label('4.', 'term');
-									echo Form::input('term4', '', array('placeholder' => 'Term')); 
+									echo Form::textarea('term4', '', array('placeholder' => 'Term')); 
 									echo Form::textarea('definition4', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
 								</div>
 
 								<div class="term">
 
 								<?  echo Form::label('5.', 'term');
-									echo Form::input('term5', '', array('placeholder' => 'Term')); 
+									echo Form::textarea('term5', '', array('placeholder' => 'Term')); 
 									echo Form::textarea('definition5', '', array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
 								</div>
 

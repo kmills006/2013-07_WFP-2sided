@@ -7,9 +7,9 @@
 ?>
 
 
-			<div class="content edit-deck">
+			<div class="content edit-deck sizer">
     			<!-- <a href="user_dashboard.html" class="back-to-dash">Back to Dashboard</a> -->
-				<?= Html::anchor('dashboard', 'Back to Dashboard', array('class' => 'back-to-dash')); ?>
+				<?= Html::anchor('dashboard', 'Back', array('class' => 'back')); ?>
 
     			<aside>
 				 	<h3>Edit</h3>
@@ -63,7 +63,7 @@
 
 											echo Form::label($card->position.'.', 'term');
 											echo Form::input('card_id'.$card->id, $card->id, array('type' => 'hidden'));
-											echo Form::input('term'.$card->position, $card->term, array('placeholder' => 'Term')); 
+											echo Form::textarea('term'.$card->position, $card->term, array('placeholder' => 'Term')); 
 											echo Form::textarea('definition'.$card->position, $card->definition, array('placeholder' => 'Definition', 'class' => 'opensans')); ?>
 									</div>
 								<? endforeach; ?>

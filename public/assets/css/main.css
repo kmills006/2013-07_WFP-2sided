@@ -1223,8 +1223,8 @@ nav input{
    ========================================================================== 
 */
 
-.back-to-dash{
-	margin: 20px 5px;	
+.back{
+	margin: 20px;	
 	display: block;
 	text-decoration: none;
 	color: #2C3E50;
@@ -1712,6 +1712,124 @@ nav input{
 
 .mastered:hover{
 	background-color: #007233;
+}
+
+/* ==========================================================================
+   Add/Edit Deck Styles
+   ========================================================================== 
+*/
+
+.edit-deck aside, .create-deck aside{
+	width: 200px;
+	background-color: #FFF;
+	margin-left: 10px;
+	margin-right: 20px;
+	padding: 0 10px;
+	overflow: hidden;
+	float: left;
+}
+
+.new-deck-info{
+	overflow: hidden;
+	width: 640px;
+	background: #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 0;
+	float: left;
+	padding: 20px;
+}
+
+.new-deck-info h3{
+	margin: 0 0 20px 0;
+}
+
+.new-deck-info form input{
+	display: inline-block;
+	padding: 5px;
+	margin: 0 20px 20px 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: #E67E22 solid 1px;
+}
+
+#form_tags{
+	margin: 0;
+}
+
+.new-deck-info .deck-info{
+	width: 640px;
+	margin: 0 0 20px 0;
+	padding-bottom: 20px;
+}
+
+#form_title{
+	width: 330px;
+}
+
+#form_tags{
+	width: 265px;
+}
+
+.new-deck-info .deck-info input[type="radio"]{
+	/*clear: both;*/
+	display: inline-block;
+	padding: 0;
+	margin: 0 0 0 10px;
+}
+
+.new-deck-info .deck-info label{
+	font-size: 14px;	
+	padding: 0 10px 0 10px;
+	font-weight: 600;
+}
+
+.new-deck-info .deck-info{
+	border-bottom: 1px solid #000;
+}
+
+.terms{
+	clear: both;
+}
+
+.term label{
+	margin-right: 20px;
+	font-size: 14px;
+}
+
+.term textarea{
+	width: 280px;
+	margin: 0 20px 20px 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: #E67E22 solid 1px;
+	padding: 5px;
+}
+
+.term textarea:last-child{
+	margin: 0;
+}
+
+.new-deck-info a{
+	font-size: 12px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+}
+
+.new-deck-info a img{
+	position: relative;
+	top: -2px;
+	margin-right: 5px;
+}
+
+.new-deck-info button{
+	display: block;
+	margin: 30px 0 0 0;
 }
 
 /* ==========================================================================

@@ -1,5 +1,7 @@
 <?php
 
+use \Social\Facebook;
+
 class Controller_User extends Controller_Template{
 
 	/**
@@ -45,6 +47,52 @@ class Controller_User extends Controller_Template{
 			$this->get_login();
 		}
 
+	}
+
+
+	/**
+	 * Facebook Login
+	 * 
+	 * 
+	 */
+	public function action_facebook()
+	{
+
+		$data= array();
+
+        $fbl_params = array(
+        				'scope'        => 'email',
+        				'redirect_uri' => Uri::create('user/handle_facebook'),
+        );
+
+        $data['fb_login_url'] = Facebook::instance()->getLoginUrl($fbl_params);
+
+        Response::redirect($data['fb_login_url']);
+	}
+
+
+	public function action_handle_facebook()
+	{
+
+		$user_id = Facebook::instance()->getUser();
+		var_dump($user_id);
+
+		if($user_id)
+		{
+			try{
+				$me = Facebook::instance()->api('/me');
+				$user = $me;
+
+				var_dump($user);
+			}catch(FacebookApiException $e){
+				error_log($e);
+			}
+		}
+
+		$this->template->head    = View::forge('includes/head');
+		$this->template->header  = View::forge('includes/logged_out/header');
+		$this->template->content = View::forge('signup/index');
+		$this->template->footer  = View::forge('includes/footer');
 	}
 	
 

@@ -1,6 +1,6 @@
 			<div class="content login">	
 				<div class="sm-btns">
-    				<p class="sm-btn fb-btn"><span>Login with Facebook</span></p><p class="sm-btn twitter-btn"><span>Login with Twitter</span></p>
+    				<p class="sm-btn fb-btn"><?= Html::anchor('user/facebook', 'Login with Facebook'); ?></p><p class="sm-btn twitter-btn"><?= Html::anchor('user/twitter', 'Login with Twitter'); ?></p>
     			</div>
 
     			<div><span>or</span></div>

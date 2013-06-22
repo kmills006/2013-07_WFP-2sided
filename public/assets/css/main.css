@@ -474,8 +474,15 @@ nav input{
 	padding: 0;
 }
 
-.sm-btn span{
+.sm-btn a{
+	text-decoration: none;
+	color: #FFF;
+	font-weight: 200;
 	margin: 0 0 0 50px;
+}
+
+.twitter-btn a{
+	margin-left: 70px;
 }
 
 .fb-btn{
@@ -1800,7 +1807,7 @@ nav input{
 }
 
 .term textarea{
-	width: 280px;
+	width: 270px;
 	margin: 0 20px 20px 0;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;

@@ -57,7 +57,6 @@ class Controller_User extends Controller_Template{
 	 */
 	public function action_facebook()
 	{
-
 		$data= array();
 
         $fbl_params = array(
@@ -71,28 +70,53 @@ class Controller_User extends Controller_Template{
 	}
 
 
+	/**
+	 * [action_handle_facebook description]
+	 * @return [type] [description]
+	 */
 	public function action_handle_facebook()
 	{
 
 		$user_id = Facebook::instance()->getUser();
-		var_dump($user_id);
+		// var_dump($user_id);
 
 		if($user_id)
 		{
 			try{
 				$me = Facebook::instance()->api('/me');
-				$user = $me;
+				$fb_user = $me;
 
-				var_dump($user);
+				if(!$fb_user)
+				{
+					// No user found
+				}
+				else
+				{
+					// Checks if the the user is alrady 
+					// a member of the community
+					if(Model_User::is_member($fb_user))
+					{
+						$user = Model_User::is_member($fb_user);
+
+						$session = Session::set(array(
+									'user_id'      => $user['id'],
+									'username'     => $user['username'],
+									'is_logged_in' => 1,
+						));
+
+						Response::redirect('dashboard');
+					}
+					else
+					{
+						// If this the first time the user
+						// is logging in, register their 
+						// Facebook information with a new account
+					}
+				}
 			}catch(FacebookApiException $e){
 				error_log($e);
 			}
 		}
-
-		$this->template->head    = View::forge('includes/head');
-		$this->template->header  = View::forge('includes/logged_out/header');
-		$this->template->content = View::forge('signup/index');
-		$this->template->footer  = View::forge('includes/footer');
 	}
 	
 

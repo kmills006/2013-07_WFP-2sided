@@ -150,6 +150,30 @@ class Model_User extends \Orm\Model
 
 
 
+
+	public static function is_member($user)
+	{
+		// echo '<pre>';
+		// var_dump($user);
+		// echo '</pre>';
+		
+		$user = static::query()
+							->where('facebook_id', $user['id'])
+							->or_where('email', $user['email'])
+							->get_one();
+		if($user == null)
+		{
+			return false;
+		}
+		else
+		{
+			return $user;
+		}
+		
+	}
+
+
+
 	/**
 	 * [date description]
 	 * @param  string $format [description]

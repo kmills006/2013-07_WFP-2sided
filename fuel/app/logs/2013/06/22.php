@@ -207,3 +207,7 @@ ERROR - 2013-06-22 15:44:02 --> Runtime Notice - Non-static method Social\Facebo
 ERROR - 2013-06-22 15:44:08 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/user.php on line 77
 ERROR - 2013-06-22 15:44:22 --> Warning - call_user_func_array() expects parameter 1 to be a valid callback, class 'Facebook' does not have a method 'check' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/social/classes/facebook.php on line 37
 ERROR - 2013-06-22 15:44:35 --> Warning - call_user_func_array() expects parameter 1 to be a valid callback, class 'Facebook' does not have a method 'get_user' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/social/classes/facebook.php on line 37
+ERROR - 2013-06-22 17:04:05 --> Error - Invalid method call.  Method is_member does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-06-22 17:17:06 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 16
+ERROR - 2013-06-22 17:17:07 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 16
+ERROR - 2013-06-22 17:17:29 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 16

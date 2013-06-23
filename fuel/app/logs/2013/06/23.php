@@ -150,3 +150,21 @@ ERROR - 2013-06-23 15:18:26 --> Parsing Error - syntax error, unexpected ')' in 
 ERROR - 2013-06-23 15:18:26 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/user.php on line 178
 ERROR - 2013-06-23 15:18:26 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/user.php on line 178
 ERROR - 2013-06-23 15:41:28 --> 3 - Username already exists in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/auth/classes/auth/login/simpleauth.php on line 226
+ERROR - 2013-06-23 16:39:44 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-23 16:40:28 --> Notice - Undefined variable: username in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 34
+ERROR - 2013-06-23 16:40:38 --> Notice - Undefined variable: username in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 34
+ERROR - 2013-06-23 16:40:44 --> Notice - Undefined variable: username in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 34
+ERROR - 2013-06-23 16:40:44 --> Notice - Undefined variable: username in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 34
+ERROR - 2013-06-23 16:40:45 --> Notice - Undefined variable: username in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 34
+ERROR - 2013-06-23 16:41:12 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 34
+ERROR - 2013-06-23 16:41:14 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 34
+ERROR - 2013-06-23 16:41:14 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 34
+ERROR - 2013-06-23 16:41:15 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 34
+ERROR - 2013-06-23 16:41:15 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 34
+ERROR - 2013-06-23 16:41:16 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 34
+ERROR - 2013-06-23 16:41:22 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 30
+ERROR - 2013-06-23 16:41:23 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 30
+ERROR - 2013-06-23 16:41:35 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 30
+ERROR - 2013-06-23 16:41:51 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 34
+ERROR - 2013-06-23 16:44:08 --> Notice - Undefined variable: username in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 34
+ERROR - 2013-06-23 16:44:27 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249

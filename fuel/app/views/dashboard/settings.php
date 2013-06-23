@@ -23,10 +23,19 @@
 				  	<h2>User Settings</h2>
 				
 				  		<?
-				  			echo Form::open('user/settings');
+				  			echo Form::open(array('enctype' => 'multipart/form-data', 'action' => 'user/settings'));
 
-				  			echo Asset::img('profile_photos/'.$user_info->profile_image, array('width' => 150, 'height' => 150, 'alt' => $user_info->username.' profile image'));
-				  			echo Form::input('picture', null, array('type' => 'file'));
+				  			if(isset($user_info->profile_image) && $user_info->profile_image != null)
+	    					{
+	    						echo Asset::img('profile_photos/'.$user_info->profile_image, array('class' => 'chan-image', 'width' => 150, 'height' => 150, 'alt' => $user_info->username.' profile image'));
+	    					}
+	    					else
+	    					{
+	    						echo Asset::img('profile_photos/profile_placeholder.gif', array('class' => 'chan-image', 'width' => 150, 'height' => 150, 'alt' => $user_info->username.' profile image'));
+	    					}
+
+				  			
+				  			echo Form::input('picture', null, array('type' => 'file', 'class' => 'chan-image-btn'));
 				  		?>
 
 				  			<div class='fake-file'><p>Change Image</p></div>

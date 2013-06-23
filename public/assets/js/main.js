@@ -52,7 +52,28 @@
 			}); */
 
 		});
+
+
+
+		// Change Image
+		$('.chan-image-btn').on('change', function(e){
+
+			console.log('File changed');
+            var newImage = e.currentTarget;
+
+            if (newImage.files && newImage.files) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('.chan-image').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(newImage.files[0]);
+            }
+
+		});
 	}
+
 
 
 

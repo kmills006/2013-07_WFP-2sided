@@ -98,9 +98,9 @@ class Controller_User extends Controller_Template{
 					{
 						$user = Model_User::is_member($fb_user);
 
-						echo '<pre>';
-						var_dump($user);
-						echo '</pre>';
+						// echo '<pre>';
+						// var_dump($user);
+						// echo '</pre>';
 
 						$session = Session::set(array(
 									'user_id'      => $user['id'],
@@ -108,18 +108,32 @@ class Controller_User extends Controller_Template{
 									'is_logged_in' => 1,
 						));
 
-						// Response::redirect('dashboard');
-						
-						$this->template->head    = View::forge('includes/head');
-						$this->template->header  = View::forge('includes/logged_out/header');
-						$this->template->content = View::forge('signup/index');
-						$this->template->footer  = View::forge('includes/footer');
+						Response::redirect('dashboard');
 					}
 					else
 					{
 						// If this the first time the user
 						// is logging in, register their 
 						// Facebook information with a new account
+						// $new_user = Auth::create_user(
+						// 					$fb_user['username'],
+						// 					null,
+
+						// );
+						
+						// echo '<pre>';
+						// var_dump($fb_user);
+						// echo '</pre>';
+						
+						$this->template->head    = View::forge('includes/head');
+
+						$this->template->header  = View::forge('includes/logged_out/header');
+
+						$this->template->content = View::forge('signup/facebook', array(
+															'facebook_user' => $fb_user,
+						));
+						
+						$this->template->footer  = View::forge('includes/footer');
 					}
 				}
 			}catch(FacebookApiException $e){
@@ -147,13 +161,15 @@ class Controller_User extends Controller_Template{
 	 * Registering a new user
 	 */
 	public function post_signup()
-	{
-		
+	{		
 		$new_user = Auth::create_user(
-						Input::post('username'),
-						Input::post('password'),
-						Input::post('email'),
-						1
+							Input::post('username'),
+							Input::post('password'),
+							Input::post('email'),
+							1,
+							array(
+								'facebook_id' => Input::post('facebook_id'),	
+							)
 		);
 
 		if(!$new_user)

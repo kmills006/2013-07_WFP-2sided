@@ -32,7 +32,15 @@
 				  			<div class='fake-file'><p>Change Image</p></div>
 
 				  			<div class="sm-btns">
-			    				<p class="sm-btn fb-btn"><span>Link to Facebook</span></p><p class="sm-btn twitter-btn"><span>Link to Twitter</span></p>
+			    				<? if($user_info->facebook_id == null): ?>
+
+			    					<p class="sm-btn fb-btn"><span>Link to Facebook</span></p>
+
+								<? elseif($user_info->twitter_id == null): ?>
+
+			    					<p class="sm-btn twitter-btn"><span>Link to Twitter</span></p>
+
+			    				<? endif; ?>
 			    			</div>
 
 			    			<div class='clearfix'></div>

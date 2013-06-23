@@ -150,16 +150,21 @@ class Model_User extends \Orm\Model
 
 
 
-
-	public static function is_member($user)
+	/**
+	 * [is_member description]
+	 * @param  array   $fb_user 
+	 * @return boolean          
+	 * @return array   $user    
+	 */
+	public static function is_member($fb_user)
 	{
 		// echo '<pre>';
 		// var_dump($user);
 		// echo '</pre>';
 		
 		$user = static::query()
-							->where('facebook_id', $user['id'])
-							->or_where('email', $user['email'])
+							->where('facebook_id', $fb_user['id'])
+							->or_where('email', $fb_user['email'])
 							->get_one();
 		if($user == null)
 		{
@@ -167,6 +172,16 @@ class Model_User extends \Orm\Model
 		}
 		else
 		{
+
+			// Checking if the user already had an account
+			// and storing their facebook_id with their account
+			if($user->facebook_id == null)
+			{
+				$user->facebook_id = $fb_user['id'];
+
+				$user->save();
+			}
+
 			return $user;
 		}
 		

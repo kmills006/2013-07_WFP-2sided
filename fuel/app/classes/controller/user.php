@@ -98,13 +98,22 @@ class Controller_User extends Controller_Template{
 					{
 						$user = Model_User::is_member($fb_user);
 
+						echo '<pre>';
+						var_dump($user);
+						echo '</pre>';
+
 						$session = Session::set(array(
 									'user_id'      => $user['id'],
 									'username'     => $user['username'],
 									'is_logged_in' => 1,
 						));
 
-						Response::redirect('dashboard');
+						// Response::redirect('dashboard');
+						
+						$this->template->head    = View::forge('includes/head');
+						$this->template->header  = View::forge('includes/logged_out/header');
+						$this->template->content = View::forge('signup/index');
+						$this->template->footer  = View::forge('includes/footer');
 					}
 					else
 					{

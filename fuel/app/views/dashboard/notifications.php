@@ -18,13 +18,13 @@
 				</div>
 				  
 				  <div id="notifications" class="ud-tab-content">
-				  	<h2>kmills006 New Notifications</h2>
+				  	<h2><?= $username; ?> New Notifications</h2>
 				  	
 
 						<? if(isset($notifications))
 						{
 							foreach($notifications as $notification): ?>
-						  		<section class="user-notification">
+						  		<div class="user-notification">
 						  			<? if($notification->profile_image != null)
 						  			   {
 						  			   		echo Asset::img('profile_photos/thumbs/'.$notification->profile_image, array('alt' => $notification->username.' profile image'));
@@ -38,15 +38,17 @@
 							  			
 							  			<button>Reject</button>
 							  			<button>Accept</button>
-						  		</section>
+						  		</div>
 				  			<? endforeach;
 						}
 						else
-						{
+						{ ?>
 
-							// User has no new notifications
+							<div class="user-notification">
+								<p>No New Notifications</p>
+							</div>
 
-						} ?>
+						<? } ?>
 
 						
 				  </div>			  

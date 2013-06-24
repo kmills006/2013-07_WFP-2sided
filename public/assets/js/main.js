@@ -55,20 +55,32 @@
 
 
 
-		// Change Image
+		// Change Profile Image
+		// Before the user saves a new profile image,
+		// they can see a preview of the new image
 		$('.chan-image-btn').on('change', function(e){
-
-			console.log('File changed');
             var newImage = e.currentTarget;
 
-            if (newImage.files && newImage.files) {
+           if (newImage.files && newImage.files) {
                 var reader = new FileReader();
 
                 reader.onload = function (e) {
                     $('.chan-image').attr('src', e.target.result);
+                    
+                    // $('.new-image').attr('src', e.target.result);
                 }
 
                 reader.readAsDataURL(newImage.files[0]);
+
+                $('.fake-file p').text('Save');
+
+                $('.fake-file p').on('click', function(e){
+                	console.log('banan grams');
+                });
+
+                // $('.change-img-modal').reveal();
+
+                // $('.new-image').Jcrop();
             }
 
 		});

@@ -1199,6 +1199,11 @@ nav input{
 	background-color: #E67E22;
 }
 
+/*.new-image{
+	width: 400px;
+	height: auto;
+}*/
+
 .fake-file{
 	height: 40px;
 	width: 150px;
@@ -1260,7 +1265,7 @@ nav input{
 	font-size: 14px;
 }
 
-.back-to-dash:hover{
+.back:hover{
 	color: #E67E22;
 }
 

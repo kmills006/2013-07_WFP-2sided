@@ -206,13 +206,22 @@ class Controller_User extends Controller_Template{
 	public function post_settings()
 	{
 
+		echo '<pre>';
+		var_dump(Input::post());
+		echo '</pre>';
+
 		$updated_info['user']     = Model_User::get_by_id(Session::get('user_id'));
 		$updated_info['new_info'] = Input::post();
 
 		$update_user = Model_User::update_user($updated_info);
 		
 		// On successful update, reload user dashbord on settings page
-		Response::redirect('dashboard/settings');
+		// Response::redirect('dashboard/settings');
+		
+		$this->template->head    = View::forge('includes/head');
+		$this->template->header  = View::forge('includes/logged_out/header');
+		$this->template->content = View::forge('signup/index');
+		$this->template->footer  = View::forge('includes/footer');
 	}
 
 

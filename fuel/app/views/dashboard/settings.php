@@ -34,9 +34,13 @@
 	    						echo Asset::img('profile_photos/profile_placeholder.gif', array('class' => 'chan-image', 'width' => 150, 'height' => 150, 'alt' => $user_info->username.' profile image'));
 	    					}
 
-				  			
 				  			echo Form::input('picture', null, array('type' => 'file', 'class' => 'chan-image-btn'));
 				  		?>
+
+				  			<div id="myModal" class="reveal-modal change-img-modal">
+							     <?= Asset::img('profile_photos/profile_placeholder.gif', array('class' => 'new-image')); ?>
+							     <a class="close-reveal-modal">&#215;</a>
+							</div>
 
 				  			<div class='fake-file'><p>Change Image</p></div>
 

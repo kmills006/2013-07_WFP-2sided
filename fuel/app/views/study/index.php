@@ -5,7 +5,7 @@
 ?>			
 
             <div class="content study-deck sizer">
-                <?= Html::anchor('dashboard', 'Back to Dashboard', array('class' => 'back-to-dash')); ?>
+                <?= Html::anchor('dashboard', 'Back to Dashboard', array('class' => 'back')); ?>
     			
     			<aside>
     			
@@ -25,9 +25,16 @@
 						
 						<h3>Tags</h3>
 						
-						<button>jeopardy</button>
-						<button>game show</button>
-						<button>trivia</button>
+						<? if(isset($tags))
+                        {
+                            foreach($tags as $tag)
+                            {
+                                echo Form::button($tag->tag_name);
+                            }
+                        } 
+                        else{
+                            // No tags
+                        }?>
     				</div>
 
     				

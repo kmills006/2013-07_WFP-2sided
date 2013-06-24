@@ -168,3 +168,4 @@ ERROR - 2013-06-23 16:41:35 --> Parsing Error - syntax error, unexpected ')' in 
 ERROR - 2013-06-23 16:41:51 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 34
 ERROR - 2013-06-23 16:44:08 --> Notice - Undefined variable: username in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/settings.php on line 34
 ERROR - 2013-06-23 16:44:27 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-23 19:55:15 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 84

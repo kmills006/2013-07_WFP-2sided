@@ -18,6 +18,8 @@
         <?  echo Asset::js('vendor/jquery-1.10.0.min.js');
             echo Asset::js('vendor/jquery-ui-1.10.3.custom.min.js');
             echo Asset::js('plugins/rotate3Di.js');
+            echo Asset::js('plugins/jquery.reveal.js');
+            echo Asset::js('plugins/jquery.Jcrop.min.js');
             echo Asset::js('plugins.js');
 		    echo Asset::js('main.js'); ?>
 </html>

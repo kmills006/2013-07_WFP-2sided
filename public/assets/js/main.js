@@ -25,7 +25,57 @@
 	// });
 		
 		
-		
+	/**
+	 *
+	 * User Dashboard
+	 * 
+	 */
+	var initDashboard = function()
+	{
+		$('.filters').each(function(i){
+
+			$(this).on('click', function(e){
+
+				switch($(this).text())
+				{
+					case 'Newest':
+						console.log('Newest');
+
+						$.ajax({
+							url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/sort_newest',
+							type: 'get',
+							success: function(response){
+								console.log(response);
+							},
+							error: function(response){
+								console.log(response.responseText);
+							}
+						});
+
+						break;
+
+					case 'Oldest':
+						console.log('Oldest');
+
+						break;
+
+					case 'Highest Rating':
+						console.log('Highest Rating');
+
+						break;
+
+					default:
+
+						break;
+				}
+
+				return false;
+				e.preventDefault();
+
+			});
+
+		});
+	}
 
 
 	/**
@@ -102,7 +152,6 @@
 		$('.card').first().addClass('active-card').css('display', 'block');
 
 		var activeCard = $('.active-card'); 
-		
 		
 		// Card click to change term
 		$('.card p').on('click', function(e){
@@ -183,6 +232,7 @@
 	initAddTerm();
 	initCards();
 	initSettings();
+	initDashboard();
 
 	
 	

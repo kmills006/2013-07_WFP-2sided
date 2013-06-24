@@ -36,6 +36,13 @@ class Controller_Deck extends Controller_Template{
 		$deck_info['privacy'] = Input::post('privacy');
 
 		$new_deck = Model_Deck::save_deck($deck_info);
+		
+
+		// Adding tags to database
+		$new_tags = explode(',', Input::post('tags'));
+		$new_tags['deck_id'] = $deck_info['id'];
+		
+		$tags = Model_Tag::save_tags($new_tags);
 
 
 		// Removing the deck title, privacy and tags

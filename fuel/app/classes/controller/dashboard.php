@@ -120,5 +120,14 @@ class Controller_Dashboard extends Controller_Template
 		}
 	}
 
+
+
+
+
+	public function get_sort_newest()
+	{
+		echo 'HERE HOORAY!';
+	}
+
 }
 

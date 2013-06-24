@@ -45,4 +45,22 @@ class Model_Tag extends \Orm\Model
 							->where('deck_id', $deck_id)
 							->get();
 	}
+
+
+	public static function save_tags($tags)
+	{
+
+		// Removing the deck id from the array
+		$deck_id = array_pop($tags);
+
+		foreach($tags as $tag)
+		{
+			$tag = static::forge(array(
+							'deck_id'  => $deck_id,
+							'tag_name' => $tag,
+			));
+
+			$tag->save();
+		}
+	}
 }

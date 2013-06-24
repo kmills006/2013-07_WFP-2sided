@@ -5,5 +5,5 @@
 		
 		'landing'   => 'landing/index',
 	    'login'     => 'login/index',
-	    'signup'    => 'signup/index'
+	    'signup'    => 'signup/index',
 	);

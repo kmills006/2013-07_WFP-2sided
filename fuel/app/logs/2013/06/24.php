@@ -117,3 +117,37 @@ ERROR - 2013-06-24 15:10:34 --> Parsing Error - syntax error, unexpected '(', ex
 ERROR - 2013-06-24 15:10:34 --> Parsing Error - syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 36
 ERROR - 2013-06-24 15:10:41 --> Parsing Error - syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 36
 ERROR - 2013-06-24 15:10:41 --> Parsing Error - syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 36
+ERROR - 2013-06-24 15:26:52 --> Parsing Error - syntax error, unexpected ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/landing/index.php on line 23
+ERROR - 2013-06-24 15:28:21 --> Parsing Error - syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/landing/index.php on line 26
+ERROR - 2013-06-24 15:28:21 --> Parsing Error - syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/landing/index.php on line 26
+ERROR - 2013-06-24 15:28:21 --> Parsing Error - syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/landing/index.php on line 26
+ERROR - 2013-06-24 15:28:21 --> Parsing Error - syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/landing/index.php on line 26
+ERROR - 2013-06-24 15:28:22 --> Parsing Error - syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/landing/index.php on line 26
+ERROR - 2013-06-24 15:28:22 --> Parsing Error - syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/landing/index.php on line 26
+ERROR - 2013-06-24 15:28:22 --> Parsing Error - syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/landing/index.php on line 26
+ERROR - 2013-06-24 15:28:22 --> Parsing Error - syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/landing/index.php on line 26
+ERROR - 2013-06-24 15:28:22 --> Parsing Error - syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/landing/index.php on line 26
+ERROR - 2013-06-24 15:28:23 --> Parsing Error - syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/landing/index.php on line 26
+ERROR - 2013-06-24 16:23:15 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
+ERROR - 2013-06-24 16:23:23 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
+ERROR - 2013-06-24 16:23:23 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
+ERROR - 2013-06-24 16:23:23 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
+ERROR - 2013-06-24 16:23:23 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
+ERROR - 2013-06-24 16:23:23 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
+ERROR - 2013-06-24 16:23:24 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
+ERROR - 2013-06-24 16:23:24 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
+ERROR - 2013-06-24 16:23:24 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
+ERROR - 2013-06-24 16:23:24 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
+ERROR - 2013-06-24 16:23:27 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
+ERROR - 2013-06-24 16:23:27 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
+ERROR - 2013-06-24 16:23:49 --> Error - The requested view could not be found: login/landing in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 388
+ERROR - 2013-06-24 16:23:56 --> Error - The requested view could not be found: landing in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 388
+ERROR - 2013-06-24 17:15:38 --> Parsing Error - syntax error, unexpected ''%;' (T_CONSTANT_ENCAPSED_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 235
+ERROR - 2013-06-24 17:15:59 --> Parsing Error - syntax error, unexpected '';' (T_CONSTANT_ENCAPSED_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 235
+ERROR - 2013-06-24 17:16:05 --> Parsing Error - syntax error, unexpected '';' (T_CONSTANT_ENCAPSED_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 235
+ERROR - 2013-06-24 17:16:11 --> Parsing Error - syntax error, unexpected ''' (T_CONSTANT_ENCAPSED_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 235
+ERROR - 2013-06-24 17:16:24 --> Error - Invalid method call.  Method search_decks does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-06-24 17:55:18 --> Error - Call to undefined method Fuel\Core\Database_Query_Builder_Select::like() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 241
+ERROR - 2013-06-24 17:55:32 --> 42000 - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 1 with query: "SELECT * FROM `decks` WHERE `title`  null" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-06-24 19:05:53 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 248
+ERROR - 2013-06-24 19:06:21 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 246

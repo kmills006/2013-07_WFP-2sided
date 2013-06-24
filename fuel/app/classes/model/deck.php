@@ -211,6 +211,10 @@ class Model_Deck extends \Orm\Model
 	}
 
 
+	/**
+	 * [delete_deck description]
+	 * @param  interger $deck_id
+	 */
 	public static function delete_deck($deck_id)
 	{
 		$deck = static::query()
@@ -218,10 +222,29 @@ class Model_Deck extends \Orm\Model
 							->get_one();
 
 		$deck->delete();
-
 	}
 
 
+	/**
+	 * [search_decks description]
+	 * @param  string $search_term
+	 * @return array  $decks
+	 */
+	public static function search_decks($search_term)
+	{
+
+		$results = DB::select()
+							->from('decks')
+							->where('title', 'LIKE', '%'.$search_term.'%')
+							->as_object('Model_Deck')->execute();
+
+		foreach($results as $result)
+		{
+			$decks[] = $result;
+		}
+
+		return $decks;
+	}
 
 	/**
 	 * [date description]

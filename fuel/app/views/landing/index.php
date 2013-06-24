@@ -3,7 +3,7 @@
 	    		<div class="cta-search sizer">
 	    			<h1>What do you want to study today?</h1>
 	    				
-	    				<form>
+	    				<?= Form::open('search'); ?>
 	    					<select class="top-cat">
 	    						<option value="default">Top Tags</option>
 	    						<option value="arts">Arts</option>
@@ -18,10 +18,12 @@
 	    					
 	    					<p>or</p>
 	    					
-	    					<input type="text" placeholder="Search by title, tags or subjects" />
-	    					
-	    					<button class="search-btn opensans">Search</button>
-	    				</form>
+	    					<?
+	    						echo Form::input('search', '', array('placeholder' => 'Search by title, tags or user'));
+	    						echo Form::button('search-btn', 'Search', array('class' => 'opensans'));
+
+	    						echo Form::close();
+	    					?>
 	    		</div> <!-- end of cta-search -->
 	    		
 	    		

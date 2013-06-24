@@ -169,7 +169,7 @@
 
 			counter = counter + 1;
 
-			var newFields = '<div class="term"><label for="term' + counter + '">' + counter + '.</label><input type="hidden" name="' + counter + '" value="' + counter + '"/><input type="text" placeholder="Term" name="term' + counter + '"/><textarea class="opensans" placeholder="Definition" name="definition' + counter + '"></textarea></div>';
+			var newFields = '<div class="term"><label for="term' + counter + '">' + counter + '.</label><input type="hidden" name="' + counter + '" value="' + counter + '"/><textarea class="opensans" placeholder="Term" name="term' + counter + '"></textarea><textarea class="opensans" placeholder="Definition" name="definition' + counter + '"></textarea></div>';
 
 			$('.terms').append(newFields);
 

@@ -24,29 +24,56 @@ class Controller_User extends Controller_Template{
 	 */
 	public function post_login()
 	{
-		
-		if(Auth::login())
-		{
-			$user['user_id']       = Auth::get_user_id()[1];
-			$user['username']      = Auth::get('username');
-			
-			
-			$session = Session::set(array(
-						'user_id'      => $user['user_id'],
-						'username'     => $user['username'],
-						'is_logged_in' => 1,
-			));
 
-			// If successful login, direct users to their dashboard
-			Response::redirect('dashboard');
+		$val = Validation::forge('login_validation');
+
+		$val->add('username', 'Username or Email Address')->add_rule('required');
+		$val->add('password', 'Password')->add_rule('required');
+		$val->set_message('required', 'The field :label is required.');
+
+		if($val->run())
+		{
+			// If the user has correctly filled in both fields
+			// attempt to login user
+			if(Auth::login())
+			{
+				$user['user_id']       = Auth::get_user_id()[1];
+				$user['username']      = Auth::get('username');
+				
+				
+				$session = Session::set(array(
+							'user_id'      => $user['user_id'],
+							'username'     => $user['username'],
+							'is_logged_in' => 1,
+				));
+
+				// If successful login, direct users to their dashboard
+				Response::redirect('dashboard');
+			}
+			else
+			{
+				// If login failed, return user to login screen
+				// and display error message
+				$this->get_login();
+			}
 		}
 		else
 		{
-			// If login failed, return user to login screen
-			// and display error message
-			$this->get_login();
-		}
+			// If the user has left either the username or password empty
+			// reload the login screen with errors
+			
 
+
+			$this->template->head    = View::forge('includes/head');
+
+			$this->template->header  = View::forge('includes/logged_out/header');
+
+			$this->template->content = View::forge('login/index', array(
+												'error_msg' => $val->error(),
+			));
+
+			$this->template->footer  = View::forge('includes/footer');
+		}
 	}
 
 

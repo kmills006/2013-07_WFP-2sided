@@ -1,4 +1,4 @@
-			<div class="content login">	
+            <div class="content login">	
 				<div class="sm-btns">
     				<p class="sm-btn fb-btn"><?= Html::anchor('user/facebook', 'Login with Facebook'); ?></p><p class="sm-btn twitter-btn"><?= Html::anchor('user/twitter', 'Login with Twitter'); ?></p>
     			</div>
@@ -7,7 +7,21 @@
     				
     				
     			<?
+
     				echo Form::open('user/login');
+
+                    // Checking if there are any error
+                    // messages from validation
+                    if(isset($error_msg))
+                    {
+                        foreach($error_msg as $error)
+                        {              
+                            echo html_tag('p', array(
+                                                'class' => 'form-errors',
+
+                            ), $error->get_message());
+                        }
+                    }
     				
     				echo Form::input('username', '', array(
                                                         'id'                              => 'username',

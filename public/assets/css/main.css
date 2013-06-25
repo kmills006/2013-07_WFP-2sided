@@ -406,6 +406,13 @@ nav input{
 	font-size: 16px;
 }
 
+.form-errors{
+	font-size: 12px;
+	color: red;
+	padding: 0;
+	margin: 5px 0 0 :;
+}
+
 
 /* ==========================================================================
    Sign Up Styles
@@ -549,7 +556,7 @@ nav input{
 	margin-top: 20px;
 }
 
-.login div:nth-child(2) span{
+/*.login div:nth-child(2) span{
 	display: inline-block;
 	margin: 10px 0 0 0;
 }
@@ -572,7 +579,7 @@ nav input{
 .login div:nth-child(2) span:after{
 	right: 420px;
 	left: auto;
-}
+}*/
 
 .login form{
 	padding-top: 15px;

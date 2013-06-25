@@ -7,6 +7,28 @@
     	
     			<?
     				echo Form::open('user/signup');
+
+                     // Checking if there are any error
+                    // messages from validation
+                    if(isset($error_msg))
+                    {
+                        if(gettype($error_msg) == 'array')
+                        {
+                            foreach($error_msg as $error)
+                            {              
+                                echo html_tag('p', array(
+                                                    'class' => 'form-errors',
+
+                                ), $error->get_message());
+                            }
+                        }
+                        else{
+                            echo html_tag('p', array(
+                                                    'class' => 'form-errors',
+
+                                ), $error_msg);
+                        }
+                    }
     				
 
     				echo Form::input('username', '', array(
@@ -21,7 +43,7 @@
                                                     'placeholder'                     => 'Email',
                                                     'class'                           => 'opensans validate[required,custom[email]',
                                                     'data-errormessage-value-missing' => 'Email address is required.',
-                                                    'data-prompt-position'            => 'rightCenter:50,55',
+                                                    'data-prompt-position'            => 'rightCenter:50,63',
                     ));
 
     				

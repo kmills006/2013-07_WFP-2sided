@@ -178,8 +178,17 @@ class Controller_User extends Controller_Template{
 	 * Registering a new user
 	 */
 	public function post_signup()
-	{		
-		$new_user = Auth::create_user(
+	{	
+		$val = Validation::forge('login_validation');
+
+		$val->add('username', 'Username')->add_rule('required');
+		$val->add('email', 'Email')->add_rule('required');
+		$val->add('password', 'Password')->add_rule('required');
+		$val->set_message('required', 'The field :label is required.');
+
+		if($val->run())
+		{
+			$new_user = Auth::create_user(
 							Input::post('username'),
 							Input::post('password'),
 							Input::post('email'),
@@ -187,29 +196,47 @@ class Controller_User extends Controller_Template{
 							array(
 								'facebook_id' => Input::post('facebook_id'),	
 							)
-		);
+			);
 
-		if(!$new_user)
-		{
-			// User could not be added to the database
-			// Show error message
+			if(!$new_user)
+			{
+				// User could not be added to the database
+				// Show error message
+			}
+			else
+			{
+				if(Auth::login(Input::post('username'), Input::post('password')))	
+				{
+					$user['user_id']  = Auth::get_user_id()[1];
+					$user['username'] = Auth::get('username');
+
+					$session = Session::set(array(
+									'user_id'      => $user['user_id'],
+									'username'     => $user['username'],
+									'is_logged_in' => 1,
+					));
+
+					Response::redirect('dashboard');
+				};
+			}	
 		}
 		else
 		{
-			if(Auth::login(Input::post('username'), Input::post('password')))	
-			{
-				$user['user_id']  = Auth::get_user_id()[1];
-				$user['username'] = Auth::get('username');
+			// If the user has left either the username or password empty
+			// reload the login screen with errors
+			$this->template->head    = View::forge('includes/head');
 
-				$session = Session::set(array(
-								'user_id'      => $user['user_id'],
-								'username'     => $user['username'],
-								'is_logged_in' => 1,
-				));
+			$this->template->header  = View::forge('includes/logged_out/header');
 
-				Response::redirect('dashboard');
-			};
+			$this->template->content = View::forge('signup/index', array(
+												'error_msg' => $val->error(),
+			));
+
+			$this->template->footer  = View::forge('includes/footer');
 		}
+
+
+		
 	
 	}
 

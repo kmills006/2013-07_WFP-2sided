@@ -189,6 +189,31 @@ class Model_User extends \Orm\Model
 
 
 
+	public static function search_users($search_terms)
+	{
+
+		$results = DB::select()
+							->from('users')
+							->where('username', 'LIKE', '%'.$search_terms.'%')
+							->as_object('Model_User')->execute();
+
+		foreach($results as $result)
+		{
+			$users[] = $result;
+		}
+
+		// echo '<pre>';
+		// var_dump($users);
+		// echo '</pre>';
+
+		if(isset($users))
+		{
+			return $users;
+		}
+	}
+
+
+
 	/**
 	 * [date description]
 	 * @param  string $format [description]

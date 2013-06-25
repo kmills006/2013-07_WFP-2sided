@@ -151,3 +151,24 @@ ERROR - 2013-06-24 17:55:18 --> Error - Call to undefined method Fuel\Core\Datab
 ERROR - 2013-06-24 17:55:32 --> 42000 - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 1 with query: "SELECT * FROM `decks` WHERE `title`  null" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
 ERROR - 2013-06-24 19:05:53 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 248
 ERROR - 2013-06-24 19:06:21 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 246
+ERROR - 2013-06-24 19:34:55 --> Error - Property "card_count" not found for Model_Deck. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-06-24 19:37:34 --> Notice - Undefined variable: deck in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 260
+ERROR - 2013-06-24 20:26:23 --> Warning - Missing argument 1 for Fuel\Core\DB::query(), called in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/tag.php on line 75 and defined in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/db.php on line 46
+ERROR - 2013-06-24 20:26:56 --> Warning - Missing argument 1 for Fuel\Core\DB::query(), called in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/tag.php on line 75 and defined in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/db.php on line 46
+ERROR - 2013-06-24 20:27:15 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 258
+ERROR - 2013-06-24 20:27:50 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 259
+ERROR - 2013-06-24 20:28:11 --> 42000 - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `tag_name` LIKE 'ban'' at line 1 with query: "SELECT * WHERE `tag_name` LIKE 'ban'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-06-24 20:28:51 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/search/index.php on line 6
+ERROR - 2013-06-24 20:45:38 --> Error - Call to undefined function issset() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/tag.php on line 85
+ERROR - 2013-06-24 21:16:13 --> Notice - Undefined variable: tags in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/tag.php on line 86
+ERROR - 2013-06-24 21:16:37 --> Notice - Undefined variable: tags in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/tag.php on line 86
+ERROR - 2013-06-24 21:23:10 --> Notice - Undefined variable: users in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 206
+ERROR - 2013-06-24 22:28:02 --> Notice - Undefined variable: users in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 206
+ERROR - 2013-06-24 22:36:32 --> Error - Call to undefined function issset() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/search/index.php on line 60
+ERROR - 2013-06-24 22:36:40 --> Error - Call to undefined function issset() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/search/index.php on line 60
+ERROR - 2013-06-24 22:36:55 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-24 22:37:49 --> Error - Could not find asset: img/profile_photos/3.png in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-24 22:38:02 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-24 22:39:33 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-24 22:39:36 --> Error - Could not find asset: profile_photos/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249
+ERROR - 2013-06-24 22:40:21 --> Error - Could not find asset: profile_photos/thumbs/ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249

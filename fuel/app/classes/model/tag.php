@@ -47,6 +47,10 @@ class Model_Tag extends \Orm\Model
 	}
 
 
+	/**
+	 * [save_tags description]
+	 * @param  [type] $tags [description]
+	 */
 	public static function save_tags($tags)
 	{
 
@@ -63,4 +67,26 @@ class Model_Tag extends \Orm\Model
 			$tag->save();
 		}
 	}
+
+
+
+	public static function search_tags($search_term)
+	{
+		$results = DB::select()
+						->from('tags')
+						->where('tag_name', 'LIKE', '%'.$search_term.'%')
+						->as_object('Model_Tag')->execute();
+
+		foreach($results as $result)
+		{
+			$tags[] = $result;
+		}
+
+		if(isset($tags))
+		{
+			return $tags;
+		}
+	}
+
+
 }

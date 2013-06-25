@@ -240,10 +240,26 @@ class Model_Deck extends \Orm\Model
 
 		foreach($results as $result)
 		{
+
+			$cards = DB::select()
+							->from('cards')
+							->join('decks')
+							->on('cards.deck_id', '=', 'decks.id')
+							->where('cards.deck_id', $result->id)
+							->as_object()->execute();
+
+			$card_count = count($cards);
+
+			$result->card_count = $card_count;
+			
 			$decks[] = $result;
 		}
 
-		return $decks;
+		if(isset($decks))
+		{
+			return $decks;
+		}
+		
 	}
 
 	/**

@@ -14,12 +14,21 @@
                     // messages from validation
                     if(isset($error_msg))
                     {
-                        foreach($error_msg as $error)
-                        {              
-                            echo html_tag('p', array(
-                                                'class' => 'form-errors',
+                        if(gettype($error_msg) == 'array')
+                        {
+                            foreach($error_msg as $error)
+                            {              
+                                echo html_tag('p', array(
+                                                    'class' => 'form-errors',
 
-                            ), $error->get_message());
+                                ), $error->get_message());
+                            }
+                        }
+                        else{
+                            echo html_tag('p', array(
+                                                    'class' => 'form-errors',
+
+                                ), $error_msg);
                         }
                     }
     				

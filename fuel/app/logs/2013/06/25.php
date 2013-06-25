@@ -31,3 +31,4 @@ ERROR - 2013-06-25 18:27:15 --> Notice - Trying to get property of non-object in
 ERROR - 2013-06-25 18:30:04 --> Parsing Error - syntax error, unexpected ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/login/index.php on line 9
 ERROR - 2013-06-25 18:30:04 --> Parsing Error - syntax error, unexpected ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/login/index.php on line 9
 ERROR - 2013-06-25 18:31:16 --> Notice - Undefined offset: 0 in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/login/index.php on line 15
+ERROR - 2013-06-25 18:43:07 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/login/index.php on line 17

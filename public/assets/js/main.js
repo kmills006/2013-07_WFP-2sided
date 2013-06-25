@@ -25,7 +25,7 @@
 	// });
 		
 
-	var initLoginValidation = function()
+	var initValidation = function()
 	{
 		$('.login form').validationEngine();
 	}
@@ -238,7 +238,7 @@
 	initCards();
 	initSettings();
 	initDashboard();
-	initLoginValidation();
+	initValidation();
 
 	
 	

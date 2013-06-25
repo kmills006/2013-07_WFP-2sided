@@ -54,16 +54,21 @@ class Controller_User extends Controller_Template{
 			{
 				// If login failed, return user to login screen
 				// and display error message
-				$this->get_login();
+				$this->template->head    = View::forge('includes/head');
+
+				$this->template->header  = View::forge('includes/logged_out/header');
+
+				$this->template->content = View::forge('login/index', array(
+													'error_msg' => 'Username or password incorrect, please try again.',
+				));
+
+				$this->template->footer  = View::forge('includes/footer');
 			}
 		}
 		else
 		{
 			// If the user has left either the username or password empty
 			// reload the login screen with errors
-			
-
-
 			$this->template->head    = View::forge('includes/head');
 
 			$this->template->header  = View::forge('includes/logged_out/header');

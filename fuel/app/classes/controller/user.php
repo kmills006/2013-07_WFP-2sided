@@ -222,11 +222,6 @@ class Controller_User extends Controller_Template{
 	 */
 	public function post_settings()
 	{
-
-		// echo '<pre>';
-		// var_dump(Input::post());
-		// echo '</pre>';
-
 		$updated_info['user']     = Model_User::get_by_id(Session::get('user_id'));
 		$updated_info['new_info'] = Input::post();
 

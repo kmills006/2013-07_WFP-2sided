@@ -32,3 +32,25 @@ ERROR - 2013-06-25 18:30:04 --> Parsing Error - syntax error, unexpected ';' in 
 ERROR - 2013-06-25 18:30:04 --> Parsing Error - syntax error, unexpected ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/login/index.php on line 9
 ERROR - 2013-06-25 18:31:16 --> Notice - Undefined offset: 0 in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/login/index.php on line 15
 ERROR - 2013-06-25 18:43:07 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/login/index.php on line 17
+ERROR - 2013-06-25 18:49:53 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:49:56 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:49:56 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:49:56 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:49:57 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:49:57 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:49:57 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:49:57 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:49:58 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:49:58 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:49:58 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:49:58 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:50:06 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:50:06 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:50:06 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:50:07 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:50:07 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:50:07 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:50:07 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:50:08 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:50:08 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 18:50:08 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20

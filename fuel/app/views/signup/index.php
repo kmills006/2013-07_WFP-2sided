@@ -8,9 +8,31 @@
     			<?
     				echo Form::open('user/signup');
     				
-    				echo Form::input('username', '', array('placeholder' => 'Username', 'class' => 'opensans'));
-    				echo Form::input('email', '', array('placeholder' => 'Email', 'class' => 'opensans'));
-    				echo Form::input('password', '', array('placeholder' => 'Password', 'type' => 'password', 'class' => 'opensans'));
+
+    				echo Form::input('username', '', array(
+                                                        'placeholder'                     => 'Username',
+                                                        'class'                           => 'opensans validate[required]',
+                                                        'data-errormessage-value-missing' => 'Username is required.',
+                                                        'data-prompt-position'            => 'rightCenter:50,55',
+                    ));
+
+    				
+                    echo Form::input('email', '', array(
+                                                    'placeholder'                     => 'Email',
+                                                    'class'                           => 'opensans validate[required,custom[email]',
+                                                    'data-errormessage-value-missing' => 'Email address is required.',
+                                                    'data-prompt-position'            => 'rightCenter:50,55',
+                    ));
+
+    				
+                    echo Form::input('password', '', array(
+                                                        'placeholder'                     => 'Password',
+                                                        'type'                            => 'password',
+                                                        'class'                           => 'opensans validate[required]',
+                                                        'data-errormessage-value-missing' => 'Password is required.',
+                                                        'data-prompt-position'            => 'rightCenter:50,55',
+                    ));
+
     				
     				echo Form::button('Submit');
     				

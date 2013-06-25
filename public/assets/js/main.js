@@ -28,6 +28,7 @@
 	var initValidation = function()
 	{
 		$('.login form').validationEngine();
+		$('.signup form').validationEngine();
 	}
 		
 	/**

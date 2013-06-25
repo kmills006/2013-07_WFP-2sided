@@ -64,9 +64,9 @@ class Model_User extends \Orm\Model
 
 
 	/**
-	 * [get_by_id description]
-	 * @param  [type] $user_id [description]
-	 * @return [type]          [description]
+	 * 
+	 * @param  interger $user_id
+	 * @return array 
 	 */
 	public static function get_by_id($user_id)
 	{
@@ -74,6 +74,14 @@ class Model_User extends \Orm\Model
 	}
 
 
+	/**
+	 * Update the user information
+	 * Users can update their email address,
+	 * username and add their name
+	 * 
+	 * @param  [type] $user_info 
+	 * @return [type]            
+	 */
 	public static function update_user($user_info)
 	{
 
@@ -151,7 +159,10 @@ class Model_User extends \Orm\Model
 
 
 	/**
-	 * [is_member description]
+	 * Check if the user has an 
+	 * existing account with
+	 * logging in with Facebook
+	 * 
 	 * @param  array   $fb_user 
 	 * @return boolean          
 	 * @return array   $user    
@@ -188,7 +199,11 @@ class Model_User extends \Orm\Model
 	}
 
 
-
+	/**
+	 * Search by username
+	 * @param  string $search_terms
+	 * @return array  $users
+	 */
 	public static function search_users($search_terms)
 	{
 
@@ -202,10 +217,6 @@ class Model_User extends \Orm\Model
 			$users[] = $result;
 		}
 
-		// echo '<pre>';
-		// var_dump($users);
-		// echo '</pre>';
-
 		if(isset($users))
 		{
 			return $users;
@@ -215,9 +226,9 @@ class Model_User extends \Orm\Model
 
 
 	/**
-	 * [date description]
-	 * @param  string $format [description]
-	 * @return string         [description]
+	 * Format the created_at field
+	 * @param  string $format
+	 * @return string
 	 */
 	public function date($format = "M d, Y")
 	{

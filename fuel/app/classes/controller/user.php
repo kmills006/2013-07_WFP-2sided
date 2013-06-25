@@ -78,7 +78,6 @@ class Controller_User extends Controller_Template{
 	{
 
 		$user_id = Facebook::instance()->getUser();
-		// var_dump($user_id);
 
 		if($user_id)
 		{
@@ -98,10 +97,6 @@ class Controller_User extends Controller_Template{
 					{
 						$user = Model_User::is_member($fb_user);
 
-						// echo '<pre>';
-						// var_dump($user);
-						// echo '</pre>';
-
 						$session = Session::set(array(
 									'user_id'      => $user['id'],
 									'username'     => $user['username'],
@@ -114,16 +109,6 @@ class Controller_User extends Controller_Template{
 					{
 						// If this the first time the user
 						// is logging in, register their 
-						// Facebook information with a new account
-						// $new_user = Auth::create_user(
-						// 					$fb_user['username'],
-						// 					null,
-
-						// );
-						
-						// echo '<pre>';
-						// var_dump($fb_user);
-						// echo '</pre>';
 						
 						$this->template->head    = View::forge('includes/head');
 
@@ -198,7 +183,7 @@ class Controller_User extends Controller_Template{
 
 
 	/**
-	 * post_settings
+	 * Post Settings
 	 *
 	 * Updating the database with the users 
 	 * changed information
@@ -206,9 +191,9 @@ class Controller_User extends Controller_Template{
 	public function post_settings()
 	{
 
-		echo '<pre>';
-		var_dump(Input::post());
-		echo '</pre>';
+		// echo '<pre>';
+		// var_dump(Input::post());
+		// echo '</pre>';
 
 		$updated_info['user']     = Model_User::get_by_id(Session::get('user_id'));
 		$updated_info['new_info'] = Input::post();
@@ -216,25 +201,7 @@ class Controller_User extends Controller_Template{
 		$update_user = Model_User::update_user($updated_info);
 		
 		// On successful update, reload user dashbord on settings page
-		// Response::redirect('dashboard/settings');
-		
-		$this->template->head    = View::forge('includes/head');
-		$this->template->header  = View::forge('includes/logged_out/header');
-		$this->template->content = View::forge('signup/index');
-		$this->template->footer  = View::forge('includes/footer');
-	}
-
-
-	/**
-	 *
-	 * check_username
-	 *
-	 * ajax 
-	 * 
-	 */
-	public function check_username($new_username)
-	{
-		var_dump($new_username);
+		Response::redirect('dashboard/settings');
 	}
 
 

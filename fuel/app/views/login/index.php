@@ -9,8 +9,22 @@
     			<?
     				echo Form::open('user/login');
     				
-    				echo Form::input('username', '', array('id' => 'username', 'placeholder' => 'Username or Email', 'class' => 'opensans'));
-    				echo Form::input('password', '', array('id' => 'password', 'placeholder' => 'Password', 'type' => 'password', 'class' => 'opensans'));
+    				echo Form::input('username', '', array(
+                                                        'id'                              => 'username',
+                                                        'placeholder'                     => 'Username or Email',
+                                                        'class'                           => 'opensans validate[required]',
+                                                        'data-errormessage-value-missing' => 'Email or Username is required',
+                                                        'data-prompt-position'            => 'rightCenter:50,55',
+                    ));
+
+    				echo Form::input('password', '', array(
+                                                        'id' => 'password', 
+                                                        'placeholder' => 'Password', 
+                                                        'type' => 'password', 
+                                                        'class' => 'opensans validate[required]',
+                                                        'data-errormessage-value-missing' => 'Password is required',
+                                                        'data-prompt-position'            => 'bottomCenter:50,55',
+                    ));
     				
     				echo Form::button('login_btn', 'Submit');
     				

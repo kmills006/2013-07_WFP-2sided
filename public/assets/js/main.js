@@ -24,6 +24,11 @@
 	// 	userDDMenu.css("display", "none");
 	// });
 		
+
+	var initLoginValidation = function()
+	{
+		$('.login form').validationEngine();
+	}
 		
 	/**
 	 *
@@ -233,6 +238,7 @@
 	initCards();
 	initSettings();
 	initDashboard();
+	initLoginValidation();
 
 	
 	

@@ -50,7 +50,7 @@
 						</div>
 
 
-						<div class="results-users">
+						<div class="users">
 							<h3>Users</h3>
 
 							<? if(isset($users))
@@ -70,9 +70,12 @@
 										echo Asset::img('profile_photos/thumbs/thumb_profile_placeholder.gif');
 									}
 
+									// Username
 									echo html_tag('a', array(
 														'href' => 'profile/view/'.$user->id,							
 									), $user->username);
+
+									echo html_tag('p', array(), '283 points');
 								}
 							}
 							else

@@ -7,3 +7,4 @@ ERROR - 2013-06-27 12:37:27 --> Parsing Error - syntax error, unexpected ')' in 
 ERROR - 2013-06-27 12:38:16 --> Notice - Undefined variable: friends in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 98
 ERROR - 2013-06-27 12:38:44 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 46
 ERROR - 2013-06-27 12:38:47 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 46
+ERROR - 2013-06-27 12:45:02 --> Notice - Use of undefined constant friends - assumed 'friends' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 100

@@ -1884,6 +1884,7 @@ nav input{
 .search-results.sizer{
 	background-color: #FFF;
 	padding: 10px;
+	overflow: hidden;
 }
 
 .search-results.sizer h2{
@@ -1917,6 +1918,18 @@ nav input{
 	font-size: 14px;
 	margin: 5px 20px 5px 0;
 	letter-spacing: 1.3px;
+}
+
+.search-results .users a, .search-results .users img{
+	float: left;
+}
+
+.search-results .users a{
+	margin-left: 20px;
+}
+
+.search-results .users p{
+	clear: both;
 }
 
 /* ==========================================================================

@@ -97,7 +97,7 @@ class Model_Friend extends \Orm\Model
 		
 		if(isset($friends))
 		{
-			return friends;
+			return $friends;
 		}
 		 
 		

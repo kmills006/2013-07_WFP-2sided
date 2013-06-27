@@ -47,7 +47,8 @@
     					
     					<h3>Score 87%</h3>
     					
-    					<p><a href="#">Test Your Knowledge</a></p>
+    					<!-- <p><a href="#">Test Your Knowledge</a></p> -->
+                        <?= html_tag('p', array(), Html::anchor('quiz', 'Test Your Knowledge')); ?>
  
     				</div>
     				

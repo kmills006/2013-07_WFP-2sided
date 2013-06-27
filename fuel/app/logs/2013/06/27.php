@@ -8,3 +8,7 @@ ERROR - 2013-06-27 12:38:16 --> Notice - Undefined variable: friends in /Users/k
 ERROR - 2013-06-27 12:38:44 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 46
 ERROR - 2013-06-27 12:38:47 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 46
 ERROR - 2013-06-27 12:45:02 --> Notice - Use of undefined constant friends - assumed 'friends' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 100
+ERROR - 2013-06-27 15:33:01 --> 3 - Username already exists in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/auth/classes/auth/login/simpleauth.php on line 226
+ERROR - 2013-06-27 15:41:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 16
+ERROR - 2013-06-27 15:41:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 16
+ERROR - 2013-06-27 15:42:53 --> Parsing Error - syntax error, unexpected '<' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 55

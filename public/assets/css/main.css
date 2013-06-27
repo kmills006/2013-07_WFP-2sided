@@ -1362,6 +1362,10 @@ nav input{
 	margin: 5px 0 0 22px;
 }	
 
+.friends-list p{
+	clear: both;
+}
+
 .friends-list p:last-child a{
 	float: right;
 	text-decoration: none;
@@ -1870,6 +1874,49 @@ nav input{
 .new-deck-info button{
 	display: block;
 	margin: 30px 0 0 0;
+}
+
+/* ==========================================================================
+   Search Results Styles
+   ========================================================================== 
+*/
+
+.search-results.sizer{
+	background-color: #FFF;
+	padding: 10px;
+}
+
+.search-results.sizer h2{
+	margin-top: 0;
+}
+
+
+.search-results h3{
+	margin-bottom: 10px;
+}
+
+.search-results .decks{
+	margin-top: 0;
+	margin-bottom: 20px;
+
+}
+
+.search-results .deck{
+	width: 220px;
+	margin: 0 0 20px 0;
+}
+
+
+.search-results .tags{
+	clear: both;
+}
+
+.search-results .tags button{
+	width: auto;
+	height: auto;
+	font-size: 14px;
+	margin: 5px 20px 5px 0;
+	letter-spacing: 1.3px;
 }
 
 /* ==========================================================================

@@ -14,11 +14,11 @@
 							  				<p>Created on: <?= $deck->date(); ?></p>
 						  				</div>
 							  				
-							  			<div class="deck-social">
+							  			<!-- <div class="deck-social">
 							  				<p><?= Asset::img('icons/check_mark.png', array('alt' => 'Decking rating', 'width' => '25', 'height' => '20')); ?></p>
-							  				<p>3</p>
+							  				<p>3</p> -->
 							  				<!-- <p><a href="#" class="share">Share Deck</a></p> -->
-							  			</div>
+							  			<!-- </div> -->
 							  				
 							  			<!-- <p><a href="#">Edit Deck</a> -->
 						  			</div>
@@ -33,14 +33,14 @@
 
 						</div>
 
-						<div class="results-tags">
+						<div class="tags">
 							<h3>Tags</h3>
 
 							<? if(isset($tags))
 							{
 								foreach($tags as $tag)
 								{
-									var_dump($tag);
+									echo Form::button($tag->tag_name);
 								}
 							}
 							else
@@ -69,6 +69,10 @@
 									{
 										echo Asset::img('profile_photos/thumbs/thumb_profile_placeholder.gif');
 									}
+
+									echo html_tag('a', array(
+														'href' => 'profile/view/'.$user->id,							
+									), $user->username);
 								}
 							}
 							else

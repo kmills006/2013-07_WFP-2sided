@@ -74,8 +74,10 @@ class Model_Tag extends \Orm\Model
 	{
 		$results = DB::select()
 						->from('tags')
+						->join('decks')
+						->on('tags.deck_id', '=', 'decks.id')
 						->where('tag_name', 'LIKE', '%'.$search_term.'%')
-						->as_object('Model_Tag')->execute();
+						->as_object()->execute();
 
 		foreach($results as $result)
 		{

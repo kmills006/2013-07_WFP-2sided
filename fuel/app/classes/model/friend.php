@@ -95,7 +95,10 @@ class Model_Friend extends \Orm\Model
 			}
 		}
 		
-		return $friends; 
+		if(isset($friends))
+		{
+			return friends;
+		}
 		 
 		
 

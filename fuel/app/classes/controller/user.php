@@ -35,8 +35,10 @@ class Controller_User extends Controller_Template{
 		{
 			// If the user has correctly filled in both fields
 			// attempt to login user
-			if(Auth::login())
+			try
 			{
+				Auth::login();
+
 				$user['user_id']       = Auth::get_user_id()[1];
 				$user['username']      = Auth::get('username');
 				
@@ -50,10 +52,14 @@ class Controller_User extends Controller_Template{
 				// If successful login, direct users to their dashboard
 				Response::redirect('dashboard');
 			}
-			else
+			catch(Exception $e)
 			{
+				// var_dump($e->getMessage());
+
 				// If login failed, return user to login screen
 				// and display error message
+				// var_dump(Auth::SimpleUserUpdateException);
+
 				$this->template->head    = View::forge('includes/head');
 
 				$this->template->header  = View::forge('includes/logged_out/header');

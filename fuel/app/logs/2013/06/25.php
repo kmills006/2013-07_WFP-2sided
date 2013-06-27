@@ -54,3 +54,12 @@ ERROR - 2013-06-25 18:50:07 --> Parsing Error - syntax error, unexpected 'email'
 ERROR - 2013-06-25 18:50:08 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
 ERROR - 2013-06-25 18:50:08 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
 ERROR - 2013-06-25 18:50:08 --> Parsing Error - syntax error, unexpected 'email' (T_STRING), expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/signup/index.php on line 20
+ERROR - 2013-06-25 19:39:13 --> Warning - Email address already exists in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/auth/classes/auth/login/simpleauth.php on line 222
+ERROR - 2013-06-25 19:41:34 --> 3 - Username already exists in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/auth/classes/auth/login/simpleauth.php on line 226
+ERROR - 2013-06-25 19:44:52 --> Parsing Error - syntax error, unexpected '(', expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/user.php on line 38
+ERROR - 2013-06-25 19:44:52 --> Parsing Error - syntax error, unexpected '(', expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/user.php on line 38
+ERROR - 2013-06-25 19:44:53 --> Parsing Error - syntax error, unexpected '(', expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/user.php on line 38
+ERROR - 2013-06-25 19:44:53 --> Parsing Error - syntax error, unexpected '(', expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/user.php on line 38
+ERROR - 2013-06-25 19:46:17 --> 3 - Username already exists in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/auth/classes/auth/login/simpleauth.php on line 226
+ERROR - 2013-06-25 19:46:47 --> 3 - Username already exists in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/auth/classes/auth/login/simpleauth.php on line 226
+ERROR - 2013-06-25 19:47:32 --> 3 - Username already exists in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/auth/classes/auth/login/simpleauth.php on line 226

@@ -43,25 +43,31 @@
 					 	
 
 
-						<? foreach($friends as $friend): ?>
-						 	<div class="friend">
-								<!-- <img src="assets/img/profile_placeholders/brittany_conrad.jpg" alt="Profile Picture" /> -->
-								<? 
-									if($friend->profile_image != NULL)
-									{
-										echo Asset::img('profile_photos/thumbs/'.$friend->profile_image, array('alt' => $friend->username.' profile image'));
-									}
-									else
-									{
-										echo Asset::img('profile_photos/thumbs/thumb_profile_placeholder.gif', array('alt', $friend->username.' profile image'));
-									}
-								?>
-								
-								<h3><?= Html::anchor('profile/view/'.$friend->id, $friend->username); ?></h3>
-								<p>395 Points</p>
-								
-						 	</div>
+
+						<? if(isset($friends)): ?>
+							<? foreach($friends as $friend): ?>
+							 	<div class="friend">
+									<!-- <img src="assets/img/profile_placeholders/brittany_conrad.jpg" alt="Profile Picture" /> -->
+									<? 
+										if($friend->profile_image != NULL)
+										{
+											echo Asset::img('profile_photos/thumbs/'.$friend->profile_image, array('alt' => $friend->username.' profile image'));
+										}
+										else
+										{
+											echo Asset::img('profile_photos/thumbs/thumb_profile_placeholder.gif', array('alt', $friend->username.' profile image'));
+										}
+									?>
+									
+									<h3><?= Html::anchor('profile/view/'.$friend->id, $friend->username); ?></h3>
+									<p>395 Points</p>
+									
+							 	</div>
 					 	<? endforeach; ?>
+
+					<? else: ?>
+						<p>No Friends</p>
+					<? endif; ?>
 					 	
 					 	<p><a href="#">View All</a></p>
 					 

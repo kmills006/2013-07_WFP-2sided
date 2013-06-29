@@ -4,7 +4,7 @@
     // echo '</pre>';
 ?>			
 
-            <div class="content study-deck sizer">
+            <div class="content quiz sizer">
                 <?= Html::anchor('dashboard', 'Back to Dashboard', array('class' => 'back')); ?>
     			
     			<aside>
@@ -31,7 +31,7 @@
                     <button>End Quiz</button>					    				
     			</aside>
     			
-    			<div class="study-content">
+    			<div class="quiz-content">
     				<div class="header">
     					<h2>Question 34 of 84</h2>
     				</div>

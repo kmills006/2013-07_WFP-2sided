@@ -1937,7 +1937,7 @@ nav input{
    ========================================================================== 
 */
 
-.quiz .study-content{
+.quiz .quiz-content{
 	overflow: auto;
 }
 
@@ -1969,7 +1969,7 @@ nav input{
 	color: #FFF;
 }
 
-.quix .header p{
+.quiz .header p{
 	float: right;
 	margin-right: 10px;
 	vertical-align: middle;
@@ -1981,13 +1981,48 @@ nav input{
 	margin-right: 5px;
 }
 
-.skip, .next{
-
+.quiz aside button{
+	width: 100px;
+	height: auto;
+	font-size: 18px;
+	float: none;
+	display: block;
+	width: 200px;
+	padding: 10px;
+	margin: 10px;
 }
 
-.skip, .next{
-	width: 50px;
+.quiz aside button:nth-child(3){
+	margin-top: 75px;
+}
+
+.quiz-content{
+	width: 700px;
+	float: right;
+	overflow: hidden;
+	background-color: #FFF;
+}
+
+
+.quiz-content .header{
+	-webkit-border-top-left-radius: 03px;
+	-webkit-border-top-right-radius: 03px;
+	-moz-border-radius-topleft: 03px;
+	-moz-border-radius-topright: 03px;
+	border-top-left-radius: 03px;
+	border-top-right-radius: 03px;
 	height: 40px;
+}
+
+.quiz-content .header a{
+	text-decoration: none;
+	color: #FFF;
+	line-height: 40px;
+	border-right: 1px solid #F2F2E2;
+	display: inline-block;
+	padding-right: 15px;
+	margin: 0 0 0 10px;
+	font-size: 14px;
 }
 
 /* ==========================================================================

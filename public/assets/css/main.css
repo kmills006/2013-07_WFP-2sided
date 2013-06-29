@@ -1938,7 +1938,7 @@ nav input{
 */
 
 .quiz .quiz-content{
-	overflow: auto;
+	padding-bottom: 40px;
 }
 
 .quiz aside{
@@ -1999,7 +1999,7 @@ nav input{
 .quiz-content{
 	width: 700px;
 	float: right;
-	overflow: hidden;
+	/*overflow: visible;*/
 	background-color: #FFF;
 }
 
@@ -2023,6 +2023,28 @@ nav input{
 	padding-right: 15px;
 	margin: 0 0 0 10px;
 	font-size: 14px;
+}
+
+.quiz-content .flip{
+	margin: 0 0 40px 110px;
+}
+
+.skip, .quiz-content .flip, .next{
+	margin-top: 20px;
+}
+
+.skip, .next{
+	height: 30px;
+	font-size: 14px;
+	width: 120px;
+}
+
+.skip{
+	float: left;
+}
+
+.next{
+	float: right;
 }
 
 /* ==========================================================================

@@ -49,9 +49,9 @@
                         <? endforeach; ?>
 	    				
                         <?= Asset::img('flashcards/right_arrow.png', array('alt' => 'Right arrow to switch flashcard', 'class' => 'controls right-arrow')); ?>
-	    				<button>Skip Question</button>
+	    				<button class="skip">Skip Question</button>
 	    				<div class="flip"></div>
-	    				<button>Next Question</button>
+	    				<button class="next">Next Question</button>
     				</div>
     			</div>
 				

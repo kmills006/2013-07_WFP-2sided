@@ -174,4 +174,30 @@ class Model_Card extends \Orm\Model
 
 
 
+	public static function get_questions($deck_id)
+	{
+			$cards = static::query()
+							->where(array(
+								'deck_id' => $deck_id,
+							))
+							->get();
+
+		foreach($cards as $card)
+		{
+			// echo '<pre>';
+			// var_dump($card->definition);
+			// echo '</pre>';
+			
+			$questions[] = $card->definition;
+		}
+
+		// echo '<pre>';
+		// var_dump($questions);
+		// echo '</pre>';
+
+		return $questions;
+	}
+
+
+
 }

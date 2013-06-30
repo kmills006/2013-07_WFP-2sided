@@ -1,6 +1,6 @@
 <? 
     // echo '<pre>';
-    // var_dump($deck_info->user_id);
+    // var_dump($questions);
     // echo '</pre>';
 ?>			
 
@@ -41,10 +41,18 @@
 	    				
                         <? foreach($cards as $card): ?>
     	    				<div class="card">
-    		    					<p class='term'><?= $card->term; ?></p>
-                                    <p class='definition'><?= $card->definition; ?></p>
+    		    					<? 
+                                        if(($card->definition = array_search($card->definition, $questions)) !== false) {
+                                            unset($questions[$card->definition]);
+                                           
+                                        }
+
+                                        // echo '<pre>';
+                                        // var_dump($questions);
+                                        // echo '</pre>';
+                                    ?>
     		    					
-                                    <p><?= Asset::img('icons/keyboard_shortcuts.png', array('alt' => 'Keyboard Shortcuts')); ?> Keyboard Shortcuts</p>
+                                    <!-- <p><?= Asset::img('icons/keyboard_shortcuts.png', array('alt' => 'Keyboard Shortcuts')); ?> Keyboard Shortcuts</p> -->
     	    				</div>
                         <? endforeach; ?>
 	    				

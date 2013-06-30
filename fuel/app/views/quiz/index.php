@@ -42,16 +42,23 @@
                         <? foreach($cards as $card): ?>
     	    				<div class="card">
     		    					<? 
-                                        if(($card->definition = array_search($card->definition, $questions)) !== false) {
-                                            unset($questions[$card->definition]);
-                                           
+                                        
+                                        if (in_array($card->definition, $questions)) 
+                                        {
+                                            unset($questions[array_search($card->definition, $questions)]);
                                         }
 
-                                        // echo '<pre>';
-                                        // var_dump($questions);
-                                        // echo '</pre>';
                                     ?>
-    		    					
+
+                                        <form>
+                                            <label for="question"><?= $card->definition; ?></label>
+                                            
+                                            <? foreach($questions as $question): ?>
+                                                    <label for='question'><?= $question ?></label>
+                                            <? endforeach; ?>
+
+                                           
+                                        </form>
                                     <!-- <p><?= Asset::img('icons/keyboard_shortcuts.png', array('alt' => 'Keyboard Shortcuts')); ?> Keyboard Shortcuts</p> -->
     	    				</div>
                         <? endforeach; ?>

@@ -12,22 +12,27 @@
 	    				if(isset($username))
 	    				{
 	    					if(isset($profile_image) && $profile_image != null)
-	    					{
-	    						echo Html::anchor('dashboard', Asset::img('profile_photos/thumbs/'.$profile_image).' '.$username, array('class' => 'global-nav'));
-	    					}
+	    					{ ?>
+	    						
+	    						
+	    						<a href="#" class="global-nav"><?= Asset::img('profile_photos/thumbs/'.$profile_image); ?><?= $username ?>
+
+									<ul class="user-dd">
+										<li><?= Html::anchor('profile/view/'.Session::get('user_id'), 'View Profile'); ?></li>
+										<li><?= Html::anchor('dashboard', 'Dashboard'); ?></li>
+										<li><?= Html::anchor('dashboard/settings', 'Settings'); ?></li>
+									</ul>
+
+	    						</a>
+			
+
+	    					<? }
 	    					else
 	    					{
 	    						echo Html::anchor('dashboard', Asset::img('profile_photos/thumbs/thumb_profile_placeholder.gif').' '.$username, array('class' => 'global-nav'));
 	    					}
 	    				}
 	    			?>
-
-	    			<div class='user-dd'>
-	    				<? echo Html::anchor('profile/view/'.Session::get('user_id'), 'View Profile'); ?>
-	    				<? echo Html::anchor('dashboard', 'Dashboard'); ?>
-	    				<? echo Html::anchor('dashboard/settings', 'Settings'); ?>
-	    				<? echo Html::anchor('user/logout', 'Logout'); ?>
-	    			</div>
 
 	    			<a class="global-nav" href="#"><? echo Asset::img('icons/new_notifications.png', array('width' => '30', 'height' => '21')); ?><span class="notification-count">18</span></a>
 	    			<a class="global-nav" href="#">Browse</a>

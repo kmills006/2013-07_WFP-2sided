@@ -254,7 +254,16 @@ nav input{
 }
 
 .user-dd{
-	display: none;
+	/*display: none;*/
+	position: absolute;
+}
+
+.user-dd a{
+	display: inline-block;
+	float: none;
+	width: 100%;
+	/*padding: 20px;*/
+	background-color: #2C3E50;
 }
 
 

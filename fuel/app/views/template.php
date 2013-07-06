@@ -22,6 +22,7 @@
             echo Asset::js('plugins/jquery.Jcrop.min.js');
             echo Asset::js('plugins/jquery.validationEngine.js');
             echo Asset::js('plugins/jquery.validationEngine-en.js');
+            echo Asset::js('plugins/alertify.js');
             echo Asset::js('plugins.js');
 		    echo Asset::js('main.js'); ?>
 </html>

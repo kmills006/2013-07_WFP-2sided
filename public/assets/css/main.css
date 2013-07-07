@@ -253,17 +253,33 @@ nav input{
 	font-size: 12px;
 }
 
-.user-dd{
-	/*display: none;*/
-	position: absolute;
+.dropdown{
+	cursor: pointer;
 }
 
-.user-dd a{
-	display: inline-block;
-	float: none;
-	width: 100%;
-	/*padding: 20px;*/
+.user-dd{
+	display: none;
 	background-color: #2C3E50;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.user-dd li{
+	font-size: 14px;
+	text-align: center;
+}
+
+.user-dd li:hover{
+	background: #34495E;
 }
 
 

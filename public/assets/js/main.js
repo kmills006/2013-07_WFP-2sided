@@ -14,15 +14,15 @@
 		logout 
 	 */
 
-	// $(".user-dd").on("mouseover", function(e){
-	// 	var userDDMenu = $(".dd-menu");
-	// 	userDDMenu.css("display", "block");
-	// });
+	$(".dropdown").on("mouseover", function(e){
+		var userDDMenu = $(".user-dd");
+		userDDMenu.css("display", "block");
+	});
 	
-	// $(".user-dd").on("mouseout", function(e){
-	// 	var userDDMenu = $(".dd-menu");
-	// 	userDDMenu.css("display", "none");
-	// });
+	$(".dropdown").on("mouseout", function(e){
+		var userDDMenu = $(".user-dd");
+		userDDMenu.css("display", "none");
+	});
 		
 
 	var initValidation = function()

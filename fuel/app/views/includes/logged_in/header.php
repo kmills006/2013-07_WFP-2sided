@@ -13,19 +13,16 @@
 	    				{
 	    					if(isset($profile_image) && $profile_image != null)
 	    					{ ?>
-	    						
-	    						
-	    						<a href="#" class="global-nav"><?= Asset::img('profile_photos/thumbs/'.$profile_image); ?><?= $username ?>
-
+	    										
+	    						<a class="global-nav dropdown"><?= Asset::img('profile_photos/thumbs/'.$profile_image); ?><?= $username ?>
 									<ul class="user-dd">
-										<li><?= Html::anchor('profile/view/'.Session::get('user_id'), 'View Profile'); ?></li>
-										<li><?= Html::anchor('dashboard', 'Dashboard'); ?></li>
-										<li><?= Html::anchor('dashboard/settings', 'Settings'); ?></li>
+										<li>Profile</li>
+										<li>Dashboard</li>
+										<li>Settings</li>
+										<li>Logout</li>
 									</ul>
-
 	    						</a>
-			
-
+				
 	    					<? }
 	    					else
 	    					{

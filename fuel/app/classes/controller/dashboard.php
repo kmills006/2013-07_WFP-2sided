@@ -50,6 +50,7 @@ class Controller_Dashboard extends Controller_Template
 				$this->template->header  = View::forge('includes/logged_in/header', array(
 													'username'      => Model_User::get_by_id(Session::get('user_id'))->username,
 													'profile_image' => Model_User::get_by_id(Session::get('user_id'))->profile_image,
+													'notifications' => Model_Notification::get_count(Session::get('user_id')),
 				));
 
 
@@ -77,6 +78,7 @@ class Controller_Dashboard extends Controller_Template
 				$this->template->header  = View::forge('includes/logged_in/header', array(
 													'username'      => Model_User::get_by_id(Session::get('user_id'))->username,
 													'profile_image' => Model_User::get_by_id(Session::get('user_id'))->profile_image,
+													'notifications' => Model_Notification::get_count(Session::get('user_id')),
 				));
 
 
@@ -106,6 +108,7 @@ class Controller_Dashboard extends Controller_Template
 				$this->template->header  = View::forge('includes/logged_in/header', array(
 													'username'      => Model_User::get_by_id(Session::get('user_id'))->username,
 													'profile_image' => Model_User::get_by_id(Session::get('user_id'))->profile_image,
+													'notifications' => Model_Notification::get_count(Session::get('user_id')),
 				));
 
 

@@ -44,7 +44,21 @@
 			switch($(this).text())
 			{
 				case 'Your Profile':
-					console.log('profile');
+					
+					// Load the logged in users profile page
+					
+					$.ajax({
+						url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/user_id',
+						type: 'get',
+						success: function(response){
+							var userID = JSON.parse(response);
+							window.location.pathname = '/2013-07_WFP-2sided/public/profile/view/' + userID.user_id;
+						},
+						error: function(response){
+							console.log(response.responseText);
+						}
+					});
+					
 
 					break;
 
@@ -73,6 +87,9 @@
 					// Default
 					break;
 			}
+
+			return false;
+			e.preventDefault();
 
 		});
 	}

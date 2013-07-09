@@ -14,17 +14,70 @@
 		logout 
 	 */
 
+
+	// Mouse over
 	$(".dropdown").on("mouseover", function(e){
+		console.log('mouseover');
 		var userDDMenu = $(".user-dd");
 		userDDMenu.css("display", "block");
 	});
 	
+
+	// Mouse out
 	$(".dropdown").on("mouseout", function(e){
 		var userDDMenu = $(".user-dd");
 		userDDMenu.css("display", "none");
 	});
+
+
+	var initDropdown = function()
+	{
+		
+		$('.user-dd li').on('click', function(e){
+			
+			switch($(this).text())
+			{
+				case 'Your Profile':
+					console.log('profile');
+
+					break;
+
+				case 'Dashboard':
+					console.log('dashboard');
+
+					break;
+
+				case 'Settings':
+					console.log('settings');
+
+					break;
+
+				case 'Logout':
+					console.log('logout');
+
+					break;
+
+				default:
+					// Default
+					break;
+			}
+
+		});
+	}
 		
 
+
+
+
+
+
+
+
+	/**
+	 * 
+	 * Validation for login and sign up pages
+	 * 
+	 */
 	var initValidation = function()
 	{
 		$('.login form').validationEngine();
@@ -240,6 +293,7 @@
 	initSettings();
 	initDashboard();
 	initValidation();
+	initDropdown();
 
 	
 	

@@ -16,7 +16,7 @@
 	    										
 	    						<a class="global-nav dropdown"><?= Asset::img('profile_photos/thumbs/'.$profile_image); ?><?= $username ?>
 									<ul class="user-dd">
-										<li>Profile</li>
+										<li>Your Profile</li>
 										<li>Dashboard</li>
 										<li>Settings</li>
 										<li>Logout</li>
@@ -25,9 +25,18 @@
 				
 	    					<? }
 	    					else
-	    					{
-	    						echo Html::anchor('dashboard', Asset::img('profile_photos/thumbs/thumb_profile_placeholder.gif').' '.$username, array('class' => 'global-nav'));
-	    					}
+	    					{ ?>
+
+	    						<a class="global-nav dropdown"><?= Asset::img('profile_photos/thumbs/thumb_profile_placeholder.gif'); ?><?= $username ?>
+									<ul class="user-dd">
+										<li>Your Profile</li>
+										<li>Dashboard</li>
+										<li>Settings</li>
+										<li>Logout</li>
+									</ul>
+	    						</a>
+	    						
+	    					<? }
 	    				}
 	    			?>
 

@@ -106,16 +106,12 @@ class Model_Notification extends \Orm\Model
 
 	public static function get_count($user_id)
 	{
-		$test = static::query()
+		return static::query()
 							->where(array(
 										'user_id' => $user_id,
 										'status'  => 0,
 							))
 							->count();
-
-		echo '<pre>';
-		var_dump($test);
-		echo '</pre>';
 	}
 
 

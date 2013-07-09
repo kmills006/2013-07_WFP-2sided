@@ -38,9 +38,18 @@
 	    						
 	    					<? }
 	    				}
+
+	    				if(isset($notifications) && $notifications != 0)
+	    				{
+	    					echo Html::anchor('dashboard/notifications', Asset::img('icons/new_notifications.png', array('width' => '30', 'height' => '21')).' <span class="notification-count">'.$notifications.'</span>', array('class' => 'global-nav'));
+	    				}
+	    				else
+	    				{
+	    					echo Html::anchor('dashboard/notifications', Asset::img('icons/new_notifications.png', array('width' => '30', 'height' => '21')), array('class' => 'global-nav'));
+	    				}
+
 	    			?>
 
-	    			<a class="global-nav" href="#"><?= Asset::img('icons/new_notifications.png', array('width' => '30', 'height' => '21')); ?><span class="notification-count">18</span></a>
 	    			<a class="global-nav" href="#">Browse</a>
     			</div>
     		</nav>

@@ -41,6 +41,11 @@ class Model_Notification extends \Orm\Model
 	protected static $_table_name = 'notifications';
 
 
+	/**
+	 * [get_notifications description]
+	 * @param  interger $user_id
+	 * @return array    $notifications
+	 */
 	public static function get_notifications($user_id)
 	{
 		$query = static::query()
@@ -55,12 +60,12 @@ class Model_Notification extends \Orm\Model
 		foreach($query as $notification)
 		{
 			$results = DB::select('users.id', 'users.username', 'users.profile_image', 'notifications.message', 'notifications.created_at')
-										->from('users')
-										->join('notifications')
-										->on('users.id', '=', 'notifications.friend_id')
-										->where('users.id', $notification->friend_id)
-										->limit(1)
-										->as_object('Model_User')->execute();
+								->from('users')
+								->join('notifications')
+								->on('users.id', '=', 'notifications.friend_id')
+								->where('users.id', $notification->friend_id)
+								->limit(1)
+								->as_object('Model_User')->execute();
 			
 			foreach($results as $r)
 			{
@@ -88,11 +93,29 @@ class Model_Notification extends \Orm\Model
 
 		}
 
+
+
 		// Check if there are any notifications
 		if(isset($notifications))
 		{
 			return $notifications;
 		}
+	}
+
+
+
+	public static function get_count($user_id)
+	{
+		$test = static::query()
+							->where(array(
+										'user_id' => $user_id,
+										'status'  => 0,
+							))
+							->count();
+
+		echo '<pre>';
+		var_dump($test);
+		echo '</pre>';
 	}
 
 

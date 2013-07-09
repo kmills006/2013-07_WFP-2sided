@@ -30,12 +30,7 @@
 	});
 
 
-	/**
-	 *
-	 * Create dropdown menu for
-	 * logged in users
-	 * 
-	 */
+	// Drop down menu links
 	var initDropdown = function()
 	{
 		
@@ -46,7 +41,6 @@
 				case 'Your Profile':
 					
 					// Load the logged in users profile page
-					
 					$.ajax({
 						url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/user_id',
 						type: 'get',
@@ -59,7 +53,6 @@
 						}
 					});
 					
-
 					break;
 
 				case 'Dashboard':
@@ -112,7 +105,9 @@
 		$('.login form').validationEngine();
 		$('.signup form').validationEngine();
 	}
-		
+
+
+
 	/**
 	 *
 	 * User Dashboard

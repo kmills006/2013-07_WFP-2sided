@@ -40,7 +40,7 @@
 	    				}
 	    			?>
 
-	    			<a class="global-nav" href="#"><? echo Asset::img('icons/new_notifications.png', array('width' => '30', 'height' => '21')); ?><span class="notification-count">18</span></a>
+	    			<a class="global-nav" href="#"><?= Asset::img('icons/new_notifications.png', array('width' => '30', 'height' => '21')); ?><span class="notification-count">18</span></a>
 	    			<a class="global-nav" href="#">Browse</a>
     			</div>
     		</nav>

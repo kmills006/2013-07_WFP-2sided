@@ -30,6 +30,12 @@
 	});
 
 
+	/**
+	 *
+	 * Create dropdown menu for
+	 * logged in users
+	 * 
+	 */
 	var initDropdown = function()
 	{
 		
@@ -43,17 +49,23 @@
 					break;
 
 				case 'Dashboard':
-					console.log('dashboard');
+					
+					// Link to the user dashboard
+					window.location.pathname = '/2013-07_WFP-2sided/public/dashboard';
 
 					break;
 
 				case 'Settings':
-					console.log('settings');
+					
+					// Link the user to the settings tab of the user dashboard
+					window.location.pathname = '/2013-07_WFP-2sided/public/dashboard/settings';
 
 					break;
 
 				case 'Logout':
-					console.log('logout');
+
+					// Logout the user
+					window.location.pathname = '/2013-07_WFP-2sided/public/user/logout';
 
 					break;
 

@@ -37,20 +37,26 @@ class Controller_User extends Controller_Template{
 			// attempt to login user
 			try
 			{
-				Auth::login();
+				if(Auth::login())
+				{
+					$user['user_id']       = Auth::get_user_id()[1];
+					$user['username']      = Auth::get('username');
+					
+					
+					$session = Session::set(array(
+								'user_id'      => $user['user_id'],
+								'username'     => $user['username'],
+								'is_logged_in' => 1,
+					));
 
-				$user['user_id']       = Auth::get_user_id()[1];
-				$user['username']      = Auth::get('username');
-				
-				
-				$session = Session::set(array(
-							'user_id'      => $user['user_id'],
-							'username'     => $user['username'],
-							'is_logged_in' => 1,
-				));
+					// If successful login, direct users to their dashboard
+					Response::redirect('dashboard');
+				}
+				else
+				{
+					Response::redirect('user/login');
+				}
 
-				// If successful login, direct users to their dashboard
-				Response::redirect('dashboard');
 			}
 			catch(Exception $e)
 			{

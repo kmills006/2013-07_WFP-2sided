@@ -121,8 +121,6 @@
 			sortedDecks   = ''
 		;
 
-		console.log(decksArea);
-
 		$.each(decks, function(key, value){
 
 			// Formating date created
@@ -186,14 +184,20 @@
 
 			var formatedDate = month + ' ' + day + ', ' + year;
 
-			sortedDecks += '<section class="deck"><div class="deck-info"><p><a href="study/cards/' + value.id +'">' + value.title + '</a></p><p>Total Cards: ' + value.card_count + '</p><p>Created on: ' + formatedDate + '</p></div><div class="deck-social"><p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p><p>3</p><p><a href="#" class="share">Share Deck</a></p></div><p class="delect-deck">Delete Deck</p></section>';
+			if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard')
+			{
+				sortedDecks += '<section class="deck"><div class="deck-info"><p><a href="study/cards/' + value.id +'">' + value.title + '</a></p><p>Total Cards: ' + value.card_count + '</p><p>Created on: ' + formatedDate + '</p></div><div class="deck-social"><p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p><p>3</p><p><a href="#" class="share">Share Deck</a></p></div><p class="delect-deck">Delete Deck</p></section>';
+			}
+			else{
+				sortedDecks += '<section class="deck"><div class="deck-info"><p><a href="study/cards/' + value.id +'">' + value.title + '</a></p><p>Total Cards: ' + value.card_count + '</p><p>Created on: ' + formatedDate + '</p></div><div class="deck-social"><p><img src="../../assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p><p>3</p><p><a href="#" class="share">Share Deck</a></p></div><p class="delect-deck">Delete Deck</p></section>';
+			}
 
 			decksArea.html(sortedDecks);
 
 		});
 	}
 
-	var initDashboard = function()
+	var initFilters = function()
 	{
 		$('.filters').each(function(i){
 
@@ -246,8 +250,6 @@
 				}
 
 				return false;
-				e.preventDefault();
-
 			});
 
 		});
@@ -412,7 +414,7 @@
 	initAddTerm();
 	initCards();
 	initSettings();
-	initDashboard();
+	initFilters();
 	initValidation();
 	initDropdown();
 

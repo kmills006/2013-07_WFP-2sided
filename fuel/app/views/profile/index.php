@@ -94,23 +94,24 @@
 					  			<button class="filters">Highest Rating</button>
 					  			<div class="clearfix"></div>
 					  			
-					  			<? foreach($decks as $deck): ?>
-					  			<div class="deck">
-					  				<div class="deck-info">
-						  				<p><?= Html::anchor('study/cards/'.$deck->id, $deck->title); ?></p>
-						  				<p>Total Cards: <?= $deck->card_count; ?></p>
-						  				<p>Created on: <?= $deck->date(); ?></p>
-					  				</div>
-						  				
-						  			<div class="deck-social">
-						  				<p><?= Asset::img('icons/check_mark.png', array('alt' => 'Decking rating', 'width' => '25', 'height' => '20')); ?></p>
-						  				<p>3</p>
-						  				<!-- <p><a href="#" class="share">Share Deck</a></p> -->
-						  			</div>
-						  				
-						  			<!-- <p><a href="#">Edit Deck</a> -->
-					  			</div>
-					  			<? endforeach; ?>
+					  			<div class="decks">
+						  			<? foreach($decks as $deck): ?>
+							  			<div class="deck">
+							  				<div class="deck-info">
+								  				<p><?= Html::anchor('study/cards/'.$deck->id, $deck->title); ?></p>
+								  				<p>Total Cards: <?= $deck->card_count; ?></p>
+								  				<p>Created on: <?= $deck->date(); ?></p>
+							  				</div>
+								  				
+								  			<div class="deck-social">
+								  				<p><?= Asset::img('icons/check_mark.png', array('alt' => 'Decking rating', 'width' => '25', 'height' => '20')); ?></p>
+								  				<p>3</p>
+								  			</div>
+								  				
+								  			<!-- <p><a href="#">Edit Deck</a> -->
+							  			</div>
+						  			<? endforeach; ?>
+						  		</div>
 					  			
 					  		</div> <!-- end of your-decks -->
 					  		

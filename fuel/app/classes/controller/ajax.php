@@ -26,9 +26,7 @@ class Controller_Ajax extends Controller_Rest{
 	public function post_newest()
 	{
 
-  		$data = array(
-  					'decks'    => Model_Deck::get_users_decks(Session::get('user_id'), Input::post('newest')),
-  		);
+  		$data = Model_Deck::get_users_decks(Session::get('user_id'), Input::post('newest'));
 
   		return $this->response = \Format::forge($data)->to_json();
 	}

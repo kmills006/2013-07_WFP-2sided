@@ -189,7 +189,7 @@
 				sortedDecks += '<section class="deck"><div class="deck-info"><p><a href="study/cards/' + value.id +'">' + value.title + '</a></p><p>Total Cards: ' + value.card_count + '</p><p>Created on: ' + formatedDate + '</p></div><div class="deck-social"><p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p><p>3</p><p><a href="#" class="share">Share Deck</a></p></div><p class="delect-deck">Delete Deck</p></section>';
 			}
 			else{
-				sortedDecks += '<section class="deck"><div class="deck-info"><p><a href="study/cards/' + value.id +'">' + value.title + '</a></p><p>Total Cards: ' + value.card_count + '</p><p>Created on: ' + formatedDate + '</p></div><div class="deck-social"><p><img src="../../assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p><p>3</p><p><a href="#" class="share">Share Deck</a></p></div><p class="delect-deck">Delete Deck</p></section>';
+				sortedDecks += '<section class="deck"><div class="deck-info"><p><a href="study/cards/' + value.id +'">' + value.title + '</a></p><p>Total Cards: ' + value.card_count + '</p><p>Created on: ' + formatedDate + '</p></div><div class="deck-social"><p><img src="../../assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p><p>3</p><p></p></div></section>';
 			}
 
 			decksArea.html(sortedDecks);
@@ -206,14 +206,12 @@
 				switch($(this).text())
 				{
 					case 'Newest':
-						console.log('Newest');
-
 						$.ajax({
 							url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/newest',
 							type: 'post',
 							data: {newest: 'newest'},
 							success: function(response){
-								console.log(response);
+								setDecks(response);
 							},
 							error: function(response){
 								console.log(response.responseText);
@@ -223,8 +221,6 @@
 						break;
 
 					case 'Oldest':
-						console.log('Oldest');
-
 						$.ajax({
 							url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/oldest',
 							type: 'post',

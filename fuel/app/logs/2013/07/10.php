@@ -254,3 +254,5 @@ ERROR - 2013-07-10 03:44:47 --> Notice - Trying to get property of non-object in
 ERROR - 2013-07-10 03:51:02 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
 ERROR - 2013-07-10 03:51:03 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
 ERROR - 2013-07-10 03:51:04 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-07-10 19:07:10 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-07-10 19:07:15 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13

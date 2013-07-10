@@ -29,7 +29,7 @@ class Controller_Profile extends Controller_Template
 											'user_info'  => Model_User::get_by_id($user_id),
 											'deck_count' => Model_Deck::get_total_decks($user_id),
 											'friends'    => Model_Friend::get_friends($user_id),
-											'decks'		 => Model_Deck::get_users_decks($user_id),
+											'decks'		 => Model_Deck::get_users_decks($user_id, 'newest'),
 		));
 		
 		$this->template->footer  = View::forge('includes/footer');

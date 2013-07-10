@@ -53,7 +53,7 @@ class Model_Deck extends \Orm\Model
 	 * @param  integer $user_id [description]
 	 * @return array   $decks   [description]
 	 */
-	public static function get_users_decks($user_id)
+	public static function get_users_decks($user_id, $sort_by)
 	{
 
 		if($user_id != Session::get('user_id'))

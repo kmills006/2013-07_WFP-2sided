@@ -125,8 +125,9 @@
 						console.log('Newest');
 
 						$.ajax({
-							url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/sort_newest',
-							type: 'get',
+							url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/newest',
+							type: 'post',
+							data: {newest: 'newest'},
 							success: function(response){
 								console.log(response);
 							},
@@ -239,16 +240,20 @@
 		// Card click to change term
 		$('.card p').on('click', function(e){
 
-			if($(e.currentTarget).hasClass('term'))
-			{
-				$('.card .term').css('display', 'none');
-				$('.card .definition').css('display', 'block');
-			}
-			if($(e.currentTarget).hasClass('definition'))
-			{
-				$('.card .definition').css('display', 'none');
-				$('.card .term').css('display', 'block');
-			};
+			
+			console.log(e.currentTarget);
+
+
+			// if($(e.currentTarget).hasClass('term'))
+			// {
+			// 	$('.card .term').css('display', 'none');
+			// 	$('.card .definition').css('display', 'block');
+			// }
+			// if($(e.currentTarget).hasClass('definition'))
+			// {
+			// 	$('.card .definition').css('display', 'none');
+			// 	$('.card .term').css('display', 'block');
+			// };
 
 			return false;
 

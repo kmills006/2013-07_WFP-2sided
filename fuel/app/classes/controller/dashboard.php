@@ -22,7 +22,7 @@ class Controller_Dashboard extends Controller_Template
 			$this->template->content = View::forge('dashboard/index', array(
 												'username'    => Model_User::get_by_id(Session::get('user_id'))->username,
 												'name'        => Model_User::get_by_id(Session::get('user_id'))->name,
-												'decks'       => Model_Deck::get_users_decks(Session::get('user_id')),
+												'decks'       => Model_Deck::get_users_decks(Session::get('user_id'), 'newest'),
 												'total_decks' => Model_Deck::get_total_decks(Session::get('user_id')),
 			));
 

@@ -23,11 +23,11 @@ class Controller_Ajax extends Controller_Rest{
 	 * Sort users decks by newests created
 	 * @return $data 
 	 */
-	public function get_newest()
+	public function post_newest()
 	{
 
   		$data = array(
-  					'decks'    => Model_Deck::get_user_decks(Session::get('user_id')),
+  					'decks'    => Model_Deck::get_users_decks(Session::get('user_id'), Input::post('newest')),
   		);
 
   		return $this->response = \Format::forge($data)->to_json();

@@ -880,7 +880,10 @@ nav input{
 
 .deck:nth-child(odd){
 	margin-right: 0;
-	float: right;
+}
+
+.deck:nth-child(even){
+	margin-left: 20px;
 }
 
 .deck .deck-info{

@@ -113,6 +113,86 @@
 	 * User Dashboard
 	 * 
 	 */
+	
+	var setDecks = function(response){
+		var decks = $.parseJSON(response);
+
+		var decksArea 	  = $('.decks'),
+			sortedDecks   = ''
+		;
+
+		console.log(decksArea);
+
+		$.each(decks, function(key, value){
+
+			// Formating date created
+			var createdAt = new Date(value.created_at * 1000),
+				month     = createdAt.getMonth() + 1,
+				day       = createdAt.getDate(),
+				year      = createdAt.getFullYear()
+			;
+
+			// Formating month
+			switch(month){
+				case 1:
+					month = 'Jan';
+
+					break;
+				case 2:
+					month = 'Feb';
+
+					break;
+				case 3:
+					month = 'Mar';
+
+					break;
+				case 4:
+					month = 'Apr';
+
+					break;
+				case 5:
+					month = 'May';
+
+					break;
+				case 6:
+					month = 'Jun';
+
+					break;
+				case 7:
+					month = 'Jul';
+
+					break;
+				case 8:
+					month = 'Aug';
+
+					break;
+				case 9:
+					month = 'Sept';
+
+					break;
+				case 10:
+					month = 'Oct';
+
+					break;
+				case 11:
+					month = 'Nov';
+
+					break;
+				case 12:
+					month = 'Dec';
+
+					break;
+			}
+
+			var formatedDate = month + ' ' + day + ', ' + year;
+
+			sortedDecks += '<section class="deck"><div class="deck-info"><p><a href="study/cards/' + value.id +'">' + value.title + '</a></p><p>Total Cards: ' + value.card_count + '</p><p>Created on: ' + formatedDate + '</p></div><div class="deck-social"><p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p><p>3</p><p><a href="#" class="share">Share Deck</a></p></div><p class="delect-deck">Delete Deck</p></section>';
+
+			decksArea.html(sortedDecks);
+
+		});
+	}
+
 	var initDashboard = function()
 	{
 		$('.filters').each(function(i){
@@ -140,6 +220,18 @@
 
 					case 'Oldest':
 						console.log('Oldest');
+
+						$.ajax({
+							url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/oldest',
+							type: 'post',
+							data: {oldest: 'oldest'},
+							success: function(response){
+								setDecks(response);
+							},
+							error: function(response){
+								console.log(response.responseText);
+							}
+						});
 
 						break;
 

@@ -72,11 +72,32 @@ class Model_Deck extends \Orm\Model
 			// Viewing your own profile page
 			// Will need to update to include
 			// if the two uses are friends
-			$decks = static::query()->where(array('user_id' => $user_id))->order_by('created_at', 'desc')->get();
+			
+			
+			switch($sort_by)
+			{
+				case 'newest':
+					$decks = static::query()->where(array('user_id' => $user_id))->order_by('created_at', 'desc')->get();
+
+					break;
+
+				case 'oldest':
+					$decks = static::query()->where(array('user_id' => $user_id))->order_by('created_at', 'asc')->get();
+
+					break;
+
+				case 'rating':
+
+					break;
+
+				default:
+
+					break;
+			}
 
 		}		
 
-		// Attempting to get the card count of each deck
+		// Getting the total card count of each deck
 		foreach($decks as $deck)
 		{			
 			$cards = DB::select()
@@ -271,4 +292,5 @@ class Model_Deck extends \Orm\Model
 	{
 		return date($format, $this->created_at);
 	}
+
 }

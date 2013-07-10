@@ -33,4 +33,16 @@ class Controller_Ajax extends Controller_Rest{
   		return $this->response = \Format::forge($data)->to_json();
 	}
 
+	/**
+	 * Sort users decks by oldest created
+	 * @return $data 
+	 */
+	public function post_oldest()
+	{
+
+  		$data = Model_Deck::get_users_decks(Session::get('user_id'), Input::post('oldest'));
+
+  		return $this->response = \Format::forge($data)->to_json();
+	}
+
 }

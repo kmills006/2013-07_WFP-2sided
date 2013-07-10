@@ -59,24 +59,26 @@
 				  			
 
 				  			<!-- Looping through all the users decks -->
-				  			<? foreach($decks as $deck): ?>
-				  			<section class="deck">
-				  				<div class="deck-info">
-					  				<p><?= Html::anchor('study/cards/'.$deck->id, $deck->title); ?></p>
-					  				<p>Total Cards: <?= $deck->card_count; ?></p>
-					  				<p>Created on: <?= $deck->date(); ?></p>
-				  				</div>
-					  				
-					  			<div class="deck-social">
-					  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
-					  				<p>3</p>
-					  				<p><a href="#" class="share">Share Deck</a></p>
-					  			</div>
-					  				
-					  			<!-- <p class="delect-deck"><?= Html::anchor('deck/delete/'.$deck->id, 'Delete Deck'); ?></p> -->
-								<p class="delect-deck">Delete Deck</p>
-				  			</section>
-				  			<? endforeach; ?>
+				  			<div class="decks">
+					  			<? foreach($decks as $deck): ?>
+						  			<section class="deck">
+						  				<div class="deck-info">
+							  				<p><?= Html::anchor('study/cards/'.$deck->id, $deck->title); ?></p>
+							  				<p>Total Cards: <?= $deck->card_count; ?></p>
+							  				<p>Created on: <?= $deck->date(); ?></p>
+						  				</div>
+							  				
+							  			<div class="deck-social">
+							  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
+							  				<p>3</p>
+							  				<p><a href="#" class="share">Share Deck</a></p>
+							  			</div>
+							  				
+							  			<!-- <p class="delect-deck"><?= Html::anchor('deck/delete/'.$deck->id, 'Delete Deck'); ?></p> -->
+										<p class="delect-deck">Delete Deck</p>
+						  			</section>
+					  			<? endforeach; ?>
+					  		</div>
 				  			
 
 				  		</div>

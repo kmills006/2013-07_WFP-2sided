@@ -37,12 +37,11 @@ class Model_Notification extends \Orm\Model
 	    )
 	);
 
-
 	protected static $_table_name = 'notifications';
 
 
 	/**
-	 * [get_notifications description]
+	 * Get all notifications the currently logged in user has
 	 * @param  interger $user_id
 	 * @return array    $notifications
 	 */
@@ -78,6 +77,7 @@ class Model_Notification extends \Orm\Model
 			{
 				foreach($results as $r)
 				{
+					// Set the notification->id for the ability to delete the record when needed
 					$r->notification_id = $notification->id;
 
 					switch($r->message)
@@ -112,7 +112,7 @@ class Model_Notification extends \Orm\Model
 
 
 	/**
-	 * [get_count description]
+	 * Get the total number of notifications for a user
 	 * @param  integer $user_id
 	 * @return array
 	 */
@@ -128,7 +128,7 @@ class Model_Notification extends \Orm\Model
 
 
 	/**
-	 * [add_new description]
+	 * When a friend request is sent, add a new notification for the user to either accept or reject
 	 * @param integer $user_id   ID of the user adding a new friend
 	 * @param integer $friend_id ID of the user who is getting the friend request
 	 * @param string  $message   Determines whether this new notification is a friend request or a challenge request
@@ -178,7 +178,8 @@ class Model_Notification extends \Orm\Model
 
 
 	/**
-	 * [check_pending description]
+	 * Check whether the user has already sent the user whose profile or decks are being viewed a friend request
+	 * that has not been answered
 	 * @param  integer $user_id      ID of the user they are trying to add
 	 * @param  integer $current_user ID of the currenly logged in user
 	 * @return bool
@@ -203,6 +204,11 @@ class Model_Notification extends \Orm\Model
 
 
 
+	/**
+	 * Delete the notification
+	 * Either by rejecting the request of accepting
+	 * @param  integer $notification_id ID of the notification to be deleted
+	 */
 	public static function delete_request($notification_id)
 	{
 		$notification = static::find($notification_id);
@@ -212,9 +218,9 @@ class Model_Notification extends \Orm\Model
 
 
 	/**
-	 * [date description]
-	 * @param  string $format [description]
-	 * @return string         [description]
+	 * Format the date created at
+	 * @param  string $format 
+	 * @return string 
 	 */
 	public function date($format = "M d, Y")
 	{

@@ -35,9 +35,9 @@ class Model_Friend extends \Orm\Model
 
 
 	/**
-	 * [get_friends description]
-	 * @param  interger $user_id [description]
-	 * @return array          [description]
+	 * Get a list of all of the users friends
+	 * @param  interger $user_id
+	 * @return array
 	 */
 	public static function get_friends($user_id)
 	{
@@ -49,10 +49,6 @@ class Model_Friend extends \Orm\Model
 		
 		foreach($query as $friend)
 		{
-
-			// echo '<pre>';
-			// var_dump($friend);
-			// echo '</pre>';
 
 			if($friend->user_id == $user_id)
 			{
@@ -106,7 +102,12 @@ class Model_Friend extends \Orm\Model
 
 
 
-
+	/**
+	 * Check whether or not two users are friends
+	 * @param  integer $user_id      ID of the friend whose profile or decks are being viewd
+	 * @param  integer $current_user ID of the currently logged in user
+	 * @return bool
+	 */
 	public static function check_friendship($user_id, $current_user)
 	{
 		$query = static::query()

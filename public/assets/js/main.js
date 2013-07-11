@@ -271,18 +271,44 @@
 				success: function(response){
 					var result = JSON.parse(response);
 
-					console.log(result.success);
-
 					if(!result.success)
 					{
 						console.log('Failed');
 					}
 					else
 					{
+						// Remove the notification from the users dashboard
 						$('.user-notification[data-id="' + notification_id + '"]').remove();
-					}
 
-					// $('.user-notification').attr('data-id')[response]
+						// Update the global navigation message icon
+						$.ajax({
+							url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/user_id',
+							type: 'get',
+							success: function(response){
+								var userID = JSON.parse(response).user_id;
+								
+								$.ajax({
+									url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/update_nav',
+									type: 'post',
+									data: {
+										user_id: userID
+									},
+									success: function(response){
+										var newCount = JSON.parse(response).notification_count;
+										$('.notification-count').text(newCount);
+										
+										
+									},
+									error: function(response){
+										console.log(response.responseText);
+									}
+								});
+							},
+							error: function(response){
+								console.log(response.responseText);
+							}
+						});
+					}
 				},
 				error: function(response){
 					console.log(response.responseText);

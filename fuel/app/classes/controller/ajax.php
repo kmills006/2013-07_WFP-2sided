@@ -77,9 +77,20 @@ class Controller_Ajax extends Controller_Rest{
 	 */
 	public function post_delete()
 	{
-		//$deleted = Model_Notification::delete_request(Input::post('notification_id'));
+		$deleted = Model_Notification::delete_request(Input::post('notification_id'));
 
 		return $this->response = \Format::forge(array('success' => true))->to_json();
+	}
+
+	/**
+	 * [post_update_nav description]
+	 * @return [type] [description]
+	 */
+	public function post_update_nav()
+	{
+		$new_count = Model_Notification::get_count(Input::post('user_id'));
+		
+		return $this->response = \Format::forge(array('notification_count' => $new_count))->to_json();
 	}
 
 

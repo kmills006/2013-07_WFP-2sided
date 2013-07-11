@@ -257,15 +257,32 @@
 	// Notifications
 	var initNotifications = function()
 	{
+		var notification_id = '';
+
 		$('.reject').on('click', function(e){
+			notification_id = $(this).attr('data-id');
+
 			 $.ajax({
-				url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/reject',
+				url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/delete',
 				type: 'post',
 				data: {
-					notification_id: $(this).attr('data-id')
+					notification_id: notification_id
 				},
 				success: function(response){
-					console.log(response);
+					var result = JSON.parse(response);
+
+					console.log(result.success);
+
+					if(!result.success)
+					{
+						console.log('Failed');
+					}
+					else
+					{
+						$('.user-notification[data-id="' + notification_id + '"]').remove();
+					}
+
+					// $('.user-notification').attr('data-id')[response]
 				},
 				error: function(response){
 					console.log(response.responseText);

@@ -24,7 +24,7 @@
 						<? if(isset($notifications))
 						{
 							foreach($notifications as $notification): ?>
-						  		<div class="user-notification">
+						  		<div class="user-notification" data-id="<?= $notification->notification_id; ?>">
 						  			<? if($notification->profile_image != null)
 						  			   {
 						  			   		echo Asset::img('profile_photos/thumbs/'.$notification->profile_image, array('alt' => $notification->username.' profile image'));

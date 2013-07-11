@@ -418,7 +418,8 @@
 	 var initProfile = function()
 	 {
 	 	var userID   = '',
-	 		friendID = $('.add-friend').attr('data-userid')
+	 		friendID = $('.add-friend').attr('data-userid'),
+	 		result   = ''
 		;
 
 	 	$('.add-friend').on('click', function(e){
@@ -447,7 +448,13 @@
 								message:   'friend'
 							},
 							success: function(response){
-								console.log(response);
+								var result = JSON.parse(response);
+
+								if(result.success == true)
+								{
+									$('.add-friend').text('Pending');
+									$('.add-friend').css('cursor', 'default');
+								}
 							},
 							error: function(response){
 								console.log(response.responseText);

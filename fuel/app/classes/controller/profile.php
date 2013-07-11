@@ -26,10 +26,12 @@ class Controller_Profile extends Controller_Template
 		}
 
 		$this->template->content = View::forge('profile/index', array(
-											'user_info'  => Model_User::get_by_id($user_id),
-											'deck_count' => Model_Deck::get_total_decks($user_id),
-											'friends'    => Model_Friend::get_friends($user_id),
-											'decks'		 => Model_Deck::get_users_decks($user_id, 'newest'),
+											'user_info'     => Model_User::get_by_id($user_id),
+											'decks'         => Model_Deck::get_users_decks($user_id, 'newest'),
+											'deck_count'    => Model_Deck::get_total_decks($user_id),
+											'friends'       => Model_Friend::get_friends($user_id),
+											'friend_check'  => Model_Friend::check_friendship($user_id, Session::get('user_id')),
+											'check_pending' => Model_Notification::check_pending($user_id, Session::get('user_id')),
 		));
 		
 		$this->template->footer  = View::forge('includes/footer');

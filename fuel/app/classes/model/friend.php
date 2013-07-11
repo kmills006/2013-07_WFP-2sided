@@ -104,4 +104,29 @@ class Model_Friend extends \Orm\Model
 
 
 
+
+
+
+	public static function check_friendship($user_id, $current_user)
+	{
+		$query = static::query()
+							->where('status', 1)
+							->where('user_id', $user_id)
+							->where('friend_id', $current_user)
+							->or_where('user_id', $current_user)
+							->where('friend_id', $user_id)
+							->get();
+
+		if($query != 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+
+
 }

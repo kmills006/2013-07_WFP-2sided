@@ -79,11 +79,23 @@
     			  	<div class="user-info">
 					  	<h2><?= $user_info->username; ?></h2>	
 					  	
-					  	<? if($user_info->id == Session::get('user_id')):?>
+					  	<? if($user_info->id == Session::get('user_id')){?>
 					  			<!-- looking at your profile; check will be added if you have already added this friend --> 
-					  	<? else: ?>
-					  		<button class="add-friend" data-userid="<? echo $user_info->id ?>">Add Friend</button>	
-					  	<? endif; ?>
+					  	<? }else{ 
+					  			if($friend_check != true)
+					  			{
+					  				echo 'here fool';
+					  			}
+					  			else
+					  			{ 
+					  				if(!$check_pending): ?>
+					  					<button class="add-friend" data-userid="<? echo $user_info->id ?>">Add Friend</button>
+					  				<? else: ?>
+										<button class="pending" data-userid="<? echo $user_info->id ?>">Pending</button>
+					  				<? endif; 
+					  			}
+					  	
+					  		} ?>
 					  		
 					  		<div class="your-decks">
 					  			<h3>Decks / <?= $deck_count; ?></h3>

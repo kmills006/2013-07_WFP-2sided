@@ -119,11 +119,11 @@ class Model_Notification extends \Orm\Model
 	public static function get_count($user_id)
 	{
 		return static::query()
-							->where(array(
-										'friend_id' => $user_id,
-										'status'  => 0,
-							))
-							->count();
+						->where(array(
+									'friend_id' => $user_id,
+									'status'  => 0,
+						))
+						->count();
 	}
 
 
@@ -171,6 +171,28 @@ class Model_Notification extends \Orm\Model
 		{
 			// Already existing notification
 			// cannot add another
+		}
+	}
+
+
+
+
+
+	public static function check_pending($user_id, $current_user)
+	{
+		$check_pending = static::query()
+									->where('status', 0)
+									->where('user_id', $current_user)
+									->where('friend_id', $user_id)
+									->get();
+
+		if(count($check_pending) != 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
 		}
 	}
 

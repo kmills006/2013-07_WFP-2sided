@@ -65,7 +65,7 @@ class Controller_Ajax extends Controller_Rest{
 			// change button to pending until
 			// user accepts friend request
 			
-			echo 'trueeeee';
+			return $this->response = \Format::forge(array('success' => true))->to_json();
 		}
 	}
 }

@@ -82,7 +82,7 @@
 					  	<? if($user_info->id == Session::get('user_id')){?>
 					  			<!-- looking at your profile; check will be added if you have already added this friend --> 
 					  	<? }else{ 
-					  			if($friend_check != true)
+					  			if(!$friend_check)
 					  			{
 					  				echo 'here fool';
 					  			}

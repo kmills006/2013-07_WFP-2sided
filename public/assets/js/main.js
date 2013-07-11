@@ -114,6 +114,8 @@
 	 * 
 	 */
 	
+
+	// Set the decks in their new sorted order
 	var setDecks = function(response){
 		var decks = $.parseJSON(response);
 
@@ -197,6 +199,7 @@
 		});
 	}
 
+	//Filter through the decks by either the newest, oldest or highest rating
 	var initFilters = function()
 	{
 		$('.filters').each(function(i){
@@ -251,12 +254,28 @@
 		});
 	}
 
+	// Notifications
+	var initNotifications = function()
+	{
+		$('.reject').on('click', function(e){
+			 $.ajax({
+				url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/reject',
+				type: 'post',
+				data: {
+					notification_id: $(this).attr('data-id')
+				},
+				success: function(response){
+					console.log(response);
+				},
+				error: function(response){
+					console.log(response.responseText);
+				}
+			}); 
+		});
+	}
 
-	/**
-	 * 
-	 * User Settings
-	 *
-	 */
+
+	// User Settings 
 	var initSettings = function()
 	{
 		$('.settings-name').on('keyup', function(e){
@@ -477,6 +496,7 @@
 	initValidation();
 	initDropdown();
 	initProfile();
+	initNotifications();
 
 	
 	

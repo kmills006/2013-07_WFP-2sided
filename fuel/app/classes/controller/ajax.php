@@ -68,4 +68,22 @@ class Controller_Ajax extends Controller_Rest{
 			return $this->response = \Format::forge(array('success' => true))->to_json();
 		}
 	}
+
+
+
+	/**
+	 * Reject Friend Request
+	 * @return
+	 */
+	public function post_reject()
+	{
+		$deleted = Model_Notification::delete_request(Input::post('notification_id'));
+	}
+
+
+
+
+
+
+
 }

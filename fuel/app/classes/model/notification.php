@@ -78,6 +78,8 @@ class Model_Notification extends \Orm\Model
 			{
 				foreach($results as $r)
 				{
+					$r->notification_id = $notification->id;
+
 					switch($r->message)
 					{
 						case 'friend':
@@ -100,8 +102,6 @@ class Model_Notification extends \Orm\Model
 				// No results found
 			}
 		}
-
-
 
 		// Check if there are any notifications
 		if(isset($notifications))
@@ -177,7 +177,12 @@ class Model_Notification extends \Orm\Model
 
 
 
-
+	/**
+	 * [check_pending description]
+	 * @param  integer $user_id      ID of the user they are trying to add
+	 * @param  integer $current_user ID of the currenly logged in user
+	 * @return bool
+	 */
 	public static function check_pending($user_id, $current_user)
 	{
 		$check_pending = static::query()
@@ -194,6 +199,14 @@ class Model_Notification extends \Orm\Model
 		{
 			return false;
 		}
+	}
+
+
+
+	public static function delete_request($notification_id)
+	{
+		$notification = static::find($notification_id);
+		$notification->delete();
 	}
 
 

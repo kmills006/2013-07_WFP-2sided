@@ -36,8 +36,8 @@
 							  			<p><?= $notification->date(); ?></p>
 							  			<p><a href="#"><?= $notification->username; ?></a> <?= $notification->message; ?></p>
 							  			
-							  			<button>Reject</button>
-							  			<button>Accept</button>
+							  			<button class="reject" data-id="<?= $notification->notification_id; ?>">Reject</button>
+							  			<button class="accept" data-id="<?= $notification->notification_id; ?>">Accept</button>
 						  		</div>
 				  			<? endforeach;
 						}

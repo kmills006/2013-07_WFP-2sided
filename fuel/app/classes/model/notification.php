@@ -120,7 +120,7 @@ class Model_Notification extends \Orm\Model
 	{
 		return static::query()
 							->where(array(
-										'user_id' => $user_id,
+										'friend_id' => $user_id,
 										'status'  => 0,
 							))
 							->count();

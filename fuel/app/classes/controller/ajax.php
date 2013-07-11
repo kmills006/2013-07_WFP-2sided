@@ -83,8 +83,8 @@ class Controller_Ajax extends Controller_Rest{
 	}
 
 	/**
-	 * [post_update_nav description]
-	 * @return [type] [description]
+	 * Update the notification icon in the global nav when a user is logged in
+	 * @return
 	 */
 	public function post_update_nav()
 	{

@@ -407,12 +407,69 @@
 	}
 
 
+
+
+
+	/**
+	 *
+	 * Profile Page
+	 * 
+	 */
+	 var initProfile = function()
+	 {
+	 	var userID   = '',
+	 		friendID = $('.add-friend').attr('data-userid')
+		;
+
+	 	$('.add-friend').on('click', function(e){
+
+	 		// Get IDs of the user who is trying to add a new friend
+	 		$.ajax({
+				url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/user_id',
+				type: 'get',
+				success: function(response){
+					userID = JSON.parse(response).user_id;
+
+					// If there is no logged in user, redirect user to login
+					if(userID == null)
+					{
+						window.location.pathname = '/2013-07_WFP-2sided/public/user/login'
+					}
+					else
+					{
+						// Add friends
+				 		$.ajax({
+							url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/add_friend',
+							type: 'post',
+							data: {
+								user_id:   userID,
+								friend_id: friendID,
+								message:   'friend'
+							},
+							success: function(response){
+								console.log(response);
+							},
+							error: function(response){
+								console.log(response.responseText);
+							}
+						});
+					}
+				},
+				error: function(response){
+					console.log(response.responseText);
+				}
+			});
+
+	 	});
+	 }
+
 	initAddTerm();
 	initCards();
 	initSettings();
 	initFilters();
 	initValidation();
 	initDropdown();
+	initProfile();
 
 	
 	

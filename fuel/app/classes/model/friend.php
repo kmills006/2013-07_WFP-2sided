@@ -99,8 +99,9 @@ class Model_Friend extends \Orm\Model
 		{
 			return $friends;
 		}
-		 
 		
-
 	}
+
+
+
 }

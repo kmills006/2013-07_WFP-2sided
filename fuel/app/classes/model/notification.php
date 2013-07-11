@@ -50,47 +50,55 @@ class Model_Notification extends \Orm\Model
 	{
 		$query = static::query()
 						->where('user_id', $user_id)
+						->or_where('friend_id', $user_id)
 						->where('status', 0)
 						->get();
-
-		// echo '<pre>';
-		// var_dump($notifications);
-		// echo '</pre>';
 		
 		foreach($query as $notification)
 		{
-			$results = DB::select('users.id', 'users.username', 'users.profile_image', 'notifications.message', 'notifications.created_at')
+			if($notification->user_id != $user_id)
+			{
+				$results = DB::select('users.id', 'users.username', 'users.profile_image', 'notifications.message', 'notifications.created_at')
 								->from('users')
 								->join('notifications')
-								->on('users.id', '=', 'notifications.friend_id')
-								->where('users.id', $notification->friend_id)
+								->on('users.id', '=', 'notifications.user_id')
+								->where('users.id', $notification->user_id)
 								->limit(1)
 								->as_object('Model_User')->execute();
-			
-			foreach($results as $r)
-			{
-				switch($r->message)
-				{
-					case 'friend':
-
-						$r->message = ' wants to be friends.';
-
-						break;
-					
-					case 'challenge':
-						$r->message = ' wants to challenge you.';
-
-						break;
-				}
-
-				$notifications[] = $r;
 			}
+			else
+			{
+				// Current user requested the new friend or challenge
+				// Do not display in their notifications
+			}
+			
 
+			// Checking for any results from DB
+			if(isset($results))
+			{
+				foreach($results as $r)
+				{
+					switch($r->message)
+					{
+						case 'friend':
 
-			// echo '<pre>';
-			// var_dump($notification);
-			// echo '</pre>';
+							$r->message = ' wants to be friends.';
 
+							break;
+						
+						case 'challenge':
+							$r->message = ' wants to challenge you.';
+
+							break;
+					}
+
+					$notifications[] = $r;
+				}	
+			}
+			else
+			{
+				// No results found
+			}
 		}
 
 
@@ -103,7 +111,11 @@ class Model_Notification extends \Orm\Model
 	}
 
 
-
+	/**
+	 * [get_count description]
+	 * @param  integer $user_id
+	 * @return array
+	 */
 	public static function get_count($user_id)
 	{
 		return static::query()
@@ -112,6 +124,54 @@ class Model_Notification extends \Orm\Model
 										'status'  => 0,
 							))
 							->count();
+	}
+
+
+	/**
+	 * [add_new description]
+	 * @param integer $user_id   ID of the user adding a new friend
+	 * @param integer $friend_id ID of the user who is getting the friend request
+	 * @param string  $message   Determines whether this new notification is a friend request or a challenge request
+	 */
+	public static function add_new($user_id, $friend_id, $message)
+	{
+
+		// Checking to make sure there is not already an existing request
+		// from either the currect user logged in or the friend they are 
+		// trying to notify
+		$check_exists = static::query()
+									->where('user_id', $user_id)
+									->where('friend_id', $friend_id)
+									->or_where('user_id', $friend_id)
+									->where('friend_id', $user_id)
+									->get();
+
+		if(count($check_exists) == 0)
+		{
+			$notification = static::forge(array(
+								'user_id'   => $user_id,
+								'friend_id' => $friend_id,
+								'message'	=> $message,
+								'status'    => 0,
+
+			));
+
+			// If the notification was successfully saved
+			// return true to change the button to from 
+			// 'Add Friend' to 'Pending'
+			if($notification->save())
+			{
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		else
+		{
+			// Already existing notification
+			// cannot add another
+		}
 	}
 
 

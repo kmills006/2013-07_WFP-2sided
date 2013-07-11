@@ -256,3 +256,28 @@ ERROR - 2013-07-10 03:51:03 --> Notice - Trying to get property of non-object in
 ERROR - 2013-07-10 03:51:04 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
 ERROR - 2013-07-10 19:07:10 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
 ERROR - 2013-07-10 19:07:15 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 13
+ERROR - 2013-07-10 19:55:02 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 85
+ERROR - 2013-07-10 22:30:52 --> Error - Invalid method call.  Method add_new does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-10 23:12:59 --> Notice - Undefined variable: notifications in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 58
+ERROR - 2013-07-10 23:16:09 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 75
+ERROR - 2013-07-10 23:16:16 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 75
+ERROR - 2013-07-10 23:16:16 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 75
+ERROR - 2013-07-10 23:16:16 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 75
+ERROR - 2013-07-10 23:16:17 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 75
+ERROR - 2013-07-10 23:16:17 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 75
+ERROR - 2013-07-10 23:16:18 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 75
+ERROR - 2013-07-10 23:16:18 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 75
+ERROR - 2013-07-10 23:16:35 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 83
+ERROR - 2013-07-10 23:16:35 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 83
+ERROR - 2013-07-10 23:18:33 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 77
+ERROR - 2013-07-10 23:18:33 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 77
+ERROR - 2013-07-10 23:18:33 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 77
+ERROR - 2013-07-10 23:18:34 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 77
+ERROR - 2013-07-10 23:18:34 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 77
+ERROR - 2013-07-10 23:18:34 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 77
+ERROR - 2013-07-10 23:18:34 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 77
+ERROR - 2013-07-10 23:18:35 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 77
+ERROR - 2013-07-10 23:18:35 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 77
+ERROR - 2013-07-10 23:18:35 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 77
+ERROR - 2013-07-10 23:18:58 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 76
+ERROR - 2013-07-10 23:18:58 --> Notice - Undefined variable: results in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/notification.php on line 76

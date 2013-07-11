@@ -82,7 +82,7 @@
 					  	<? if($user_info->id == Session::get('user_id')):?>
 					  			<!-- looking at your profile; check will be added if you have already added this friend --> 
 					  	<? else: ?>
-					  		<button>Add Friend</button>	
+					  		<button class="add-friend" data-userid="<? echo $user_info->id ?>">Add Friend</button>	
 					  	<? endif; ?>
 					  		
 					  		<div class="your-decks">

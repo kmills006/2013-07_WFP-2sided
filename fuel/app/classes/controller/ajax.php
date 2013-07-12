@@ -77,9 +77,17 @@ class Controller_Ajax extends Controller_Rest{
 	 */
 	public function post_delete_notification()
 	{
-		//$deleted = Model_Notification::delete_request(Input::post('notification_id'));
+		// Delete the notification
+		$deleted = Model_Notification::delete_request(Input::post('notification_id'));
 
-		return $this->response = \Format::forge(array('success' => true))->to_json();
+		if(!$deleted)
+		{
+			return $this->response = \Format::forge(array('success' => false))->to_json();
+		}
+		else
+		{
+			return $this->response = \Format::forge(array('success' => true))->to_json();
+		}
 	}
 
 	/**
@@ -89,14 +97,19 @@ class Controller_Ajax extends Controller_Rest{
 	public function post_accept_friend()
 	{
 		
-		$notification = Model_Notification::find(Input::post('notification_id'));
+		// Pull the correct notification
+		$notification        = Model_Notification::find(Input::post('notification_id'));
 
-		$new_friends = Model_Friend::add_new($notification);
+		// Add the new friends
+		$new_friends         = Model_Friend::add_new($notification);
+
+		// Delete the notification
 		$delete_notification = Model_Notification::delete_request($notification->id);
+
 		
 		if(!$new_friends)
 		{
-			// Error adding friend
+			return $this->response = \Format::forge(array('success' => false))->to_json();
 		}
 		else
 		{

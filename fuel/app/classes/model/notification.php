@@ -54,51 +54,56 @@ class Model_Notification extends \Orm\Model
 		
 		foreach($query as $notification)
 		{
+			// echo '<pre>';
+			// var_dump(count($notification));
+			// echo '</pre>';
+
 			if($notification->user_id != $user_id)
 			{
+
 				$results = DB::select('users.id', 'users.username', 'users.profile_image', 'notifications.message', 'notifications.created_at')
 								->from('users')
 								->join('notifications')
 								->on('users.id', '=', 'notifications.user_id')
-								->where('users.id', $notification->user_id)
+								->where('notifications.user_id', $notification->user_id)
 								->limit(1)
 								->as_object('Model_User')->execute();
-			}
-			else
-			{
-				// Current user requested the new friend or challenge
-				// Do not display in their notifications
-			}
-			
 
-			// Checking for any results from DB
-			if(isset($results))
-			{
-				foreach($results as $r)
+				// Checking for any results from DB
+				if(isset($results))
 				{
-					// Set the notification->id for the ability to delete the record when needed
-					$r->notification_id = $notification->id;
-
-					switch($r->message)
+					foreach($results as $r)
 					{
-						case 'friend':
 
-							$r->message = ' wants to be friends.';
+						// Set the notification->id for the ability to delete the record when needed
+						$r->notification_id = $notification->id;
 
-							break;
-						
-						case 'challenge':
-							$r->message = ' wants to challenge you.';
+						// Set the message accordingly
+						switch($r->message)
+						{
+							case 'friend':
 
-							break;
-					}
+								$r->message = ' wants to be friends.';
 
-					$notifications[] = $r;
-				}	
+								break;
+							
+							case 'challenge':
+								$r->message = ' wants to challenge you.';
+
+								break;
+						}
+
+						$notifications[] = $r;
+					}	
+				}
+				else
+				{
+					// No results found
+				}
 			}
 			else
 			{
-				// No results found
+				// Do not pull from database, the currently logged in user sent the friend request
 			}
 		}
 

@@ -8,6 +8,8 @@ class Model_Friend extends \Orm\Model
 		'user_id',
 		'friend_id',
 		'status',
+		'created_at',
+		'updated_at',
 	);
 
 	protected static $_observers = array(
@@ -119,6 +121,30 @@ class Model_Friend extends \Orm\Model
 							->get();
 
 		if($query != 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+
+
+	/**
+	 * Add new friends
+	 * @param array $notification
+	 */
+	public static function add_new($notification)
+	{
+		$new_friends = static::forge(array(
+						'user_id'   => $notification->user_id,
+						'friend_id' => $notification->friend_id,
+						'status'    => 1,
+		));
+
+		if($new_friends->save())
 		{
 			return true;
 		}

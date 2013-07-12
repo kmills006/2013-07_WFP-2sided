@@ -257,9 +257,81 @@
 	// Notifications
 	var initNotifications = function()
 	{
-		var notification_id = '';
+		var notification_id = '',
+			ajaxUrl = '';
 
-		$('.reject').on('click', function(e){
+		$('.friend-request').on('click', function(e){
+			notification_id = $(this).attr('data-id');
+
+			switch($(this).text())
+			{
+				case 'Accept':
+					ajaxUrl = 'accept_friend';
+
+					break;
+				case 'Reject':
+					ajaxUrl = 'delete_notification'
+
+					break;
+			}
+
+			$.ajax({
+				url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/' + ajaxUrl,
+				type: 'post',
+				data: {
+					notification_id: notification_id
+				},
+				success: function(response){
+					var result = JSON.parse(response);
+
+					console.log(response);
+
+					if(!result.success)
+					{
+						console.log('Failed');
+					}
+					else
+					{
+						// Remove the notification from the users dashboard
+						$('.user-notification[data-id="' + notification_id + '"]').remove();
+
+						// Update the global navigation message icon
+						$.ajax({
+							url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/user_id',
+							type: 'get',
+							success: function(response){
+								var userID = JSON.parse(response).user_id;
+								
+								$.ajax({
+									url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/update_nav',
+									type: 'post',
+									data: {
+										user_id: userID
+									},
+									success: function(response){
+										var newCount = JSON.parse(response).notification_count;
+										$('.notification-count').text(newCount);
+										
+										
+									},
+									error: function(response){
+										console.log(response.responseText);
+									}
+								});
+							},
+							error: function(response){
+								console.log(response.responseText);
+							}
+						});
+					}
+				},
+				error: function(response){
+					console.log(response.responseText);
+				}
+			}); 
+		});
+
+		/* $('.reject').on('click', function(e){
 			notification_id = $(this).attr('data-id');
 
 			 $.ajax({
@@ -314,7 +386,7 @@
 					console.log(response.responseText);
 				}
 			}); 
-		});
+		}); */
 	}
 
 

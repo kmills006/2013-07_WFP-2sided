@@ -26,7 +26,6 @@ class Model_Notification extends \Orm\Model
 		),
 	);
 
-
 	protected static $_belongs_to = array(
 	    'users' => array(
 	        'key_from' => 'user_id',

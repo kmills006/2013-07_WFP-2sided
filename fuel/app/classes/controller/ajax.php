@@ -75,11 +75,33 @@ class Controller_Ajax extends Controller_Rest{
 	 * Reject Friend Request
 	 * @return
 	 */
-	public function post_delete()
+	public function post_delete_notification()
 	{
-		$deleted = Model_Notification::delete_request(Input::post('notification_id'));
+		//$deleted = Model_Notification::delete_request(Input::post('notification_id'));
 
 		return $this->response = \Format::forge(array('success' => true))->to_json();
+	}
+
+	/**
+	 * Accept Friend Request
+	 * @return
+	 */
+	public function post_accept_friend()
+	{
+		
+		$notification = Model_Notification::find(Input::post('notification_id'));
+
+		$new_friends = Model_Friend::add_new($notification);
+		$delete_notification = Model_Notification::delete_request($notification->id);
+		
+		if(!$new_friends)
+		{
+			// Error adding friend
+		}
+		else
+		{
+			return $this->response = \Format::forge(array('success' => true))->to_json();
+		}
 	}
 
 	/**

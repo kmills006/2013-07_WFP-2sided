@@ -59,3 +59,5 @@ ERROR - 2013-07-11 17:35:50 --> Error - Call to protected method Auth\Auth_Login
 ERROR - 2013-07-11 17:35:50 --> Error - Call to protected method Auth\Auth_Login_Simpleauth::perform_check() from context 'Controller_App' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/app.php on line 32
 ERROR - 2013-07-11 17:35:50 --> Error - Call to protected method Auth\Auth_Login_Simpleauth::perform_check() from context 'Controller_App' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/app.php on line 32
 ERROR - 2013-07-11 17:35:53 --> Error - Class 'Controller_Base' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/friend.php on line 6
+ERROR - 2013-07-11 20:05:28 --> Error - Call to a member function save() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/friend.php on line 142
+ERROR - 2013-07-11 20:21:18 --> Notice - Use of undefined constant console - assumed 'console' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/ajax.php on line 97

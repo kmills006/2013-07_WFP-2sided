@@ -34,8 +34,8 @@
 						  			   } ?>
 							  			<!-- <img src="img/profile_placeholders/sara_englishbee.jpg" alt="User profile thumbnail" width="50" width="50"/> -->
 							  			<p><?= $notification->date(); ?></p>
-							  			<p><a href="#"><?= $notification->username; ?></a> <?= $notification->message; ?></p>
-							  			
+							  			<!-- <p><a href=""><?= $notification->username; ?></a> <?= $notification->message; ?></p> -->
+							  			<p><?= Html::anchor('profile/view/'.$notification->id, $notification->username); ?><?= $notification->message;?></p>							  			
 							  			<button class="reject friend-request" data-id="<?= $notification->notification_id; ?>">Reject</button>
 							  			<button class="accept friend-request" data-id="<?= $notification->notification_id; ?>">Accept</button>
 						  		</div>

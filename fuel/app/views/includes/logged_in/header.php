@@ -14,7 +14,7 @@
 	    					if(isset($profile_image) && $profile_image != null)
 	    					{ ?>
 	    										
-	    						<a class="global-nav dropdown"><?= Asset::img('profile_photos/thumbs/'.$profile_image); ?><?= $username ?>
+	    						<a class="global-nav dropdown"><?= Asset::img('profile_photos/thumbs/'.$profile_image); ?><span><?= $username ?></span>
 									<ul class="user-dd">
 										<li>Your Profile</li>
 										<li>Dashboard</li>
@@ -27,7 +27,7 @@
 	    					else
 	    					{ ?>
 
-	    						<a class="global-nav dropdown"><?= Asset::img('profile_photos/thumbs/thumb_profile_placeholder.gif'); ?><?= $username ?>
+	    						<a class="global-nav dropdown"><?= Asset::img('profile_photos/thumbs/thumb_profile_placeholder.gif'); ?><span><?= $username ?></span>
 									<ul class="user-dd">
 										<li>Your Profile</li>
 										<li>Dashboard</li>

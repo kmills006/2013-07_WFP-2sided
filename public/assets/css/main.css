@@ -195,12 +195,20 @@ nav{
 	text-decoration: none;
 	font-weight: 100;
 	font-size: 16px;
-	padding: 0 15px;
 	height: 70px;
 	line-height: 70px;
 	vertical-align: middle;
 	border-left: 1px solid #3B97D2;
 }
+
+.global-nav:last-child{
+	padding:0 15px;
+}
+
+.global-nav img{
+	padding: 0 15px;
+}
+
 
 .global-nav:nth-child(2){
 	border-right: 1px solid #3B97D2;
@@ -238,6 +246,7 @@ nav input{
 	border-radius: 2px;
 	border: 1px solid #E67E22;
 	margin-left: 85px;
+	padding-left: 5px;
 }
 
 .notification-count{
@@ -257,6 +266,14 @@ nav input{
 	cursor: pointer;
 }
 
+.dropdown img{
+	padding-left: 15px;
+}
+
+img + span{
+	padding-right: 15px;
+}
+
 .user-dd{
 	display: none;
 	background-color: #2C3E50;
@@ -267,7 +284,7 @@ nav input{
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 	margin: 0;
-	padding: 0;
+	padding: 0 20px;
 	position: relative;
 	z-index: 1;
 	cursor: pointer;

@@ -3,6 +3,14 @@
 class Controller_Profile extends Controller_Template
 {
 
+	public function post_profile($username)
+	{
+		var_dump(Input::post());
+	}
+
+
+
+
 	public function action_view($user_id)
 	{
 

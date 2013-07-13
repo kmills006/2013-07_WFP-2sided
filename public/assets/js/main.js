@@ -33,6 +33,12 @@
 	// Drop down menu links
 	var initDropdown = function()
 	{
+
+		var ddWidth = $('.global-nav.dropdown').css('width');
+		// $('.user-dd').css('width', ddWidth);
+
+		console.log($('.dropdown').css('width'));
+		console.log($('.user-dd').css('width'));
 		
 		$('.user-dd li').on('click', function(e){
 			

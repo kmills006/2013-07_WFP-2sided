@@ -43,6 +43,8 @@
     	    				<div class="card">
     		    					<? 
                                         
+                                        var_dump($card->definition);
+
                                         if (in_array($card->definition, $questions)) 
                                         {
                                             unset($questions[array_search($card->definition, $questions)]);

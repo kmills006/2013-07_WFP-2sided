@@ -1,9 +1,9 @@
 		<div id="wrapper" class="logged-in">
     		<nav>
     			<div class="sizer">
-	    			<?= Html::anchor('landing', "<span class='logo-change'>2</span>SIDED", array('class' => 'logo')); ?>
-	    			
-	    			<?
+	    			<? echo Html::anchor('landing', "<span class='logo-change'>2</span>SIDED", array('class' => 'logo')); 
+
+	    				
 	    				echo Form::open('search');
 						echo Form::input('search', '', array(
 														'placeholder' => 'Search by title, tags or user',

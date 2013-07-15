@@ -25,7 +25,10 @@
 				));
 			}
 
-			$this->template->content = View::forge('landing/index');
+			$this->template->content = View::forge('landing/index', array(
+												'top_tags' => Model_Tag::get_top_tags(),
+			));
+			
 			$this->template->footer  = View::forge('includes/footer');
 		
 		}

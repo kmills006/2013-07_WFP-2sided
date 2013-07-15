@@ -69,7 +69,11 @@ class Model_Tag extends \Orm\Model
 	}
 
 
-
+	/**
+	 * [search_tags description]
+	 * @param  string $search_term
+	 * @return array  $tags
+	 */
 	public static function search_tags($search_term)
 	{
 		$results = DB::select()
@@ -88,6 +92,18 @@ class Model_Tag extends \Orm\Model
 		{
 			return $tags;
 		}
+	}
+
+
+
+	public static function get_top_tags()
+	{
+		$tags = static::query()
+							->get();
+
+		// echo '<pre>';
+		// var_dump($tags);
+		// echo '</pre>';
 	}
 
 

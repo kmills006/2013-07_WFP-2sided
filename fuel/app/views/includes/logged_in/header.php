@@ -3,9 +3,15 @@
     			<div class="sizer">
 	    			<?= Html::anchor('landing', "<span class='logo-change'>2</span>SIDED", array('class' => 'logo')); ?>
 	    			
-	    			<form>
-	    				<input type="text" name="search" placeholder="Search by title, tags or subject" class="opensans" />
-	    			</form>
+	    			<?
+	    				echo Form::open('search');
+						echo Form::input('search', '', array(
+														'placeholder' => 'Search by title, tags or user',
+														'class'       => 'opensans nav-search'
+						));
+
+						echo Form::close();
+					?>
 	    			
 	    			<!-- Profile picture and username dropdown -->
 	    			<?

@@ -50,6 +50,6 @@
 
 	    			?>
 
-	    			<a class="global-nav" href="#">Browse</a>
+	    			<a class="global-nav nav" href="#">Browse</a>
     			</div>
     		</nav>

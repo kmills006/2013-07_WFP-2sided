@@ -200,9 +200,13 @@ nav{
 	vertical-align: middle;
 	border-left: 1px solid #3B97D2;
 }
-
+/*
 .global-nav:last-child{
 	padding:0 15px;
+}*/
+
+.nav{
+	padding: 0 15px;
 }
 
 .global-nav img{

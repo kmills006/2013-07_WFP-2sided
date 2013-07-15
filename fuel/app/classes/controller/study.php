@@ -9,6 +9,14 @@ class Controller_Study extends Controller_Template
 		$deck = Model_Deck::get_deck($deck_id);
 		$deck_owner = $deck->users->username;
 
+		if($deck->user_id != Session::get('user_id'))
+		{
+			$liked = Model_Like::check_like($deck_id);
+		}
+		else
+		{
+			// echo 'Viewing your own';
+		}
 		
 		// Setting up views
 		$this->template->head    = View::forge('includes/head');
@@ -26,12 +34,15 @@ class Controller_Study extends Controller_Template
 			));
 		}
 
+
 		$this->template->content = View::forge('study/index', array(
 											'deck_info'  => Model_Deck::get_deck($deck_id),
 											'cards'      => Model_Card::get_all_cards($deck_id),
 											'card_count' => Model_Card::get_card_count($deck_id),
 											'tags'       => Model_Tag::get_tags($deck_id),
+											'likes'      => Model_Like::get_likes($deck_id),
 											'deck_owner' => $deck_owner,
+											'liked'      => $liked,
 		));
 
 		$this->template->footer  = View::forge('includes/footer');

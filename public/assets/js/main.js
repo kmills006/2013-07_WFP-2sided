@@ -30,6 +30,13 @@
 	});
 
 
+	// if(window.location.pathname = '2013-07_WFP-2sided/public/landing')
+	// {
+	// 	// console.log('here');
+	// 	// $('.nav-search').remove();
+	// }
+
+
 	// Drop down menu links
 	var initDropdown = function()
 	{	
@@ -85,6 +92,7 @@
 
 		});
 	}
+
 
 
 

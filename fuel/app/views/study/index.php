@@ -84,8 +84,16 @@
                     }
                     else
                     {
-                        // if you are looking at someone else's deck, this button gives you the option to upvote that deck
-                        echo Form::button('like', Html::anchor('deck/like', 'Like Deck', array('class' => 'small-btn')));
+                        if(!$liked)
+                        {
+                             // if you are looking at someone else's deck, this button gives you the option to upvote that deck
+                            echo Form::button('like', Html::anchor('deck/like/'.$deck_info->id, 'Like Deck', array('class' => 'small-btn')));
+                        }
+                        else
+                        {
+                             // if you have already liked this deck, you can unlike it
+                            echo Form::button('like', Html::anchor('deck/like/'.$deck_info->id, 'Liked', array('class' => 'small-btn')));
+                        }
                     } ?>
     				
     				

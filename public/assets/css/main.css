@@ -1317,11 +1317,11 @@ img + span{
 */
 
 .back{
-	margin: 20px;	
+	margin: 20px 20px 20px 5px;	
 	display: block;
 	text-decoration: none;
 	color: #2C3E50;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .back:hover{
@@ -1585,7 +1585,7 @@ img + span{
 	width: auto;
 	height: auto;
 	font-size: 12px;
-	margin: 5px 0;
+	margin: 5px 5px 0 0;
 	/*font-weight: 600;*/
 	letter-spacing: 1.3px;
 }

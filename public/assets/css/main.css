@@ -1741,6 +1741,16 @@ img + span{
 	right: 2px;
 }
 
+.k-shortcut{
+	font-size: 12px;
+}
+
+.k-shortcut img{
+	margin-right: 10px;
+	position: relative;
+	bottom: 2px;
+}
+
 .controls{
 	position: relative;
 	top: 100px;

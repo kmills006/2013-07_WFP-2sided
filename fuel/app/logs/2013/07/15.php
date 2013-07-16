@@ -307,3 +307,20 @@ ERROR - 2013-07-15 16:45:15 --> Parsing Error - syntax error, unexpected '}' in 
 ERROR - 2013-07-15 16:45:15 --> Parsing Error - syntax error, unexpected '}' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 15
 ERROR - 2013-07-15 16:47:50 --> Error - Class 'Model_Rating' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 150
 ERROR - 2013-07-15 17:41:07 --> Notice - Undefined variable: deck_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/ajax.php on line 134
+ERROR - 2013-07-15 22:18:59 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:19:05 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:19:17 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:19:17 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:19:22 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:19:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:19:34 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:19:54 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:20:21 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:21:16 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:21:16 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:21:46 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:21:59 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:22:06 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:22:19 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:22:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10
+ERROR - 2013-07-15 22:22:29 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 10

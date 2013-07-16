@@ -474,7 +474,11 @@
 	var keyboardShortcuts = $('.keyboard-shortcuts');
 
 	keyboardShortcuts.on('mouseover', function(e){
-		$(this).tooltip();
+		$(this).tooltip({
+			items: 'p[title]',
+			content: '<p class="k-shortcut"><img src="../../assets/img/icons/keyboard_shortcuts.png" />Flip Card</p><p class="k-shortcut"><img src="../../assets/img/icons/keyboard_shortcuts.png" />Previous Card</p><p class="k-shortcut"><img src="../../assets/img/icons/keyboard_shortcuts.png" />Next Card</p>'
+		});
+
 	});
 
 

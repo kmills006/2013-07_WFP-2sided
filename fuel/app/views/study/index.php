@@ -112,7 +112,7 @@
     		    					<p class='term'><?= $card->term; ?></p>
                                     <p class='definition'><?= $card->definition; ?></p>
     		    					
-                                    <p class="keyboard-shortcuts" title="Tool tip please"><?= Asset::img('icons/keyboard_shortcuts.png', array('alt' => 'Keyboard Shortcuts')); ?> Keyboard Shortcuts</p>
+                                    <p class="keyboard-shortcuts" title="Keyboard shortcuts tooltip"><?= Asset::img('icons/keyboard_shortcuts.png', array('alt' => 'Keyboard Shortcuts')); ?> Keyboard Shortcuts</p>
     	    				</div>
                         <? endforeach; ?>
 	    				

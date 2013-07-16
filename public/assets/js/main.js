@@ -395,15 +395,17 @@
 	// Like Deck
 	$('.like-btn').on('click', function(e){
 
-		var ajaxUrl = '';
+		var ajaxUrl     = '',
+			liked_btn   = $(this)
+		;
 
-		switch($(this).text()){
+		switch(liked_btn.text()){
 			case 'Like':
 				ajaxUrl = 'like_deck';
 
 				break;
 
-			case 'Liked':
+			case 'Unlike':
 				ajaxUrl = 'unlike_deck';
 
 				break;
@@ -427,7 +429,19 @@
 				{
 					console.log('PASSED! Wahoo!');
 
-					console.log($('.like-btn').text());
+					switch(liked_btn.text())
+					{
+						case 'Like':
+								liked_btn.text('Unlike');
+								liked_btn.addClass('liked-active');
+
+								break;
+						case 'Unlike':
+								liked_btn.text('Like');
+								liked_btn.removeClass('liked-active');
+
+								break;
+					}
 
 					//$('.like-btn').text('Liked');
 					//console.log($('.like-btn').css('background-color', 'rgb(211, 89, 0)'));

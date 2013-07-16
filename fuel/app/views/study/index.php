@@ -95,8 +95,8 @@
                         else
                         {
                             // if you have already liked this deck, you can unlike it
-                            echo Form::button('like', 'Liked', array(
-                                                                'class'   => 'small-btn like-btn liked',
+                            echo Form::button('like', 'Unlike', array(
+                                                                'class'   => 'small-btn like-btn liked-active',
                                                                 'data-id' => $deck_info->id,
                             ));
                         }

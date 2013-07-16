@@ -1684,8 +1684,8 @@ img + span{
 	font-size: 14px;
 }
 
-.liked{
-	background: #D35400;
+.liked-active{
+	background-color: #D35400;
 }
 
 .flash-card{

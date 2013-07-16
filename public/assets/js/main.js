@@ -1,6 +1,6 @@
 /*  
-	Your Project Title
-	Author: You
+	2sided - The Social Way to Study
+	Author: Kristy Miller
 */
 
 (function($){
@@ -391,7 +391,6 @@
 	 *
 	 * 
 	 */
-	
 	// Like Deck
 	$('.like-btn').on('click', function(e){
 
@@ -423,12 +422,9 @@
 				if(!results)
 				{
 					// Like failed
-					console.log('FAILED!');
 				}
 				else
 				{
-					console.log('PASSED! Wahoo!');
-
 					switch(liked_btn.text())
 					{
 						case 'Like':
@@ -442,9 +438,6 @@
 
 								break;
 					}
-
-					//$('.like-btn').text('Liked');
-					//console.log($('.like-btn').css('background-color', 'rgb(211, 89, 0)'));
 				}
 			},
 			error: function(response){
@@ -453,24 +446,8 @@
 		});
 	});
 
-	//Unlike Deck
-	$('.liked').on('click', function(e){
-		/* $.ajax({
-			url: 'http://localhost:9999/2013-07_WFP-2sided/public/ajax/unlike_deck',
-			type: 'post',
-			data: {
-				deck_id: $(this).attr('data-id')
-			},
-			success: function(response){
-				console.log(response);
-			},
-			error: function(response){
 
-			}
-		}); */
-	});
-
-
+	// Keyboard shortcuts tooltip
 	var keyboardShortcuts = $('.keyboard-shortcuts');
 
 	keyboardShortcuts.on('mouseover', function(e){
@@ -487,47 +464,120 @@
 
 	var initCards = function(){
 
-		$('.card').first().addClass('active-card').css('display', 'block');
-
-		var activeCard = $('.active-card'); 
+		// $('.card').first().addClass('active-card').css('display', 'block');
 		
-		// Card click to change term
-		$('.card p').on('click', function(e){
+		var cards = $('.card'),
+			count = 0
+		;
 
+		cards.each(function(e){
+			var card = $(this);
+
+			if(e == 0)
+			{
+				card.addClass('current').css('display', 'block');
+			}
+	
+			card.attr('id', 'handle' + e);
+		});
+
+		// Right Arrow Click
+		$('.right-arrow').on('click', function(e){
 			
-			console.log(e.currentTarget);
+			// console.log(cards.hasClass('current'));
+			
+			if(cards.hasClass('current') == true)
+			{
+				$('.card.current').removeClass('current').css('display', 'none');
 
+				count ++; 
+				$(cards[count]).addClass('current').css('display', 'block');
+
+				if(count == cards.length -1)
+				{
+					console.log('end of the road');
+					count = -1;
+				}
+				
+				return false;
+			}
+			else
+			{
+				console.log('Not current');
+			}
+
+
+
+			// console.log(cards.length);
+
+			/* activeCard.removeClass('active-card').css('display', 'none').next().addClass('active-card').css('display', 'block');
+
+			if(activeCard.index() == cards.length)
+			{
+				$(cards[cards.length - 1]).css('display', 'none');
+				$(cards[0]).addClass('active-card').css('display', 'block');
+
+				console.log($('.right-arrow'));
+			} */
+
+
+			return false;
+		});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		var flipCard = function(e){
+			console.log(e.currentTarget);
 
 			// if($(e.currentTarget).hasClass('term'))
 			// {
+			// 	console.log('termmmmm class');
 			// 	$('.card .term').css('display', 'none');
 			// 	$('.card .definition').css('display', 'block');
 			// }
 			// if($(e.currentTarget).hasClass('definition'))
 			// {
+			// 	console.log('definition');
 			// 	$('.card .definition').css('display', 'none');
 			// 	$('.card .term').css('display', 'block');
 			// };
 
-			return false;
+		}
+		
+		// Card click to change term
+		$('.card p').on('click', function(e){
+			flipCard(e);
 
+			return false;
 		}); // end of card click
 
-
-		// Right Arrow Click
-		$('.right-arrow').on('click', function(e){
-			
-			console.log($('.active-card').next()	);
-
-			if($('active-card').next())
-			{
-				$('.active-card').removeClass('active-card').css('display', 'none').next().addClass('active-card').css('display', 'block');
-			}
-			// $('.active-card').removeClass('active-card').css('display', 'none');
-			
+		// Flip icon to change term
+		$('.flip').on('click', function(e){
+			flipCard(e);
 
 			return false;
 		});
+
+		// Space bar to change term
+		// $(document).keydown(function(e){
+			
+		// 	if(e.keyCode == 32){
+		// 		flipCard(e);
+		// 	}
+
+		// 	return false;
+		// });
 
 	};
 

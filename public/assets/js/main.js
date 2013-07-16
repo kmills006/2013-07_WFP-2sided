@@ -552,14 +552,14 @@
 				switch(e.keyCode){
 					case 37:
 						// Left Arrow
-						console.log('left');
+						prevCard();
 						
 						break;
 					
 					case 39:
 						// Right Arrow
-						console.log('right');
-						
+						nextCard();
+
 						break;
 
 					case 32:

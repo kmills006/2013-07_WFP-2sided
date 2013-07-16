@@ -129,6 +129,21 @@ class Controller_Ajax extends Controller_Rest{
 	}
 
 
+	public function post_like_deck()
+	{
+		$like = Model_Like::like(Input::post('deck_id'));
+
+		return $this->response = \Format::forge(array('success' => $like))->to_json();
+	}
+
+	public function post_unlike_deck()
+	{
+		$unlike = Model_Like::unlike(Input::post('deck_id'));
+
+		return $this->response = \Format::forge(array('success' => $unlike))->to_json();
+	}
+
+
 
 
 

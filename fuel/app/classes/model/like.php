@@ -39,9 +39,10 @@ class Model_Like extends \Orm\Model
 
 	/**
 	 * [like_deck description]
-	 * @param  integer $deck_id 
+	 * @param  integer $deck_id
+	 * @return bool
 	 */
-	public static function like_deck($deck_id)
+	public static function like($deck_id)
 	{
 		$like = static::forge(array(
 					'deck_id' => $deck_id,
@@ -49,7 +50,38 @@ class Model_Like extends \Orm\Model
 					'rating'  => 1,
 		));
 
-		$like->save();
+		if($like->save())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+
+	/** 
+	 * [unlike description]
+	 * @param  integer $deck_id 
+	 * @return bool
+	 */
+	public static function unlike($deck_id)
+	{
+		$unlike = static::query()
+							->where('deck_id', $deck_id)
+							->where('user_id', Session::get('user_id'))
+							->get_one();
+
+		if($unlike->delete())
+		{
+
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 
 
@@ -58,6 +90,11 @@ class Model_Like extends \Orm\Model
 
 	}
 
+	/**
+	 * [check_like description]
+	 * @param  integer $deck_id
+	 * @return bool
+	 */
 	public static function check_like($deck_id)
 	{
 		$liked = static::query()

@@ -1684,6 +1684,10 @@ img + span{
 	font-size: 14px;
 }
 
+.liked{
+	background: #D35400;
+}
+
 .flash-card{
 	width: 520px;
 	height: 248px;

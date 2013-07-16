@@ -67,7 +67,7 @@
     			<div class="study-content">
     				<div class="header">
     					<a href="#" class="active-study-tab">Card View</a>
-    					<a href="#">List View</a>
+    					<a href="#" class="list-view">List View</a>
     				</div>
     				
     				<button class="card-sort-active">Random Order</button>
@@ -87,12 +87,18 @@
                         if(!$liked)
                         {
                              // if you are looking at someone else's deck, this button gives you the option to upvote that deck
-                            echo Form::button('like', Html::anchor('deck/like/'.$deck_info->id, 'Like Deck', array('class' => 'small-btn')));
+                            echo Form::button('like', 'Like', array(
+                                                                'class'   => 'small-btn like-btn',
+                                                                'data-id' => $deck_info->id,
+                            ));
                         }
                         else
                         {
-                             // if you have already liked this deck, you can unlike it
-                            echo Form::button('like', Html::anchor('deck/like/'.$deck_info->id, 'Liked', array('class' => 'small-btn')));
+                            // if you have already liked this deck, you can unlike it
+                            echo Form::button('like', 'Liked', array(
+                                                                'class'   => 'small-btn like-btn liked',
+                                                                'data-id' => $deck_info->id,
+                            ));
                         }
                     } ?>
     				

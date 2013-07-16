@@ -30,13 +30,6 @@
 	});
 
 
-	// if(window.location.pathname = '2013-07_WFP-2sided/public/landing')
-	// {
-	// 	// console.log('here');
-	// 	// $('.nav-search').remove();
-	// }
-
-
 	// Drop down menu links
 	var initDropdown = function()
 	{	
@@ -394,10 +387,77 @@
 
 
 	/**
-	 * Card Functionality
+	 * Study 
 	 *
 	 * 
 	 */
+	
+	// Like Deck
+	$('.like-btn').on('click', function(e){
+
+		var ajaxUrl = '';
+
+		switch($(this).text()){
+			case 'Like':
+				ajaxUrl = 'like_deck';
+
+				break;
+
+			case 'Liked':
+				ajaxUrl = 'unlike_deck';
+
+				break;
+		}
+
+		$.ajax({
+			url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/' + ajaxUrl,
+			type: 'post',
+			data: {
+				deck_id: $(this).attr('data-id')
+			},
+			success: function(response){
+				var results = JSON.parse(response).success;
+
+				if(!results)
+				{
+					// Like failed
+					console.log('FAILED!');
+				}
+				else
+				{
+					console.log('PASSED! Wahoo!');
+
+					console.log($('.like-btn').text());
+
+					//$('.like-btn').text('Liked');
+					//console.log($('.like-btn').css('background-color', 'rgb(211, 89, 0)'));
+				}
+			},
+			error: function(response){
+				console.log(response.responseText);
+			}
+		});
+	});
+
+	//Unlike Deck
+	$('.liked').on('click', function(e){
+		/* $.ajax({
+			url: 'http://localhost:9999/2013-07_WFP-2sided/public/ajax/unlike_deck',
+			type: 'post',
+			data: {
+				deck_id: $(this).attr('data-id')
+			},
+			success: function(response){
+				console.log(response);
+			},
+			error: function(response){
+
+			}
+		}); */
+	});
+
+
+
 	
 
 	var initCards = function(){

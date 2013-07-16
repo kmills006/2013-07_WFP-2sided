@@ -306,3 +306,4 @@ ERROR - 2013-07-15 16:45:15 --> Parsing Error - syntax error, unexpected '}' in 
 ERROR - 2013-07-15 16:45:15 --> Parsing Error - syntax error, unexpected '}' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 15
 ERROR - 2013-07-15 16:45:15 --> Parsing Error - syntax error, unexpected '}' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 15
 ERROR - 2013-07-15 16:47:50 --> Error - Class 'Model_Rating' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 150
+ERROR - 2013-07-15 17:41:07 --> Notice - Undefined variable: deck_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/ajax.php on line 134

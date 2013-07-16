@@ -142,21 +142,6 @@ class Controller_Deck extends Controller_Template{
 
 	}
 
-	public function action_like($deck_id)
-	{
-
-		if(Session::get('is_logged_in') == 1)
-		{
-			$rating = Model_Like::like_deck($deck_id);
-
-			Response::redirect('study/cards/'.$deck_id);
-		}
-		else
-		{
-			Response::redirect('user/login');
-		}
-	}
-
 
 	/**
 	 * [get_delete description]

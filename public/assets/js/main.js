@@ -483,9 +483,7 @@
 
 		// Right Arrow Click
 		$('.right-arrow').on('click', function(e){
-			
-			// console.log(cards.hasClass('current'));
-			
+						
 			if(cards.hasClass('current') == true)
 			{
 				$('.card.current').removeClass('current').css('display', 'none');
@@ -493,9 +491,8 @@
 				count ++; 
 				$(cards[count]).addClass('current').css('display', 'block');
 
-				if(count == cards.length -1)
+				if(count === cards.length -1)
 				{
-					console.log('end of the road');
 					count = -1;
 				}
 				
@@ -506,20 +503,33 @@
 				console.log('Not current');
 			}
 
+			return false;
+		});
 
 
-			// console.log(cards.length);
-
-			/* activeCard.removeClass('active-card').css('display', 'none').next().addClass('active-card').css('display', 'block');
-
-			if(activeCard.index() == cards.length)
+		// Left Arrow Click
+		$('.left-arrow').on('click', function(e){
+			if(cards.hasClass('current') == true)
 			{
-				$(cards[cards.length - 1]).css('display', 'none');
-				$(cards[0]).addClass('active-card').css('display', 'block');
+				if($('.card.current').attr('id') == 'handle0' )
+				{
+					count = cards.length - 1;
+				}
 
-				console.log($('.right-arrow'));
-			} */
+				$('.card.current').removeClass('current').css('display', 'none');
+				$(cards[count]).addClass('current').css('display', 'block');
 
+				count --;
+
+				if(count === -1)
+				{
+					count = cards.length - 1;
+				}
+			}
+			else
+			{
+				console.log('Not current');
+			}
 
 			return false;
 		});

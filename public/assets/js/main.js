@@ -463,13 +463,14 @@
 	
 
 	var initCards = function(){
-
-		// $('.card').first().addClass('active-card').css('display', 'block');
 		
 		var cards = $('.card'),
 			count = 0
 		;
 
+		// Cycle through all the cards
+		// Add IDs to each
+		// Display first card
 		cards.each(function(e){
 			var card = $(this);
 
@@ -481,34 +482,9 @@
 			card.attr('id', 'handle' + e);
 		});
 
-		// Right Arrow Click
-		$('.right-arrow').on('click', function(e){
-						
-			if(cards.hasClass('current') == true)
-			{
-				$('.card.current').removeClass('current').css('display', 'none');
-
-				count ++; 
-				$(cards[count]).addClass('current').css('display', 'block');
-
-				if(count === cards.length -1)
-				{
-					count = -1;
-				}
-				
-				return false;
-			}
-			else
-			{
-				console.log('Not current');
-			}
-
-			return false;
-		});
-
-
-		// Left Arrow Click
-		$('.left-arrow').on('click', function(e){
+		// Go to the previous card in the deck
+		var prevCard = function()
+		{
 			if(cards.hasClass('current') == true)
 			{
 				if($('.card.current').attr('id') == 'handle0' )
@@ -530,15 +506,82 @@
 			{
 				console.log('Not current');
 			}
+		}
+
+		// Go to the next flash card in the deck
+		var nextCard = function()
+		{
+			if(cards.hasClass('current') == true)
+			{
+				$('.card.current').removeClass('current').css('display', 'none');
+
+				count ++; 
+				$(cards[count]).addClass('current').css('display', 'block');
+
+				if(count === cards.length -1)
+				{
+					count = -1;
+				}
+				
+				return false;
+			}
+			else
+			{
+				console.log('Not current');
+			}
+		}
+
+		// Right Arrow Click
+		$('.right-arrow').on('click', function(e){
+			nextCard();
+
+			return false;			
+		});
+
+		// Left Arrow Click
+		$('.left-arrow').on('click', function(e){			
+			prevCard();
 
 			return false;
 		});
 
+		// Key Events
+		var initKeys = function()
+		{
+			$(document).keydown(function(e){
+				switch(e.keyCode){
+					case 37:
+						// Left Arrow
+						console.log('left');
+						
+						break;
+					
+					case 39:
+						// Right Arrow
+						console.log('right');
+						
+						break;
 
+					case 32:
+						// Space Bar
+						console.log('space');
+						
+						break;
+				};
 
+				return false;
+			});
+		}
 
-
-
+		// Determining if we are on the correct page
+		if(cards.length == 0)
+		{
+			console.log('on different page');
+		}
+		else
+		{
+			initKeys();
+		}
 
 
 

@@ -29,12 +29,12 @@
                         {
                             foreach($tags as $tag)
                             {
-                                echo Form::button($tag->tag_name);
+                                echo Form::button($tag->tag_name, $tag->tag_name,array('class' => 'tags'));
                             }
                         } 
-                        else{
-                            // No tags
-                        }?>
+                        if(count($tags) == 0){ ?>
+                            <p>No tags</p>
+                       <? } ?>
     				</div>
 
     				
@@ -117,9 +117,9 @@
                         <? endforeach; ?>
 	    				
                         <?= Asset::img('flashcards/right_arrow.png', array('alt' => 'Right arrow to switch flashcard', 'class' => 'controls right-arrow')); ?>
-	    				<div class="practice-more"></div>
+<!-- 	    				<div class="practice-more"></div>
 	    				<div class="flip"></div>
-	    				<div class="mastered"></div>
+	    				<div class="mastered"></div> -->
     				</div>
     			</div>
 				

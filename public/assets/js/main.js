@@ -471,6 +471,13 @@
 	});
 
 
+	var keyboardShortcuts = $('.keyboard-shortcuts');
+
+	keyboardShortcuts.on('mouseover', function(e){
+		$(this).tooltip();
+	});
+
+
 
 	
 

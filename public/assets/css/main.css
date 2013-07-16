@@ -1729,9 +1729,10 @@ img + span{
 	font-size: 12px;
 	color: #484C4C;
 	font-weight: 600;
-	top: 160px;
+	top: 190px;
 	right: 15px;
 	text-align: left;
+	cursor: pointer;
 }
 
 .card p:last-child img{

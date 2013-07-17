@@ -15,7 +15,9 @@ class Controller_Study extends Controller_Template
 		}
 		else
 		{
-			// echo 'Viewing your own';
+			// Viewing your own deck
+			// Edit button
+			$liked = false;
 		}
 		
 		// Setting up views

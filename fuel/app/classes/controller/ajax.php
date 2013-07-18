@@ -47,7 +47,8 @@ class Controller_Ajax extends Controller_Rest{
 	public function post_get_cards()
 	{
 		$data = Model_Card::get_all_cards(Input::post('deck_id'));
-		var_dump($data);
+		
+		return $this->response = \Format::forge($data)->to_json(); 
 	}
 
 

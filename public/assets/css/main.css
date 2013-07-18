@@ -1651,7 +1651,7 @@ img + span{
 	margin-top: 20px;
 }
 
-.study-content button:nth-child(2), .study-content button:nth-child(3){
+.study-content button:nth-child(1), .study-content button:nth-child(2){
 	background-color: #54544D;
 }
 /* NOT WORKING! */
@@ -1659,17 +1659,17 @@ img + span{
 	background-color: #2C3E50;
 }
 
-.study-content button:nth-child(6), .study-content button:nth-child(7){
+.card-view button:nth-child(5), .study-content button:nth-child(6){
 	float: right;
 	margin-right: 20px;
 }
 
-.study-content button:nth-child(6) a, .study-content button:nth-child(7) a{
+.study-content button:nth-child(5) a, .study-content button:nth-child(6) a{
 	text-decoration: none;
 	color: #FFF;
 }
 
-.study-content button:nth-child(7){
+.study-content button:nth-child(6){
 	display: none;
 }
 
@@ -1829,6 +1829,10 @@ img + span{
 
 .mastered:hover{
 	background-color: #007233;
+}
+
+.list-view{
+	display: none;
 }
 
 /* ==========================================================================

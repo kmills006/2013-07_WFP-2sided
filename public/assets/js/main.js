@@ -391,8 +391,29 @@
 	 *
 	 * 
 	 */
+
 	
 	// List View
+	// Display cards in a table format
+	var listViewDisplay = function(response){
+		var cards     = $.parseJSON(response),
+			cardTable = $('.card-table'),
+			cardArea  = ''
+		;
+
+		// Remove the card view and display the list view
+		$('.card-view').css('display', 'none');
+		$('.list-view').css('display', 'block');
+
+
+		$.each(cards, function(key, value){
+			cardArea += '<tr><td>' + value.term + '</td><td>' + value.definition + '</td></tr>';
+		});
+
+		cardTable.html(cardArea);
+	}
+
+	// Get all cards for the list view
 	$('.list-view').on('click', function(e){
 
 		var deck_id = $('.deck-title').attr('data-id');
@@ -402,15 +423,12 @@
 			type: 'post',
 			data: {deck_id: deck_id},
 			success: function(response){
-				console.log(response);
+				listViewDisplay(response);
 			},
 			error: function(response){
 				console.log(response.responseText);
 			}
 		});
-
-
-		$('.study-content').replaceWith('<div class="study-content"><div class="header"><a href="#">Card View</a><a href="#" class="list-view active-study-tab">List View</a></div></div>');
 	});
 
 
@@ -424,7 +442,7 @@
 		;
 
 		// If user is not logged in redirect them to login page
-		if($(this).attr('data-logged') == undefined)
+		if(liked_btn.attr('data-logged') == undefined)
 		{
 			window.location.pathname = '2013-07_WFP-2sided/public/user/login'; 
 		}

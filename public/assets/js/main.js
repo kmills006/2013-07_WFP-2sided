@@ -396,7 +396,6 @@
 
 		var ajaxUrl     = '',
 			liked_btn   = $(this)
-			// logged_in   = $(this).attr('data-logged-in')
 		;
 
 		// If user is not logged in redirect them to login page
@@ -418,6 +417,7 @@
 					break;
 			}
 
+			// Either 'Like' or 'Unlike' a deck
 			$.ajax({
 				url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/' + ajaxUrl,
 				type: 'post',

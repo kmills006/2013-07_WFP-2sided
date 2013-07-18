@@ -120,13 +120,13 @@ class Model_Friend extends \Orm\Model
 							->where('friend_id', $user_id)
 							->get();
 
-		if($query != 0)
+		if(empty($query) == true)
 		{
-			return true;
+			return false;
 		}
 		else
 		{
-			return false;
+			return true;
 		}
 	}
 

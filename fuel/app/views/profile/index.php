@@ -78,17 +78,18 @@
 					  	<? if($user_info->id == Session::get('user_id')){?>
 					  			<!-- looking at your profile; check will be added if you have already added this friend --> 
 					  	<? }else{ 
+
 					  			if(!$friend_check)
 					  			{
-					  				echo 'here fool';
-					  			}
-					  			else
-					  			{ 
 					  				if(!$check_pending): ?>
 					  					<button class="add-friend" data-userid="<? echo $user_info->id ?>">Add Friend</button>
 					  				<? else: ?>
 										<button class="pending" data-userid="<? echo $user_info->id ?>">Pending</button>
 					  				<? endif; 
+					  			}
+					  			else
+					  			{ 
+					  				// Users already friends
 					  			}
 					  	
 					  		} ?>

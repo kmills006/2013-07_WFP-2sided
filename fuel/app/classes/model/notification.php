@@ -194,6 +194,8 @@ class Model_Notification extends \Orm\Model
 									->where('status', 0)
 									->where('user_id', $current_user)
 									->where('friend_id', $user_id)
+									->or_where('user_id', $user_id)
+									->where('friend_id', $current_user)
 									->get();
 
 		if(count($check_pending) != 0)

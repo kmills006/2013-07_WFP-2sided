@@ -1611,10 +1611,11 @@ img + span{
 }
 
 .study-content{
-	width: 700px;
-	float: right;
+	width: 690px;
+	float: left;
 	overflow: hidden;
 	background-color: #FFF;
+	margin-left: 40px;
 }
 
 .study-content .header{
@@ -1908,6 +1909,10 @@ img + span{
 
 .terms{
 	clear: both;
+}
+
+.term, .definition{
+	cursor: pointer;
 }
 
 .term label{

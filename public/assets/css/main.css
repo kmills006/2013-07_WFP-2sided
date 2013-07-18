@@ -1659,7 +1659,7 @@ img + span{
 	background-color: #2C3E50;
 }
 
-.card-view button:nth-child(5), .study-content button:nth-child(6){
+.card-view button:nth-child(5), .study-content button:nth-child(6), .edit{
 	float: right;
 	margin-right: 20px;
 }
@@ -1831,8 +1831,34 @@ img + span{
 	background-color: #007233;
 }
 
-.list-view{
+.list{
 	display: none;
+	margin: 20px 0;
+}
+
+.list table th, td{
+	border: 1px solid #000;
+}
+
+.list table thead tr{
+	height: 50px;
+}
+
+.list table th{
+	height: 50%;
+}
+
+.list table td{
+	padding: 5px 10px;
+}
+
+.list table td:nth-child(odd){
+	width: 150px;
+}
+
+.list table{
+	width: 80%;
+	margin: 0 auto;
 }
 
 /* ==========================================================================

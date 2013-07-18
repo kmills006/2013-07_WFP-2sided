@@ -402,8 +402,8 @@
 		;
 
 		// Remove the card view and display the list view
-		$('.card-view').css('display', 'none');
-		$('.list-view').css('display', 'block');
+		$('.flashcard-view').css('display', 'none');
+		$('.list').css('display', 'block');
 
 
 		$.each(cards, function(key, value){
@@ -429,6 +429,12 @@
 				console.log(response.responseText);
 			}
 		});
+	});
+
+	// Return to the flash card view
+	$('.card-view').on('click', function(e){
+		$('.list').css('display', 'none');
+		$('.flashcard-view').css('display', 'block');
 	});
 
 

@@ -67,12 +67,12 @@
     			
     			<div class="study-content">
     				<div class="header">
-    					<a href="#" class="active-study-tab">Card View</a>
+    					<a href="#" class="active-study-tab card-view">Card View</a>
     					<a href="#" class="list-view">List View</a>
     				</div>
     				
     				
-                    <div class="card-view">
+                    <div class="flashcard-view">
                         <button class="card-sort-active">Random Order</button>
         				<button>A-Z</button>
         				
@@ -130,10 +130,10 @@
         				</div>
                     </div>
 
-                    <div class="list-view">
+                    <div class="list">
                         
                         <table>
-                            <caption>List View</caption>
+                            <!-- <caption>List View</caption> -->
 
                             <thead>
                                 <th>Term</th>

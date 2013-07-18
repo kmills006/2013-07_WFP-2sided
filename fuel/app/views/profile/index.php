@@ -40,14 +40,10 @@
 									 	{
 									 		?>0<?
 									 	} ?></h2>
-					 	
-
-
 
 						<? if(isset($friends)): ?>
 							<? foreach($friends as $friend): ?>
 							 	<div class="friend">
-									<!-- <img src="assets/img/profile_placeholders/brittany_conrad.jpg" alt="Profile Picture" /> -->
 									<? 
 										if($friend->profile_image != NULL)
 										{
@@ -117,7 +113,7 @@
 								  				
 								  			<div class="deck-social">
 								  				<p><?= Asset::img('icons/check_mark.png', array('alt' => 'Decking rating', 'width' => '25', 'height' => '20')); ?></p>
-								  				<p>3</p>
+								  				<p><?= $deck->likes_count; ?></p>
 								  			</div>
 								  				
 								  			<!-- <p><a href="#">Edit Deck</a> -->

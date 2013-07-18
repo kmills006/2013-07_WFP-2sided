@@ -97,7 +97,7 @@ class Model_Deck extends \Orm\Model
 
 		}		
 
-		// Getting the total card count of each deck
+		// Getting the total card count and likes of each deck
 		foreach($decks as $deck)
 		{			
 			$cards = DB::select()
@@ -107,9 +107,17 @@ class Model_Deck extends \Orm\Model
 								->where('cards.deck_id', $deck->id)
 								->as_object()->execute();  					
 			
-			$card_count = count($cards);
+			$deck->card_count = count($cards);
 
-			$deck->card_count = $card_count;
+
+			$likes = DB::select()
+								->from('likes')
+								->join('decks')
+								->on('likes.deck_id', '=', 'decks.id')
+								->where('likes.deck_id', $deck->id)
+								->as_object()->execute();
+						
+			$deck->likes_count = count($likes);
 		}
 
 		return $decks;

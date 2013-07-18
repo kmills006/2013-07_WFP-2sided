@@ -391,6 +391,31 @@
 	 *
 	 * 
 	 */
+	
+	// List View
+	$('.list-view').on('click', function(e){
+
+		var deck_id = $('.deck-title').attr('data-id');
+
+		$.ajax({
+			url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/get_cards',
+			type: 'post',
+			data: {deck_id: deck_id},
+			success: function(response){
+				console.log(response);
+			},
+			error: function(response){
+				console.log(response.responseText);
+			}
+		});
+
+
+		$('.study-content').replaceWith('<div class="study-content"><div class="header"><a href="#">Card View</a><a href="#" class="list-view active-study-tab">List View</a></div></div>');
+	});
+
+
+
+
 	// Like Deck
 	$('.like-btn').on('click', function(e){
 

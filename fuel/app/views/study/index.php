@@ -12,7 +12,7 @@
     				<div class="header">
 
                         <? if(isset($deck_info->title)): ?>
-						<h2><?= $deck_info->title ?></h2>
+						<h2 class="deck-title" data-id="<?= $deck_info->id; ?>"><?= $deck_info->title ?></h2>
                         <? endif?>
 
 						<!-- <p><img src="assets/img/icons/check_mark_white.png" alt="Rating Check Mark Icon" width="25" height="20"/>  237</p> -->

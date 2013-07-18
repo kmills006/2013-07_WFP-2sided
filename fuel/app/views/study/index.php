@@ -88,9 +88,12 @@
                         {
                              // if you are looking at someone else's deck, this button gives you the option to upvote that deck
                             echo Form::button('like', 'Like', array(
-                                                                'class'   => 'small-btn like-btn',
-                                                                'data-id' => $deck_info->id,
+                                                                'class'       => 'small-btn like-btn',
+                                                                'data-id'     => $deck_info->id,
+                                                                'data-logged' => Session::get('is_logged_in'),
                             ));
+
+                            // var_dump(Session::get('is_logged_in'));
                         }
                         else
                         {
@@ -117,9 +120,9 @@
                         <? endforeach; ?>
 	    				
                         <?= Asset::img('flashcards/right_arrow.png', array('alt' => 'Right arrow to switch flashcard', 'class' => 'controls right-arrow')); ?>
-<!-- 	    				<div class="practice-more"></div>
+	    				<div class="practice-more"></div>
 	    				<div class="flip"></div>
-	    				<div class="mastered"></div> -->
+	    				<div class="mastered"></div>
     				</div>
     			</div>
 				

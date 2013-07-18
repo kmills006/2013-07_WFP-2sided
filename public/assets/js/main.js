@@ -396,54 +396,63 @@
 
 		var ajaxUrl     = '',
 			liked_btn   = $(this)
+			// logged_in   = $(this).attr('data-logged-in')
 		;
 
-		switch(liked_btn.text()){
-			case 'Like':
-				ajaxUrl = 'like_deck';
-
-				break;
-
-			case 'Unlike':
-				ajaxUrl = 'unlike_deck';
-
-				break;
+		// If user is not logged in redirect them to login page
+		if($(this).attr('data-logged') == undefined)
+		{
+			window.location.pathname = '2013-07_WFP-2sided/public/user/login'; 
 		}
+		else
+		{
+			switch(liked_btn.text()){
+				case 'Like':
+					ajaxUrl = 'like_deck';
 
-		$.ajax({
-			url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/' + ajaxUrl,
-			type: 'post',
-			data: {
-				deck_id: $(this).attr('data-id')
-			},
-			success: function(response){
-				var results = JSON.parse(response).success;
+					break;
 
-				if(!results)
-				{
-					// Like failed
-				}
-				else
-				{
-					switch(liked_btn.text())
-					{
-						case 'Like':
-								liked_btn.text('Unlike');
-								liked_btn.addClass('liked-active');
+				case 'Unlike':
+					ajaxUrl = 'unlike_deck';
 
-								break;
-						case 'Unlike':
-								liked_btn.text('Like');
-								liked_btn.removeClass('liked-active');
-
-								break;
-					}
-				}
-			},
-			error: function(response){
-				console.log(response.responseText);
+					break;
 			}
-		});
+
+			$.ajax({
+				url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/' + ajaxUrl,
+				type: 'post',
+				data: {
+					deck_id: $(this).attr('data-id')
+				},
+				success: function(response){
+					var results = JSON.parse(response).success;
+
+					if(!results)
+					{
+						// Like failed
+					}
+					else
+					{
+						switch(liked_btn.text())
+						{
+							case 'Like':
+									liked_btn.text('Unlike');
+									liked_btn.addClass('liked-active');
+
+									break;
+							case 'Unlike':
+									liked_btn.text('Like');
+									liked_btn.removeClass('liked-active');
+
+									break;
+						}
+					}
+				},
+				error: function(response){
+					console.log(response.responseText);
+				}
+			});
+		}
 	});
 
 
@@ -481,6 +490,62 @@
 	
 			card.attr('id', 'handle' + e);
 		});
+
+
+
+		// Flip Card Functionality
+		var flipCard = function(e){
+			
+			var term = '';
+
+			if(e.currentTarget)
+			{
+				term = e.currentTarget;
+			}
+			else
+			{
+				term = e[0];
+				console.log($(term).children());
+				console.log($(term).children().hasClass('term'));
+			}
+
+
+			if($(term).hasClass('term'))
+			{
+				console.log('termmmmm class');
+				$('.card .term').css('display', 'none');
+				$('.card .definition').css('display', 'block');
+			}
+			else if($(term).hasClass('definition'))
+			{
+				console.log('definition');
+				$('.card .definition').css('display', 'none');
+				$('.card .term').css('display', 'block');
+			};
+
+		}
+		
+		// Card click to change term
+		$('.card p').on('click', function(e){
+			flipCard(e);
+
+			return false;
+		}); // end of card click
+
+		// Flip icon to change term
+		$('.flip').on('click', function(e){
+			flipCard(e);
+
+			return false;
+		});
+
+
+
+
+
+
+
+
 
 		// Go to the previous card in the deck
 		var prevCard = function()
@@ -549,6 +614,7 @@
 		var initKeys = function()
 		{
 			$(document).keydown(function(e){
+
 				switch(e.keyCode){
 					case 37:
 						// Left Arrow
@@ -564,7 +630,7 @@
 
 					case 32:
 						// Space Bar
-						console.log('space');
+						flipCard($('.current'));
 						
 						break;
 				};
@@ -582,55 +648,6 @@
 		{
 			initKeys();
 		}
-
-
-
-
-
-
-
-
-		var flipCard = function(e){
-			console.log(e.currentTarget);
-
-			// if($(e.currentTarget).hasClass('term'))
-			// {
-			// 	console.log('termmmmm class');
-			// 	$('.card .term').css('display', 'none');
-			// 	$('.card .definition').css('display', 'block');
-			// }
-			// if($(e.currentTarget).hasClass('definition'))
-			// {
-			// 	console.log('definition');
-			// 	$('.card .definition').css('display', 'none');
-			// 	$('.card .term').css('display', 'block');
-			// };
-
-		}
-		
-		// Card click to change term
-		$('.card p').on('click', function(e){
-			flipCard(e);
-
-			return false;
-		}); // end of card click
-
-		// Flip icon to change term
-		$('.flip').on('click', function(e){
-			flipCard(e);
-
-			return false;
-		});
-
-		// Space bar to change term
-		// $(document).keydown(function(e){
-			
-		// 	if(e.keyCode == 32){
-		// 		flipCard(e);
-		// 	}
-
-		// 	return false;
-		// });
 
 	};
 

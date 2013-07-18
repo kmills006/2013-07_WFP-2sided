@@ -1606,6 +1606,29 @@ img + span{
 	font-size: 14px;
 }
 
+.quiz-stats button{
+	width: auto;
+	height: auto;
+	text-align: center;
+	margin: 0 0 20px 0;
+}
+
+.quiz-stats button a{
+/*	font-size: 12px;
+	margin: 5px 5px 0 0;
+	letter-spacing: 1.3px;
+	color: #FFF;
+	font-weight: 100;
+	padding: 0;*/
+	color: #FFF;
+	font-weight: 100;
+	font-size: 12px;
+}
+
+.quiz-stats button a:hover{
+	color: #FFF;
+}
+
 .quiz-stats a:hover, .challenge a:hover{
 	color: #34495E;
 }

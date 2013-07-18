@@ -44,25 +44,21 @@
     				</div>
     				
     				<div class="quiz-stats">
-    					<p>Last quiz on May 11th, 2013</p>
-    					
-    					<h3>Score 87%</h3>
-    					
-    					<!-- <p><a href="#">Test Your Knowledge</a></p> -->
-                        <?= html_tag('p', array(), Html::anchor('quiz/questions/'.$deck_info->id, 'Test Your Knowledge')); ?>
+
+                        <? if(Session::get('is_logged_in') === 1): ?>
+        					<p>Last quiz on May 11th, 2013</p>
+        					
+        					<h3>Score 87%</h3>
+        					
+        					<!-- <p><a href="#">Test Your Knowledge</a></p> -->
+                            <?= html_tag('p', array(), Html::anchor('quiz/questions/'.$deck_info->id, 'Test Your Knowledge')); ?>
+                        <? else: ?>
+                            <p>Please login to take quiz on <?= $deck_info->title; ?> </p>
+                            <button><?= Html::anchor('user/login', 'Login'); ?></button>
+                        <? endif; ?>
  
     				</div>
-    				
-    				<div class="header">
-						<h2>Challenge</h2>
-					</div>
-    				
-    				<div class="challenge">
-    					<p>Test your friends knowledge on this deck with a challenge, both of you will take the quiz on Jeopardy and highest score wins and receives StudyPoints</p>
-    					
-    					<p><a href="#">Select an Opponent</a></p>
-    					
-    				</div>					    				
+    							    				
     			</aside>
     			
     			<div class="study-content">

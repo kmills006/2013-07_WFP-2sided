@@ -137,6 +137,9 @@ class Controller_Ajax extends Controller_Rest{
 	}
 
 
+	/**
+	 * Like Deck
+	 */
 	public function post_like_deck()
 	{
 		$like = Model_Like::like(Input::post('deck_id'));
@@ -144,6 +147,11 @@ class Controller_Ajax extends Controller_Rest{
 		return $this->response = \Format::forge(array('success' => $like))->to_json();
 	}
 
+
+	/**
+	 * Unlike Deck
+	 * @return [type] [description]
+	 */
 	public function post_unlike_deck()
 	{
 		$unlike = Model_Like::unlike(Input::post('deck_id'));
@@ -153,7 +161,15 @@ class Controller_Ajax extends Controller_Rest{
 
 
 
+	public function post_delete_deck()
+	{
 
+		$deck = Model_Deck::delete_deck(Input::post('deck_id'));
+
+		// On succesful delete, reload user dashboard study page
+		// Show success notification
+		return $this->response = \Format::forge(array('success' => true))->to_json();
+	}
 
 
 

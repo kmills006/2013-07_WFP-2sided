@@ -249,6 +249,58 @@
 		});
 	}
 
+	// Delete Deck
+	$('.delect-deck').on('click', function(e){
+		var deck_id    = $(this).attr('data-id'),
+			deck_title = $(this).attr('data-title')
+		;
+
+
+
+
+		// Display confirm delete box
+		alertify.confirm("Message", function (e) {
+		    if (e) {
+		    	// Delete the deck
+		    	
+		    	$.ajax({
+					url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/delete_deck',
+					type: 'post',
+					data: {
+						deck_id: deck_id
+					},
+					success: function(response){
+						if(JSON.parse(response).success == true)
+						{
+							alertify.success(deck_title + ' successfully deleted');
+
+							$.ajax({
+								url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/newest',
+								type: 'post',
+								data: {newest: 'newest'},
+								success: function(response){
+									setDecks(response);
+								},
+								error: function(response){
+									console.log(response.responseText);
+								}
+							});
+						}
+					},
+					error: function(response){
+						console.log(response.responseText);
+					}
+				});
+		    	
+		    } else {
+		        // user clicked "cancel"
+		        console.log('DONT Delete');
+		    }
+		});
+
+		return false;
+	});
+
 	// Notifications
 	var initNotifications = function()
 	{

@@ -74,8 +74,7 @@
 							  				<p><a href="#" class="share">Share Deck</a></p>
 							  			</div>
 							  				
-							  			<!-- <p class="delect-deck"><?= Html::anchor('deck/delete/'.$deck->id, 'Delete Deck'); ?></p> -->
-										<p class="delect-deck">Delete Deck</p>
+							  			<p class="delect-deck" data-id="<?= $deck->id; ?>" data-title="<?= $deck->title; ?>"><?= Html::anchor('#'.$deck->id, 'Delete Deck'); ?></p>
 						  			</section>
 					  			<? endforeach; ?>
 					  		</div>

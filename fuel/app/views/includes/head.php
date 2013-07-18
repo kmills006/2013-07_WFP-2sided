@@ -14,6 +14,7 @@
 		<?= Asset::css('plugins/validationEngine.jquery.css'); ?>
 		<?= Asset::css('plugins/validationEngine.jquery.css'); ?>
 		<?= Asset::css('plugins/alertify.default.css'); ?>
+		<?= Asset::css('plugins/alertify.core.css'); ?>
 
 		<!-- jQuery UI Styles -->
 		<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">

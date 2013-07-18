@@ -141,20 +141,4 @@ class Controller_Deck extends Controller_Template{
 		Response::redirect('dashboard');
 
 	}
-
-
-	/**
-	 * [get_delete description]
-	 * @param  [type] $deck_id [description]
-	 * @return [type]          [description]
-	 */
-	public function get_delete($deck_id)
-	{
-		$deck = Model_Deck::delete_deck($deck_id);
-
-		// On succesful delete, reload user dashboard study page
-		// Show success notification
-		Response::redirect('dashboard');
-	}
-
 }

@@ -1431,7 +1431,7 @@ img + span{
 }
 
 .profile{
-	float: right;
+	float: left;
 	width: 680px;
 	background-color: #FFF;
 	padding: 0 10px;

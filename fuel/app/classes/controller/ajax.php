@@ -150,7 +150,7 @@ class Controller_Ajax extends Controller_Rest{
 
 	/**
 	 * Unlike Deck
-	 * @return [type] [description]
+	 * @return 
 	 */
 	public function post_unlike_deck()
 	{
@@ -160,7 +160,10 @@ class Controller_Ajax extends Controller_Rest{
 	}
 
 
-
+	/**
+	 * Delete deck
+	 * @return
+	 */
 	public function post_delete_deck()
 	{
 

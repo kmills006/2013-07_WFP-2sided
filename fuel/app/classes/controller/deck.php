@@ -104,10 +104,7 @@ class Controller_Deck extends Controller_Template{
 	 */
 	public function post_update()
 	{
-		// echo '<pre>';
-		// var_dump(Input::post());
-		// echo '</pre>';
-		
+
 		$updated_info['orig_info'] = Model_Deck::get_deck(Input::post('id'));
 
 		$updated_info['id']        = Input::post('id');

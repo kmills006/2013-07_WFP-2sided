@@ -192,13 +192,7 @@ class Model_Card extends \Orm\Model
 		// echo '<pre>';
 		// var_dump($choices);
 		// echo '</pre>';
-		
-		$current_card = array(
-			'definition' => $question,
-			'id'         => $card_id,
-		);
-
-		array_push($choices, $current_card);
+	
 		
 		return $choices;
  	}

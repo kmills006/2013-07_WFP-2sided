@@ -860,6 +860,75 @@
 	 	});
 	 }
 
+
+	function shuffle(array) {
+	  var copy = [], n = array.length, i;
+
+	  // While there remain elements to shuffle…
+	  while (n) {
+
+	    // Pick a remaining element…
+	    i = Math.floor(Math.random() * array.length);
+
+	    // If not already shuffled, move it to the new array.
+	    if (i in array) {
+	      copy.push(array[i]);
+	      delete array[i];
+	      n--;
+	    }
+	  }
+
+	  // console.log(copy);
+
+	  return copy;
+	}
+
+
+	 /**
+	  *
+	  * Quiz
+	  * 
+	  */
+	var initQuestions = function()
+	{
+		var first_question = $('.question').first().text(),
+			first_answer   = $('.answer').first().text(),
+			deck_id		   = $('.deck-title').attr('data-id'),
+			card_id		   = $('.card').attr('data-id')
+		;
+
+		$.ajax({
+			url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/get_choices',
+			type: 'post',
+			data: {
+				deck_id:  deck_id,
+				question: first_question,
+				card_id:  first_answer
+			},
+			success: function(response){
+				var choices = $($.parseJSON(response).choices);
+
+				var current_card = {
+							id: card_id, 
+							definition: first_answer
+				};
+
+				choices.push(current_card);
+				choices = shuffle(choices);
+
+			},
+			error: function(response){
+				console.log(response.responseText);
+			}
+		});
+	}
+
+
+
+
+
+
+
 	initAddTerm();
 	initCards();
 	initSettings();
@@ -868,6 +937,7 @@
 	initDropdown();
 	initProfile();
 	initNotifications();
+	initQuestions();
 
 	
 	

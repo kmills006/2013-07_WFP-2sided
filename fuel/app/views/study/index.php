@@ -45,18 +45,23 @@
     				
     				<div class="quiz-stats">
 
-                        <? if(Session::get('is_logged_in') === 1): ?>
-        					<p>Last quiz on May 11th, 2013</p>
-        					
-        					<h3>Score 87%</h3>
-        					
-        					<!-- <p><a href="#">Test Your Knowledge</a></p> -->
-                            <?= html_tag('p', array(), Html::anchor('quiz/questions/'.$deck_info->id, 'Test Your Knowledge')); ?>
-                        <? else: ?>
+                        <? if(Session::get('is_logged_in') === 1){
+                            if(!$quiz_score): ?>
+                                <p>No past scores</p>
+
+                                <?= html_tag('p', array(), Html::anchor('quiz/questions/'.$deck_info->id, 'Test Your Knowledge')); ?>
+                            <? else: ?>
+                                <p>Last quiz on <?= $quiz_score->date(); ?></p>
+                            
+                                <h3>Score <?= $quiz_score->score; ?>%</h3>
+                                
+                                <?= html_tag('p', array(), Html::anchor('quiz/questions/'.$deck_info->id, 'Test Your Knowledge')); ?>
+                            <? endif; ?>
+                        <? }else
+                        { ?>
                             <p>Please login to take quiz on <?= $deck_info->title; ?> </p>
                             <button><?= Html::anchor('user/login', 'Login'); ?></button>
-                        <? endif; ?>
- 
+                        <? } ?> 
     				</div>
     							    				
     			</aside>

@@ -937,17 +937,19 @@
 			cards              = $('.card'),
 			count              = 0,
 			correct            = 0,
-			skippedQuestions   = []
+			skipped_questions  = [],
+			question_count     = $('.question-count'),
+			score			   = '',
+			score_display      = $('.score')
 		;
+
+		// Set the question number
+		question_count.text(count + 1);
 
 		// If you are at the quiz, get choices
 		if(window.location.pathname == '/2013-07_WFP-2sided/public/quiz/questions/' + deck_id)
 		{
 			getChoices(first_question, first_answer, deck_id, card_id);
-		}
-		else
-		{
-			// On another page
 		}
 
 		// Next Question
@@ -992,6 +994,7 @@
 
 					// Increment to the next card
 					count ++; 
+					question_count.text(count + 1);
 
 					// Display the new card
 					$(cards[count]).addClass('current').css('display', 'block');
@@ -1005,10 +1008,14 @@
 					getChoices(question, answer, deck_id, card_id);
 
 
-					if(count === cards.length -1)
+
+					score = 100/cards.length * correct;
+					score_display.text(score);
+
+
+					if(count === cards.length - 1)
 					{
-						// End quiz
-						console.log(count);
+						// End of quiz, calulate score
 					}
 					
 					return false;
@@ -1029,15 +1036,15 @@
 
 		// Skip Question
 		$('.skip').on('click', function(e){
-			skippedQuestion = {
+			skipped_question = {
 					question: $('.current .question').text(),
 					answer: $('.current .answer').text()
 			};
 
-			skippedQuestions.push(skippedQuestion);
+			skipped_questions.push(skipped_question);
 
 			// Set skipped count
-			$('.skipped').text('Skipped: ' + skippedQuestions.length);
+			$('.skipped').text('Skipped: ' + skipped_questions.length);
 
 			// Remove the current card
 			$('.card.current').removeClass('current').css('display', 'none');
@@ -1060,11 +1067,10 @@
 			if(count === cards.length -1)
 			{
 				// End quiz
-				console.log(count);
 			}
 			
 			return false;
-			
+
 		});
 
 	}

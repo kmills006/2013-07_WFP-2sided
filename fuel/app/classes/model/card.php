@@ -174,7 +174,11 @@ class Model_Card extends \Orm\Model
 	}
 
 
-
+	/**
+	 * [get_choices description]
+	 * @param  [type] $post [description]
+	 * @return [type]       [description]
+	 */
 	public static function get_choices($post)
 	{
 		$deck_id  = $post['deck_id'];
@@ -189,48 +193,9 @@ class Model_Card extends \Orm\Model
 							->limit(3)
 							->as_object('Model_Card')->execute();
 
-		// echo '<pre>';
-		// var_dump($choices);
-		// echo '</pre>';
-	
-		
+
 		return $choices;
  	}
-
-
-
-	/* public static function get_questions($deck_id)
-	{
-		$cards = static::query()
-							->where(array(
-								'deck_id' => $deck_id,
-							))
-							->get();
-		
-		$keys = array_keys($cards);
-		shuffle($keys);
-
-		// Setting random order for questions
-		foreach($keys as $key)
-		{
-			$questions[$key] = $cards[$key];
-		}
-
-		// Setting question number
-		$counter = 0;
-
-		foreach($questions as $card)
-		{
-			$counter = $counter + 1;
-			$card->position = $counter;
-		}
-
-		// echo '<pre>';
-		// var_dump($questions);
-		// echo '</pre>';
-
-		return $questions;
-	} /* 
 
 	/**
 	 * [date description]

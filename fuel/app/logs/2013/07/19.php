@@ -824,3 +824,16 @@ ERROR - 2013-07-19 04:32:57 --> Notice - Undefined index: deck_id in /Users/kris
 ERROR - 2013-07-19 04:32:58 --> Notice - Undefined index: deck_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 180
 ERROR - 2013-07-19 04:36:40 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
 ERROR - 2013-07-19 04:49:13 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
+ERROR - 2013-07-19 04:56:27 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
+ERROR - 2013-07-19 04:57:05 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
+ERROR - 2013-07-19 04:57:24 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
+ERROR - 2013-07-19 04:58:05 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
+ERROR - 2013-07-19 04:58:37 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
+ERROR - 2013-07-19 05:04:30 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
+ERROR - 2013-07-19 05:05:14 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
+ERROR - 2013-07-19 05:06:00 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
+ERROR - 2013-07-19 05:06:20 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
+ERROR - 2013-07-19 05:12:41 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
+ERROR - 2013-07-19 05:13:05 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
+ERROR - 2013-07-19 05:13:44 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
+ERROR - 2013-07-19 05:16:11 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182

@@ -24,6 +24,7 @@
 
                         <p class="correct">Correct: 0</p>
                         <p class="skipped">Skipped: 0</p>
+                        <p class="score">Score: 0</p>
                         <!-- <p class="remaining">Remaining: <?= $card_count; ?></p> -->
 						
 
@@ -37,7 +38,7 @@
     			
     			<div class="quiz-content">
     				<div class="header">
-    					<h2>Question  1 of <?= $card_count; ?></h2>
+    					<h2>Question <span class="question-count">1</span> of <?= $card_count; ?></h2>
     				</div>
     				
     				<div class="flash-card">
@@ -46,9 +47,7 @@
                                 <p class="question"><?= $card->term; ?></p>
                                 <p class="answer"><?= $card->definition; ?></p>
 
-                                <form>
-
-                                </form>
+                                <form></form>
     	    				</div>
                         <? endforeach; ?>
 	    				

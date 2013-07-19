@@ -24,6 +24,7 @@
 
                         <p class="correct">Correct: 0</p>
                         <p class="skipped">Skipped: 0</p>
+                        <!-- <p class="remaining">Remaining: <?= $card_count; ?></p> -->
 						
 
                         <h3>Instructions</h3>

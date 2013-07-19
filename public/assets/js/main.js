@@ -861,6 +861,7 @@
 	 }
 
 
+	// Shuffle array
 	function shuffle(array) {
 	  var copy = [], n = array.length, i;
 
@@ -877,8 +878,6 @@
 	      n--;
 	    }
 	  }
-
-	  // console.log(copy);
 
 	  return copy;
 	}
@@ -931,30 +930,32 @@
 
 	var initQuestions = function()
 	{
-		var first_question = $('.question').first().text(),
-			first_answer   = $('.answer').first().text(),
-			deck_id		   = $('.deck-title').attr('data-id'),
-			card_id		   = $('.card').attr('data-id'),
-			cards 		   = $('.card'),
-			count 		   = 0,
-			correct 	   = 0
+		var first_question 	   = $('.question').first().text(),
+			first_answer       = $('.answer').first().text(),
+			deck_id            = $('.deck-title').attr('data-id'),
+			card_id            = $('.card').attr('data-id'),
+			cards              = $('.card'),
+			count              = 0,
+			correct            = 0,
+			skippedQuestions   = []
 		;
 
-		getChoices(first_question, first_answer, deck_id, card_id);
-
+		// If you are at the quiz, get choices
+		if(window.location.pathname == '/2013-07_WFP-2sided/public/quiz/questions/' + deck_id)
+		{
+			getChoices(first_question, first_answer, deck_id, card_id);
+		}
+		else
+		{
+			// On another page
+		}
 
 		// Next Question
-		$('.quiz-content .next').on('click', function(e){
+		$('.quiz-content .next').on('click', function(e){			
 			if($('.multiple-choice').is(':checked'))
 			{
-
-				// console.log($('.multiple-choice:radio:checked + label').text());
-				// console.log($('.current .answer').text());
-
-
 				if(cards.hasClass('current') == true)
 				{
-
 					var user_response = $('.multiple-choice:radio:checked + label').text();
 
 					if(count == 0)
@@ -962,7 +963,7 @@
 						if(user_response == first_answer)
 						{
 							// Correct answer, hooray!!
-							correct = correct + 1;
+							correct ++;
 						}
 						else
 						{
@@ -971,10 +972,10 @@
 					}
 					else
 					{
-						// console.log($('.current .answer').text());
 						if(user_response == $('.current .answer').text())
 						{
-							correct = correct + 1;
+							// Correct answer, hooray!!
+							correct ++;
 						}
 						else
 						{
@@ -982,13 +983,20 @@
 						}
 					}
 
+					// How many correct as the quiz progresses 
 					$('.correct').text('Correct: ' + correct);
 
+
+					// Remove the current card
 					$('.card.current').removeClass('current').css('display', 'none');
 
+					// Increment to the next card
 					count ++; 
+
+					// Display the new card
 					$(cards[count]).addClass('current').css('display', 'block');
 
+					// Get 3 new random answers to choose from
 					var question = $('.current .question').text(),
 						answer   = $('.current .answer').text(),
 						card_id  = $('.current').attr('data-id')
@@ -996,20 +1004,19 @@
 
 					getChoices(question, answer, deck_id, card_id);
 
+
 					if(count === cards.length -1)
 					{
 						// End quiz
-						console.log('End of quiz');
+						console.log(count);
 					}
-
-					console.log('Count: ' + count);
 					
 					return false;
-			}
-			else
-			{
-				console.log('Not current');
-			}
+				}
+				else
+				{
+					console.log('Not current');
+				}
 			}
 			else
 			{
@@ -1017,6 +1024,47 @@
 			}
 
 			return false;
+		});
+
+
+		// Skip Question
+		$('.skip').on('click', function(e){
+			skippedQuestion = {
+					question: $('.current .question').text(),
+					answer: $('.current .answer').text()
+			};
+
+			skippedQuestions.push(skippedQuestion);
+
+			// Set skipped count
+			$('.skipped').text('Skipped: ' + skippedQuestions.length);
+
+			// Remove the current card
+			$('.card.current').removeClass('current').css('display', 'none');
+
+			// Increment to the next card
+			count ++; 
+
+			// Display the new card
+			$(cards[count]).addClass('current').css('display', 'block');
+
+			// Get 3 new random answers to choose from
+			var question = $('.current .question').text(),
+				answer   = $('.current .answer').text(),
+				card_id  = $('.current').attr('data-id')
+			;
+
+			getChoices(question, answer, deck_id, card_id);
+
+
+			if(count === cards.length -1)
+			{
+				// End quiz
+				console.log(count);
+			}
+			
+			return false;
+			
 		});
 
 	}

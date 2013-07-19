@@ -22,8 +22,8 @@
    						<p><?= Html::anchor('profile/view/'.$deck_info->user_id, $deck_owner); ?></p>
 						<p>Total Cards: <?= $card_count; ?></p>
 
-                        <p>Correct: 1</p>
-                        <p>Skipped: 0</p>
+                        <p class="correct">Correct: 0</p>
+                        <p class="skipped">Skipped: 0</p>
 						
 
                         <h3>Instructions</h3>

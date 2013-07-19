@@ -884,11 +884,11 @@
 	}
 
 
-	 /**
-	  *
-	  * Quiz
-	  * 
-	  */
+	/**
+	*
+	* Quiz
+	* 
+	*/
 	 
 	var getChoices = function(question, answer, deck_id, card_id)
 	{
@@ -936,7 +936,8 @@
 			deck_id		   = $('.deck-title').attr('data-id'),
 			card_id		   = $('.card').attr('data-id'),
 			cards 		   = $('.card'),
-			count 		   = 0
+			count 		   = 0,
+			correct 	   = 0
 		;
 
 		getChoices(first_question, first_answer, deck_id, card_id);
@@ -947,12 +948,42 @@
 			if($('.multiple-choice').is(':checked'))
 			{
 
-				console.log($('.multiple-choice').is(':checked'));
-				console.log($('.multiple-choice:radio:checked + label').text());
+				// console.log($('.multiple-choice:radio:checked + label').text());
+				// console.log($('.current .answer').text());
 
 
 				if(cards.hasClass('current') == true)
 				{
+
+					var user_response = $('.multiple-choice:radio:checked + label').text();
+
+					if(count == 0)
+					{
+						if(user_response == first_answer)
+						{
+							// Correct answer, hooray!!
+							correct = correct + 1;
+						}
+						else
+						{
+							// Sorry, wrong answer
+						}
+					}
+					else
+					{
+						// console.log($('.current .answer').text());
+						if(user_response == $('.current .answer').text())
+						{
+							correct = correct + 1;
+						}
+						else
+						{
+							// Sorry, wrong answer
+						}
+					}
+
+					$('.correct').text('Correct: ' + correct);
+
 					$('.card.current').removeClass('current').css('display', 'none');
 
 					count ++; 

@@ -21,6 +21,9 @@
     				<div class="sd-deck-info">
    						<p><?= Html::anchor('profile/view/'.$deck_info->user_id, $deck_owner); ?></p>
 						<p>Total Cards: <?= $card_count; ?></p>
+
+                        <p>Correct: 1</p>
+                        <p>Skipped: 0</p>
 						
 
                         <h3>Instructions</h3>
@@ -37,8 +40,6 @@
     				</div>
     				
     				<div class="flash-card">
-                        <?= Asset::img('flashcards/left_arrow.png', array('alt' => 'Left arrow to switch flashcard', 'class' => 'controls left-arrow')); ?>
-	    				
                         <? foreach($cards as $card): ?>
     	    				<div class="card" data-id="<?= $card->id; ?>">
                                 <p class="question"><?= $card->term; ?></p>
@@ -50,11 +51,10 @@
     	    				</div>
                         <? endforeach; ?>
 	    				
-                        <?= Asset::img('flashcards/right_arrow.png', array('alt' => 'Right arrow to switch flashcard', 'class' => 'controls right-arrow')); ?>
-	    				
-                            <button class="skip">Skip Question</button>
-                            <div class="flip"></div>
-                            <button class="next">Next Question</button>
+                    
+                        <button class="skip">Skip Question</button>
+                        <div class="flip"></div>
+                        <button class="next">Next Question</button>
     				</div>
     			</div>
 				

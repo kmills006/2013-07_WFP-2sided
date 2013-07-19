@@ -889,21 +889,16 @@
 	  * Quiz
 	  * 
 	  */
-	var initQuestions = function()
+	 
+	var getChoices = function(question, answer, deck_id, card_id)
 	{
-		var first_question = $('.question').first().text(),
-			first_answer   = $('.answer').first().text(),
-			deck_id		   = $('.deck-title').attr('data-id'),
-			card_id		   = $('.card').attr('data-id')
-		;
-
 		$.ajax({
 			url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/get_choices',
 			type: 'post',
 			data: {
 				deck_id:  deck_id,
-				question: first_question,
-				card_id:  first_answer
+				question: question,
+				card_id:  card_id
 			},
 			success: function(response){
 				var choices     = $($.parseJSON(response).choices),
@@ -914,15 +909,14 @@
 
 				var current_card = {
 							id: card_id, 
-							definition: first_answer
+							definition: answer
 				};
 
 				choices.push(current_card);
 				choices = shuffle(choices);
 
 				$.each(choices, function(key, value){
-					console.log(value);
-					answersArea += '<input type="radio" name="' + value.id + 'choice"/><label for="1">' + value.definition + '</label>';
+					answersArea += '<input type="radio" name="' + value.id + 'choice" class="multiple-choice"/><label for="1">' + value.definition + '</label>';
 				});
 
 				answersForm.html(answersArea);
@@ -932,6 +926,68 @@
 				console.log(response.responseText);
 			}
 		});
+	}
+
+
+	var initQuestions = function()
+	{
+		var first_question = $('.question').first().text(),
+			first_answer   = $('.answer').first().text(),
+			deck_id		   = $('.deck-title').attr('data-id'),
+			card_id		   = $('.card').attr('data-id'),
+			cards 		   = $('.card'),
+			count 		   = 0
+		;
+
+		getChoices(first_question, first_answer, deck_id, card_id);
+
+
+		// Next Question
+		$('.quiz-content .next').on('click', function(e){
+			if($('.multiple-choice').is(':checked'))
+			{
+
+				console.log($('.multiple-choice').is(':checked'));
+				console.log($('.multiple-choice:radio:checked + label').text());
+
+
+				if(cards.hasClass('current') == true)
+				{
+					$('.card.current').removeClass('current').css('display', 'none');
+
+					count ++; 
+					$(cards[count]).addClass('current').css('display', 'block');
+
+					var question = $('.current .question').text(),
+						answer   = $('.current .answer').text(),
+						card_id  = $('.current').attr('data-id')
+					;
+
+					getChoices(question, answer, deck_id, card_id);
+
+					if(count === cards.length -1)
+					{
+						// End quiz
+						console.log('End of quiz');
+					}
+
+					console.log('Count: ' + count);
+					
+					return false;
+			}
+			else
+			{
+				console.log('Not current');
+			}
+			}
+			else
+			{
+				console.log('Throw error message to remind user to either fill in answer or "Skip Question"');
+			}
+
+			return false;
+		});
+
 	}
 
 

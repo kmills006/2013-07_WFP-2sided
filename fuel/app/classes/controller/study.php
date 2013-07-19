@@ -45,6 +45,7 @@ class Controller_Study extends Controller_Template
 											'likes'      => Model_Like::get_likes($deck_id),
 											'deck_owner' => $deck_owner,
 											'liked'      => $liked,
+											'quiz_score' => Model_Score::get_last_score($deck_id, Session::get('user_id')),
 		));
 
 		$this->template->footer  = View::forge('includes/footer');

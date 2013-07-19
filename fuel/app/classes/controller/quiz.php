@@ -10,6 +10,8 @@ class Controller_Quiz extends Controller_Template
 
 			$deck = Model_Deck::get_deck($deck_id);
 			$deck_owner = $deck->users->username;
+
+			$questions = Model_Quiz::get_quiz($deck_id);
 			
 			// Setting up views
 			$this->template->head    = View::forge('includes/head');
@@ -32,7 +34,7 @@ class Controller_Quiz extends Controller_Template
 												'deck_info'  => Model_Deck::get_deck($deck_id),
 												'cards'      => Model_Card::get_all_cards($deck_id),
 												'card_count' => Model_Card::get_card_count($deck_id),
-												'questions'  => Model_Card::get_questions($deck_id),
+												// 'quiz_cards' => Model_Card::get_questions($deck_id),
 												'tags'       => Model_Tag::get_tags($deck_id),
 												'deck_owner' => $deck_owner,
 			));

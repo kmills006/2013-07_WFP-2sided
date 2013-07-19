@@ -85,6 +85,7 @@ class Model_Card extends \Orm\Model
 							->where(array(
 								'deck_id' => $deck_id,
 							))
+							->order_by(DB::expr('RAND()'))
 							->get();
 
 		// Setting the position depending
@@ -174,21 +175,60 @@ class Model_Card extends \Orm\Model
 
 
 
-	public static function get_questions($deck_id)
+	public static function get_choices($post)
 	{
-			$cards = static::query()
+		$deck_id  = $post['deck_id'];
+		$question = $post['question'];
+		$card_id   = $post['card_id'];
+
+		$choices = DB::select('id', 'definition')
+							->from('cards')
+							->where('term', '!=', $question)
+							->where('deck_id', $deck_id)
+							->order_by(DB::expr('RAND()'))
+							->limit(3)
+							->as_object('Model_Card')->execute();
+
+		// echo '<pre>';
+		// var_dump($choices);
+		// echo '</pre>';
+		
+		$current_card = array(
+			'definition' => $question,
+			'id'         => $card_id,
+		);
+
+		array_push($choices, $current_card);
+		
+		return $choices;
+ 	}
+
+
+
+	/* public static function get_questions($deck_id)
+	{
+		$cards = static::query()
 							->where(array(
 								'deck_id' => $deck_id,
 							))
 							->get();
+		
+		$keys = array_keys($cards);
+		shuffle($keys);
 
-		foreach($cards as $card)
+		// Setting random order for questions
+		foreach($keys as $key)
 		{
-			// echo '<pre>';
-			// var_dump($card->definition);
-			// echo '</pre>';
-			
-			$questions[] = $card->definition;
+			$questions[$key] = $cards[$key];
+		}
+
+		// Setting question number
+		$counter = 0;
+
+		foreach($questions as $card)
+		{
+			$counter = $counter + 1;
+			$card->position = $counter;
 		}
 
 		// echo '<pre>';
@@ -196,8 +236,17 @@ class Model_Card extends \Orm\Model
 		// echo '</pre>';
 
 		return $questions;
-	}
+	} /* 
 
+	/**
+	 * [date description]
+	 * @param  string $format [description]
+	 * @return string         [description]
+	 */
+	public function date($format = "M d, Y")
+	{
+		return date($format, $this->created_at);
+	}
 
 
 }

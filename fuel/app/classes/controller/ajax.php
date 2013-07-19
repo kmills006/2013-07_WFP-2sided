@@ -174,6 +174,13 @@ class Controller_Ajax extends Controller_Rest{
 		return $this->response = \Format::forge(array('success' => true))->to_json();
 	}
 
+	public function post_get_choices()
+	{
+		$choices = Model_Card::get_choices(Input::post());
+
+		return $this->response = \Format::forge(array('choices' => $choices))->to_json();
+	}
+
 
 
 }

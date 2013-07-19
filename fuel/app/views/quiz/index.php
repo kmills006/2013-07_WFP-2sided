@@ -1,6 +1,6 @@
 <? 
     // echo '<pre>';
-    // var_dump($questions);
+    // var_dump($cards);
     // echo '</pre>';
 ?>			
 
@@ -12,7 +12,7 @@
     				<div class="header">
 
                         <? if(isset($deck_info->title)): ?>
-						<h2><?= $deck_info->title ?></h2>
+						<h2 class="deck-title" data-id="<?= $deck_info->id; ?>"><?= $deck_info->title ?></h2>
                         <? endif?>
 
 						<!-- <p><img src="assets/img/icons/check_mark_white.png" alt="Rating Check Mark Icon" width="25" height="20"/>  237</p> -->
@@ -33,42 +33,24 @@
     			
     			<div class="quiz-content">
     				<div class="header">
-    					<h2>Question 34 of 84</h2>
+    					<h2>Question  1 of <?= $card_count; ?></h2>
     				</div>
     				
     				<div class="flash-card">
                         <?= Asset::img('flashcards/left_arrow.png', array('alt' => 'Left arrow to switch flashcard', 'class' => 'controls left-arrow')); ?>
 	    				
                         <? foreach($cards as $card): ?>
-    	    				<div class="card">
-    		    					<? 
-                                        
-                                        var_dump($card->definition);
-
-                                        if (in_array($card->definition, $questions)) 
-                                        {
-                                            unset($questions[array_search($card->definition, $questions)]);
-                                        }
-
-                                    ?>
-
-                                        <form>
-                                            <label for="question"><?= $card->definition; ?></label>
-                                            
-                                            <? foreach($questions as $question): ?>
-                                                    <label for='question'><?= $question ?></label>
-                                            <? endforeach; ?>
-
-                                           
-                                        </form>
-                                    <!-- <p><?= Asset::img('icons/keyboard_shortcuts.png', array('alt' => 'Keyboard Shortcuts')); ?> Keyboard Shortcuts</p> -->
+    	    				<div class="card" data-id="<?= $card->id; ?>">
+                                <p class="question"><?= $card->term; ?></p>
+                                <p class="answer"><?= $card->definition; ?></p>
     	    				</div>
                         <? endforeach; ?>
 	    				
                         <?= Asset::img('flashcards/right_arrow.png', array('alt' => 'Right arrow to switch flashcard', 'class' => 'controls right-arrow')); ?>
-	    				<button class="skip">Skip Question</button>
-	    				<div class="flip"></div>
-	    				<button class="next">Next Question</button>
+	    				
+                            <button class="skip">Skip Question</button>
+                            <div class="flip"></div>
+                            <button class="next">Next Question</button>
     				</div>
     			</div>
 				

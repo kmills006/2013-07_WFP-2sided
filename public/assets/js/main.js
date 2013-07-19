@@ -906,7 +906,11 @@
 				card_id:  first_answer
 			},
 			success: function(response){
-				var choices = $($.parseJSON(response).choices);
+				var choices     = $($.parseJSON(response).choices),
+					answersForm = $('.quiz-content .flash-card form'),
+					answersArea = ''
+
+				;
 
 				var current_card = {
 							id: card_id, 
@@ -915,6 +919,13 @@
 
 				choices.push(current_card);
 				choices = shuffle(choices);
+
+				$.each(choices, function(key, value){
+					console.log(value);
+					answersArea += '<input type="radio" name="' + value.id + 'choice"/><label for="1">' + value.definition + '</label>';
+				});
+
+				answersForm.html(answersArea);
 
 			},
 			error: function(response){

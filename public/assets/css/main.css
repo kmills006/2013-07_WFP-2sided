@@ -2177,6 +2177,16 @@ img + span{
 	float: right;
 }
 
+.quiz-content .flash-card .question{
+	postion: relative;
+	top: 0;
+	margin-right: 400px;
+}
+
+.quiz-content .flash-card .answer{
+	display: none;
+}
+
 /* ==========================================================================
    Footer Styles
    ========================================================================== 

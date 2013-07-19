@@ -694,3 +694,12 @@ ERROR - 2013-07-19 02:43:20 --> Warning - array_push() expects parameter 1 to be
 ERROR - 2013-07-19 02:43:21 --> Warning - array_push() expects parameter 1 to be array, object given in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/ajax.php on line 186
 ERROR - 2013-07-19 02:43:32 --> Warning - array_push() expects parameter 1 to be array, object given in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/ajax.php on line 186
 ERROR - 2013-07-19 02:43:33 --> Warning - array_push() expects parameter 1 to be array, object given in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/ajax.php on line 186
+ERROR - 2013-07-19 02:56:24 --> Notice - Undefined variable: card in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/quiz/index.php on line 39
+ERROR - 2013-07-19 02:56:59 --> Notice - Undefined variable: card in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/quiz/index.php on line 39
+ERROR - 2013-07-19 02:57:00 --> Notice - Undefined variable: card in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/quiz/index.php on line 39
+ERROR - 2013-07-19 02:57:00 --> Notice - Undefined variable: card in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/quiz/index.php on line 39
+ERROR - 2013-07-19 02:57:00 --> Notice - Undefined variable: card in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/quiz/index.php on line 39
+ERROR - 2013-07-19 02:57:02 --> Notice - Undefined variable: card in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/quiz/index.php on line 39
+ERROR - 2013-07-19 02:57:03 --> Notice - Undefined variable: card in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/quiz/index.php on line 39
+ERROR - 2013-07-19 02:57:03 --> Notice - Undefined variable: card in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/quiz/index.php on line 39
+ERROR - 2013-07-19 02:57:03 --> Notice - Undefined variable: card in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/quiz/index.php on line 39

@@ -190,6 +190,8 @@ class Controller_Ajax extends Controller_Rest{
 	public function post_save_score()
 	{
 		$new_score = Model_Score::save_score(Input::post());
+
+		return $this->response = \Format::forge(array('success' => $new_score))->to_json();
 	}
 
 

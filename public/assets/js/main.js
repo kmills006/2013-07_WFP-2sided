@@ -889,13 +889,24 @@
 	* 
 	*/
 
-	var displayResults = function(score, skipped_questions, correct, deck_id)
+	var displayResults = function(score, skipped_questions, missed_questions, correct, deck_id)
 	{
 		// console.log('Score: ' + score);
 		// console.log('Skipped Questions: ' + skipped_questions);
 		// console.log('Correct: ' + correct);
+		// console.log('Missed Questions: ' + missed_questions);
+	
+		/* $.each(skipped_questions, function(key, value){
+			console.log($(this));
+		});*/
+
+		$.each(missed_questions, function(key, value){
+			console.log($(this));
+		});
 		
-		$.ajax({
+
+		
+		/* $.ajax({
 			url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/save_score',
 			type: 'post',
 			data: {
@@ -909,12 +920,17 @@
 			error: function(response){
 				console.log(response.responseText);
 			}
-		});
+		}); */
 		
 
 		$('.quiz-content .header h2').text('Results');
 		$('.skip').css('display', 'none');
 		$('.next').css('display', 'none');
+
+
+		// var resultsDiv  = $('.results'),
+		// 	resultsArea = ''
+		// ;
 	}
 	 
 	var getChoices = function(question, answer, deck_id, card_id)
@@ -966,6 +982,7 @@
 			count              = 0,
 			correct            = 0,
 			skipped_questions  = [],
+			missed_questions   = [],
 			question_count     = $('.question-count'),
 			score			   = '',
 			score_display      = $('.score')
@@ -986,6 +1003,7 @@
 			{
 				if(cards.hasClass('current') == true)
 				{
+					// Saving the users choice
 					var user_response = $('.multiple-choice:radio:checked + label').text();
 
 					if(count == 0)
@@ -998,6 +1016,14 @@
 						else
 						{
 							// Sorry, wrong answer
+							var missed_question = {
+								question: $('.current .question').text(),
+								answer: first_answer,
+								user_response: user_response,
+								choices: $('.answer label')
+							};
+
+							missed_questions.push(missed_question);
 						}
 					}
 					else
@@ -1010,6 +1036,14 @@
 						else
 						{
 							// Sorry, wrong answer
+							var missed_question = {
+								question: $('.current .question').text(),
+								answer: $('.current .answer').text(),
+								user_response: user_response,
+								choices: $('.answer label')
+							};
+
+							missed_questions.push(missed_question);
 						}
 					}
 
@@ -1040,7 +1074,7 @@
 					if(count === cards.length)
 					{
 						// End of quiz
-						displayResults(score, skipped_questions, correct, deck_id);
+						displayResults(score, null, missed_questions, correct, deck_id);
 					}
 					else
 					{
@@ -1066,9 +1100,11 @@
 
 		// Skip Question
 		$('.skip').on('click', function(e){
-			skipped_question = {
+			var skipped_question = {
 					question: $('.current .question').text(),
-					answer: $('.current .answer').text()
+					answer: $('.current .answer').text(),
+					choices: $('.current label')
+
 			};
 
 			skipped_questions.push(skipped_question);
@@ -1094,7 +1130,7 @@
 
 			if(count === cards.length)
 			{
-				displayResults(score, skipped_questions, correct, deck_id);
+				displayResults(score, skipped_questions, null, null, correct, deck_id);
 			}
 			else
 			{

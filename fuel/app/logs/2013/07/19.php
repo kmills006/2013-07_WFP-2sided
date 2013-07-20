@@ -844,3 +844,4 @@ ERROR - 2013-07-19 05:34:39 --> Notice - Undefined index: card_id in /Users/kris
 ERROR - 2013-07-19 05:34:48 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 186
 ERROR - 2013-07-19 22:53:12 --> Error - Class 'Model_Quiz' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/quiz.php on line 14
 ERROR - 2013-07-19 23:09:59 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/score.php on line 65
+ERROR - 2013-07-19 23:16:00 --> Error - Call to a member function save() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/score.php on line 71

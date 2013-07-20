@@ -7,6 +7,7 @@ class Model_Score extends \Orm\Model
 		'user_id',
 		'deck_id',
 		'score',
+		'total_correct',
 		'created_at',
 		'updated_at',
 	);
@@ -54,17 +55,29 @@ class Model_Score extends \Orm\Model
 
 
 
-
+	/**
+	 * Save the new quiz score
+	 * @param  array $post information containing the new score, deck id and total correct
+	 * @return boolean
+	 */
 	public static function save_score($post)
 	{
-		$new_score = array(
+		$new_score = static::forge(array(
 						'user_id'       => Session::get('user_id'),
 						'deck_id'       => $post['deck_id'],
 						'score'         => $post['score'],
 						'total_correct' => $post['total_correct'],
-		);
+		));
 
-		var_dump($new_score);
+		if($new_score->save())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+
 	}
 
 

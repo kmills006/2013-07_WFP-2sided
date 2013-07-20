@@ -55,5 +55,59 @@
                         <button class="next">Next Question</button>
     				</div>
     			</div>
+
+
+
+                <div class="results">
+                        
+                   <h2>Final Score: 89%</h2>
+
+                    <h3>Correct: 10</h3>
+                    <h3>Missed: 3</h3>
+                    <h3>Skipped: 0</h3>
+
+                    <h4>Missed Questions</h4>
+                        <ul>
+                            <li>1. Donna
+                                <ul>
+                                    <li class="correct-answer">a. <span>CORRECT: </span> Haverford </li>
+                                    <li>b. Haverford </li>
+                                    <li class="your-answer">c. <span>INCORRECT: </span> Haverford </li>
+                                    <li>d. Haverford </li>
+                                </ul>
+                            </li>
+                            <li>1. Donna
+                                <ul>
+                                    <li class="correct-answer">a. <span>CORRECT: </span> Haverford </li>
+                                    <li>b. Haverford </li>
+                                    <li class="your-answer">c. <span>INCORRECT: </span> Haverford </li>
+                                    <li>d. Haverford </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    <h4>Skipped Questions</h4>
+                        <ul>
+                            <li>1. Donna
+                                <ul>
+                                    <li class="correct-answer">a. <span>CORRECT: </span> Haverford </li>
+                                    <li>b. Haverford </li>
+                                    <li>c. Haverford </li>
+                                    <li>d. Haverford </li>
+                                </ul>
+                            </li>
+                            <li>1. Donna
+                                <ul>
+                                    <li class="correct-answer">a. <span>CORRECT: </span> Haverford </li>
+                                    <li>b. Haverford </li>
+                                    <li>c. Haverford </li>
+                                    <li>d. Haverford </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                </div>
 				
     		</div> <!-- end of content -->

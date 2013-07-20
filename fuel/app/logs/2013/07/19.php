@@ -837,3 +837,10 @@ ERROR - 2013-07-19 05:12:41 --> Notice - Undefined index: card_id in /Users/kris
 ERROR - 2013-07-19 05:13:05 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
 ERROR - 2013-07-19 05:13:44 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
 ERROR - 2013-07-19 05:16:11 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 182
+ERROR - 2013-07-19 05:33:33 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 186
+ERROR - 2013-07-19 05:33:56 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 186
+ERROR - 2013-07-19 05:34:00 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 186
+ERROR - 2013-07-19 05:34:39 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 186
+ERROR - 2013-07-19 05:34:48 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 186
+ERROR - 2013-07-19 22:53:12 --> Error - Class 'Model_Quiz' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/quiz.php on line 14
+ERROR - 2013-07-19 23:09:59 --> Parsing Error - syntax error, unexpected ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/score.php on line 65

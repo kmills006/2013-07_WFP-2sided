@@ -20,7 +20,6 @@
 					
     				<div class="sd-deck-info">
    						<p><?= Html::anchor('profile/view/'.$deck_info->user_id, $deck_owner); ?></p>
-						<p>Total Cards: <?= $card_count; ?></p>
 
                         <p class="correct">Correct: 0</p>
                         <p class="skipped">Skipped: 0</p>
@@ -53,7 +52,6 @@
 	    				
                     
                         <button class="skip">Skip Question</button>
-                        <div class="flip"></div>
                         <button class="next">Next Question</button>
     				</div>
     			</div>

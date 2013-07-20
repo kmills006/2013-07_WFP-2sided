@@ -1,8 +1,8 @@
 <? 
 
 	// echo '<pre>';
-	// // var_dump($friends);
-	// // echo '</pre>';
+	// var_dump($decks);
+	// echo '</pre>';
 ?>			
 
 			<div class="content user-profile sizer">

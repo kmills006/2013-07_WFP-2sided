@@ -174,11 +174,22 @@ class Controller_Ajax extends Controller_Rest{
 		return $this->response = \Format::forge(array('success' => true))->to_json();
 	}
 
+
+	/**
+	 * Get choices for quiz questions
+	 * @return
+	 */
 	public function post_get_choices()
 	{
 		$choices = Model_Card::get_choices(Input::post());
 
 		return $this->response = \Format::forge(array('choices' => $choices))->to_json();
+	}
+
+
+	public function post_save_score()
+	{
+		$new_score = Model_Score::save_score(Input::post());
 	}
 
 

@@ -33,13 +33,7 @@ class Model_Score extends \Orm\Model
 	 * @return array/boolean
 	 */
 	public static function get_last_score($deck_id, $user_id)
-	{
-		// SELECT *
-		// FROM scores
-		// WHERE user_id = '3' AND deck_id = '51c12d64eace1'
-		// ORDER BY created_at DESC
-		// LIMIT 1;
-		
+	{		
 		$last_score = static::query()
 								->where('user_id', $user_id)
 								->where('deck_id', $deck_id)
@@ -55,6 +49,22 @@ class Model_Score extends \Orm\Model
 		{
 			return $last_score;
 		}
+	}
+
+
+
+
+
+	public static function save_score($post)
+	{
+		$new_score = array(
+						'user_id'       => Session::get('user_id'),
+						'deck_id'       => $post['deck_id'],
+						'score'         => $post['score'],
+						'total_correct' => $post['total_correct'],
+		);
+
+		var_dump($new_score);
 	}
 
 

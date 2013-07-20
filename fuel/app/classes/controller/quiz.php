@@ -10,8 +10,6 @@ class Controller_Quiz extends Controller_Template
 
 			$deck = Model_Deck::get_deck($deck_id);
 			$deck_owner = $deck->users->username;
-
-			$questions = Model_Quiz::get_quiz($deck_id);
 			
 			// Setting up views
 			$this->template->head    = View::forge('includes/head');

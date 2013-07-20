@@ -888,6 +888,34 @@
 	* Quiz
 	* 
 	*/
+
+	var displayResults = function(score, skipped_questions, correct, deck_id)
+	{
+		// console.log('Score: ' + score);
+		// console.log('Skipped Questions: ' + skipped_questions);
+		// console.log('Correct: ' + correct);
+		
+		$.ajax({
+			url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/save_score',
+			type: 'post',
+			data: {
+				deck_id:  deck_id,
+				score: score,
+				total_correct:  correct
+			},
+			success: function(response){
+				console.log(response);
+			},
+			error: function(response){
+				console.log(response.responseText);
+			}
+		});
+		
+
+		$('.quiz-content .header h2').text('Results');
+		$('.skip').css('display', 'none');
+		$('.next').css('display', 'none');
+	}
 	 
 	var getChoices = function(question, answer, deck_id, card_id)
 	{
@@ -994,10 +1022,13 @@
 
 					// Increment to the next card
 					count ++; 
-					question_count.text(count + 1);
 
 					// Display the new card
 					$(cards[count]).addClass('current').css('display', 'block');
+
+					score = 100/cards.length * correct;
+					score = score.toFixed(2);
+					score_display.text(score);
 
 					// Get 3 new random answers to choose from
 					var question = $('.current .question').text(),
@@ -1005,17 +1036,16 @@
 						card_id  = $('.current').attr('data-id')
 					;
 
-					getChoices(question, answer, deck_id, card_id);
 
-
-
-					score = 100/cards.length * correct;
-					score_display.text(score);
-
-
-					if(count === cards.length - 1)
+					if(count === cards.length)
 					{
-						// End of quiz, calulate score
+						// End of quiz
+						displayResults(score, skipped_questions, correct, deck_id);
+					}
+					else
+					{
+						question_count.text(count + 1);
+						getChoices(question, answer, deck_id, card_id);
 					}
 					
 					return false;
@@ -1061,12 +1091,15 @@
 				card_id  = $('.current').attr('data-id')
 			;
 
-			getChoices(question, answer, deck_id, card_id);
 
-
-			if(count === cards.length -1)
+			if(count === cards.length)
 			{
-				// End quiz
+				displayResults(score, skipped_questions, correct, deck_id);
+			}
+			else
+			{
+				question_count.text(count + 1);
+				getChoices(question, answer, deck_id, card_id);
 			}
 			
 			return false;

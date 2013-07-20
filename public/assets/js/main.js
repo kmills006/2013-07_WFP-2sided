@@ -891,18 +891,10 @@
 
 	var displayResults = function(score, skipped_questions, missed_questions, correct, deck_id)
 	{
-		// console.log('Score: ' + score);
-		// console.log('Skipped Questions: ' + skipped_questions);
+		// console.log(score);
 		// console.log('Correct: ' + correct);
-		// console.log('Missed Questions: ' + missed_questions);
-	
-		/* $.each(skipped_questions, function(key, value){
-			console.log($(this));
-		});*/
-
-		$.each(missed_questions, function(key, value){
-			console.log($(this));
-		});
+		// console.log('SKIPPED: ' + skipped_questions);
+		// console.log(missed_questions);
 		
 
 		
@@ -924,13 +916,51 @@
 		
 
 		$('.quiz-content .header h2').text('Results');
+		$('.flash-card').css('display', 'none');
 		$('.skip').css('display', 'none');
 		$('.next').css('display', 'none');
+		$('.results').css('display', 'block');
 
 
-		// var resultsDiv  = $('.results'),
-		// 	resultsArea = ''
-		// ;
+		var scoresDiv   = $('.scores'),
+			scoresArea  = '',
+			missedDiv   = $('.missed-questions'),
+			missedArea  = '',
+			skippedDiv  = $('.skipped-questions'),
+			skippedArea = ''
+		;
+
+		// If all questions were skipped or missed
+		if(score == '')
+		{
+			score = 0;
+		}
+ 
+		scoresArea = '<h2>Final Score: ' + score + '%</h2><h3>Correct: ' + correct + '</h3><h3>Incorrect: ' + $(missed_questions).length + '</h3><h3>Skipped: ' + $(skipped_questions).length + '</h3>';
+		scoresDiv.html(scoresArea);
+
+
+		// <li>1. Donna
+  //           <ul>
+  //               <li class="correct-answer">a. <span>CORRECT: </span> Haverford </li>
+  //               <li>b. Haverford </li>
+  //               <li class="your-answer">c. <span>INCORRECT: </span> Haverford </li>
+  //               <li>d. Haverford </li>
+  //           </ul>
+  //       </li>
+  
+  		$.each(skipped_questions, function(key, value){
+  			var skipped = $(value)[0];
+
+  			skippedArea += '<li>1. ' + skipped.question + '</li><ul>' + $.each(skipped.choices, function(key, value){}).text() + '</li></ul></li>';
+  			
+  			$.each(skipped.choices, function(key, value){
+  				console.log($(this));
+  			});
+  		});
+
+  		skippedDiv.html(skippedArea);
+
 	}
 	 
 	var getChoices = function(question, answer, deck_id, card_id)
@@ -1020,7 +1050,7 @@
 								question: $('.current .question').text(),
 								answer: first_answer,
 								user_response: user_response,
-								choices: $('.answer label')
+								choices: $('.current label')
 							};
 
 							missed_questions.push(missed_question);
@@ -1040,7 +1070,7 @@
 								question: $('.current .question').text(),
 								answer: $('.current .answer').text(),
 								user_response: user_response,
-								choices: $('.answer label')
+								choices: $('.current label')
 							};
 
 							missed_questions.push(missed_question);
@@ -1070,11 +1100,10 @@
 						card_id  = $('.current').attr('data-id')
 					;
 
-
 					if(count === cards.length)
 					{
 						// End of quiz
-						displayResults(score, null, missed_questions, correct, deck_id);
+						displayResults(score, skipped_questions, missed_questions, correct, deck_id);
 					}
 					else
 					{
@@ -1130,7 +1159,7 @@
 
 			if(count === cards.length)
 			{
-				displayResults(score, skipped_questions, null, null, correct, deck_id);
+				displayResults(score, skipped_questions, missed_questions, correct, deck_id);
 			}
 			else
 			{

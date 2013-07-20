@@ -2126,7 +2126,7 @@ img + span{
 	margin-top: 75px;
 }
 
-.quiz-content{
+.quiz-content, .results{
 	width: 700px;
 	float: right;
 	/*overflow: visible;*/
@@ -2189,7 +2189,7 @@ img + span{
 
 
 .results{
-	/*display: none;*/
+	display: none;
 }
 
 .correct-answer{

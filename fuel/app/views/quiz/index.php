@@ -72,6 +72,8 @@
                             <div class="skipped-questions"></div>
                         </ul>
 
+                        <!-- <div class="skipped-questions"></div> -->
+
                 </div>
 				
     		</div> <!-- end of content -->

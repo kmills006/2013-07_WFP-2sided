@@ -891,13 +891,7 @@
 
 	var displayResults = function(score, skipped_questions, missed_questions, correct, deck_id)
 	{
-		// console.log(score);
-		// console.log('Correct: ' + correct);
-		// console.log('SKIPPED: ' + skipped_questions);
-		// console.log(missed_questions);
-		
-
-		
+		// Save score
 		/* $.ajax({
 			url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/save_score',
 			type: 'post',
@@ -927,7 +921,8 @@
 			missedDiv   = $('.missed-questions'),
 			missedArea  = '',
 			skippedDiv  = $('.skipped-questions'),
-			skippedArea = ''
+			skippedArea = '',
+			counter     = 1
 		;
 
 		// If all questions were skipped or missed
@@ -939,30 +934,76 @@
 		scoresArea = '<h2>Final Score: ' + score + '%</h2><h3>Correct: ' + correct + '</h3><h3>Incorrect: ' + $(missed_questions).length + '</h3><h3>Skipped: ' + $(skipped_questions).length + '</h3>';
 		scoresDiv.html(scoresArea);
 
+		// Missed Questions
+		$.each(missed_questions, function(key, value){
+			var missed  = $(value)[0],
+				choices = []
+			;
 
-		// <li>1. Donna
-  //           <ul>
-  //               <li class="correct-answer">a. <span>CORRECT: </span> Haverford </li>
-  //               <li>b. Haverford </li>
-  //               <li class="your-answer">c. <span>INCORRECT: </span> Haverford </li>
-  //               <li>d. Haverford </li>
-  //           </ul>
-  //       </li>
-  
-  		$.each(skipped_questions, function(key, value){
-  			var skipped = $(value)[0];
+			$.each(missed.choices, function(key, value){
 
-  			skippedArea += '<li>1. ' + skipped.question + '</li><ul>' + $.each(skipped.choices, function(key, value){}).text() + '</li></ul></li>';
-  			
-  			$.each(skipped.choices, function(key, value){
-  				console.log($(this));
+  				var choice = $(value).text();
+
+  				// if(choice == missed.answer)
+  				// {
+  				// 	choices += '<ul><li class="correct">CORRECT: ' + $(value).text() + '</li></ul>';	
+  				
+  				// {
+  				// 	choices += '<ul><li>' + $(value).text() + '</li></ul>';
+  				// }
+  				
+  				if(choice == missed.answer)
+  				{
+  					choices += '<ul><li class="correct">CORRECT: ' + $(value).text() + '</li></ul>';
+  				}
+  				else if(choice == missed.user_response)
+  				{
+  					choices += '<ul><li class="incorrect">INCORRECT: ' + $(value).text() + '</li></ul>';
+  				}
+  				else
+  				{
+  					choices += '<ul><li>' + $(value).text() + '</li></ul>';		
+  				}
+  				
   			});
+
+  			missedArea += '<li>' + counter + '. ' + missed.question + choices + '</li>';
+
+  			counter ++;
+
+  			missedDiv.html(missedArea)
+		});
+
+    
+    	// Skipped Questions
+  		$.each(skipped_questions, function(key, value){
+  			var skipped = $(value)[0],
+  			    choices = []
+  			;
+
+  			$.each(skipped.choices, function(key, value){
+
+  				var choice = $(value).text();
+
+  				if(choice == skipped.answer)
+  				{
+  					choices += '<ul><li class="correct">CORRECT: ' + $(value).text() + '</li></ul>';	
+  				}else
+  				{
+  					choices += '<ul><li>' + $(value).text() + '</li></ul>';
+  				}
+  			});
+
+  			skippedArea += '<li>' + counter + '. ' + skipped.question + choices + '</li>';
+
+  			counter ++;
   		});
 
   		skippedDiv.html(skippedArea);
 
 	}
 	 
+	// Get choices 
 	var getChoices = function(question, answer, deck_id, card_id)
 	{
 		$.ajax({

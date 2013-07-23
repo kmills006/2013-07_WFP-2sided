@@ -55,7 +55,7 @@
 										}
 									?>
 									
-									<h3><?= Html::anchor('profile/view/'.$friend->id, $friend->username); ?></h3>
+									<h3><?= Html::anchor($friend->profile_url(), $friend->username); ?></h3>
 									<p>395 Points</p>
 									
 							 	</div>

@@ -1,3 +1,12 @@
+<? 
+
+	// echo '<pre>';
+	// var_dump($user);
+	// echo '</pre>';
+	
+?>
+
+
     		<div class="content user-dashboard sizer">
     			<h1>Dashboard</h1>
     			
@@ -12,12 +21,12 @@
 				  
 				<div id="study" class="ud-tab-content">
 
-				  	<? if(isset($name)): ?>
-				  	<h2>Welcome back <?= $name; ?>!</h2>
-				  	<? elseif(isset($username)):?>
-				  	<h2>Welcome back <?= $username; ?>!</h2>
+				  	<? if(isset($user_info->name)): ?>
+				  		<h2>Welcome back <?= $user_info->name; ?>!</h2>
+				  	<? elseif(isset($user_info->username)):?>
+				  		<h2>Welcome back <?= $user_info->username; ?>!</h2>
 				 	<? else:?>
-				 	<h2>Welcome back!</h2>
+				 		<h2>Welcome back!</h2>
 				  	<? endif; ?>
 				  	
 				  		<div class="recently-studied">
@@ -63,7 +72,10 @@
 					  			<? foreach($decks as $deck): ?>
 						  			<section class="deck">
 						  				<div class="deck-info">
-							  				<p><?= Html::anchor('study/cards/'.$deck->id, $deck->title); ?></p>
+							  				<p><?= Html::anchor('study/view/'.$deck->id, $deck->title, array('data-id' => $deck->id)); ?></p>
+							  				
+							  				<? Session::set_flash('deck_id', $deck->id); ?>
+							  				
 							  				<p>Total Cards: <?= $deck->card_count; ?></p>
 							  				<p>Created on: <?= $deck->date(); ?></p>
 						  				</div>

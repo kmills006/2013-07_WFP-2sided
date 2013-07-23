@@ -66,11 +66,22 @@ class Model_User extends \Orm\Model
 	/**
 	 * 
 	 * @param  interger $user_id
-	 * @return array 
+	 * @return Model_User 
 	 */
 	public static function get_by_id($user_id)
 	{
-		return static::query()->where(array('id' => $user_id))->get_one();
+		return static::query()->where('id', $user_id)->get_one();
+	}
+
+
+	/**
+	 * 
+	 * @param  string $username
+	 * @return Model_User 
+	 */
+	public static function get_by_username($username)
+	{
+		return static::query()->where('username', $username)->get_one();
 	}
 
 
@@ -222,6 +233,89 @@ class Model_User extends \Orm\Model
 			return $users;
 		}
 	}
+
+	/**
+	 * [total_notifications description]
+	 * @return [type] [description]
+	 */
+	public function total_notifications()
+	{
+		return Model_Notification::get_count($this->id);
+	}
+
+	public function get_notifications()
+	{
+		return Model_Notification::get_notifications($this->id);
+	}
+
+	/**
+	 * [profile_url description]
+	 * @return [type] [description]
+	 */
+	public function profile_url()
+	{
+		return 'profile/view/'.$this->username;
+	}
+
+
+	/**
+	 * [image_url description]
+	 * @return [type] [description]
+	 */
+	public function image_url()
+	{
+		return 'profile_photos/thumbs/' . $this->profile_image;
+	}
+
+	/**
+	 * [get_decks description]
+	 * @return [type] [description]
+	 */
+	public function get_decks()
+	{
+		return Model_Deck::get_users_decks($this->id, 'newest');
+	}
+
+	/**
+	 * [total_decks description]
+	 * @return [type] [description]
+	 */
+	public function total_decks()
+	{
+		return Model_Deck::get_total_decks($this->id);
+	}
+	
+	/**
+	 * [get_friends description]
+	 * @return [type] [description]
+	 */
+	public function get_friends()
+	{
+		return Model_Friend::get_friends($this->id);
+	}
+
+
+	/**
+	 * [is_friends_with description]
+	 * @param  [type]  $user_id [description]
+	 * @return boolean          [description]
+	 */
+	public function is_friends_with($user_id)
+	{
+		return Model_Friend::check_friendship($this->id, $user_id);
+	}
+
+
+	/**
+	 * [is_pending_friend description]
+	 * @param  [type]  $user_id [description]
+	 * @return boolean          [description]
+	 */
+	public function is_pending_friend($user_id)
+	{
+		return Model_Notification::check_pending($this->id, $user_id);
+	}
+
 
 
 

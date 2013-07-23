@@ -892,7 +892,7 @@
 	var displayResults = function(score, skipped_questions, missed_questions, correct, deck_id)
 	{
 		// Save score
-		/* $.ajax({
+		$.ajax({
 			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/save_score',
 			type: 'post',
 			data: {
@@ -906,7 +906,7 @@
 			error: function(response){
 				console.log(response.responseText);
 			}
-		}); */
+		});
 		
 
 		$('.quiz-content .header h2').text('Results');

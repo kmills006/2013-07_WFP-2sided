@@ -21,7 +21,7 @@
     				<div class="sd-deck-info">
    						<p><?= Html::anchor('profile/view/'.$deck_info->user_id, $deck_owner); ?></p>
 
-                        <p class="correct">Correct: 0</p>
+                        <p>Correct: 0</p>
                         <p class="skipped">Skipped: 0</p>
                         <p class="score">Score: 0</p>
                         <!-- <p class="remaining">Remaining: <?= $card_count; ?></p> -->

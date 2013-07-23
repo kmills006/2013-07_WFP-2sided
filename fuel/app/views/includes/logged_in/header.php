@@ -13,14 +13,14 @@
 						echo Form::close();
 					?>
 	    			
-	    			<!-- Profile picture and username dropdown -->
+	    			<!-- Profile picture and user->username dropdown -->
 	    			<?
-	    				if(isset($username))
+	    				if(isset($user->username))
 	    				{
-	    					if(isset($profile_image) && $profile_image != null)
+	    					if(isset($user->profile_image) && $user->profile_image != null)
 	    					{ ?>
 	    										
-	    						<a class="global-nav dropdown"><?= Asset::img('profile_photos/thumbs/'.$profile_image); ?><span><?= $username ?></span>
+	    						<a class="global-nav dropdown"><?= Asset::img($user->image_url()); ?><span><?= $user->username ?></span>
 									<ul class="user-dd">
 										<li>Your Profile</li>
 										<li>Dashboard</li>
@@ -33,7 +33,7 @@
 	    					else
 	    					{ ?>
 
-	    						<a class="global-nav dropdown"><?= Asset::img('profile_photos/thumbs/thumb_profile_placeholder.gif'); ?><span><?= $username ?></span>
+	    						<a class="global-nav dropdown"><?= Asset::img('profile_photos/thumbs/thumb_profile_placeholder.gif'); ?><span><?= $user->username ?></span>
 									<ul class="user-dd">
 										<li>Your Profile</li>
 										<li>Dashboard</li>
@@ -44,17 +44,9 @@
 	    						
 	    					<? }
 	    				}
-
-	    				if(isset($notifications) && $notifications != 0)
-	    				{
-	    					echo Html::anchor('dashboard/notifications', Asset::img('icons/new_notifications.png', array('width' => '30', 'height' => '21')).' <span class="notification-count">'.$notifications.'</span>', array('class' => 'global-nav'));
-	    				}
-	    				else
-	    				{
-	    					echo Html::anchor('dashboard/notifications', Asset::img('icons/new_notifications.png', array('width' => '30', 'height' => '21')), array('class' => 'global-nav'));
-	    				}
-
 	    			?>
+
+	    			<?= Html::anchor('dashboard/notifications', Asset::img('icons/new_notifications.png', array('width' => '30', 'height' => '21')).' <span class="notification-count">'.$user->total_notifications().'</span>', array('class' => 'global-nav')) ?>
 
 	    			<a class="global-nav nav" href="#">Browse</a>
     			</div>

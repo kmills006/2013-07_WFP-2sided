@@ -2068,7 +2068,7 @@ img + span{
 */
 
 .quiz .quiz-content{
-	padding-bottom: 40px;
+	/*padding-bottom: 40px;*/
 }
 
 .quiz aside{
@@ -2161,6 +2161,7 @@ img + span{
 
 .skip, .quiz-content .flip, .next{
 	margin-top: 20px;
+	margin-bottom: 30px;
 }
 
 .skip, .next{
@@ -2190,13 +2191,32 @@ img + span{
 
 .results{
 	display: none;
+	width: 660px;
+	padding: 0 20px;
 }
 
-.correct-answer{
+.results h2{
+	font-size: 20px;
+}
+
+.results h3{
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.results ul li{
+	list-style: none;
+}
+
+.results ul + li{
+	font-weight: bold;
+}
+
+.correct{
 	color: green;
 }
 
-.your-answer{
+.incorrect{
 	color: red;
 }
 

@@ -41,7 +41,7 @@
 					
 					// Load the logged in users profile page
 					$.ajax({
-						url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/user_id',
+						url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/user_id',
 						type: 'get',
 						success: function(response){
 							var userID = JSON.parse(response);
@@ -205,7 +205,7 @@
 				{
 					case 'Newest':
 						$.ajax({
-							url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/newest',
+							url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/newest',
 							type: 'post',
 							data: {newest: 'newest'},
 							success: function(response){
@@ -220,7 +220,7 @@
 
 					case 'Oldest':
 						$.ajax({
-							url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/oldest',
+							url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/oldest',
 							type: 'post',
 							data: {oldest: 'oldest'},
 							success: function(response){
@@ -269,7 +269,7 @@
 		    	// Delete the deck
 		    	
 		    	$.ajax({
-					url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/delete_deck',
+					url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/delete_deck',
 					type: 'post',
 					data: {
 						deck_id: deck_id
@@ -280,7 +280,7 @@
 							alertify.success(deck_title + ' successfully deleted');
 
 							$.ajax({
-								url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/newest',
+								url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/newest',
 								type: 'post',
 								data: {newest: 'newest'},
 								success: function(response){
@@ -328,7 +328,7 @@
 			}
 
 			$.ajax({
-				url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/' + ajaxUrl,
+				url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/' + ajaxUrl,
 				type: 'post',
 				data: {
 					notification_id: notification_id
@@ -349,13 +349,13 @@
 
 						// Update the global navigation message icon
 						$.ajax({
-							url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/user_id',
+							url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/user_id',
 							type: 'get',
 							success: function(response){
 								var userID = JSON.parse(response).user_id;
 								
 								$.ajax({
-									url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/update_nav',
+									url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/update_nav',
 									type: 'post',
 									data: {
 										user_id: userID
@@ -476,7 +476,7 @@
 		var deck_id = $('.deck-title').attr('data-id');
 
 		$.ajax({
-			url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/get_cards',
+			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/get_cards',
 			type: 'post',
 			data: {deck_id: deck_id},
 			success: function(response){
@@ -525,7 +525,7 @@
 
 			// Either 'Like' or 'Unlike' a deck
 			$.ajax({
-				url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/' + ajaxUrl,
+				url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/' + ajaxUrl,
 				type: 'post',
 				data: {
 					deck_id: $(this).attr('data-id')
@@ -816,7 +816,7 @@
 
 	 		// Get IDs of the user who is trying to add a new friend
 	 		$.ajax({
-				url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/user_id',
+				url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/user_id',
 				type: 'get',
 				success: function(response){
 					userID = JSON.parse(response).user_id;
@@ -830,7 +830,7 @@
 					{
 						// Add friends
 				 		$.ajax({
-							url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/add_friend',
+							url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/add_friend',
 							type: 'post',
 							data: {
 								user_id:   userID,
@@ -893,7 +893,7 @@
 	{
 		// Save score
 		/* $.ajax({
-			url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/save_score',
+			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/save_score',
 			type: 'post',
 			data: {
 				deck_id:  deck_id,
@@ -930,76 +930,83 @@
 		{
 			score = 0;
 		}
- 
+
+
 		scoresArea = '<h2>Final Score: ' + score + '%</h2><h3>Correct: ' + correct + '</h3><h3>Incorrect: ' + $(missed_questions).length + '</h3><h3>Skipped: ' + $(skipped_questions).length + '</h3>';
 		scoresDiv.html(scoresArea);
 
-		// Missed Questions
-		$.each(missed_questions, function(key, value){
-			var missed  = $(value)[0],
-				choices = []
-			;
+		if(missed_questions == '')
+		{
+			$('.results h4:first').css('display', 'none');
+		}
+		else
+		{
+			// Missed Questions
+			$.each(missed_questions, function(key, value){
+				var missed  = $(value)[0],
+					choices = []
+				;
 
-			$.each(missed.choices, function(key, value){
+				$.each(missed.choices, function(key, value){
 
-  				var choice = $(value).text();
+	  				var choice = $(value).text();
+	  				
+	  				if(choice == missed.answer)
+	  				{
+	  					choices += '<ul><li class="correct">CORRECT: ' + $(value).text() + '</li></ul>';
+	  				}
+	  				else if(choice == missed.user_response)
+	  				{
+	  					choices += '<ul><li class="incorrect">INCORRECT: ' + $(value).text() + '</li></ul>';
+	  				}
+	  				else
+	  				{
+	  					choices += '<ul><li>' + $(value).text() + '</li></ul>';		
+	  				}
+	  				
+	  			});
 
-  				// if(choice == missed.answer)
-  				// {
-  				// 	choices += '<ul><li class="correct">CORRECT: ' + $(value).text() + '</li></ul>';	
-  				
-  				// {
-  				// 	choices += '<ul><li>' + $(value).text() + '</li></ul>';
-  				// }
-  				
-  				if(choice == missed.answer)
-  				{
-  					choices += '<ul><li class="correct">CORRECT: ' + $(value).text() + '</li></ul>';
-  				}
-  				else if(choice == missed.user_response)
-  				{
-  					choices += '<ul><li class="incorrect">INCORRECT: ' + $(value).text() + '</li></ul>';
-  				}
-  				else
-  				{
-  					choices += '<ul><li>' + $(value).text() + '</li></ul>';		
-  				}
-  				
-  			});
+	  			missedArea += '<li>' + counter + '. ' + missed.question + choices + '</li>';
 
-  			missedArea += '<li>' + counter + '. ' + missed.question + choices + '</li>';
+	  			counter ++;
 
-  			counter ++;
+	  			missedDiv.html(missedArea)
+			});
+		}
 
-  			missedDiv.html(missedArea)
-		});
 
-    
-    	// Skipped Questions
-  		$.each(skipped_questions, function(key, value){
-  			var skipped = $(value)[0],
-  			    choices = []
-  			;
+		if(skipped_questions == '')
+		{
+			$('.results h4:last').css('display', 'none');
+		}
+		else
+		{
+			// Skipped Questions
+	  		$.each(skipped_questions, function(key, value){
+	  			var skipped = $(value)[0],
+	  			    choices = []
+	  			;
 
-  			$.each(skipped.choices, function(key, value){
+	  			$.each(skipped.choices, function(key, value){
 
-  				var choice = $(value).text();
+	  				var choice = $(value).text();
 
-  				if(choice == skipped.answer)
-  				{
-  					choices += '<ul><li class="correct">CORRECT: ' + $(value).text() + '</li></ul>';	
-  				}else
-  				{
-  					choices += '<ul><li>' + $(value).text() + '</li></ul>';
-  				}
-  			});
+	  				if(choice == skipped.answer)
+	  				{
+	  					choices += '<ul><li class="correct">CORRECT: ' + $(value).text() + '</li></ul>';	
+	  				}else
+	  				{
+	  					choices += '<ul><li>' + $(value).text() + '</li></ul>';
+	  				}
+	  			});
 
-  			skippedArea += '<li>' + counter + '. ' + skipped.question + choices + '</li>';
+	  			skippedArea += '<li>' + counter + '. ' + skipped.question + choices + '</li>';
 
-  			counter ++;
-  		});
+	  			counter ++;
+	  		});
 
-  		skippedDiv.html(skippedArea);
+	  		skippedDiv.html(skippedArea);
+		}
 
 	}
 	 
@@ -1007,7 +1014,7 @@
 	var getChoices = function(question, answer, deck_id, card_id)
 	{
 		$.ajax({
-			url:  'http://localhost:9999/2013-07_WFP-2sided/public/ajax/get_choices',
+			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/get_choices/' + deck_id,
 			type: 'post',
 			data: {
 				deck_id:  deck_id,
@@ -1033,7 +1040,7 @@
 					answersArea += '<input type="radio" name="' + value.id + 'choice" class="multiple-choice"/><label for="1">' + value.definition + '</label>';
 				});
 
-				answersForm.html(answersArea);
+				answersForm.html(answersArea); 
 
 			},
 			error: function(response){
@@ -1061,6 +1068,7 @@
 
 		// Set the question number
 		question_count.text(count + 1);
+
 
 		// If you are at the quiz, get choices
 		if(window.location.pathname == '/2013-07_WFP-2sided/public/quiz/questions/' + deck_id)

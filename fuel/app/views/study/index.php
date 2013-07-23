@@ -21,7 +21,7 @@
    						<p><?= Html::anchor('profile/view/'.$deck_info->user_id, $deck_owner); ?></p>
 						<p>Total Cards: <?= $card_count; ?></p>
 						<p>Created on <?= $deck_info->date(); ?></p>
-                        <p><img src="assets/img/icons/check_mark_white.png" alt="Rating Check Mark Icon" width="25" height="20"/>  <?= $deck_info->likes_count ?></p>
+                        <p><img src="../../assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/>  <?= $deck_info->likes_count ?></p>
 						
 						<h3>Tags</h3>
 						
@@ -83,7 +83,7 @@
                         <? if($deck_info->user_id == Session::get('user_id'))
                         {
                             // if you are looking at your own deck, this button gives you the option to edit the deck
-                            echo Form::button('edit', Html::anchor('deck/edit/'.$deck_info->id, 'Edit Deck', array('class' => 'small-btn')));
+                            echo Form::button('edit', Html::anchor('deck/edit/'.$deck_info->id, 'Edit Deck', array('class' => 'small-btn edit-btn')));
                         }
                         else
                         {

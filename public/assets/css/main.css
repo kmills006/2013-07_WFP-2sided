@@ -1572,8 +1572,17 @@ img + span{
 }
 
 .sd-deck-info p{
-	font-size: 14px;
+	font-size: 16px;
 	margin: 5px 0;
+}
+
+.sd-deck-info p:nth-child(4){
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.sd-deck-info img{
+	margin-right: 10px;
 }
 
 .sd-deck-info h3{
@@ -1590,7 +1599,7 @@ img + span{
 	letter-spacing: 1.3px;
 }
 
-.quiz-stats, .challenge{
+.quiz-stats{
 	font-size: 14px;
 }
 
@@ -1599,7 +1608,7 @@ img + span{
 	margin: 5px 0;
 }
 
-.quiz-stats a, .challenge a{
+.quiz-stats a{
 	font-weight: 700;
 	text-decoration: none;
 	color: #E67E22;
@@ -1629,7 +1638,7 @@ img + span{
 	color: #FFF;
 }
 
-.quiz-stats a:hover, .challenge a:hover{
+.quiz-stats a:hover{
 	color: #34495E;
 }
 
@@ -1710,6 +1719,10 @@ img + span{
 
 .liked-active{
 	background-color: #D35400;
+}
+
+.edit-btn, .like-btn{
+	float: right;
 }
 
 .flash-card{

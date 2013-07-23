@@ -7,15 +7,23 @@ class Controller_Study extends Controller_App
 	{
 		$deck = Model_Deck::get_deck($deck_id);
 
-		if($deck->user_id != $this->user->id)
+		if(!isset($this->user))
 		{
-			$liked = $deck->check_like($this->user->id);
+			$liked      = false;
+			$quiz_score = false;
 		}
 		else
 		{
-			// Viewing your own deck
-			// Edit button
-			$liked = false;
+			if($deck->user_id != $this->user->id)
+			{
+				$liked = $deck->check_like($this->user->id);
+			}
+			else
+			{
+				$liked = false;
+			}
+
+			$quiz_score = $deck->get_last_score($this->user->id);
 		}
 		
 		// Setting up view
@@ -26,7 +34,7 @@ class Controller_Study extends Controller_App
 											'tags'       => $deck->get_tags(),
 											'deck_owner' => $deck->users->username,
 											'liked'      => $liked,
-											'quiz_score' => $deck->get_last_score($this->user->id),
+											'quiz_score' => $quiz_score,
 		));		
 	}
 

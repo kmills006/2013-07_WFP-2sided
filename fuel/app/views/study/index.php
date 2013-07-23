@@ -83,7 +83,7 @@
                         <? if($deck_info->user_id == Session::get('user_id'))
                         {
                             // if you are looking at your own deck, this button gives you the option to edit the deck
-                            echo Form::button('edit', Html::anchor('deck/edit/'.$deck_info->id, 'Edit Deck', array('class' => 'small-btn edit-btn')));
+                            echo Form::button('edit', Html::anchor('deck/edit/'.$deck_info->id, 'Edit Deck'), array('class' => 'small-btn edit-btn'));
                         }
                         else
                         {
@@ -96,7 +96,6 @@
                                                                     'data-logged' => Session::get('is_logged_in'),
                                 ));
 
-                                // var_dump(Session::get('is_logged_in'));
                             }
                             else
                             {

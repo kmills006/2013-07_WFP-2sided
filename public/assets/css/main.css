@@ -1691,14 +1691,18 @@ img + span{
 	background-color: #2C3E50;
 }
 
-.card-view button:nth-child(5), .study-content button:nth-child(6), .edit{
-	float: right;
+.card-view button:nth-child(5), .study-content button:nth-child(6), .like, .edit{
 	margin-right: 20px;
 }
 
 .study-content button:nth-child(5) a, .study-content button:nth-child(6) a{
 	text-decoration: none;
 	color: #FFF;
+}
+
+.small-btn.like-btn, .small-btn.edit-btn{
+	float: right;
+	margin-right: 20px;
 }
 
 .study-content button:nth-child(6){
@@ -1719,10 +1723,6 @@ img + span{
 
 .liked-active{
 	background-color: #D35400;
-}
-
-.edit-btn, .like-btn{
-	float: right;
 }
 
 .flash-card{
@@ -2172,7 +2172,7 @@ img + span{
 	margin: 0 0 40px 110px;
 }
 
-.skip, .quiz-content .flip, .next{
+.skip, .next{
 	margin-top: 20px;
 	margin-bottom: 30px;
 }

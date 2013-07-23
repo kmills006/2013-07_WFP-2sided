@@ -13,7 +13,7 @@ class Controller_Dashboard extends Controller_App
 
 		if (!isset($user))
 		{
-			throw new HttpNotFoundException;
+			Response::redirect('user/login');
 		}
 
 		// Setting up views
@@ -35,7 +35,7 @@ class Controller_Dashboard extends Controller_App
 
 		if (! isset($user))
 		{
-			throw new HttpNotFoundException;
+			Response::redirect('user/login');
 		}
 		
 		$this->template->content = View::forge('dashboard/notifications', array(
@@ -54,7 +54,7 @@ class Controller_Dashboard extends Controller_App
 		
 		if (! isset($user))
 		{
-			throw new HttpNotFoundException;
+			Response::redirect('user/login');
 		}
 		
 		$this->template->content = View::forge('dashboard/achievements', array(
@@ -73,7 +73,7 @@ class Controller_Dashboard extends Controller_App
 		
 		if (! isset($user))
 		{
-			throw new HttpNotFoundException;
+			Response::redirect('user/login');
 		}
 
 

@@ -95,7 +95,7 @@ class Model_Like extends \Orm\Model
 	 * @param  integer $deck_id
 	 * @return bool
 	 */
-	public static function check_like($deck_id)
+	public static function check_like($deck_id, $user_id)
 	{
 		$liked = static::query()
 							->where('deck_id', '=', $deck_id)

@@ -2,7 +2,8 @@
 
 use \Social\Facebook;
 
-class Controller_User extends Controller_Template{
+class Controller_User extends Controller_App
+{
 
 	/**
 	 * Get Login
@@ -11,10 +12,7 @@ class Controller_User extends Controller_Template{
 	 */
 	public function get_login()
 	{
-		$this->template->head    = View::forge('includes/head');
-		$this->template->header  = View::forge('includes/logged_out/header');
 		$this->template->content = View::forge('login/index');
-		$this->template->footer  = View::forge('includes/footer');
 	}
 
 	/**
@@ -65,31 +63,18 @@ class Controller_User extends Controller_Template{
 				// If login failed, return user to login screen
 				// and display error message
 				// var_dump(Auth::SimpleUserUpdateException);
-
-				$this->template->head    = View::forge('includes/head');
-
-				$this->template->header  = View::forge('includes/logged_out/header');
-
 				$this->template->content = View::forge('login/index', array(
 													'error_msg' => 'Username or password incorrect, please try again.',
 				));
-
-				$this->template->footer  = View::forge('includes/footer');
 			}
 		}
 		else
 		{
 			// If the user has left either the username or password empty
 			// reload the login screen with errors
-			$this->template->head    = View::forge('includes/head');
-
-			$this->template->header  = View::forge('includes/logged_out/header');
-
 			$this->template->content = View::forge('login/index', array(
 												'error_msg' => $val->error(),
 			));
-
-			$this->template->footer  = View::forge('includes/footer');
 		}
 	}
 
@@ -153,16 +138,9 @@ class Controller_User extends Controller_Template{
 					{
 						// If this the first time the user
 						// is logging in, register their 
-						
-						$this->template->head    = View::forge('includes/head');
-
-						$this->template->header  = View::forge('includes/logged_out/header');
-
 						$this->template->content = View::forge('signup/facebook', array(
-															'facebook_user' => $fb_user,
-						));
-						
-						$this->template->footer  = View::forge('includes/footer');
+							'facebook_user' => $fb_user,
+						));						
 					}
 				}
 			}catch(FacebookApiException $e){
@@ -179,10 +157,7 @@ class Controller_User extends Controller_Template{
 	 */
 	public function get_signup()
 	{
-		$this->template->head    = View::forge('includes/head');
-		$this->template->header  = View::forge('includes/logged_out/header');
 		$this->template->content = View::forge('signup/index');
-		$this->template->footer  = View::forge('includes/footer');
 	}
 
 
@@ -236,15 +211,10 @@ class Controller_User extends Controller_Template{
 		{
 			// If the user has left either the username or password empty
 			// reload the login screen with errors
-			$this->template->head    = View::forge('includes/head');
-
-			$this->template->header  = View::forge('includes/logged_out/header');
-
 			$this->template->content = View::forge('signup/index', array(
 												'error_msg' => $val->error(),
 			));
 
-			$this->template->footer  = View::forge('includes/footer');
 		}
 
 

@@ -3,7 +3,11 @@
 class Controller_Quiz extends Controller_Template
 {
 
-			
+		/**
+		 * [get_questions description]
+		 * @param  [type] $deck_id [description]
+		 * @return [type]          [description]
+		 */
 		public function get_questions($deck_id)
 		{
 			$is_logged_in = Session::get('is_logged_in');
@@ -32,7 +36,6 @@ class Controller_Quiz extends Controller_Template
 												'deck_info'  => Model_Deck::get_deck($deck_id),
 												'cards'      => Model_Card::get_all_cards($deck_id),
 												'card_count' => Model_Card::get_card_count($deck_id),
-												// 'quiz_cards' => Model_Card::get_questions($deck_id),
 												'tags'       => Model_Tag::get_tags($deck_id),
 												'deck_owner' => $deck_owner,
 			));

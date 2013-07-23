@@ -55,7 +55,6 @@ class Model_Deck extends \Orm\Model
 	 */
 	public static function get_users_decks($user_id, $sort_by)
 	{
-
 		if($user_id != Session::get('user_id'))
 		{
 			// Viewing someone else's profile page
@@ -175,7 +174,27 @@ class Model_Deck extends \Orm\Model
 	public static function get_deck($deck_id)
 	{
 
-		$deck = static::query()->where(array('id' => $deck_id))->get_one();
+		$deck = static::query()
+							->where(array(
+								'id' => $deck_id
+							))
+							->get_one();
+
+		foreach($deck as $d)
+		{
+			$likes = DB::select()
+								->from('likes')
+								->join('decks')
+								->on('likes.deck_id', '=', 'decks.id')
+								->where('likes.deck_id', $deck->id)
+								->as_object()->execute();
+						
+			$deck->likes_count = count($likes);
+		}
+
+		// echo '<pre>';
+		// var_dump($deck);
+		// echo '</pre>';
 
 		return $deck;
 	}
@@ -289,6 +308,77 @@ class Model_Deck extends \Orm\Model
 			return $decks;
 		}
 		
+	}
+
+
+	/**
+	 * [get_cards description]
+	 * @return [type] [description]
+	 */
+	public function get_cards()
+	{
+		return Model_Card::get_all_cards($this->id);
+	}
+
+	/**
+	 * [get_card_count description]
+	 * @return [type] [description]
+	 */
+	public function get_card_count()
+	{
+		return Model_Card::get_card_count($this->id);
+	}
+
+	/**
+	 * [get_tags description]
+	 * @return [type] [description]
+	 */
+	public function get_tags()
+	{
+		return Model_Tag::get_tags($this->id);
+	}
+
+	/**
+	 * [get_likes description]
+	 * @param  [type] $this->id [description]
+	 * @return [type]           [description]
+	 */
+	public function get_likes()
+	{
+		return Model_Like::get_likes($this->id);
+	}
+
+
+	/**
+	 * [get_last_score description]
+	 * @param  [type] $user_id [description]
+	 * @return [type]          [description]
+	 */
+	public function get_last_score($user_id)
+	{
+		return Model_Score::get_last_score($this->id, $user_id);
+	}
+
+
+	/**
+	 * [check_like description]
+	 * @param  [type] $user_id [description]
+	 * @return [type]          [description]
+	 */
+	public function check_like($user_id)
+	{
+		return Model_Like::check_like($this->id, $user_id);
+	}
+
+
+	/**
+	 * [deck_url description]
+	 * @param  [type] $title [description]
+	 * @return [type]        [description]
+	 */
+	public function deck_url($title)
+	{
+		return strtolower(urlencode($title));
 	}
 
 	/**

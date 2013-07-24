@@ -606,20 +606,24 @@
 			
 			var term = '';
 
-			console.log(e[0]);
-			
-
 			if(e.currentTarget)
 			{
 				term = $(e.currentTarget);
 			}
 			else
 			{
-				term = $(e[0]);
-				
+				$.each($(e).children(), function(key, value){
+					var v = $(value);
+
+					if(v.hasClass('current-term') || v.hasClass('current-def'))
+					{
+						term = v;
+					}
+
+				});		
 			}
 
-			console.log('Term: ' + term);
+			// console.log(term);
 
 			if(term.hasClass('term'))
 			{
@@ -636,6 +640,7 @@
 
 				$('.card .term').css('display', 'none');
 				$('.card .term').removeClass('current-term');
+
 				$('.card .definition').addClass('current-def');
 				$('.card .definition').css('display', 'block');
 			}
@@ -645,6 +650,7 @@
 
 				$('.card .definition').css('display', 'none');
 				$('.card .definition').removeClass('current-def');
+
 				$('.card .term').addClass('current-term');
 				$('.card .term').css('display', 'block');
 			}

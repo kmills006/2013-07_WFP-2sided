@@ -1,6 +1,6 @@
 <?
 
-class Model_Resourse extends \Orm\Model
+class Model_Resource extends \Orm\Model
 {
 	protected static $_properties = array(
 		'id',
@@ -60,6 +60,16 @@ class Model_Resourse extends \Orm\Model
 						->where('card_id', $card_id)
 						->where('deck_id', $deck_id)
 						->get_one();
+	}
+
+
+	public static function delete_resource($resource_id)
+	{
+		$resource = static::query()
+								->where('id', $resource_id)
+								->get_one();
+
+		$resource->delete();
 	}
 
 

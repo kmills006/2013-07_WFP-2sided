@@ -226,18 +226,26 @@ class Controller_Ajax extends Controller_Rest
 	 * [post_resources description]
 	 * @return [type] [description]
 	 */
-	public function post_resources()
+	public function post_save_resource()
 	{
-		$new = Model_Resourse::save_resource(Input::post());
+		$new = Model_Resource::save_resource(Input::post());
 
 		return $this->response = \Format::forge($new)->to_json();
 	}
 
-
+	/**
+	 * [post_check_resource description]
+	 * @return [type] [description]
+	 */
 	public function post_check_resource()
 	{
-		$results = Model_Resourse::check_resource(Input::post('user_id'), Input::post('card_id'), Input::post('deck_id'));
+		$results = Model_Resource::check_resource(Input::post('user_id'), Input::post('card_id'), Input::post('deck_id'));
 		return $this->response = \Format::forge($results)->to_json();
+	}
+
+	public function post_delete_resource()
+	{
+		$resource = Model_Resource::delete_resource(Input::post('resource_id'));
 	}
 
 

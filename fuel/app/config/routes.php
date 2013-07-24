@@ -6,4 +6,6 @@
 		'landing'   => 'landing/index',
 	    'login'     => 'login/index',
 	    'signup'    => 'signup/index',
+
+	    'study/(:segment)' => 'study/index',
 	);

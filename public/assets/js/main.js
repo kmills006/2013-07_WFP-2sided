@@ -587,16 +587,17 @@
 					success: function(response){
 						var resource = JSON.parse(response);
 
-						// Remove any with the class current
+						// Remove any with the class current and the resource id
 						if($('.practice-more').hasClass('checked'))
 						{
-							$('.practice-more').removeClass('checked');
+							$('.practice-more').removeClass('checked').removeAttr('data-id', '');
 						}
 						else if($('.mastered').hasClass('checked'))
 						{
-							$('.mastered').removeClass('checked');
+							$('.mastered').removeClass('checked').removeAttr('data-id');
 						}
 
+						// If no resource remove active color
 						if(!resource)
 						{
 							$('.practice-more').css('background-color', '#E67e22');
@@ -611,12 +612,14 @@
 								case 'practice':
 									$('.mastered').css('background-color', '#E67e22');
 									$('.practice-more').addClass('checked').css('background-color', '#D35400');
+									$('.practice-more').attr('data-id', resource.id);
 
 									break;
 
 								case 'master':
 									$('.practice-more').css('background-color', '#E67e22');
 									$('.mastered').addClass('checked').css('background-color', '#D35400');
+									$('.mastered').attr('data-id', resource.id);
 
 									break;
 							}
@@ -688,24 +691,43 @@
 			console.log('deck_id: ' + deck_id);
 			console.log('card_id: ' + card_id);
 
-			console.log($(e.currentTarget).hasClass('checked'));
-
-			/* $.ajax({
-				url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/resources',
-				type: 'post',
-				data: {
-					user_id:   user_id,
-					deck_id:   deck_id,
-					card_id:   card_id,
-					resource:  resource
-				},
-				success: function(response){
-					console.log(response);
-				},
-				error: function(response){
-					console.log(response.responseText);
-				}
-			}); */
+			if($(e.currentTarget).hasClass('checked'))
+			{
+				// Already in database
+				// Toggle off
+				$.ajax({
+					url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/delete_resource',
+					type: 'post',
+					data: {
+						resource_id: $(e.currentTarget).attr('data-id')
+					},
+					success: function(response){
+						console.log(response);
+					},
+					error: function(response){
+						console.log(response.responseText);
+					}
+				});
+			}
+			else
+			{
+				$.ajax({
+					url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/save_resource',
+					type: 'post',
+					data: {
+						user_id:   user_id,
+						deck_id:   deck_id,
+						card_id:   card_id,
+						resource:  resource
+					},
+					success: function(response){
+						console.log(response);
+					},
+					error: function(response){
+						console.log(response.responseText);
+					}
+				});
+			}
 		});
 	}
 

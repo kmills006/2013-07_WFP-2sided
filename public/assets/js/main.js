@@ -605,7 +605,7 @@
 		var flipCard = function(e){
 			
 			var term = '';
-
+			
 			if(e.currentTarget)
 			{
 				term = $(e.currentTarget);
@@ -627,8 +627,6 @@
 
 			if(term.hasClass('term'))
 			{
-				console.log(term);
-
 				/* term.animate({ 
 						opacity: 0,
 					    bottom: '+=80'
@@ -646,8 +644,6 @@
 			}
 			if(term.hasClass('definition'))
 			{
-				console.log('defintion');
-
 				$('.card .definition').css('display', 'none');
 				$('.card .definition').removeClass('current-def');
 
@@ -664,15 +660,9 @@
 			return false;
 		}); // end of card click
 
-		$('.card .term').on('click', function(e){
-			flipCard(e);
-
-			return false;
-		}); // end of card click
-
 		// Flip icon to change term
 		$('.flip').on('click', function(e){
-			flipCard(e);
+			flipCard($('.current'));
 
 			return false;
 		});
@@ -730,7 +720,7 @@
 			}
 			else
 			{
-				console.log('Not current');
+				initCards();
 			}
 		}
 

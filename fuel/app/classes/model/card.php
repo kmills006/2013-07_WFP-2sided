@@ -76,17 +76,27 @@ class Model_Card extends \Orm\Model
 	 * @param  integer $deck_id [description]
 	 * @return array            [description]
 	 */
-	public static function get_all_cards($deck_id)
+	public static function get_all_cards($deck_id, $sort = null)
 	{
 	
-		// return static::query()->where(array('deck_id' => $deck_id))->get();
-		
-		$cards = static::query()
-							->where(array(
-								'deck_id' => $deck_id,
-							))
-							->order_by(DB::expr('RAND()'))
-							->get();
+		if(isset($sort) && $sort == 'az')
+		{
+			$cards = static::query()
+				->where(array(
+					'deck_id' => $deck_id,
+				))
+				->order_by('term', 'asc')
+				->get();
+		}
+		else
+		{
+			$cards = static::query()
+				->where(array(
+					'deck_id' => $deck_id,
+				))
+				->order_by(DB::expr('RAND()'))
+				->get();
+		}
 
 		// Setting the position depending
 		// on the number of cards in 
@@ -99,7 +109,7 @@ class Model_Card extends \Orm\Model
 
 			$card->position = $counter;
 		}
-
+		
 		return $cards;
 	
 	}

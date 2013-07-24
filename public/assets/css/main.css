@@ -1754,9 +1754,15 @@ img + span{
 	font-size: 22px;
 	position: relative;
 	top: 75px;
+	bottom: 70px;
 	text-align: center;
 	width: auto;
 	
+}
+
+.term{
+	margin-top: 75px;
+	/*bottom: 70px;*/
 }
 
 .definition{
@@ -1792,6 +1798,10 @@ img + span{
 .controls{
 	position: relative;
 	top: 100px;
+}
+
+.left-arrow, .right-arrow{
+	cursor: pointer;
 }
 
 .left-arrow{

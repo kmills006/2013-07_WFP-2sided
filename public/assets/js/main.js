@@ -592,10 +592,12 @@
 			if(e == 0)
 			{
 				card.addClass('current').css('display', 'block');
+				$('.current .term').addClass('current-term');
 			}
 	
 			card.attr('id', 'handle' + e);
 		});
+
 
 
 
@@ -604,35 +606,59 @@
 			
 			var term = '';
 
+			console.log(e[0]);
+			
+
 			if(e.currentTarget)
 			{
-				term = e.currentTarget;
+				term = $(e.currentTarget);
 			}
 			else
 			{
-				term = e[0];
-				console.log($(term).children());
-				console.log($(term).children().hasClass('term'));
+				term = $(e[0]);
+				
 			}
 
+			console.log('Term: ' + term);
 
-			if($(term).hasClass('term'))
+			if(term.hasClass('term'))
 			{
-				console.log('termmmmm class');
+				console.log(term);
+
+				/* term.animate({ 
+						opacity: 0,
+					    bottom: '+=80'
+					    
+					  }, 2000, function() {
+					    // Animation complete.
+					    console.log('animation finished');
+				}); */
+
 				$('.card .term').css('display', 'none');
+				$('.card .term').removeClass('current-term');
+				$('.card .definition').addClass('current-def');
 				$('.card .definition').css('display', 'block');
 			}
-			else if($(term).hasClass('definition'))
+			if(term.hasClass('definition'))
 			{
-				console.log('definition');
+				console.log('defintion');
+
 				$('.card .definition').css('display', 'none');
+				$('.card .definition').removeClass('current-def');
+				$('.card .term').addClass('current-term');
 				$('.card .term').css('display', 'block');
-			};
+			}
 
 		}
 		
 		// Card click to change term
 		$('.card p').on('click', function(e){
+			flipCard(e);
+
+			return false;
+		}); // end of card click
+
+		$('.card .term').on('click', function(e){
 			flipCard(e);
 
 			return false;

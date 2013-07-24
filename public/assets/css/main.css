@@ -1687,8 +1687,12 @@ img + span{
 .study-content button:nth-child(1), .study-content button:nth-child(2){
 	background-color: #54544D;
 }
-/* NOT WORKING! */
-.card-sort-active button{
+
+.study-content button:nth-child(1).card-sort-active{
+	background-color: #2C3E50;
+}
+
+.study-content button:nth-child(2).card-sort-active{
 	background-color: #2C3E50;
 }
 
@@ -1869,12 +1873,6 @@ button.mastered{
 	float: right;
 	margin-right: 37px;
 }
-
-/* Mastered selected color #00B753 */
-
-/*.mastered:hover{
-	background-color: #007233;
-}*/
 
 .list{
 	display: none;

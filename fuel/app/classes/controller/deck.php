@@ -1,6 +1,7 @@
 <?
 
-class Controller_Deck extends Controller_Template{
+class Controller_Deck extends Controller_App
+{
 	
 	/**
 	 * Create New Deck

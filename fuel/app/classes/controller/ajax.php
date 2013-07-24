@@ -1,7 +1,8 @@
 <? 
 
 
-class Controller_Ajax extends Controller_Rest{
+class Controller_Ajax extends Controller_Rest
+{
 
 
 	/**
@@ -12,7 +13,7 @@ class Controller_Ajax extends Controller_Rest{
 	{
 
   		$data = array(
-  					'user_id' => Session::get('user_id'),
+  			'user_id' => Session::get('user_id'),
   		);
 
   		return $this->response = \Format::forge($data)->to_json();
@@ -186,12 +187,44 @@ class Controller_Ajax extends Controller_Rest{
 		return $this->response = \Format::forge(array('choices' => $choices))->to_json();
 	}
 
-
+	/**
+	 * [post_save_score description]
+	 * @return [type] [description]
+	 */
 	public function post_save_score()
 	{
 		$new_score = Model_Score::save_score(Input::post());
 
 		return $this->response = \Format::forge(array('success' => $new_score))->to_json();
+	}
+
+
+	/**
+	 * [post_sort_az description]
+	 * @return [type] [description]
+	 */
+	public function post_sort_az()
+	{
+		$cards = Model_Card::get_all_cards(Input::post('deck_id'), 'az');
+
+		return $this->response = \Format::forge($cards)->to_json();
+	}
+
+
+	/**
+	 * [post_sort_random description]
+	 * @return [type] [description]
+	 */
+	public function post_sort_random()
+	{
+		$cards = Model_Card::get_all_cards(Input::post('deck_id'));
+
+		return $this->response = \Format::forge($cards)->to_json();
+	}
+
+	public function post_resources()
+	{
+		$new = Model_Resourse::save_resource(Input::post());
 	}
 
 

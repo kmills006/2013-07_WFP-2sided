@@ -564,6 +564,70 @@
 	});
 
 
+
+	/**
+	 * 
+	 * Init Resources
+	 * 
+	 */
+	var initResources = function()
+	{
+		var resources = $('.resources'),
+			user_id   = '',
+			deck_id   = $('.current').attr('data-deckid'),
+			card_id   = $('.current').attr('data-cardid')
+		;
+
+
+		$.ajax({
+			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/user_id',
+			type: 'get',
+			success: function(response){
+				user_id = JSON.parse(response);
+			},
+			error: function(response){
+				console.log(response.responseText);
+			}
+		});
+
+
+
+		resources.on('click', function(e){
+
+			var resource = '';
+
+			switch($(this).text())
+			{
+				case 'Practice More':
+					resource = 'practice';
+
+					break;
+
+				case 'Mastered':
+					resource = 'master';
+
+					break;
+			}
+
+			$.ajax({
+				url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/resources',
+				type: 'post',
+				data: {
+					user_id:   user_id,
+					deck_id:   deck_id,
+					card_id:   card_id,
+					resource:  resource
+				},
+				success: function(response){
+					console.log(response);
+				},
+				error: function(response){
+					console.log(response.responseText);
+				}
+			});
+		});
+	}
+
 	// Keyboard shortcuts tooltip
 	var keyboardShortcuts = $('.keyboard-shortcuts');
 
@@ -576,20 +640,10 @@
 	});
 
 
+	// Display both sides of card
 	var bothSides = function()
 	{
 		$('.both-sides').on('change', function(e){
-			// if($('.term').hasClass('current-term'))
-			// {
-			// 	$('.card .definition').css('display', 'block');
-			// }
-			// else if($('.definition').hasClass('current-def'))
-			// {
-			// 	console.log('current-def');
-			// 	$('.card .definition').css('display', 'none');
-			// }
-			
-
 			if($('.definition').css('display') == 'none')
 			{
 				$('.keyboard-shortcuts').css('top', '160px');
@@ -605,6 +659,8 @@
 	};
 
 	
+
+	// Sort cards by either random order or alphabetical order
 	var cardSort = function()
 	{
 		var random = $('.random'),
@@ -675,6 +731,8 @@
 			});
 		});
 	}
+
+
 
 
 
@@ -877,6 +935,11 @@
 	};
 
 
+
+
+
+
+
 	/**
 	 *
 	 * Add New Term Functionality
@@ -978,6 +1041,12 @@
 
 	 	});
 	 }
+
+
+
+
+
+
 
 
 	// Shuffle array
@@ -1356,6 +1425,7 @@
 	initProfile();
 	initNotifications();
 	initQuestions();
+	initResources();
 
 	
 	

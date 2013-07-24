@@ -114,7 +114,7 @@
                             <?= Asset::img('flashcards/left_arrow.png', array('alt' => 'Left arrow to switch flashcard', 'class' => 'controls left-arrow')); ?>
     	    				
                             <? foreach($cards as $card): ?>
-        	    				<div class="card">
+        	    				<div class="card" data-deckid='<?= $card->deck_id; ?>' data-cardid='<?= $card->id; ?>'>
         		    					<p class='term'><?= $card->term; ?></p>
                                         <p class='definition'><?= $card->definition; ?></p>
         		    					
@@ -123,9 +123,9 @@
                             <? endforeach; ?>
     	    				
                             <?= Asset::img('flashcards/right_arrow.png', array('alt' => 'Right arrow to switch flashcard', 'class' => 'controls right-arrow')); ?>
-    	    				<button class="practice-more">Practice More</button>
+    	    				<button class="practice-more resources">Practice More</button>
     	    				<div class="flip"></div>
-                            <button class="mastered">Mastered</button>
+                            <button class="mastered resources">Mastered</button>
     	    				
         				</div>
                     </div>

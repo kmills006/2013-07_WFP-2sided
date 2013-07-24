@@ -1085,3 +1085,4 @@ ERROR - 2013-07-23 16:42:23 --> Notice - Undefined variable: quiz_score in /User
 ERROR - 2013-07-23 16:42:48 --> Notice - Undefined variable: head in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/template.php on line 7
 ERROR - 2013-07-23 16:42:53 --> Notice - Undefined variable: quiz_score in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 48
 ERROR - 2013-07-23 16:43:12 --> Notice - Undefined variable: quiz_score in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 48
+ERROR - 2013-07-23 21:39:26 --> Error - Could not find asset: plugins/rotate3Di.js in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/asset/instance.php on line 249

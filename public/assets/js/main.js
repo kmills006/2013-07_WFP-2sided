@@ -593,7 +593,6 @@
 
 						if(resource == null)
 						{
-							console.log('No resource');
 							$('.practice-more').css('background-color', '#891616');
 							$('.mastered').css('background-color', '#0b6211');
 						}
@@ -624,44 +623,6 @@
 									break;
 							}
 						}
-
-						// Remove any with the class current and the resource id
-						/* if($('.practice-more').hasClass('checked'))
-						{
-							$('.practice-more').removeClass('checked').removeAttr('data-id', '');
-						}
-						else if($('.mastered').hasClass('checked'))
-						{
-							$('.mastered').removeClass('checked').removeAttr('data-id');
-						}*/
-
-						// If no resource remove active color
-						/* if(!resource)
-						{
-							$('.practice-more').css('background-color', '#E67e22');
-							$('.mastered').css('background-color', '#E67e22');
-
-							return false;
-						}
-						else
-						{
-							switch(resource.resource)
-							{
-								case 'practice':
-									$('.mastered').css('background-color', '#E67e22');
-									$('.practice-more').addClass('checked').css('background-color', '#D35400');
-									$('.practice-more').attr('data-id', resource.id);
-
-									break;
-
-								case 'master':
-									$('.practice-more').css('background-color', '#E67e22');
-									$('.mastered').addClass('checked').css('background-color', '#D35400');
-									$('.mastered').attr('data-id', resource.id);
-
-									break;
-							}
-						} */
 					},
 					error: function(response){
 						console.log(response.responseText);
@@ -725,7 +686,47 @@
 					break;
 			}
 
-			console.log(e.currentTarget);
+			if($(e.currentTarget).attr('data-id'))
+			{
+				resource_id = $(e.currentTarget).attr('data-id');
+
+				// console.log(e.currentTarget);
+
+				$.ajax({
+					url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/delete_resource',
+					type: 'post',
+					data: {
+						resource_id: resource_id
+					},
+					success: function(response){
+						var result = JSON.parse(response);
+
+						if(!result)
+						{
+							console.log('Failed');
+						}
+						else
+						{
+							if($(e.currentTarget).hasClass('practice-more'))
+							{
+								$('.practice-more').removeClass('current').removeAttr('data-id').css('background-color', '#891616');
+							}
+							else if($(e.currentTarget).hasClass('mastered'))
+							{
+								$('.mastered').removeClass('current').removeAttr('data-id').css('background-color', '#0b6211');
+							}
+							
+						}
+					},
+					error: function(response){
+						console.log(response.responseText);
+					}
+				});
+			}
+			else
+			{
+				console.log('no resource yet');
+			}
 
 			/* if($(e.currentTarget).hasClass('checked'))
 			{
@@ -783,6 +784,8 @@
 					}
 				});
 			} */
+
+			return false;
 		});
 	}
 
@@ -847,7 +850,7 @@
 					console.log(response);
 					var cards = $.parseJSON(response);
 
-					console.log(cards);
+					// console.log(cards);
 
 					// var arr = [];
 
@@ -905,9 +908,8 @@
 
 	var initCards = function(){
 
-		cardSort();
+		// cardSort();
 		bothSides();
-		checkResource();
 		
 		var cards   = $('.card'),
 			count   = 0,
@@ -928,6 +930,9 @@
 	
 			card.attr('id', 'handle' + e);
 		});
+
+		checkResource();
+		cardSort();
 
 
 		// Flip Card Functionality
@@ -951,8 +956,6 @@
 
 				});		
 			}
-
-			console.log(term);
 
 			if(term.hasClass('term'))
 			{
@@ -1000,8 +1003,6 @@
 		// Go to the previous card in the deck
 		var prevCard = function()
 		{
-			checkResource();
-
 			if(cards.hasClass('current') == true)
 			{
 				if($('.card.current').attr('id') == 'handle0' )
@@ -1018,6 +1019,10 @@
 				{
 					count = cards.length - 1;
 				}
+
+				checkResource();
+
+				return false;
 			}
 			else
 			{
@@ -1028,7 +1033,6 @@
 		// Go to the next flash card in the deck
 		var nextCard = function()
 		{
-			checkResource();
 
 			if(cards.hasClass('current') == true)
 			{
@@ -1042,6 +1046,8 @@
 					count = -1;
 				}
 				
+				checkResource();
+
 				return false;
 			}
 			else

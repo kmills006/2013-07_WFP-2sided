@@ -81,7 +81,14 @@ class Model_Resource extends \Orm\Model
 								->where('id', $resource_id)
 								->get_one();
 
-		$resource->delete();
+		if($resource->delete())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 
 

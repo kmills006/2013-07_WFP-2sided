@@ -250,7 +250,7 @@ class Controller_Ajax extends Controller_Rest
 	public function post_delete_resource()
 	{
 		$results = Model_Resource::delete_resource(Input::post('resource_id'));
-		return $this->response = \Format::forge(true)->to_json();
+		return $this->response = \Format::forge($results)->to_json();
 	}
 
 

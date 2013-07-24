@@ -222,9 +222,22 @@ class Controller_Ajax extends Controller_Rest
 		return $this->response = \Format::forge($cards)->to_json();
 	}
 
+	/**
+	 * [post_resources description]
+	 * @return [type] [description]
+	 */
 	public function post_resources()
 	{
 		$new = Model_Resourse::save_resource(Input::post());
+
+		return $this->response = \Format::forge($new)->to_json();
+	}
+
+
+	public function post_check_resource()
+	{
+		$results = Model_Resourse::check_resource(Input::post('user_id'), Input::post('card_id'), Input::post('deck_id'));
+		return $this->response = \Format::forge($results)->to_json();
 	}
 
 

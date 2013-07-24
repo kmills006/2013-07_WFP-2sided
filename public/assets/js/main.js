@@ -567,8 +567,76 @@
 
 	/**
 	 * 
-	 * Init Resources
+	 *  Resources
 	 * 
+	 */
+	var checkResource = function()
+	{
+		$.ajax({
+			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/user_id',
+			type: 'get',
+			success: function(response){				
+				$.ajax({
+					url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/check_resource',
+					type: 'post',
+					data:{
+						user_id: JSON.parse(response).user_id,
+						card_id: $('.current').attr('data-cardid'),
+						deck_id: $('.current').attr('data-deckid')
+					},
+					success: function(response){
+						var resource = JSON.parse(response);
+
+						// Remove any with the class current
+						if($('.practice-more').hasClass('checked'))
+						{
+							$('.practice-more').removeClass('checked');
+						}
+						else if($('.mastered').hasClass('checked'))
+						{
+							$('.mastered').removeClass('checked');
+						}
+
+						if(!resource)
+						{
+							$('.practice-more').css('background-color', '#E67e22');
+							$('.mastered').css('background-color', '#E67e22');
+
+							return false;
+						}
+						else
+						{
+							switch(resource.resource)
+							{
+								case 'practice':
+									$('.mastered').css('background-color', '#E67e22');
+									$('.practice-more').addClass('checked').css('background-color', '#D35400');
+
+									break;
+
+								case 'master':
+									$('.practice-more').css('background-color', '#E67e22');
+									$('.mastered').addClass('checked').css('background-color', '#D35400');
+
+									break;
+							}
+						}
+					},
+					error: function(response){
+						console.log(response.responseText);
+					}
+				});
+
+			},
+			error: function(response){
+				console.log(response.responseText);
+			}
+		});
+	}
+
+	/**
+	 * Init Resources
+	 * @return {[type]} [description]
 	 */
 	var initResources = function()
 	{
@@ -583,7 +651,7 @@
 			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/user_id',
 			type: 'get',
 			success: function(response){
-				user_id = JSON.parse(response);
+				user_id = JSON.parse(response).user_id;
 			},
 			error: function(response){
 				console.log(response.responseText);
@@ -591,8 +659,15 @@
 		});
 
 
-
+		// Practice More or Mastered click
 		resources.on('click', function(e){
+
+			// If user is logged out, redirect user to login page
+			if(user_id == null)
+			{
+				window.location.pathname = '/2013-07_WFP-2sided/public/user/login';
+			}
+
 
 			var resource = '';
 
@@ -609,7 +684,13 @@
 					break;
 			}
 
-			$.ajax({
+			console.log('user_id: ' + user_id);
+			console.log('deck_id: ' + deck_id);
+			console.log('card_id: ' + card_id);
+
+			console.log($(e.currentTarget).hasClass('checked'));
+
+			/* $.ajax({
 				url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/resources',
 				type: 'post',
 				data: {
@@ -624,11 +705,14 @@
 				error: function(response){
 					console.log(response.responseText);
 				}
-			});
+			}); */
 		});
 	}
 
-	// Keyboard shortcuts tooltip
+	/**
+	 * [keyboardShortcuts description]
+	 * @type {[type]}
+	 */
 	var keyboardShortcuts = $('.keyboard-shortcuts');
 
 	keyboardShortcuts.on('mouseover', function(e){
@@ -640,7 +724,10 @@
 	});
 
 
-	// Display both sides of card
+	/**
+	 * Display both sides of card
+	 * @return {[type]} [description]
+	 */
 	var bothSides = function()
 	{
 		$('.both-sides').on('change', function(e){
@@ -660,7 +747,10 @@
 
 	
 
-	// Sort cards by either random order or alphabetical order
+	/**
+	 * Sort cards by either random order or alphabetical order
+	 * @return {[type]} [description]
+	 */
 	var cardSort = function()
 	{
 		var random = $('.random'),
@@ -740,10 +830,41 @@
 
 		cardSort();
 		bothSides();
+		checkResource();
 		
-		var cards = $('.card'),
-			count = 0
+		var cards   = $('.card'),
+			count   = 0,
+			user_id = ''
 		;
+
+		$.ajax({
+			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/user_id',
+			type: 'get',
+			success: function(response){				
+				$.ajax({
+					url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/check_resource',
+					type: 'post',
+					data:{
+						user_id: JSON.parse(response).user_id,
+						card_id: $('.current').attr('data-cardid'),
+						deck_id: $('.current').attr('data-deckid')
+					},
+					success: function(response){
+						console.log(response);
+					},
+					error: function(response){
+						console.log(response.responseText);
+					}
+				});
+
+			},
+			error: function(response){
+				console.log(response.responseText);
+			}
+		});
+
+
+
 
 		// Cycle through all the cards
 		// Add IDs to each
@@ -755,12 +876,12 @@
 			{
 				card.addClass('current').css('display', 'block');
 				$('.current .term').addClass('current-term');
+
+				var card_id = $('.current').attr('data-cardid');			
 			}
 	
 			card.attr('id', 'handle' + e);
 		});
-
-
 
 
 		// Flip Card Functionality
@@ -833,6 +954,8 @@
 		// Go to the previous card in the deck
 		var prevCard = function()
 		{
+			checkResource();
+
 			if(cards.hasClass('current') == true)
 			{
 				if($('.card.current').attr('id') == 'handle0' )
@@ -859,6 +982,8 @@
 		// Go to the next flash card in the deck
 		var nextCard = function()
 		{
+			checkResource();
+
 			if(cards.hasClass('current') == true)
 			{
 				$('.card.current').removeClass('current').css('display', 'none');

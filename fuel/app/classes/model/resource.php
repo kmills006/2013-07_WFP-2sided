@@ -34,12 +34,16 @@ class Model_Resource extends \Orm\Model
 	 */
 	public static function save_resource($new_resource)
 	{
+		var_dump($new_resource);
+		
 		$new_resource = static::forge(array(
 									'user_id'  => $new_resource['user_id'],
 									'deck_id'  => $new_resource['deck_id'],
 									'card_id'  => $new_resource['card_id'],
 									'resource' => $new_resource['resource']
 		));
+
+		// var_dump($new_resource);
 
 		if($new_resource->save())
 		{

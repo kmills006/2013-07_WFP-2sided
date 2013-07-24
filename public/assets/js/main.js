@@ -573,6 +573,12 @@
 	var checkResource = function()
 	{
 		console.log('Checking resources');
+		console.log($('.current'));
+
+		console.log('Check Resources');
+		console.log('DeckID: ' + $('.current').attr('data-deckid'));
+		console.log('CardID: ' + $('.current').attr('data-cardid'));
+		console.log('');
 
 		$.ajax({
 			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/user_id',
@@ -595,6 +601,8 @@
 						{
 							$('.practice-more').css('background-color', '#891616');
 							$('.mastered').css('background-color', '#0b6211');
+							practice_more.removeAttr('data-id');
+							mastered.removeAttr('data-id');
 						}
 						else
 						{
@@ -643,11 +651,8 @@
 	var initResources = function()
 	{
 		var resources = $('.resources'),
-			user_id   = '',
-			deck_id   = $('.current').attr('data-deckid'),
-			card_id   = $('.current').attr('data-cardid')
+			user_id   = ''
 		;
-
 
 		$.ajax({
 			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/user_id',
@@ -662,7 +667,12 @@
 
 
 		// Practice More or Mastered click
+		// Practice More' and 'Mastered' act as toggle buttons
+		// If clicked, either the card will be in the database or not
+			
 		resources.on('click', function(e){
+
+			console.log(e.currentTarget);
 
 			// If user is logged out, redirect user to login page
 			if(user_id == null)
@@ -671,21 +681,8 @@
 			}
 
 
-			var resource = '';
-
-			switch($(this).text())
-			{
-				case 'Practice More':
-					resource = 'practice';
-
-					break;
-
-				case 'Mastered':
-					resource = 'master';
-
-					break;
-			}
-
+			// If there is a resource
+			// Delete from database
 			if($(e.currentTarget).attr('data-id'))
 			{
 				resource_id = $(e.currentTarget).attr('data-id');
@@ -725,65 +722,43 @@
 			}
 			else
 			{
-				console.log('no resource yet');
-			}
+				var resource  = '',
+					deck_id   = $('.current').attr('data-deckid'),
+					card_id   = $('.current').attr('data-cardid')
+				;
 
-			/* if($(e.currentTarget).hasClass('checked'))
-			{
-				// Already in database
-				// Toggle off
-				console.log($(e.currentTarget).attr('data-id'));
+				console.log($('.current').attr('data-deckid'));
 
-				$.ajax({
-					url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/delete_resource',
-					type: 'post',
-					data: {
-						resource_id: $(e.currentTarget).attr('data-id')
-					},
-					success: function(response){
-						var results = JSON.parse(response);
+				
+				if($(e.currentTarget).hasClass('practice-more'))
+				{
+					resource = 'practice';
+				}
+				else if($(e.currentTarget).hasClass('mastered'))
+				{
+					resource = 'master';
+				}
 
-						console.log(results);
-
-						if(!results)
-						{
-							console.log('failed');
-						}
-						else
-						{
-							console.log('here');
-							console.log($('.checked'));
-							$('.checked').removeClass('checked').css('background-color', '#E67e22');
-							console.log($('.checked'));
-						}
-
-						console.log(response);
-					},
-					error: function(response){
-						console.log(response.responseText);
-					}
-				});
-			}
-			else
-			{
+				
 				$.ajax({
 					url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/save_resource',
 					type: 'post',
 					data: {
-						user_id:   user_id,
-						deck_id:   deck_id,
-						card_id:   card_id,
-						resource:  resource
+						user_id:  user_id,
+						deck_id:  deck_id,
+						card_id:  card_id,
+						resource: resource
 					},
 					success: function(response){
-						var resource = JSON.parse(response);
-						$(e.currentTarget).addClass('checked').attr('data-id', resource.id).css('background-color', '#D35400');
+						// console.log(response);
+
+						checkResource();
 					},
 					error: function(response){
 						console.log(response.responseText);
 					}
 				});
-			} */
+			}
 
 			return false;
 		});

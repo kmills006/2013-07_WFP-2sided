@@ -54,3 +54,5 @@ ERROR - 2013-07-24 13:39:03 --> Parsing Error - syntax error, unexpected 'return
 ERROR - 2013-07-24 13:39:03 --> Parsing Error - syntax error, unexpected 'return' (T_RETURN) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 87
 ERROR - 2013-07-24 13:40:58 --> Error - Call to a member function delete() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 84
 ERROR - 2013-07-24 13:41:17 --> Error - Call to a member function delete() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 84
+ERROR - 2013-07-24 17:48:12 --> Notice - Undefined index: resource in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 41
+ERROR - 2013-07-24 17:51:17 --> Notice - Undefined index: resource in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 41

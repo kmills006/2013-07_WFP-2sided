@@ -1818,10 +1818,9 @@ img + span{
 	margin-left: 20px;
 }
 
-button.practice-more, button.mastered, .flip{
+/*button.practice-more, button.mastered, .flip{
 	clear: both;
 	display: inline-block;
-	/*margin: 0 0 40px 0;*/
 }
 
 button.practice-more, button.mastered{
@@ -1834,33 +1833,72 @@ button.practice-more, button.mastered{
 }
 
 button.practice-more{
-	/*background-color: #951400;*/
-	/*background-image: url("../img/icons/practice_more.png");*/
+	background-color: #951400;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 25px 25px;
 	margin-left: 30px;
+}*/
+
+.practice-more, .mastered, .flip{
+	clear: both;
+	display: inline-block;
+	background-color: #E87C00;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.practice-more{
+	background-image: url("../img/icons/thumbsdown.png");
+	margin-left: 35px;
+	background-color: #891616;
+}
+
+.practice-more:hover{
+	background-color: #c21b1b;
+}
+
+.mastered{
+	background-image: url('../img/icons/thumbsup.png');
+	background-color: #0b6211;
+	float: right;
+	margin: 20px 40px 0;
+}
+
+.mastered:hover{
+	background-color: #28a831;
+}
+
+.resources{
+	width: 40px;
+	height: 40px;
+	/*background-color: #E87C00;*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 25px 25px;
 }
 
 .flip{
 	width: 60px;
-	height: 30px;
-	background-color: #E87C00;
+	height: 40px;
+	/*background-color: #E87C00;*/
 	background-image: url("../img/icons/flip.png");
 	background-position: center center;
 	background-size: 30px 23px;
 	background-repeat: no-repeat;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	margin-left: 70px;
+	margin-left: 150px;
 	cursor: pointer;
-	/*margin-top: 20px;*/
+	margin-top: 20px;
 	position: relative;
-	top: 10px;
+	/*top: 10px;*/
 }
 
-.practice-more:hover, .flip:hover, .mastered:hover{
+/*.practice-more:hover, .flip:hover, .mastered:hover{
+	background-color: #D35400;
+}*/
+
+.flip:hover{
 	background-color: #D35400;
 }
 

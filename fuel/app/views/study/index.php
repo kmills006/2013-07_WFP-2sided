@@ -124,9 +124,11 @@
     	    				
                             <?= Asset::img('flashcards/right_arrow.png', array('alt' => 'Right arrow to switch flashcard', 'class' => 'controls right-arrow')); ?>
 
-    	    				<button class="practice-more resources">Practice More</button>
+    	    				<!-- <button class="practice-more resources">Practice More</button> -->
+                            <div class='practice-more resources'></div>
     	    				<div class="flip"></div>
-                            <button class="mastered resources">Mastered</button>
+                            <div class='mastered resources'></div>
+                            <!-- <button class="mastered resources">Mastered</button> -->
     	    				
         				</div>
                     </div>

@@ -43,7 +43,7 @@ class Model_Resource extends \Orm\Model
 
 		if($new_resource->save())
 		{
-			return true;
+			return $new_resource;
 		}
 		else
 		{
@@ -53,6 +53,13 @@ class Model_Resource extends \Orm\Model
 
 
 
+	/**
+	 * [check_resource description]
+	 * @param  [type] $user_id [description]
+	 * @param  [type] $card_id [description]
+	 * @param  [type] $deck_id [description]
+	 * @return [type]          [description]
+	 */
 	public static function check_resource($user_id, $card_id, $deck_id)
 	{
 		return static::query()
@@ -63,6 +70,11 @@ class Model_Resource extends \Orm\Model
 	}
 
 
+	/**
+	 * [delete_resource description]
+	 * @param  [type] $resource_id [description]
+	 * @return [type]              [description]
+	 */
 	public static function delete_resource($resource_id)
 	{
 		$resource = static::query()

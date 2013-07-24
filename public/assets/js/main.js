@@ -572,6 +572,8 @@
 	 */
 	var checkResource = function()
 	{
+		console.log('Checking resources');
+
 		$.ajax({
 			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/user_id',
 			type: 'get',
@@ -585,20 +587,56 @@
 						deck_id: $('.current').attr('data-deckid')
 					},
 					success: function(response){
-						var resource = JSON.parse(response);
+						var resource      = JSON.parse(response),
+							practice_more = $('.practice-more'),
+							mastered      = $('.mastered');
+
+						if(resource == null)
+						{
+							console.log('No resource');
+							$('.practice-more').css('background-color', '#891616');
+							$('.mastered').css('background-color', '#0b6211');
+						}
+						else
+						{
+							// If no resource remove active color
+							if(practice_more.hasClass('checked'))
+							{
+								practice_more.removeClass('checked').removeAttr('data-id');
+							}
+							else if(mastered.hasClass('checked'))
+							{
+								mastered.removeClass('checked').removeAttr('data-id');
+							}
+
+							
+							
+							switch(resource.resource)
+							{
+								case 'practice':
+									practice_more.addClass('checked').attr('data-id', resource.id).css('background-color', '#c21b1b');
+
+									break;
+
+								case 'master':
+									mastered.addClass('checked').attr('data-id', resource.id).css('background-color', '#28a831');
+
+									break;
+							}
+						}
 
 						// Remove any with the class current and the resource id
-						if($('.practice-more').hasClass('checked'))
+						/* if($('.practice-more').hasClass('checked'))
 						{
 							$('.practice-more').removeClass('checked').removeAttr('data-id', '');
 						}
 						else if($('.mastered').hasClass('checked'))
 						{
 							$('.mastered').removeClass('checked').removeAttr('data-id');
-						}
+						}*/
 
 						// If no resource remove active color
-						if(!resource)
+						/* if(!resource)
 						{
 							$('.practice-more').css('background-color', '#E67e22');
 							$('.mastered').css('background-color', '#E67e22');
@@ -623,7 +661,7 @@
 
 									break;
 							}
-						}
+						} */
 					},
 					error: function(response){
 						console.log(response.responseText);
@@ -687,14 +725,14 @@
 					break;
 			}
 
-			console.log('user_id: ' + user_id);
-			console.log('deck_id: ' + deck_id);
-			console.log('card_id: ' + card_id);
+			console.log(e.currentTarget);
 
-			if($(e.currentTarget).hasClass('checked'))
+			/* if($(e.currentTarget).hasClass('checked'))
 			{
 				// Already in database
 				// Toggle off
+				console.log($(e.currentTarget).attr('data-id'));
+
 				$.ajax({
 					url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/delete_resource',
 					type: 'post',
@@ -702,6 +740,22 @@
 						resource_id: $(e.currentTarget).attr('data-id')
 					},
 					success: function(response){
+						var results = JSON.parse(response);
+
+						console.log(results);
+
+						if(!results)
+						{
+							console.log('failed');
+						}
+						else
+						{
+							console.log('here');
+							console.log($('.checked'));
+							$('.checked').removeClass('checked').css('background-color', '#E67e22');
+							console.log($('.checked'));
+						}
+
 						console.log(response);
 					},
 					error: function(response){
@@ -721,13 +775,14 @@
 						resource:  resource
 					},
 					success: function(response){
-						console.log(response);
+						var resource = JSON.parse(response);
+						$(e.currentTarget).addClass('checked').attr('data-id', resource.id).css('background-color', '#D35400');
 					},
 					error: function(response){
 						console.log(response.responseText);
 					}
 				});
-			}
+			} */
 		});
 	}
 
@@ -859,35 +914,6 @@
 			user_id = ''
 		;
 
-		$.ajax({
-			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/user_id',
-			type: 'get',
-			success: function(response){				
-				$.ajax({
-					url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/check_resource',
-					type: 'post',
-					data:{
-						user_id: JSON.parse(response).user_id,
-						card_id: $('.current').attr('data-cardid'),
-						deck_id: $('.current').attr('data-deckid')
-					},
-					success: function(response){
-						console.log(response);
-					},
-					error: function(response){
-						console.log(response.responseText);
-					}
-				});
-
-			},
-			error: function(response){
-				console.log(response.responseText);
-			}
-		});
-
-
-
-
 		// Cycle through all the cards
 		// Add IDs to each
 		// Display first card
@@ -898,8 +924,6 @@
 			{
 				card.addClass('current').css('display', 'block');
 				$('.current .term').addClass('current-term');
-
-				var card_id = $('.current').attr('data-cardid');			
 			}
 	
 			card.attr('id', 'handle' + e);
@@ -928,7 +952,7 @@
 				});		
 			}
 
-			// console.log(term);
+			console.log(term);
 
 			if(term.hasClass('term'))
 			{

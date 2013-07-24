@@ -46,3 +46,11 @@ ERROR - 2013-07-24 13:17:52 --> Error - Class 'Model_Resource' not found in /Use
 ERROR - 2013-07-24 13:17:52 --> Error - Class 'Model_Resource' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/ajax.php on line 242
 ERROR - 2013-07-24 13:17:55 --> Error - Class 'Model_Resource' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/ajax.php on line 242
 ERROR - 2013-07-24 13:17:55 --> Error - Class 'Model_Resource' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/ajax.php on line 242
+ERROR - 2013-07-24 13:29:45 --> Error - Call to a member function delete() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 84
+ERROR - 2013-07-24 13:30:08 --> Error - Call to a member function delete() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 84
+ERROR - 2013-07-24 13:38:22 --> Error - Call to a member function delete() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 84
+ERROR - 2013-07-24 13:38:38 --> Error - Call to a member function delete() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 84
+ERROR - 2013-07-24 13:39:03 --> Parsing Error - syntax error, unexpected 'return' (T_RETURN) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 87
+ERROR - 2013-07-24 13:39:03 --> Parsing Error - syntax error, unexpected 'return' (T_RETURN) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 87
+ERROR - 2013-07-24 13:40:58 --> Error - Call to a member function delete() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 84
+ERROR - 2013-07-24 13:41:17 --> Error - Call to a member function delete() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 84

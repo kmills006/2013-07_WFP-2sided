@@ -448,6 +448,8 @@
 	 *
 	 * 
 	 */
+	
+
 
 	
 	// List View
@@ -478,7 +480,9 @@
 		$.ajax({
 			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/get_cards',
 			type: 'post',
-			data: {deck_id: deck_id},
+			data: {
+				deck_id: deck_id
+			},
 			success: function(response){
 				listViewDisplay(response);
 			},
@@ -493,8 +497,6 @@
 		$('.list').css('display', 'none');
 		$('.flashcard-view').css('display', 'block');
 	});
-
-
 
 
 	// Like Deck
@@ -574,10 +576,112 @@
 	});
 
 
+	var bothSides = function()
+	{
+		$('.both-sides').on('change', function(e){
+			// if($('.term').hasClass('current-term'))
+			// {
+			// 	$('.card .definition').css('display', 'block');
+			// }
+			// else if($('.definition').hasClass('current-def'))
+			// {
+			// 	console.log('current-def');
+			// 	$('.card .definition').css('display', 'none');
+			// }
+			
+
+			if($('.definition').css('display') == 'none')
+			{
+				$('.keyboard-shortcuts').css('top', '160px');
+				$('.definition').css('display', 'block');
+			}
+			else if($('.definition').css('display') == 'block')
+			{
+				$('.keyboard-shortcuts').css('top', '190px');
+				$('.definition').css('display', 'none');
+			}
+
+		});
+	};
 
 	
+	var cardSort = function()
+	{
+		var random = $('.random'),
+			az     = $('.az'),
+			deck_id = $('.deck-title').attr('data-id');
+		;
+
+		// Alphabetical order
+		az.on('click', function(e){
+			$.ajax({
+				url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/sort_az',
+				type: 'post',
+				data: {
+					deck_id: deck_id
+				},
+				success: function(response){
+					console.log(response);
+					var cards = $.parseJSON(response);
+
+					console.log(cards);
+
+					// var arr = [];
+
+					$.each(cards, function(key, value){
+						console.log(value);
+
+						// arr.push(value.term);
+					});
+
+					// arr.sort();
+					// console.log(arr);
+				},
+				error: function(response){
+					console.log(response.responseText);
+				}
+			});
+		});
+
+
+		// Random
+		random.on('click', function(e){
+			$.ajax({
+				url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/sort_random',
+				type: 'post',
+				data: {
+					deck_id: deck_id
+				},
+				success: function(response){
+					console.log(response);
+					var cards = $.parseJSON(response);
+
+					// console.log(cards);
+
+					// var arr = [];
+
+					$.each(cards, function(value){
+						console.log(value);
+
+						// arr.push(value.term);
+					});
+
+					// arr.sort();
+					// console.log(arr);
+				},
+				error: function(response){
+					console.log(response.responseText);
+				}
+			});
+		});
+	}
+
+
 
 	var initCards = function(){
+
+		cardSort();
+		bothSides();
 		
 		var cards = $('.card'),
 			count = 0
@@ -605,7 +709,7 @@
 		var flipCard = function(e){
 			
 			var term = '';
-			
+
 			if(e.currentTarget)
 			{
 				term = $(e.currentTarget);
@@ -666,13 +770,6 @@
 
 			return false;
 		});
-
-
-
-
-
-
-
 
 
 		// Go to the previous card in the deck

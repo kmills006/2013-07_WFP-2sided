@@ -73,10 +73,10 @@
     				
     				
                     <div class="flashcard-view">
-                        <button class="card-sort-active">Random Order</button>
-        				<button>A-Z</button>
+                        <button class="card-sort-active random">Random Order</button>
+        				<button class="az">A-Z</button>
         				
-        				<input type="checkbox" name="both-sides"/>
+        				<input type="checkbox" name="both-sides" class='both-sides'/>
         				<label for="both-sides">Both Sides</label>
         				
         				

@@ -372,6 +372,17 @@ class Model_Deck extends \Orm\Model
 
 
 	/**
+	 * [get_resources description]
+	 * @param  [type] $user_id [description]
+	 * @return [type]          [description]
+	 */
+	public function get_resources($user_id)
+	{
+		return Model_Resource::get_resources($user_id, $this->id);
+	}
+
+
+	/**
 	 * [deck_url description]
 	 * @param  [type] $title [description]
 	 * @return [type]        [description]

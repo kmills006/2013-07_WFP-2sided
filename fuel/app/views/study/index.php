@@ -18,7 +18,7 @@
 					
     				
                     <div class="sd-deck-info">
-   						<p><?= Html::anchor('profile/view/'.$deck_info->user_id, $deck_owner); ?></p>
+   						<p><?= Html::anchor($deck_owner->profile_url(), $deck_owner->username); ?></p>
 						<p>Total Cards: <?= $card_count; ?></p>
 						<p>Created on <?= $deck_info->date(); ?></p>
                         <p><img src="../../assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/>  <?= $deck_info->likes_count ?></p>

@@ -59,7 +59,7 @@
 
 									// Username
 									echo html_tag('a', array(
-														'href' => 'profile/view/'.$user->id,							
+														'href' => $user->profile_url(),							
 									), $user->username);
 
 									echo html_tag('p', array(), '283 points');

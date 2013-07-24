@@ -41,11 +41,12 @@
 					
 					// Load the logged in users profile page
 					$.ajax({
-						url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/user_id',
+						url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/username',
 						type: 'get',
 						success: function(response){
-							var userID = JSON.parse(response);
-							window.location.pathname = '/2013-07_WFP-2sided/public/profile/view/' + userID.user_id;
+							var username = JSON.parse(response);
+							console.log(username);
+							window.location.pathname = '/2013-07_WFP-2sided/public/profile/view/' + username;
 						},
 						error: function(response){
 							console.log(response.responseText);

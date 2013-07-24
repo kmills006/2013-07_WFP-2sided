@@ -1645,9 +1645,10 @@ img + span{
 .study-content{
 	width: 690px;
 	float: left;
-	overflow: hidden;
+	overflow: auto;
 	background-color: #FFF;
 	margin-left: 40px;
+	padding-bottom: 40px;
 }
 
 .study-content .header{
@@ -1803,57 +1804,55 @@ img + span{
 	margin-left: 20px;
 }
 
-.practice-more, .mastered, .flip{
+button.practice-more, button.mastered, .flip{
 	clear: both;
 	display: inline-block;
-	margin: 20px 0 40px 0;
-	cursor: pointer;
+	/*margin: 0 0 40px 0;*/
 }
 
-.practice-more, .mastered{
-	width: 50px;
-	height: 40px;
+button.practice-more, button.mastered{
+	width: 120px;
+	height: 30px;
+	font-size: 14px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 }
 
-.practice-more{
-	background-color: #951400;
-	background-image: url("../img/icons/practice_more.png");
+button.practice-more{
+	/*background-color: #951400;*/
+	/*background-image: url("../img/icons/practice_more.png");*/
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 25px 25px;
-	margin-left: 32px;
-}
-
-/* Practice more selected color #C11200 */
-
-.practice-more:hover{
-	background-color: #720B00;
+	margin-left: 30px;
 }
 
 .flip{
 	width: 60px;
-	height: 40px;
+	height: 30px;
 	background-color: #E87C00;
 	background-image: url("../img/icons/flip.png");
 	background-position: center center;
-	background-size: 38px 31px;
+	background-size: 30px 23px;
 	background-repeat: no-repeat;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
-	margin-left: 140px;
+	margin-left: 70px;
+	cursor: pointer;
+	/*margin-top: 20px;*/
+	position: relative;
+	top: 10px;
 }
 
-.flip:hover{
+.practice-more:hover, .flip:hover, .mastered:hover{
 	background-color: #D35400;
 }
 
-.mastered{
-	background-color: #009245;
-	background-image: url("../img/icons/mastered.png");
+button.mastered{
+	/*background-color: #009245;*/
+	/*background-image: url("../img/icons/mastered.png");*/
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 31px 26px;
@@ -1863,9 +1862,9 @@ img + span{
 
 /* Mastered selected color #00B753 */
 
-.mastered:hover{
+/*.mastered:hover{
 	background-color: #007233;
-}
+}*/
 
 .list{
 	display: none;
@@ -2142,7 +2141,6 @@ img + span{
 .quiz-content, .results{
 	width: 700px;
 	float: right;
-	/*overflow: visible;*/
 	background-color: #FFF;
 }
 
@@ -2168,13 +2166,27 @@ img + span{
 	font-size: 14px;
 }
 
-.quiz-content .flip{
-	margin: 0 0 40px 110px;
+.quiz-content .flash-card{
+	width: 451px;
+	height: 250px;
+}
+
+.quiz-content .flash-card .question{
+	postion: relative;
+	top: 0;
+	margin-right: 400px;
+}
+
+.quiz-content .flash-card .answer{
+	display: none;
 }
 
 .skip, .next{
 	margin-top: 20px;
 	margin-bottom: 30px;
+	height: 30px;
+	font-size: 14px;
+	width: 120px;
 }
 
 .skip, .next{
@@ -2190,17 +2202,6 @@ img + span{
 .next{
 	float: right;
 }
-
-.quiz-content .flash-card .question{
-	postion: relative;
-	top: 0;
-	margin-right: 400px;
-}
-
-.quiz-content .flash-card .answer{
-	display: none;
-}
-
 
 .results{
 	display: none;

@@ -1,5 +1,8 @@
 <? 
 
+    // echo '<pre>';
+    // var_dump($resources);
+    // echo '</pre>';
 
 ?>			
 
@@ -112,16 +115,17 @@
         				
         				<div class="flash-card">
                             <?= Asset::img('flashcards/left_arrow.png', array('alt' => 'Left arrow to switch flashcard', 'class' => 'controls left-arrow')); ?>
-    	    				
-                            <? foreach($cards as $card): ?>
-        	    				<div class="card" data-deckid='<?= $card->deck_id; ?>' data-cardid='<?= $card->id; ?>'>
-        		    					<p class='term'><?= $card->term; ?></p>
-                                        <p class='definition'><?= $card->definition; ?></p>
-        		    					
-                                        <p class="keyboard-shortcuts" title="Keyboard shortcuts tooltip"><?= Asset::img('icons/keyboard_shortcuts.png', array('alt' => 'Keyboard Shortcuts')); ?> Keyboard Shortcuts</p>
-        	    				</div>
-                            <? endforeach; ?>
-    	    				
+    	    				<div class='cards'>
+                                <? foreach($cards as $card): ?>
+            	    				<div class="card" data-deckid='<?= $card->deck_id; ?>' data-cardid='<?= $card->id; ?>'>
+            		    					<p class='term'><?= $card->term; ?></p>
+                                            <p class='definition'><?= $card->definition; ?></p>
+            		    					
+                                            <p class="keyboard-shortcuts" title="Keyboard shortcuts tooltip"><?= Asset::img('icons/keyboard_shortcuts.png', array('alt' => 'Keyboard Shortcuts')); ?> Keyboard Shortcuts</p>
+            	    				</div>
+                                <? endforeach; ?>
+    	    				</div>
+                            
                             <?= Asset::img('flashcards/right_arrow.png', array('alt' => 'Right arrow to switch flashcard', 'class' => 'controls right-arrow')); ?>
 
     	    				<!-- <button class="practice-more resources">Practice More</button> -->

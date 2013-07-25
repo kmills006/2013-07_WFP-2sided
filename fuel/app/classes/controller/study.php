@@ -24,6 +24,7 @@ class Controller_Study extends Controller_App
 			}
 
 			$quiz_score = $deck->get_last_score($this->user->id);
+			$resources  = $deck->get_resources($this->user->id);
 		}
 		
 		// Setting up view
@@ -32,7 +33,7 @@ class Controller_Study extends Controller_App
 											'cards'      => $deck->get_cards(),
 											'card_count' => $deck->get_card_count(),
 											'tags'       => $deck->get_tags(),
-											'deck_owner' => $deck->users->username,
+											'deck_owner' => $deck->users,
 											'liked'      => $liked,
 											'quiz_score' => $quiz_score,
 		));		

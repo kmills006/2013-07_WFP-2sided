@@ -1857,7 +1857,8 @@ button.practice-more{
 }
 
 .practice-more:hover{
-	background-color: #c21b1b;
+	/*background-color: #c21b1b;*/
+	background-color: #fa0000;
 }
 
 .mastered{

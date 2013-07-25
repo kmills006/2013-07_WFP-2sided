@@ -20,6 +20,13 @@ class Controller_Ajax extends Controller_Rest
 	}
 
 
+	public function get_username()
+	{
+		$user = Model_User::get_by_id(Session::get('user_id'));
+		return $this->response = \Format::forge($user->username)->to_json();
+	}
+
+
 	/**
 	 * Sort users decks by newests created
 	 * @return $data 
@@ -251,6 +258,13 @@ class Controller_Ajax extends Controller_Rest
 	{
 		$results = Model_Resource::delete_resource(Input::post('resource_id'));
 		return $this->response = \Format::forge($results)->to_json();
+	}
+
+
+	public function post_get_resources()
+	{
+		$resources = Model_Resource::get_resources(Input::post('user_id'), Input::post('deck_id'));
+		return $this->response = \Format::forge($resources)->to_json();
 	}
 
 

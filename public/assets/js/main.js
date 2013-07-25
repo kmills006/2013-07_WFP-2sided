@@ -573,14 +573,6 @@
 	 */
 	var checkResource = function()
 	{
-		console.log('Checking resources');
-		console.log($('.current'));
-
-		console.log('Check Resources');
-		console.log('DeckID: ' + $('.current').attr('data-deckid'));
-		console.log('CardID: ' + $('.current').attr('data-cardid'));
-		console.log('');
-
 		$.ajax({
 			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/user_id',
 			type: 'get',
@@ -600,8 +592,8 @@
 
 						if(resource == null)
 						{
-							$('.practice-more').css('background-color', '#891616');
-							$('.mastered').css('background-color', '#0b6211');
+							$('.practice-more').removeClass('current').css('background-color', '#891616');
+							$('.mastered').removeClass('current').css('background-color', '#0b6211');
 							practice_more.removeAttr('data-id');
 							mastered.removeAttr('data-id');
 						}
@@ -610,11 +602,11 @@
 							// If no resource remove active color
 							if(practice_more.hasClass('checked'))
 							{
-								practice_more.removeClass('checked').removeAttr('data-id');
+								practice_more.removeClass('checked').removeAttr('data-id').css('background-color', '#891616');
 							}
 							else if(mastered.hasClass('checked'))
 							{
-								mastered.removeClass('checked').removeAttr('data-id');
+								mastered.removeClass('checked').removeAttr('data-id').css('background-color', '#0b6211');
 							}
 
 							
@@ -622,7 +614,7 @@
 							switch(resource.resource)
 							{
 								case 'practice':
-									practice_more.addClass('checked').attr('data-id', resource.id).css('background-color', '#c21b1b');
+									practice_more.addClass('checked').attr('data-id', resource.id).css('background-color', '#fa0000');
 
 									break;
 
@@ -672,8 +664,6 @@
 		// If clicked, either the card will be in the database or not
 			
 		resources.on('click', function(e){
-
-			console.log(e.currentTarget);
 
 			// If user is logged out, redirect user to login page
 			if(user_id == null)
@@ -727,9 +717,6 @@
 					deck_id   = $('.current').attr('data-deckid'),
 					card_id   = $('.current').attr('data-cardid')
 				;
-
-				console.log($('.current').attr('data-deckid'));
-
 				
 				if($(e.currentTarget).hasClass('practice-more'))
 				{
@@ -880,32 +867,102 @@
 
 
 
-
-
-	var initCards = function(){
+	var initCards = function($resources){
 
 		// cardSort();
 		bothSides();
 		
 		var cards   = $('.card'),
 			count   = 0,
-			user_id = ''
+			user_id = '',
+			resources = ''
 		;
 
-		// Cycle through all the cards
-		// Add IDs to each
-		// Display first card
-		cards.each(function(e){
-			var card = $(this);
+		// Adding new cards
+		var add_to_cards = function(arr){
+			console.log(arr);
 
-			if(e == 0)
-			{
-				card.addClass('current').css('display', 'block');
-				$('.current .term').addClass('current-term');
+			$.each(arr, function(key, value){
+				var new_card = $('<div class="card" data-deckid="' + value.deck_id + '" data-cardid="' + value.card_id + '"><p class="term">' + value.term + '</p><p class="definition">' + value.definition + '</p><p class="keyboard-shortcuts" title="Keyboard shortcuts tooltip"><img src="../../assets/img/icons/keyboard_shortcuts.png" alt="Keyboard Shortcuts" /> Keyboard Shortcuts</p></div>');
+				$('.cards').append(new_card);
+
+				cards.push(new_card[0]);
+			});
+		};
+
+		$.ajax({
+			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/user_id',
+			type: 'get',
+			success: function(response){
+				user_id = JSON.parse(response).user_id;
+
+				// Get resources
+				$.ajax({
+					url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/get_resources',
+					type: 'post',
+					data: {
+						deck_id: $('.deck-title').attr('data-id'),
+						user_id: user_id
+					},
+					success: function(response){
+						resources = $.parseJSON(response);
+						var new_card = [];
+
+						if(resources == '')
+						{
+							$.each(cards, function(key, value){
+								var card = $(this);
+
+								if(key == 0)
+								{
+									card.addClass('current').css('display', 'block');
+									$('.current .term').addClass('current-term');
+								}
+
+								card.attr('id', 'handle' + key);
+							});
+						}
+						else
+						{
+							// Creating duplicates of the practice more cards
+							var second_set = resources.slice();
+
+							add_to_cards(resources);
+							add_to_cards(second_set);
+
+							// Shuffle all cards
+							// cards = shuffle(cards);
+
+							// Cycle through all cards
+							$.each(cards, function(key, value){
+								var card = $(this);
+
+								console.log(value);
+
+
+								if(key === 0)
+								{
+									console.log('here');
+
+									card.addClass('current').css('display', 'block');
+									$('.current .term').addClass('current-term');
+								}
+
+								card.attr('id', 'handle' + key);
+							});
+						}
+
+					},
+					error: function(response){
+						console.log(response.responseText);
+					}
+				});
+			},
+			error: function(response){
+				console.log(response.responseText);
 			}
-	
-			card.attr('id', 'handle' + e);
 		});
+
 
 		checkResource();
 		cardSort();

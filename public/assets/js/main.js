@@ -1539,6 +1539,12 @@
 		});
 	}
 
+	var start_over = $('.quiz aside button:first');
+
+	start_over.on('click', function(e){
+		initQuestions();
+	});
+
 
 	/**
 	 * Init Questions
@@ -1569,6 +1575,7 @@
 		{
 			getChoices(first_question, first_answer, deck_id, card_id);
 		}
+
 
 		// Next Question
 		$('.quiz-content .next').on('click', function(e){			
@@ -1620,7 +1627,6 @@
 						}
 					}
 
-					console.log(correct);
 
 					// How many correct as the quiz progresses 
 					$('.correct-score').text('Correct: ' + correct);

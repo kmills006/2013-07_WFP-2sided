@@ -5,7 +5,7 @@
 ?>			
 
             <div class="content quiz sizer">
-                <?= Html::anchor('dashboard', 'Back to Dashboard', array('class' => 'back')); ?>
+                <?= Html::anchor('study/view/'.$deck_info->id, 'Back', array('class' => 'back')); ?>
     			
     			<aside>
     			
@@ -32,7 +32,7 @@
     				</div>
 
     				<button>Start Over</button>
-                    <button>End Quiz</button>					    				
+                    <button><?= Html::anchor('study/view/'.$deck_info->id, 'End Quiz'); ?></button>					    				
     			</aside>
     			
     			<div class="quiz-content">

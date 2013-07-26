@@ -2218,6 +2218,11 @@ button.mastered{
 	height: 250px;
 }
 
+.quiz button a{
+	color: #FFF;
+	text-decoration: none;
+}
+
 .quiz-content .flash-card .answer{
 	display: none;
 }

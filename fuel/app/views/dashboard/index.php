@@ -1,9 +1,9 @@
 <? 
 
 	// echo '<pre>';
-	// var_dump($user);
+	// var_dump($decks);
 	// echo '</pre>';
-	
+
 ?>
 
 

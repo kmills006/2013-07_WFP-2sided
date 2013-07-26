@@ -4,14 +4,6 @@
 
 2sided is an online community that allows users to easily create and study flash cards. At 2sided you will find a variety of different subject to study and can test your knowledge by completeing a quiz on the deck you are studying.
 
-### Versioning
-
-2sided will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered with the following format:
-
-<major>.<minor>.<patch>
-
-Versioning will start being logged after v1.0.0
-
 ### Author
 
 Author: Kristy Miller  

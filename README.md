@@ -1,11 +1,22 @@
-## 2sided: The social way to study
+## 2sided The Social Way to Study v.1.0.0
 
-###Description
+### A social way to motivate students to study more often by rewarding them with badges and StudyPoints.
 
-2sided is a responsive online community that will motivate users to study by allowing them to easily create, and share flash card decks with classmates and friends, whether at home or on the go.
+2sided is an online community that allows users to easily create and study flash cards. At 2sided you will find a variety of different subject to study and can test your knowledge by completeing a quiz on the deck you are studying.
 
-### Contributors
+### Versioning
+
+2sided will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered with the following format:
+
+<major>.<minor>.<patch>
+
+Versioning will start being logged after v1.0.0
+
+### Author
 
 Author: Kristy Miller  
 Email: miller.kristy06@gmail.com  
-Twitter: kmills006  
+Twitter: https://twitter.com/kmills006
+Twitter: https://twitter.com/study2sided
+Facebook: https://www.facebook.com/study2sided 
+GitHub: https://github.com/kmills006/2013-07_WFP-2sided

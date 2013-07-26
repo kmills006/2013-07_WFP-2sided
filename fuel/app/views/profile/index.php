@@ -107,7 +107,7 @@
 						  			<? foreach($decks as $deck): ?>
 							  			<div class="deck">
 							  				<div class="deck-info">
-								  				<p><?= Html::anchor('study/cards/'.$deck->id, $deck->title); ?></p>
+								  				<p><?= Html::anchor('study/view/'.$deck->id, $deck->title); ?></p>
 								  				<p>Total Cards: <?= $deck->card_count; ?></p>
 								  				<p>Created on: <?= $deck->date(); ?></p>
 							  				</div>

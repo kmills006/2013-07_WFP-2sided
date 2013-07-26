@@ -1462,7 +1462,7 @@
 				choices = shuffle(choices);
 
 				$.each(choices, function(key, value){
-					answersArea += '<input type="radio" name="' + value.id + 'choice" class="multiple-choice"/><label for="1">' + value.definition + '</label>';
+					answersArea += '<div><input type="radio" name="' + value.id + 'choice" class="multiple-choice"/><label for="1">' + value.definition + '</label></div>';
 				});
 
 				answersForm.html(answersArea); 

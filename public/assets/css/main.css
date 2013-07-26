@@ -1750,7 +1750,7 @@ img + span{
 	display: none;
 }	
 
-.term, .definition{
+.term, .definition, .question{
 	margin: 0 auto;
 	vertical-align: middle;
 	padding: 0 30px;
@@ -2004,7 +2004,6 @@ button.mastered{
 }
 
 .new-deck-info .deck-info input[type="radio"]{
-	/*clear: both;*/
 	display: inline-block;
 	padding: 0;
 	margin: 0 0 0 10px;
@@ -2219,15 +2218,64 @@ button.mastered{
 	height: 250px;
 }
 
-.quiz-content .flash-card .question{
+.quiz-content .flash-card .answer{
+	display: none;
+}
+
+.quiz-content .question{
+	top: 0;
+	text-align: left;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+
+.quiz-content .flash-card form{
+	margin: 20px 0 0 20px;
+}
+
+.quiz-content .flash-card form div{
+	margin-bottom: 20px;
+}
+
+.quiz-content .flash-card form div label{
+	margin-left: 20px;
+}
+
+/*.quiz-content .flash-card .question{
 	postion: relative;
 	top: 0;
 	margin-right: 400px;
 }
 
-.quiz-content .flash-card .answer{
-	display: none;
+.floater{
+	float: left; 
+	height: 50%; 
+	margin-bottom: -87.5px;
 }
+
+.quiz-content .flash-card form{
+	clear: both;
+	display: block;
+	height: 175px;
+	position: relative;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.quiz-content .flash-card form div{
+	margin: 15px 10px 0 0;
+}
+
+.quiz-content .flash-card form input[type="radio"]{
+	float: left;
+	margin-top: 3px;
+}
+
+.quiz-content .flash-card form label{
+	margin: 5px 0 0 30px;
+	font-weight: bold;
+	display: block;
+}*/
 
 .skip, .next{
 	margin-top: 20px;

@@ -45,8 +45,10 @@
     	    				<div class="card" data-id="<?= $card->id; ?>">
                                 <p class="question"><?= $card->term; ?></p>
                                 <p class="answer"><?= $card->definition; ?></p>
-
-                                <form></form>
+                                
+                                <div class="floater">
+                                    <form></form>
+                                </div>
     	    				</div>
                         <? endforeach; ?>
 	    				

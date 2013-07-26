@@ -1367,18 +1367,40 @@
 				$.each(missed.choices, function(key, value){
 
 	  				var choice = $(value).text();
+
+	  				switch(key){
+	  					case 0:
+	  						key = 'a.';
+
+	  						break;
+
+	  					case 1:
+	  						key = 'b.';
+
+	  						break;
+
+	  					case 2:
+	  						key = 'c.';
+
+	  						break;
+
+	  					case 3:
+	  						key = 'd.';
+
+	  						break;
+	  				}
 	  				
 	  				if(choice == missed.answer)
 	  				{
-	  					choices += '<ul><li class="correct">CORRECT: ' + $(value).text() + '</li></ul>';
+	  					choices += '<ul><li class="correct">' + key + ' CORRECT: ' + $(value).text() + '</li></ul>';
 	  				}
 	  				else if(choice == missed.user_response)
 	  				{
-	  					choices += '<ul><li class="incorrect">INCORRECT: ' + $(value).text() + '</li></ul>';
+	  					choices += '<ul><li class="incorrect">' + key + ' INCORRECT: ' + $(value).text() + '</li></ul>';
 	  				}
 	  				else
 	  				{
-	  					choices += '<ul><li>' + $(value).text() + '</li></ul>';		
+	  					choices += '<ul><li>' + key + ' ' + $(value).text() + '</li></ul>';		
 	  				}
 	  				
 	  			});
@@ -1408,12 +1430,35 @@
 
 	  				var choice = $(value).text();
 
+	  				switch(key){
+	  					case 0:
+	  						key = 'a.';
+
+	  						break;
+
+	  					case 1:
+	  						key = 'b.';
+
+	  						break;
+
+	  					case 2:
+	  						key = 'c.';
+
+	  						break;
+
+	  					case 3:
+	  						key = 'd.';
+
+	  						break;
+	  				}
+
+
 	  				if(choice == skipped.answer)
 	  				{
-	  					choices += '<ul><li class="correct">CORRECT: ' + $(value).text() + '</li></ul>';	
+	  					choices += '<ul><li class="correct">' + key + ' CORRECT: ' + $(value).text() + '</li></ul>';	
 	  				}else
 	  				{
-	  					choices += '<ul><li>' + $(value).text() + '</li></ul>';
+	  					choices += '<ul><li>' + key + ' ' + $(value).text() + '</li></ul>';
 	  				}
 	  			});
 

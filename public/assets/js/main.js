@@ -267,7 +267,17 @@
 						break;
 
 					case 'Highest Rating':
-						console.log('Highest Rating');
+						$.ajax({
+							url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/highest_rating',
+							type: 'post',
+							data: {highest_rating: 'rating'},
+							success: function(response){
+								setDecks(response);
+							},
+							error: function(response){
+								console.log(response.responseText);
+							}
+						});
 
 						break;
 

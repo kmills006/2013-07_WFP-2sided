@@ -87,9 +87,22 @@ class Model_Deck extends \Orm\Model
 
 				case 'rating':
 
-					break;
-
-				default:
+					// SELECT COUNT(d.id)
+					// FROM decks as d
+					// JOIN likes as l
+					// ON l.deck_id = d.id
+					// WHERE d.user_id = 3
+					// GROUP BY d.id;
+					
+					$exp = DB::expr('COUNT(decks.id)');
+					
+					$decks = DB::select($exp, 'decks.id', 'title', 'decks.created_at')
+								->from('decks')
+								->join('likes')
+								->on('likes.deck_id', '=', 'decks.id')
+								->where('decks.user_id', $user_id)
+								->group_by('decks.id')
+								->as_object()->execute();
 
 					break;
 			}

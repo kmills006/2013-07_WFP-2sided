@@ -51,6 +51,13 @@ class Controller_Ajax extends Controller_Rest
   		return $this->response = \Format::forge($data)->to_json();
 	}
 
+	public function post_highest_rating()
+	{
+		$data = Model_Deck::get_users_decks(Session::get('user_id'), Input::post('highest_rating'));
+
+		return $this->response = \Format::forge($data)->to_json();
+	}
+
 
 	public function post_get_cards()
 	{

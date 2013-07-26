@@ -8,7 +8,7 @@
 
 Author: Kristy Miller  
 Email: miller.kristy06@gmail.com  
-Twitter: https://twitter.com/kmills006
-Twitter: https://twitter.com/study2sided
-Facebook: https://www.facebook.com/study2sided 
-GitHub: https://github.com/kmills006/2013-07_WFP-2sided
+Twitter: https://twitter.com/kmills006  
+Twitter: https://twitter.com/study2sided  
+Facebook: https://www.facebook.com/study2sided   
+GitHub: https://github.com/kmills006/2013-07_WFP-2sided  

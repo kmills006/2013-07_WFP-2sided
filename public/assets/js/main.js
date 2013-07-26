@@ -7,6 +7,34 @@
 
 
 	/**
+	* [shuffle description]
+	* @param  {[type]} array [description]
+	* @return {[type]}       [description]
+	*/
+	function shuffle(array) {
+	  var copy = [], n = array.length, i;
+
+	  // While there remain elements to shuffle…
+	  while (n) {
+
+	    // Pick a remaining element…
+	    i = Math.floor(Math.random() * array.length);
+
+	    // If not already shuffled, move it to the new array.
+	    if (i in array) {
+	      copy.push(array[i]);
+	      delete array[i];
+	      n--;
+	    }
+	  }
+
+	  return copy;
+	}
+
+
+
+
+	/**
 	 * Global Navigation
 	 *
 	 *  In the global navigation, when a user hovers over their profile image and username
@@ -110,7 +138,6 @@
 	 * 
 	 */
 	
-
 	// Set the decks in their new sorted order
 	var setDecks = function(response){
 		var decks = $.parseJSON(response);
@@ -195,7 +222,12 @@
 		});
 	}
 
-	//Filter through the decks by either the newest, oldest or highest rating
+	
+	/**
+	 *
+	 * Filter through the decks by either the newest, oldest or highest rating
+	 * 
+	 */
 	var initFilters = function()
 	{
 		$('.filters').each(function(i){
@@ -250,7 +282,11 @@
 		});
 	}
 
-	// Delete Deck
+	/**
+	 * 
+	 * Delete Deck
+	 *
+	 */
 	$('.delect-deck').on('click', function(e){
 		var deck_id    = $(this).attr('data-id'),
 			deck_title = $(this).attr('data-title')
@@ -307,7 +343,11 @@
 		return false;
 	});
 
-	// Notifications
+	/**
+	 * 
+	 * Notifications
+	 * 
+	 */
 	var initNotifications = function()
 	{
 		var notification_id = '',
@@ -328,6 +368,7 @@
 					break;
 			}
 
+			// User accepts or rejects friend request
 			$.ajax({
 				url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/' + ajaxUrl,
 				type: 'post',
@@ -386,28 +427,12 @@
 
 	}
 
-	// User Settings 
-	var initSettings = function()
-	{
-		$('.settings-name').on('keyup', function(e){
-
-			/* $.ajax({
-				url:  'index.php/user/check_username',
-				type: 'post',
-				data: { 
-						new_name: $(this).val() 
-				},
-				success: function(response){
-					console.log(response);
-				},
-				error: function(response){
-					console.log(response.responseText);
-				}
-			}); */
-
-		});
-
-
+	/**
+	 * 
+	 * User Settings
+	 * 
+	 */
+	var initSettings = function(){
 
 		// Change Profile Image
 		// Before the user saves a new profile image,
@@ -445,13 +470,10 @@
 
 
 	/**
-	 * Study 
 	 *
+	 *  Study Deck
 	 * 
 	 */
-	
-
-
 	
 	// List View
 	// Display cards in a table format
@@ -492,6 +514,7 @@
 			}
 		});
 	});
+
 
 	// Return to the flash card view
 	$('.card-view').on('click', function(e){
@@ -569,8 +592,14 @@
 	/**
 	 * 
 	 *  Resources
+	 *
+	 * 	Users have the option to flag any card when studying with either 'Practice More' or 'Mastered'
+	 *
+	 * 	If practice more is clicked, the card will appear more than once as the user cycles through the deck
 	 * 
 	 */
+	
+	// Checking if the user has any flagged cards
 	var checkResource = function()
 	{
 		$.ajax({
@@ -637,10 +666,12 @@
 		});
 	}
 
+
 	/**
-	 * Init Resources
-	 * @return {[type]} [description]
-	 */
+	* 
+	* Init Resources
+	* 
+	*/
 	var initResources = function()
 	{
 		var resources = $('.resources'),
@@ -713,6 +744,7 @@
 			}
 			else
 			{
+				// Add new resource to deck
 				var resource  = '',
 					deck_id   = $('.current').attr('data-deckid'),
 					card_id   = $('.current').attr('data-cardid')
@@ -741,6 +773,7 @@
 						// console.log(response);
 
 						checkResource();
+						// initCards();
 					},
 					error: function(response){
 						console.log(response.responseText);
@@ -753,8 +786,13 @@
 	}
 
 	/**
-	 * [keyboardShortcuts description]
-	 * @type {[type]}
+	 *
+	 * Keyboard Shortcuts
+	 *
+	 * Left Arrow - Previous Card
+	 * Space Bar - Flip Card
+	 * Right Arrow - NExt Card
+	 * 
 	 */
 	var keyboardShortcuts = $('.keyboard-shortcuts');
 
@@ -768,8 +806,9 @@
 
 
 	/**
+	 * 
 	 * Display both sides of card
-	 * @return {[type]} [description]
+	 * 
 	 */
 	var bothSides = function()
 	{
@@ -788,11 +827,13 @@
 		});
 	};
 
-	
 
 	/**
+	 * 
 	 * Sort cards by either random order or alphabetical order
-	 * @return {[type]} [description]
+	 *
+	 * ****** 7/25/2013 - Neither random or alphabetical order are working properly
+	 * 
 	 */
 	var cardSort = function()
 	{
@@ -813,18 +854,14 @@
 					console.log(response);
 					var cards = $.parseJSON(response);
 
-					// console.log(cards);
+					console.log(cards);
 
-					// var arr = [];
 
 					$.each(cards, function(key, value){
 						console.log(value);
 
 						// arr.push(value.term);
 					});
-
-					// arr.sort();
-					// console.log(arr);
 				},
 				error: function(response){
 					console.log(response.responseText);
@@ -867,10 +904,14 @@
 
 
 
+	/**
+	 * 
+	 * Init Cards
+	 *
+	 * Card functionality
+	 * 
+	 */
 	var initCards = function($resources){
-
-		// cardSort();
-		bothSides();
 		
 		var cards   = $('.card'),
 			count   = 0,
@@ -878,10 +919,8 @@
 			resources = ''
 		;
 
-		// Adding new cards
+		// Adding new cards if there are any flagged
 		var add_to_cards = function(arr){
-			console.log(arr);
-
 			$.each(arr, function(key, value){
 				var new_card = $('<div class="card" data-deckid="' + value.deck_id + '" data-cardid="' + value.card_id + '"><p class="term">' + value.term + '</p><p class="definition">' + value.definition + '</p><p class="keyboard-shortcuts" title="Keyboard shortcuts tooltip"><img src="../../assets/img/icons/keyboard_shortcuts.png" alt="Keyboard Shortcuts" /> Keyboard Shortcuts</p></div>');
 				$('.cards').append(new_card);
@@ -890,6 +929,8 @@
 			});
 		};
 
+
+		// 
 		$.ajax({
 			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/user_id',
 			type: 'get',
@@ -931,18 +972,21 @@
 							add_to_cards(second_set);
 
 							// Shuffle all cards
+							// 
+							// ***** 7/25/2013 - Shuffle cards throwing error
+							// 
 							// cards = shuffle(cards);
 
 							// Cycle through all cards
 							$.each(cards, function(key, value){
 								var card = $(this);
 
-								console.log(value);
+								// console.log(value);
 
 
 								if(key === 0)
 								{
-									console.log('here');
+									// console.log('here');
 
 									card.addClass('current').css('display', 'block');
 									$('.current .term').addClass('current-term');
@@ -965,6 +1009,7 @@
 
 
 		checkResource();
+		bothSides();
 		cardSort();
 
 
@@ -1255,32 +1300,6 @@
 
 
 
-
-
-
-
-	// Shuffle array
-	function shuffle(array) {
-	  var copy = [], n = array.length, i;
-
-	  // While there remain elements to shuffle…
-	  while (n) {
-
-	    // Pick a remaining element…
-	    i = Math.floor(Math.random() * array.length);
-
-	    // If not already shuffled, move it to the new array.
-	    if (i in array) {
-	      copy.push(array[i]);
-	      delete array[i];
-	      n--;
-	    }
-	  }
-
-	  return copy;
-	}
-
-
 	/**
 	*
 	* Quiz
@@ -1408,7 +1427,15 @@
 
 	}
 	 
-	// Get choices 
+
+	/**
+	 * Get Choices
+	 * @param  {[type]} question [description]
+	 * @param  {[type]} answer   [description]
+	 * @param  {[type]} deck_id  [description]
+	 * @param  {[type]} card_id  [description]
+	 * @return {[type]}          [description]
+	 */
 	var getChoices = function(question, answer, deck_id, card_id)
 	{
 		$.ajax({
@@ -1448,6 +1475,10 @@
 	}
 
 
+	/**
+	 * Init Questions
+	 * @return {[type]} [description]
+	 */
 	var initQuestions = function()
 	{
 		var first_question 	   = $('.question').first().text(),

@@ -56,3 +56,68 @@ ERROR - 2013-07-24 13:40:58 --> Error - Call to a member function delete() on a 
 ERROR - 2013-07-24 13:41:17 --> Error - Call to a member function delete() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 84
 ERROR - 2013-07-24 17:48:12 --> Notice - Undefined index: resource in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 41
 ERROR - 2013-07-24 17:51:17 --> Notice - Undefined index: resource in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 41
+ERROR - 2013-07-24 18:40:20 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 38
+ERROR - 2013-07-24 18:41:03 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:05 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:05 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:06 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:06 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:09 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:09 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:09 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:10 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:10 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:10 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:11 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:11 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:11 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:11 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:11 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:12 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:12 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:12 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:12 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:13 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:13 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:13 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:13 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:32 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:32 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:32 --> Parsing Error - syntax error, unexpected ';', expecting ')' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 39
+ERROR - 2013-07-24 18:41:40 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:41 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:41 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:41 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:41 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:42 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:42 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:42 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:42 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:43 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:43 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:43 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:43 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:44 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:44 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:44 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:44 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:45 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:41:45 --> Notice - Undefined property: Controller_Study::$user_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/study.php on line 27
+ERROR - 2013-07-24 18:42:50 --> Notice - Undefined variable: resources in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 4
+ERROR - 2013-07-24 18:42:50 --> Notice - Undefined variable: resources in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 4
+ERROR - 2013-07-24 18:42:51 --> Notice - Undefined variable: resources in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 4
+ERROR - 2013-07-24 18:42:51 --> Notice - Undefined variable: resources in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 4
+ERROR - 2013-07-24 18:42:51 --> Notice - Undefined variable: resources in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 4
+ERROR - 2013-07-24 18:42:52 --> Notice - Undefined variable: resources in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 4
+ERROR - 2013-07-24 18:42:52 --> Notice - Undefined variable: resources in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 4
+ERROR - 2013-07-24 18:42:52 --> Notice - Undefined variable: resources in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 4
+ERROR - 2013-07-24 18:42:53 --> Notice - Undefined variable: resources in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 4
+ERROR - 2013-07-24 18:42:53 --> Notice - Undefined variable: resources in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 4
+ERROR - 2013-07-24 18:42:53 --> Notice - Undefined variable: resources in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 4
+ERROR - 2013-07-24 18:42:53 --> Notice - Undefined variable: resources in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 4
+ERROR - 2013-07-24 18:42:54 --> Notice - Undefined variable: resources in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 4
+ERROR - 2013-07-24 18:42:54 --> Notice - Undefined variable: resources in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/study/index.php on line 4
+ERROR - 2013-07-24 19:21:10 --> 23000 - SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`WFP_2sided`.`resources`, CONSTRAINT `resources_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)) with query: "INSERT INTO `resources` (`user_id`, `deck_id`, `card_id`, `resource`, `created_at`, `updated_at`) VALUES ('', '51c12d64eace1', '109', 'practice', 1374708069, null)" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-24 19:35:21 --> Notice - Use of undefined constant Model_Card - assumed 'Model_Card' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/resource.php on line 50
+ERROR - 2013-07-24 19:35:37 --> 23000 - SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'deck_id' in where clause is ambiguous with query: "SELECT * FROM `resources` JOIN `cards` ON (`cards`.`id` = `resources`.`card_id`) WHERE `user_id` = '3' AND `deck_id` = '51c12d64eace1'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-24 19:35:38 --> 23000 - SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'deck_id' in where clause is ambiguous with query: "SELECT * FROM `resources` JOIN `cards` ON (`cards`.`id` = `resources`.`card_id`) WHERE `user_id` = '3' AND `deck_id` = '51c12d64eace1'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208

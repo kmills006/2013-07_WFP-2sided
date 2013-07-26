@@ -138,7 +138,12 @@
 	 * 
 	 */
 	
-	// Set the decks in their new sorted order
+	
+	/**
+	 * Set Decks
+	 *
+	 * After a filter is selected, reorder the users decks
+	 */
 	var setDecks = function(response){
 		var decks = $.parseJSON(response);
 
@@ -222,6 +227,45 @@
 		});
 	}
 
+
+	/**
+	 * Sort Decks
+	 *
+	 * Ajax call to sort by either newest, oldest or highest rated decks
+	 */
+	var sortDecks = function(sort_by){
+		var ajaxUrl = '';
+
+		switch(sort_by){
+			case 'newest':
+				ajaxUrl = sort_by;
+
+				break;
+
+			case 'oldest':
+				ajaxUrl = sort_by;
+
+				break;
+
+			case 'rating':
+				ajaxUrl = sort_by;
+
+				break;
+		}
+
+		$.ajax({
+			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/' + ajaxUrl,
+			type: 'post',
+			data: {sort_by: sort_by},
+			success: function(response){
+				setDecks(response);
+			},
+			error: function(response){
+				console.log(response.responseText);
+			}
+		});
+	};
+
 	
 	/**
 	 *
@@ -237,51 +281,17 @@
 				switch($(this).text())
 				{
 					case 'Newest':
-						$.ajax({
-							url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/newest',
-							type: 'post',
-							data: {newest: 'newest'},
-							success: function(response){
-								setDecks(response);
-							},
-							error: function(response){
-								console.log(response.responseText);
-							}
-						});
+						sortDecks('newest');
 
 						break;
 
 					case 'Oldest':
-						$.ajax({
-							url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/oldest',
-							type: 'post',
-							data: {oldest: 'oldest'},
-							success: function(response){
-								setDecks(response);
-							},
-							error: function(response){
-								console.log(response.responseText);
-							}
-						});
+						sortDecks('oldest');
 
 						break;
 
 					case 'Highest Rating':
-						$.ajax({
-							url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/highest_rating',
-							type: 'post',
-							data: {highest_rating: 'rating'},
-							success: function(response){
-								setDecks(response);
-							},
-							error: function(response){
-								console.log(response.responseText);
-							}
-						});
-
-						break;
-
-					default:
+						sortDecks('rating');
 
 						break;
 				}

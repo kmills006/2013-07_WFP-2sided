@@ -116,14 +116,20 @@
         				<div class="flash-card">
                             <?= Asset::img('flashcards/left_arrow.png', array('alt' => 'Left arrow to switch flashcard', 'class' => 'controls left-arrow')); ?>
     	    				<div class='cards'>
-                                <? foreach($cards as $card): ?>
-            	    				<div class="card" data-deckid='<?= $card->deck_id; ?>' data-cardid='<?= $card->id; ?>'>
-            		    					<p class='term'><?= $card->term; ?></p>
-                                            <p class='definition'><?= $card->definition; ?></p>
-            		    					
-                                            <p class="keyboard-shortcuts" title="Keyboard shortcuts tooltip"><?= Asset::img('icons/keyboard_shortcuts.png', array('alt' => 'Keyboard Shortcuts')); ?> Keyboard Shortcuts</p>
-            	    				</div>
-                                <? endforeach; ?>
+                                <? if($cards == null): ?>
+                                    <div class="card">
+                                        <p class='no-cards'>No cards yet</p>
+                                    </div>
+                                <? else: ?>
+                                    <? foreach($cards as $card): ?>
+                	    				<div class="card" data-deckid='<?= $card->deck_id; ?>' data-cardid='<?= $card->id; ?>'>
+                		    					<p class='term'><?= $card->term; ?></p>
+                                                <p class='definition'><?= $card->definition; ?></p>
+                		    					
+                                                <p class="keyboard-shortcuts" title="Keyboard shortcuts tooltip"><?= Asset::img('icons/keyboard_shortcuts.png', array('alt' => 'Keyboard Shortcuts')); ?> Keyboard Shortcuts</p>
+                	    				</div>
+                                    <? endforeach; ?>
+                                <? endif; ?>
     	    				</div>
                             
                             <?= Asset::img('flashcards/right_arrow.png', array('alt' => 'Right arrow to switch flashcard', 'class' => 'controls right-arrow')); ?>

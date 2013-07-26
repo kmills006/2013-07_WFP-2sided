@@ -21,7 +21,7 @@
     				<div class="sd-deck-info">
    						<p><?= Html::anchor('profile/view/'.$deck_info->user_id, $deck_owner); ?></p>
 
-                        <p>Correct: 0</p>
+                        <p class='correct-score'>Correct: 0</p>
                         <p class="skipped">Skipped: 0</p>
                         <p class="score">Score: 0</p>
                         <!-- <p class="remaining">Remaining: <?= $card_count; ?></p> -->
@@ -46,10 +46,9 @@
                                 <p class="question"><?= $card->term; ?></p>
                                 <p class="answer"><?= $card->definition; ?></p>
                                 
-                                <div class="floater">
-                                    <form></form>
-                                </div>
-    	    				</div>
+                                <form></form>
+    	    				
+                            </div>
                         <? endforeach; ?>
 	    				
                     

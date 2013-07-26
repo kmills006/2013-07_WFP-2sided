@@ -1555,8 +1555,10 @@
 						}
 					}
 
+					console.log(correct);
+
 					// How many correct as the quiz progresses 
-					$('.correct').text('Correct: ' + correct);
+					$('.correct-score').text('Correct: ' + correct);
 
 
 					// Remove the current card

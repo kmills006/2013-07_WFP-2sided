@@ -258,7 +258,6 @@
 			type: 'post',
 			data: {sort_by: sort_by},
 			success: function(response){
-				console.log(response);
 				setDecks(response);
 			},
 			error: function(response){
@@ -1540,12 +1539,6 @@
 		});
 	}
 
-	var start_over = $('.quiz aside button:first');
-
-	start_over.on('click', function(e){
-		initQuestions();
-	});
-
 
 	/**
 	 * Init Questions
@@ -1564,11 +1557,48 @@
 			missed_questions   = [],
 			question_count     = $('.question-count'),
 			score			   = '',
-			score_display      = $('.score')
+			score_display      = $('.score'),
+			start_over         = $('.quiz aside button:first')
 		;
 
 		// Set the question number
 		question_count.text(count + 1);
+
+
+		// Start Over
+		start_over.on('click', function(e){
+			cards = shuffle(cards);
+
+			var cardArea = '',
+				cardsDiv = $('.cards');
+
+			$.each(cards, function(key, value){
+				var card = $(value);
+
+				card.attr('id', 'handle' + key);
+
+				// if(card.hasClass('current'))
+				// {
+				// 	console.log('CURRENT');
+				// 	card.removeClass('current');
+				// }
+				
+				// console.log(card.children().first().next().text() + ' ' + card.attr('data-id'));
+
+				cardArea += '<div class="card" id="handle' + key + '"data-id="' + card.attr('data-id') + '"><p class="question">' + card.children().first().text() + '</p><p class="answer">' + card.children().first().next().text() + '</p><form></form></div>';
+			});
+
+			cardsDiv.html(cardArea);
+
+			// Add current class to first question
+			$('#handle0').addClass('current').css('display', 'block');
+			if($('.card').hasClass('current'))
+			{
+				var current = $('#handle0');
+				// console.log(current.attr('data-id'));
+				getChoices(current.children().first().text(), current.children().first().next().text(), deck_id, current.attr('data-id'));
+			}
+		});
 
 
 		// If you are at the quiz, get choices
@@ -1579,7 +1609,9 @@
 
 
 		// Next Question
-		$('.quiz-content .next').on('click', function(e){			
+		$('.quiz-content .next').on('click', function(e){
+			console.log('clicked');
+
 			if($('.multiple-choice').is(':checked'))
 			{
 				if(cards.hasClass('current') == true)

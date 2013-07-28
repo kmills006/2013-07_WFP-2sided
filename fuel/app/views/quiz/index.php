@@ -41,15 +41,17 @@
     				</div>
     				
     				<div class="flash-card">
-                        <? foreach($cards as $card): ?>
-    	    				<div class="card" data-id="<?= $card->id; ?>">
-                                <p class="question"><?= $card->term; ?></p>
-                                <p class="answer"><?= $card->definition; ?></p>
-                                
-                                <form></form>
-    	    				
-                            </div>
-                        <? endforeach; ?>
+                        <div class="cards">
+                            <? foreach($cards as $card): ?>
+        	    				<div class="card" data-id="<?= $card->id; ?>">
+                                    <p class="question"><?= $card->term; ?></p>
+                                    <p class="answer"><?= $card->definition; ?></p>
+                                    
+                                    <form></form>
+        	    				
+                                </div>
+                            <? endforeach; ?>
+                        </div>
 	    				
                     
                         <button class="skip">Skip Question</button>

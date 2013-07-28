@@ -1592,12 +1592,16 @@
 
 			// Add current class to first question
 			$('#handle0').addClass('current').css('display', 'block');
+
 			if($('.card').hasClass('current'))
 			{
 				var current = $('#handle0');
-				// console.log(current.attr('data-id'));
 				getChoices(current.children().first().text(), current.children().first().next().text(), deck_id, current.attr('data-id'));
 			}
+
+			$('.correct-score').text('Correct: 0');
+			$('.skipped').text('Skipped: 0' );
+			score_display.text('Score: 0');
 		});
 
 
@@ -1676,7 +1680,7 @@
 
 					score = 100/cards.length * correct;
 					score = score.toFixed(2);
-					score_display.text(score);
+					score_display.text('Score: ' + score);
 
 					// Get 3 new random answers to choose from
 					var question = $('.current .question').text(),

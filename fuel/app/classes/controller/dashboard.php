@@ -64,6 +64,7 @@ class Controller_Dashboard extends Controller_App
 			'username' => $user->username,
 			'points'   => $user->get_points(),
 			'level'    => $user->check_level($user->get_points()->total_points),
+			'points_to_level' => $user->points_to_level($user->get_points()->total_points),
 		));
 	}
 

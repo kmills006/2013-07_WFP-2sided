@@ -52,6 +52,17 @@ class Model_Level extends \Orm\Model
 							->get_one();
 	}
 
+	public static function points_to_level($points = '')
+	{
+		$next_level = static::query()
+								->where('required_score', '>=', $points)
+								->limit(1)
+								->order_by('required_score', 'asc')
+								->get_one();
+
+		return $next_level->required_score - $points;
+	}
+
 
 
 

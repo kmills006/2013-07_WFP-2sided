@@ -32,8 +32,6 @@
 	}
 
 
-
-
 	/**
 	 * Global Navigation
 	 *
@@ -445,6 +443,22 @@
 			}); 
 		});
 
+	}
+
+
+	/**
+	 *
+	 * Achievements
+	 *
+	 */
+	
+	var initAchievements = function(){
+		var progress_bar = $('.level-progress span:first-child span:first-child'),
+			user_points  = $('.total-points').text()
+		;
+
+		console.log(user_points/100);
+		
 	}
 
 	/**
@@ -1782,7 +1796,9 @@
 
 
 
-
+	if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard/achievements'){
+		initAchievements();
+	}
 
 
 

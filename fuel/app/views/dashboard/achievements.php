@@ -1,8 +1,8 @@
 <? 
 
-	// echo '<pre>';
-	// var_dump($points);
-	// echo '</pre>';
+	echo '<pre>';
+	var_dump($points_to_level);
+	echo '</pre>';
 ?>
 
 
@@ -23,13 +23,10 @@
 					 
 					 	<h3>StudyPoints</h3>
 					 	
-					 	<p>Total Points: <span><?= $points->total_points ?></span></p>
-					 	<p>49 points needed to reach level 3</p>
+					 	<p>Total Points: <span class="total-points"><?= $points->total_points ?></span></p>
+					 	<p><?= $points_to_level ?> points needed to reach level 3</p>
 					 	
 					 	<div class="level-progress">
-					 		<span><span></span></span>
-					 		<span><span></span></span>
-					 		<span><span></span></span>
 					 		<span><span></span></span>
 					 	</div>
 					 	

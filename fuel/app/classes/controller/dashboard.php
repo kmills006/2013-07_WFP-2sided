@@ -52,13 +52,18 @@ class Controller_Dashboard extends Controller_App
 	{
 		$user = $this->user;
 		
-		if (! isset($user))
+		if(!isset($user))
 		{
 			Response::redirect('user/login');
 		}
+
+		// $points = $user->get_points();
+		// $level = $user->check_level($points->total_points);
 		
 		$this->template->content = View::forge('dashboard/achievements', array(
-			'username'    => $user->username,
+			'username' => $user->username,
+			'points'   => $user->get_points(),
+			'level'    => $user->check_level($user->get_points()->total_points),
 		));
 	}
 

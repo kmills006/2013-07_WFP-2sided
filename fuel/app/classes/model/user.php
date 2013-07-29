@@ -316,6 +316,16 @@ class Model_User extends \Orm\Model
 		return Model_Notification::check_pending($this->id, $user_id);
 	}
 
+	public function get_points()
+	{
+		return Model_Point::get_points($this->id);
+	}
+
+	public function check_level($points)
+	{
+		return Model_Level::check_level($points);
+	}
+
 
 
 

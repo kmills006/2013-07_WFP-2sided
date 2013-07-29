@@ -1,3 +1,11 @@
+<? 
+
+	// echo '<pre>';
+	// var_dump($points);
+	// echo '</pre>';
+?>
+
+
     		<div class="content user-dashboard sizer">
     			<h1>Dashboard</h1>
     			
@@ -15,7 +23,7 @@
 					 
 					 	<h3>StudyPoints</h3>
 					 	
-					 	<p>Total Points: <span>123</span></p>
+					 	<p>Total Points: <span><?= $points->total_points ?></span></p>
 					 	<p>49 points needed to reach level 3</p>
 					 	
 					 	<div class="level-progress">

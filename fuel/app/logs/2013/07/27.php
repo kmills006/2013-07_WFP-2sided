@@ -8,3 +8,4 @@ ERROR - 2013-07-27 18:01:11 --> Notice - Undefined index: deck_id in /Users/kris
 ERROR - 2013-07-27 18:01:13 --> Notice - Undefined index: deck_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 194
 ERROR - 2013-07-27 20:08:58 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 196
 ERROR - 2013-07-27 20:09:00 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 196
+ERROR - 2013-07-27 20:35:53 --> Notice - Undefined index: card_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/card.php on line 196

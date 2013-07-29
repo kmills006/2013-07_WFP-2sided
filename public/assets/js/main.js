@@ -1344,6 +1344,11 @@
 				console.log(response.responseText);
 			}
 		});
+
+	
+		var study_points = score/3;
+		study_points = study_points.toFixed();
+		console.log(study_points);
 		
 
 		$('.quiz-content .header h2').text('Results');
@@ -1599,9 +1604,14 @@
 				getChoices(current.children().first().text(), current.children().first().next().text(), deck_id, current.attr('data-id'));
 			}
 
+			// Clear score
 			$('.correct-score').text('Correct: 0');
 			$('.skipped').text('Skipped: 0' );
 			score_display.text('Score: 0');
+			count = 0;
+			score = 0;
+			question_count.text(count + 1);
+
 		});
 
 
@@ -1614,12 +1624,12 @@
 
 		// Next Question
 		$('.quiz-content .next').on('click', function(e){
-			console.log('clicked');
 
 			if($('.multiple-choice').is(':checked'))
 			{
-				if(cards.hasClass('current') == true)
-				{
+
+				if($('.current'))
+				{					
 					// Saving the users choice
 					var user_response = $('.multiple-choice:radio:checked + label').text();
 
@@ -1664,7 +1674,6 @@
 						}
 					}
 
-
 					// How many correct as the quiz progresses 
 					$('.correct-score').text('Correct: ' + correct);
 
@@ -1673,20 +1682,30 @@
 					$('.card.current').removeClass('current').css('display', 'none');
 
 					// Increment to the next card
-					count ++; 
+					count ++;
+
+					// console.log(cards[1]);
+					// console.log(' ');
+					// console.log(count);
+					// console.log(' ');
+					// console.log(cards[count]);
 
 					// Display the new card
+					// console.log($(cards[count]).addClass('current').css('display', 'block'));
 					$(cards[count]).addClass('current').css('display', 'block');
 
+
 					score = 100/cards.length * correct;
-					score = score.toFixed(2);
-					score_display.text('Score: ' + score);
+					score = score.toFixed();
+					score_display.text('Score: ' + score + ' %');
 
 					// Get 3 new random answers to choose from
 					var question = $('.current .question').text(),
 						answer   = $('.current .answer').text(),
 						card_id  = $('.current').attr('data-id')
 					;
+
+					console.log($('.current'));
 
 					if(count === cards.length)
 					{

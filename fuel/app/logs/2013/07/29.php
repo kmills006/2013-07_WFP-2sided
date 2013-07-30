@@ -677,3 +677,327 @@ ERROR - 2013-07-29 18:47:03 --> 4096 - Object of class Model_Level could not be 
 ERROR - 2013-07-29 18:47:03 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
 ERROR - 2013-07-29 18:47:03 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
 ERROR - 2013-07-29 18:48:53 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 21:31:34 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:31:42 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:31:56 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:31:57 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:31:57 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:31:57 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:31:58 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:31:58 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:31:58 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:31:58 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:31:59 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:31:59 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:31:59 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:31:59 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:32:00 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:32:00 --> Parsing Error - syntax error, unexpected 'extend' (T_STRING), expecting '{' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 4
+ERROR - 2013-07-29 21:32:07 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:07 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:08 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:08 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:08 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:08 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:08 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:09 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:09 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:09 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:09 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:10 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:10 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:10 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:10 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:11 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:11 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:11 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:11 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:12 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:12 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:12 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:12 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:13 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:13 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:13 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:13 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:14 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:14 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:14 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:14 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:15 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:32:15 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:44:12 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:20 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:20 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:20 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:20 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:21 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:21 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:21 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:22 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:22 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:22 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:22 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:23 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:23 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:23 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:23 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:24 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:24 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:24 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:24 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:25 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:25 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:25 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:25 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:26 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:26 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:26 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:26 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:27 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:27 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:27 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:27 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:28 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:28 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:28 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:28 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:29 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:29 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:29 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:29 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:30 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:30 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:30 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:31 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:31 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:31 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:31 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:32 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:32 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:32 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:32 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:33 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:44:33 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 43
+ERROR - 2013-07-29 21:46:18 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:19 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:19 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:19 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:19 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:20 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:20 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:20 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:51 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:51 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:51 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:52 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:52 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:52 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:52 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:53 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:53 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:53 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:53 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:54 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:54 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:54 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:54 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:55 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:55 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:55 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:55 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:55 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:56 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:56 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:56 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:56 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:57 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:57 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:57 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:57 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:58 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:58 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:58 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:58 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:59 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:59 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:59 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:59 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:46:59 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'decks.deck_id' in 'where clause' with query: "SELECT * FROM `decks` WHERE `decks`.`deck_id` = '51db6887a764a'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-29 21:48:46 --> 4096 - Object of class Fuel\Core\Database_Result_Cached could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:54 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:55 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:55 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:55 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:55 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:56 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:56 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:56 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:57 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:57 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:57 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:57 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:58 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:58 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:58 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:58 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:59 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:59 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:59 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 21:48:59 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:00 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:00 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:00 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:00 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:01 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:01 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:01 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:01 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:02 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:02 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:02 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:03 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:03 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:03 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:03 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:04 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:04 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:04 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:04 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:05 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:05 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:05 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:05 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:06 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:06 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:06 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:06 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:07 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:07 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:07 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:07 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:08 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:08 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:08 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:08 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:09 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:09 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:09 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:09 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:10 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:10 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:10 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:10 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:11 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:11 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:11 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:11 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:12 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:12 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:12 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:12 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:13 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:13 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:13 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:13 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:14 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:14 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:14 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:14 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:15 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:15 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:15 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:16 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:16 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:16 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:16 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:16 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:17 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:17 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:17 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:18 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:18 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:18 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:18 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:19 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:19 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:19 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:19 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:20 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:20 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:20 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:20 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:21 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:21 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:21 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:21 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:22 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:22 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:22 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:22 --> Error - Property "title" not found for Model_Studied. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 21:49:52 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:52 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:52 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:53 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:53 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:53 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:53 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:54 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:54 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:54 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:54 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:55 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:55 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:55 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:55 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:56 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:56 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:56 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:56 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:57 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:57 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:57 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:58 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:58 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:58 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:58 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:59 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:59 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:59 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:49:59 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:00 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:00 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:00 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:00 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:01 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:01 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:01 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:01 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:02 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:02 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:02 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:02 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:03 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:03 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:03 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:04 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:04 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:04 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:04 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:05 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:05 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:05 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:05 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:06 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:06 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:06 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:06 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:07 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:07 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:07 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:07 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:08 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:08 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:08 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:50:08 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
+ERROR - 2013-07-29 21:53:39 --> Parsing Error - syntax error, unexpected '?' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44

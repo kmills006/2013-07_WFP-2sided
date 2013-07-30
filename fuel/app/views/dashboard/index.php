@@ -1,7 +1,7 @@
 <? 
 
 	// echo '<pre>';
-	// var_dump($decks);
+	// var_dump($recently_studied);
 	// echo '</pre>';
 
 ?>
@@ -40,18 +40,14 @@
 				  				</select>
 				  			</form>
 				  			
+				  			<? foreach($recently_studied as $rs): ?>
+								<div class="rs-item">
+					  				<p><span>2 days ago</span><a href="#"><?= $rs->deck_info[0]->title; ?></a></p>
+					  			</div>
+					  		<? endforeach; ?>			
 				  			
-				  			<div class="rs-item">
-				  				<p><span>2 days ago</span><a href="#">Civil War Midterm</a></p>
-				  			</div>
 				  			
-				  			<div class="rs-item">
-				  				<p><span>8 days ago</span><a href="#">Cooking Terminology</a></p>
-				  			</div>
-				  			
-				  			<div class="rs-item">
-				  				<p><span>21 days ago</span><a href="#">First Year Spanish</a></p>
-				  			</div>
+			
 				  			
 				  		</div>
 				  		

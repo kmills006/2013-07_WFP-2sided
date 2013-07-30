@@ -41,6 +41,7 @@ class Model_Studied extends \Orm\Model
 	{
 		$recently_studied = static::query()
 								->where('user_id', '=', Session::get('user_id'))
+								->limit($amount)
 								->order_by('studied_at', 'desc')
 								->get();
 		

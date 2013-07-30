@@ -28,7 +28,7 @@ class Observer_StudiedAt extends Observer
 	/**
 	 * @var  string  default property to set the timestamp on
 	 */
-	public static $property = 'created_at';
+	public static $property = 'studied_at';
 
 	/**
 	 * @var  bool  true to use mySQL timestamp instead of UNIX timestamp

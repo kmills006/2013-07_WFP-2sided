@@ -390,10 +390,8 @@
 
 		// Resort response
 		recently_studied  = temp.sort(sortAjax);
-
-
+		
 		$.each(recently_studied, function(key, value){
-			console.log(value.deck_info[0].title);
 			rs_area += '<div class="rs-item"><p><span>' + value.studied_at + '</span><a href="study/view/' + value.deck_id + '">' + value.deck_info[0].title + '</a></p>';
 		});
 
@@ -417,7 +415,6 @@
 					amount: selected_amount
 				},
 				success: function(response){
-					console.log(response);
 					displayRecentlyStudied(response);
 				},
 				error: function(response){

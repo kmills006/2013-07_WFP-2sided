@@ -14,6 +14,7 @@ class Controller_Study extends Controller_App
 		}
 		else
 		{
+			// Check if user has liked this deck
 			if($deck->user_id != $this->user->id)
 			{
 				$liked = $deck->check_like($this->user->id);
@@ -25,6 +26,11 @@ class Controller_Study extends Controller_App
 
 			$quiz_score = $deck->get_last_score($this->user->id);
 			$resources  = $deck->get_resources($this->user->id);
+
+
+
+			// Save deck into recently studied
+			$recently_studied = $deck->save_recently_studied($this->user->id);
 		}
 		
 		// Setting up view

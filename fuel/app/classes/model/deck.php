@@ -405,6 +405,12 @@ class Model_Deck extends \Orm\Model
 		return strtolower(urlencode($title));
 	}
 
+	
+	public function save_recently_studied($user_id)
+	{
+		return Model_Studied::save_deck($user_id, $this->id);
+	}
+
 	/**
 	 * [date description]
 	 * @param  string $format [description]
@@ -414,5 +420,6 @@ class Model_Deck extends \Orm\Model
 	{
 		return date($format, $this->created_at);
 	}
+
 
 }

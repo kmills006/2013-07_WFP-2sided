@@ -289,7 +289,7 @@ class Controller_Ajax extends Controller_Rest
 	{
 		$recently_studied = Model_Studied::get_recently_studied(Session::get('user_id'), Input::post('amount'));
 
-
+		// Reformat studied at date
 		foreach($recently_studied as $rs)
 		{
 			$rs->studied_at = $rs->date();

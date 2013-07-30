@@ -22,10 +22,6 @@ class Model_Studied extends \Orm\Model
 			'events' => array('before_update'),
 			'mysql_timestamp' => false,
 		),
-		'Orm\Observer_StudiedAt' => array(
-			'events' => array('before_insert'),
-			'mysql_timestamp' => false,
-		),
 	);
 
 	protected static $_table_name = 'recently_studied';
@@ -69,6 +65,19 @@ class Model_Studied extends \Orm\Model
 		{
 			return false;
 		}
+	}
+
+
+
+	public static function save_deck($user_id, $deck_id)
+	{
+		$new_deck = static::forge(array(
+			'user_id'    => $user_id,
+			'deck_id'    => $deck_id,
+			'studied_at' => time(),
+		));
+
+		$new_deck->save();
 	}
 
 

@@ -345,6 +345,10 @@ class Model_User extends \Orm\Model
 		return Model_Level::points_to_level($points, $level);
 	}
 
+	/**
+	 * [get_recently_studied description]
+	 * @return [type] [description]
+	 */
 	public function get_recently_studied()
 	{
 		return Model_Studied::get_recently_studied($this->id);

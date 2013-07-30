@@ -1002,3 +1002,84 @@ ERROR - 2013-07-29 21:50:08 --> Notice - Undefined index: title in /Users/kristy
 ERROR - 2013-07-29 21:50:08 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
 ERROR - 2013-07-29 21:53:39 --> Parsing Error - syntax error, unexpected '?' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
 ERROR - 2013-07-29 22:10:34 --> Parsing Error - syntax error, unexpected ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 76
+ERROR - 2013-07-29 22:50:44 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:05 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:06 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:07 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:07 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:07 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:07 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:08 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:08 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:08 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:08 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:09 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:09 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:09 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:09 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:10 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:10 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:10 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:10 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:11 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:11 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:11 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:11 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:12 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:12 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:12 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:12 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:13 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:13 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:13 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:13 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:14 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:14 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:14 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:14 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:15 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:15 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:51:16 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-29 22:54:42 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:01 --> Parsing Error - syntax error, unexpected '++' (T_INC) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 55
+ERROR - 2013-07-29 22:55:01 --> Parsing Error - syntax error, unexpected '++' (T_INC) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 55
+ERROR - 2013-07-29 22:55:01 --> Parsing Error - syntax error, unexpected '++' (T_INC) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 55
+ERROR - 2013-07-29 22:55:02 --> Parsing Error - syntax error, unexpected '++' (T_INC) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 55
+ERROR - 2013-07-29 22:55:02 --> Parsing Error - syntax error, unexpected '++' (T_INC) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 55
+ERROR - 2013-07-29 22:55:02 --> Parsing Error - syntax error, unexpected '++' (T_INC) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 55
+ERROR - 2013-07-29 22:55:02 --> Parsing Error - syntax error, unexpected '++' (T_INC) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 55
+ERROR - 2013-07-29 22:55:03 --> Parsing Error - syntax error, unexpected '++' (T_INC) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 55
+ERROR - 2013-07-29 22:55:03 --> Parsing Error - syntax error, unexpected '++' (T_INC) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 55
+ERROR - 2013-07-29 22:55:03 --> Parsing Error - syntax error, unexpected '++' (T_INC) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 55
+ERROR - 2013-07-29 22:55:03 --> Parsing Error - syntax error, unexpected '++' (T_INC) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 55
+ERROR - 2013-07-29 22:55:03 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:04 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:04 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:04 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:05 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:05 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:05 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:05 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:06 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:06 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:06 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:06 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:07 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:07 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:07 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:07 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:08 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:08 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:08 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:08 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:09 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:09 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:09 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:09 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:10 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:10 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:10 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:10 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:11 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:16 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077
+ERROR - 2013-07-29 22:55:17 --> Error - Primary key on model Model_Studied cannot be changed. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1077

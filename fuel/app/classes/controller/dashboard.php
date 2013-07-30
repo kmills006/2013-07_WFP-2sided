@@ -18,9 +18,9 @@ class Controller_Dashboard extends Controller_App
 
 		// Setting up views
 		$this->template->content = View::forge('dashboard/index', array(
-			'user_info'   => $user,
-			'decks'       => $user->get_decks(),
-			'total_decks' => $user->total_decks(),
+			'user_info'        => $user,
+			'decks'            => $user->get_decks(),
+			'total_decks'      => $user->total_decks(),
 			'recently_studied' => $user->get_recently_studied(),
 		));
 

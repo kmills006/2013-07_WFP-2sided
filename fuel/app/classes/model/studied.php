@@ -40,21 +40,27 @@ class Model_Studied extends \Orm\Model
 	public static function get_recently_studied($user_id, $amount = 3)
 	{
 		$recently_studied = static::query()
-								->where('user_id', '=', Session::get('user_id'))
-								->limit($amount)
-								->order_by('studied_at', 'desc')
-								->get();
+										->where('user_id', '=', Session::get('user_id'))
+										->limit($amount)
+										->order_by('studied_at', 'desc')
+										->get();
 		
 		if(isset($recently_studied))
 		{
+			$count = 0;
+
 			foreach($recently_studied as $rs)
 			{
+
+				$count ++;
+
 				$deck = DB::select()
 								->from('decks')
 								->where('decks.id', '=', $rs->deck_id)
 								->as_object('Model_Deck')->execute();
 
 				$rs->deck_info = $deck;
+				$rs->position = $count;
 			}
 
 			return $recently_studied;

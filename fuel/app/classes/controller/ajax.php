@@ -285,5 +285,12 @@ class Controller_Ajax extends Controller_Rest
 	}
 
 
+	public function post_update_recently_studied()
+	{
+		$recently_studied = Model_Studied::get_recently_studied(Session::get('user_id'), Input::post('amount'));
+		return $this->response = \Format::forge($recently_studied)->to_json();
+	}
+
+
 
 }

@@ -34,17 +34,19 @@
 				  			
 				  			<form>
 				  				<select>
-				  					<option>7 days</option>
-				  					<option>30 days</option>
-				  					<option>90 days</option>
+				  					<option>3</option>
+				  					<option>10</option>
+				  					<option>20</option>
 				  				</select>
 				  			</form>
 				  			
-				  			<? foreach($recently_studied as $rs): ?>
-								<div class="rs-item">
-					  				<p><span><?= $rs->date(); ?></span><a href="#"><?= $rs->deck_info[0]->title; ?></a></p>
-					  			</div>
-					  		<? endforeach; ?>			
+				  			<div class="rs">
+					  			<? foreach($recently_studied as $rs): ?>
+									<div class="rs-item">
+						  				<p><span><?= $rs->date(); ?></span><a href="#"><?= $rs->deck_info[0]->title; ?></a></p>
+						  			</div>
+						  		<? endforeach; ?>
+						  	</div>	
 				  			
 				  			
 			

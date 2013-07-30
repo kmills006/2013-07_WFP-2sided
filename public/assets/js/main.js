@@ -458,10 +458,9 @@
 			points_between = $('.points-till').attr('data-points')
 		;
 
+		// Setting width of progress bar
 		var width = (user_points - $('.points-till').attr('data-required')) / points_between * 100;
-
 		progress_bar.css('width', width + '%');
- 
 	}
 
 	/**
@@ -1365,7 +1364,21 @@
 	
 		var study_points = score/3;
 		study_points = study_points.toFixed();
-		console.log(study_points);
+		
+		// Save any new StudyPoints
+		$.ajax({
+			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/save_points',
+			type: 'post',
+			data: {
+				total_points: study_points
+			},
+			success: function(response){
+				console.log(response);
+			},
+			error: function(response){
+				console.log(response.responseText);
+			}
+		});
 		
 
 		$('.quiz-content .header h2').text('Results');
@@ -1391,7 +1404,12 @@
 		}
 
 
-		scoresArea = '<h2>Final Score: ' + score + '%</h2><h3>Correct: ' + correct + '</h3><h3>Incorrect: ' + $(missed_questions).length + '</h3><h3>Skipped: ' + $(skipped_questions).length + '</h3>';
+		if(study_points == 0){
+			scoresArea = '<h2>Final Score: ' + score + '%</h2><h3>Correct: ' + correct + '</h3><h3>Incorrect: ' + $(missed_questions).length + '</h3><h3>Skipped: ' + $(skipped_questions).length + '</h3>';
+		}else{
+			scoresArea = '<h2>Final Score: ' + score + '%</h2><h3>Congratulations you have earned ' + study_points + ' StudyPoints!</h3><h3>Correct: ' + correct + '</h3><h3>Incorrect: ' + $(missed_questions).length + '</h3><h3>Skipped: ' + $(skipped_questions).length + '</h3>';
+		}
+
 		scoresDiv.html(scoresArea);
 
 		if(missed_questions == '')

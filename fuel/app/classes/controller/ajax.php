@@ -213,6 +213,12 @@ class Controller_Ajax extends Controller_Rest
 	}
 
 
+	public function post_save_points()
+	{
+		$new_points = Model_Point::save_points(Input::post());
+	}
+
+
 	/**
 	 * [post_sort_az description]
 	 * @return [type] [description]
@@ -268,6 +274,10 @@ class Controller_Ajax extends Controller_Rest
 	}
 
 
+	/**
+	 * [post_get_resources description]
+	 * @return [type] [description]
+	 */
 	public function post_get_resources()
 	{
 		$resources = Model_Resource::get_resources(Input::post('user_id'), Input::post('deck_id'));

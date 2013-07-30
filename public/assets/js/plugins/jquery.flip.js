@@ -218,8 +218,8 @@ $.fn.flip = function(settings){
                     borderLeftWidth: waist,
                     borderRightWidth: waist,
                     borderBottomWidth: 0,
-                    borderTopColor: '#FFF',
-                    borderBottomColor: '#FFF',
+                    borderTopColor: '#E67E22',
+                    borderBottomColor: '#E67E22',
                     top: (flipObj.top+(flipObj.height/2)),
                     left: (flipObj.left-waist)},
                 "second": {
@@ -244,8 +244,8 @@ $.fn.flip = function(settings){
                     borderLeftWidth: 0,
                     borderRightWidth: 0,
                     borderBottomWidth: waist,
-                    borderLeftColor: '#FFF',
-                    borderRightColor: '#FFF',
+                    borderLeftColor: '#E67E22',
+                    borderRightColor: '#E67E22',
                     top: flipObj.top-waist,
                     left: flipObj.left+(flipObj.width/2)},
                 "second": {

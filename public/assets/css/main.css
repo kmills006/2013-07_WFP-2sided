@@ -112,7 +112,7 @@ textarea {
 	
 	#BDC3C7 - SILVER
 	
-#E67E22 - CARROT
+	#E67E22 - CARROT
 	
 	#D35400 - PUMPKIN
 	
@@ -1099,9 +1099,10 @@ img + span{
 }
 
 .level-progress span:first-child span:first-child{
-	background-color: green;
+	background-color: #E67E22;
+	/*background-color: #D35400;*/
 	border: none;
-	width: 30%;
+	width: 0%;
 	-webkit-border-top-left-radius: 20px;
 	-webkit-border-bottom-left-radius: 20px;
 	-moz-border-radius-topleft: 20px;
@@ -1114,60 +1115,6 @@ img + span{
 	-moz-border-radius-bottomright: 0;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
-}
-
-.level-progress span:nth-child(2){
-	background-color: #FFF;
-	width: 20%;
-}
-
-.level-progress span:nth-child(2) span:first-child{
-	background-color: orange;
-	width: 87%;
-	border: none;
-	border-radius: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-/* 	display: none; */
-}
-
-.level-progress span:nth-child(3){
-	background-color: #FFF;
-	width: 30%;
-}
-
-.level-progress span:nth-child(3) span:first-child{
-	background-color: blue;
-	width: 12%;
-	border: none;
-	border-radius: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	display: none;
-}
-
-.level-progress span:nth-child(4){
-	background-color: #FFF;
-	border: none;
-	width: 39%;
-	height: 100%;
-	-webkit-border-top-right-radius: 20px;
-	-webkit-border-bottom-right-radius: 20px;
-	-moz-border-radius-topright: 20px;
-	-moz-border-radius-bottomright: 20px;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-}
-
-.level-progress span:nth-child(4) span:first-child{
-	background-color: blue;
-	width: 89%%;
-	border: none;
-	border-radius: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	background-color: purple;
-	display: none;
 }
 
 .badges h3{
@@ -1747,7 +1694,7 @@ img + span{
 	width: 520px;
 	height: 300px;
 	margin: 60px auto;
-	background-color: #E3E3E3;
+	/*background-color: #E3E3E3;*/
 }
 
 .card{

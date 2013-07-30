@@ -1150,7 +1150,7 @@
 				$('.card').flip({
 					direction:'tb',
 					color: '#FFF',
-					// speed: 10000,
+					speed: 300,
 					onEnd: function(){
 							$('.card').css('background-image', 'none');
 							$('.card .term').css('display', 'none');

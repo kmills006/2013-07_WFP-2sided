@@ -23,9 +23,6 @@
     				
     				<div class="level-progress">
 				 		<span><span></span></span>
-				 		<span><span></span></span>
-				 		<span><span></span></span>
-				 		<span><span></span></span>
 				 	</div>
 				 	
     				<p>Total StudyPoints <span>123</span></p>

@@ -31,7 +31,6 @@
 	  return copy;
 	}
 
-
 	/**
 	 * [ description]
 	 * @param  {[type]} obj1 [description]
@@ -41,7 +40,6 @@
 	var sortAjax = function(obj1, obj2){
 		return obj1.position - obj2.position;
 	}
-
 
 	/**
 	 * Global Navigation
@@ -929,6 +927,25 @@
 	};
 
 
+
+	var displayCards = function(response){
+		
+		var cards     = $.parseJSON(response),
+			temp      = [],
+			cards_div = $('.cards'),
+			card_area = ''
+		;
+
+		$.each(cards, function(key, value){
+			temp.push(value);
+		});
+
+		cards = temp.sort(sortAjax);
+
+		
+	}
+
+
 	/**
 	 * 
 	 * Sort cards by either random order or alphabetical order
@@ -952,17 +969,7 @@
 					deck_id: deck_id
 				},
 				success: function(response){
-					console.log(response);
-					var cards = $.parseJSON(response);
-
-					console.log(cards);
-
-
-					$.each(cards, function(key, value){
-						console.log(value);
-
-						// arr.push(value.term);
-					});
+					 displayCards(response);
 				},
 				error: function(response){
 					console.log(response.responseText);
@@ -980,21 +987,7 @@
 					deck_id: deck_id
 				},
 				success: function(response){
-					console.log(response);
-					var cards = $.parseJSON(response);
-
-					// console.log(cards);
-
-					// var arr = [];
-
-					$.each(cards, function(value){
-						console.log(value);
-
-						// arr.push(value.term);
-					});
-
-					// arr.sort();
-					// console.log(arr);
+					displayCards(response);
 				},
 				error: function(response){
 					console.log(response.responseText);

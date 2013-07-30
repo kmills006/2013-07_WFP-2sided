@@ -213,6 +213,10 @@ class Controller_Ajax extends Controller_Rest
 	}
 
 
+	/**
+	 * [post_save_points description]
+	 * @return [type] [description]
+	 */
 	public function post_save_points()
 	{
 		$new_points = Model_Point::save_points(Input::post());
@@ -285,6 +289,10 @@ class Controller_Ajax extends Controller_Rest
 	}
 
 
+	/**
+	 * [post_update_recently_studied description]
+	 * @return [type] [description]
+	 */
 	public function post_update_recently_studied()
 	{
 		$recently_studied = Model_Studied::get_recently_studied(Session::get('user_id'), Input::post('amount'));

@@ -112,7 +112,7 @@ textarea {
 	
 	#BDC3C7 - SILVER
 	
-	#E67E22 - CARROT
+#E67E22 - CARROT
 	
 	#D35400 - PUMPKIN
 	
@@ -1745,8 +1745,9 @@ img + span{
 
 .flash-card{
 	width: 520px;
-	height: 248px;
+	height: 300px;
 	margin: 60px auto;
+	background-color: #E3E3E3;
 }
 
 .card{
@@ -1757,6 +1758,7 @@ img + span{
 	background-position: center;
 	background-position-y: 30px;
 	background-image: url("../img/flashcards/flashcard.png");
+	background-color: #FFF;
 	float: left;
 	margin: 0 auto;
 	padding: 0;

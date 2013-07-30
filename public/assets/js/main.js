@@ -1073,20 +1073,41 @@
 
 			if(term.hasClass('term'))
 			{
-				/* term.animate({ 
-						opacity: 0,
-					    bottom: '+=80'
+				//  term.animate({ 
+				// 		opacity: 0,
+				// 	    bottom: '+=80'
 					    
-					  }, 2000, function() {
-					    // Animation complete.
-					    console.log('animation finished');
-				}); */
+				// 	  }, 2000, function() {
+				// 	    // Animation complete.
+				// 	    console.log('animation finished');
+				// }); 
+				// console.log(term[0]);
+				// $(term[0]).animate({
+				// 	opacity: 0,
+				// 	top: '-=15'
+				// }, 1000, function(){
+				// 	console.log('pretty');
+				// })
+				
+				$('.card').flip({
+					direction:'tb',
+					color: '#FFF',
+					// speed: 10000,
+					onEnd: function(){
+							$('.card').css('background-image', 'none');
+							$('.card .term').css('display', 'none');
+							$('.card .term').removeClass('current-term');
+							$('.card .definition').addClass('current-def');
+							$('.card .definition').css('display', 'block');
+					}
+				});
+				
 
-				$('.card .term').css('display', 'none');
-				$('.card .term').removeClass('current-term');
+				// $('.card .term').css('display', 'none');
+				// $('.card .term').removeClass('current-term');
 
-				$('.card .definition').addClass('current-def');
-				$('.card .definition').css('display', 'block');
+				// $('.card .definition').addClass('current-def');
+				// $('.card .definition').css('display', 'block');
 			}
 			if(term.hasClass('definition'))
 			{

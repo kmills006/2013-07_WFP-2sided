@@ -71,9 +71,20 @@ class Model_Studied extends \Orm\Model
 	 * @param  string $format [description]
 	 * @return string         [description]
 	 */
-	public function date($format = "M d, Y")
+	public function date($format = "M d, Y - g:i a")
 	{
-		return date($format, $this->studied_at);
+		$days = floor((time() - $this->studied_at)/(60*60*24));
+
+		if($days == 0)
+		{
+			$days = 'Today';
+		}
+		else
+		{
+			$days = $days.' days ago';
+		}
+
+		return $days;
 	}
 
 

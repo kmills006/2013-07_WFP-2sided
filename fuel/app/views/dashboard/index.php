@@ -42,7 +42,7 @@
 				  			
 				  			<? foreach($recently_studied as $rs): ?>
 								<div class="rs-item">
-					  				<p><span>2 days ago</span><a href="#"><?= $rs->deck_info[0]->title; ?></a></p>
+					  				<p><span><?= $rs->date(); ?></span><a href="#"><?= $rs->deck_info[0]->title; ?></a></p>
 					  			</div>
 					  		<? endforeach; ?>			
 				  			

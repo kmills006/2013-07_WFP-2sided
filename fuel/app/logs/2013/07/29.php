@@ -1001,3 +1001,4 @@ ERROR - 2013-07-29 21:50:08 --> Notice - Undefined index: title in /Users/kristy
 ERROR - 2013-07-29 21:50:08 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
 ERROR - 2013-07-29 21:50:08 --> Notice - Undefined index: title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/result/cached.php on line 48
 ERROR - 2013-07-29 21:53:39 --> Parsing Error - syntax error, unexpected '?' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/index.php on line 44
+ERROR - 2013-07-29 22:10:34 --> Parsing Error - syntax error, unexpected ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 76

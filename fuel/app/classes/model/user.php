@@ -234,6 +234,92 @@ class Model_User extends \Orm\Model
 		}
 	}
 
+
+
+	public static function get_recent_activity($user_id)
+	{
+
+		/* CREATING RECENT ACTIVITY
+		
+		(
+		 	SELECT user_id, studied_at, 'studied' AS `type`, created_at
+		 	FROM recently_studied 
+			WHERE user_id = 3
+		)
+		UNION
+		(
+			SELECT user_id, friend_id, 'friend' AS `type`, created_at
+			FROM friends
+			WHERE user_id = 3 OR friend_id = 3
+		)
+		UNION
+		(
+			SELECT user_id, score, 'score' AS `type`, created_at
+			FROM scores
+			WHERE user_id = 3
+		)
+		UNION
+		(
+			SELECT user_id, deck_id, 'liked_deck' AS `type`, created_at
+			FROM likes
+			WHERE user_id = 3
+		)
+		UNION
+		(
+			SELECT user_id, id, 'created_deck' AS `type`, created_at
+			FROM decks
+			WHERE user_id = 3
+		)
+		ORDER BY created_at DESC; */
+
+
+		$query = '(SELECT user_id, studied_at, "studied" AS `type`, created_at 
+				   FROM recently_studied 
+				   WHERE user_id = ' . $user_id . '
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, friend_id, "friend" AS `type`, created_at 
+				  	FROM friends 
+				  	WHERE user_id = 3 OR friend_id =' . $user_id . '
+				  )
+				  UNION
+				  (
+					SELECT user_id, score, "score" AS `type`, created_at
+					FROM scores
+					WHERE user_id = ' . $user_id . '
+				  )
+				  UNION
+				  (
+					SELECT user_id, deck_id, "liked_deck" AS `type`, created_at
+					FROM likes
+					WHERE user_id = ' . $user_id . '
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, id, "created_deck" AS `type`, created_at
+				  	FROM decks
+				  	WHERE user_id = ' . $user_id . '
+				)
+				ORDER BY created_at DESC'
+		;
+
+		// echo $query;
+
+		$results = \DB::query($query)->as_object()->execute();
+
+		foreach($results as $r)
+		{
+			echo '<pre>';
+			var_dump($r->type);
+			echo '</pre>';
+		}
+	}
+
+
+
+
+
 	/**
 	 * [total_notifications description]
 	 * @return [type] [description]

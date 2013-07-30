@@ -20,6 +20,8 @@ class Controller_Profile extends Controller_App
 			throw new HttpNotFoundException;
 		}
 
+		$recent_activity = Model_User::get_recent_activity($user->id);
+
 		$this->template->content = View::forge('profile/index', array(
 			'user_info'     => $user,
 			'decks'         => $user->get_decks(),

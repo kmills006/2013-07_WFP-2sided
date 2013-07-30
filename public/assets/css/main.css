@@ -980,6 +980,7 @@ img + span{
 .user-notification{
 	margin: 20px 0;
 	padding: 20px 0 30px 0;
+	height: 300px;
 }
 
 .user-notification{

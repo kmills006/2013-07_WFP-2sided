@@ -52,7 +52,12 @@ class Model_Level extends \Orm\Model
 							->get_one();
 	}
 
-	public static function points_to_level($points = '')
+	/**
+	 * [points_to_level description]
+	 * @param  string $points [description]
+	 * @return [type]         [description]
+	 */
+	public static function points_to_level($points = '', $current_level = '')
 	{
 		$next_level = static::query()
 								->where('required_score', '>=', $points)
@@ -60,7 +65,10 @@ class Model_Level extends \Orm\Model
 								->order_by('required_score', 'asc')
 								->get_one();
 
-		return $next_level->required_score - $points;
+		$next_level->points_between = $next_level->required_score - $current_level->required_score;
+		$next_level->points_till = $next_level->required_score - $points;
+
+		return $next_level;
 	}
 
 

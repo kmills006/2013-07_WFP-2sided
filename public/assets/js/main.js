@@ -453,12 +453,15 @@
 	 */
 	
 	var initAchievements = function(){
-		var progress_bar = $('.level-progress span:first-child span:first-child'),
-			user_points  = $('.total-points').text()
+		var progress_bar   = $('.level-progress span:first-child span:first-child'),
+			user_points    = $('.total-points').text(),
+			points_between = $('.points-till').attr('data-points')
 		;
 
-		console.log(user_points/100);
-		
+		var width = (user_points - $('.points-till').attr('data-required')) / points_between * 100;
+
+		progress_bar.css('width', width + '%');
+ 
 	}
 
 	/**

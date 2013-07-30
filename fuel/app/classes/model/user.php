@@ -340,9 +340,9 @@ class Model_User extends \Orm\Model
 	 * @param  [type] $points [description]
 	 * @return [type]         [description]
 	 */
-	public function points_to_level($points)
+	public function points_to_level($points, $level)
 	{
-		return Model_Level::points_to_level($points);
+		return Model_Level::points_to_level($points, $level);
 	}
 
 

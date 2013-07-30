@@ -563,3 +563,117 @@ ERROR - 2013-07-29 18:22:32 --> Parsing Error - syntax error, unexpected ''>='' 
 ERROR - 2013-07-29 18:22:32 --> Parsing Error - syntax error, unexpected ''>='' (T_CONSTANT_ENCAPSED_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 58
 ERROR - 2013-07-29 18:22:32 --> Parsing Error - syntax error, unexpected ''>='' (T_CONSTANT_ENCAPSED_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 58
 ERROR - 2013-07-29 18:22:33 --> Parsing Error - syntax error, unexpected ''>='' (T_CONSTANT_ENCAPSED_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 58
+ERROR - 2013-07-29 18:28:05 --> Error - Property "level" not found for Model_Point. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-29 18:28:37 --> Parsing Error - syntax error, unexpected ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 4
+ERROR - 2013-07-29 18:28:37 --> Parsing Error - syntax error, unexpected ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 4
+ERROR - 2013-07-29 18:36:41 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:42 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:42 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:42 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:42 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:43 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:43 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:43 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:43 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:44 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:44 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:44 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:44 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:45 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:45 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:45 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:45 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:46 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:46 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:46 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:46 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:46 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:47 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:47 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:47 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:47 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:48 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:48 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:48 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:48 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:49 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:49 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:49 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:49 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:49 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:50 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:50 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:50 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:50 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:51 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:51 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:51 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:51 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:52 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:52 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:52 --> Parsing Error - syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:52 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:53 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:53 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:53 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:53 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:53 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:54 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:54 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:54 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:54 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:55 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:55 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:55 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:55 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:55 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:56 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:56 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:56 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:56 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:57 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:57 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:57 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:57 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:58 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:58 --> Error - Using $this when not in object context in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 68
+ERROR - 2013-07-29 18:36:58 --> Notice - Undefined variable: current_level in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 70
+ERROR - 2013-07-29 18:36:58 --> Notice - Undefined variable: current_level in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 70
+ERROR - 2013-07-29 18:36:59 --> Notice - Undefined variable: current_level in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 70
+ERROR - 2013-07-29 18:36:59 --> Notice - Undefined variable: current_level in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 70
+ERROR - 2013-07-29 18:36:59 --> Notice - Undefined variable: current_level in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 70
+ERROR - 2013-07-29 18:36:59 --> Notice - Undefined variable: current_level in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 70
+ERROR - 2013-07-29 18:37:00 --> Notice - Undefined variable: current_level in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 70
+ERROR - 2013-07-29 18:37:00 --> Notice - Undefined variable: current_level in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 70
+ERROR - 2013-07-29 18:37:00 --> Notice - Undefined variable: current_level in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 70
+ERROR - 2013-07-29 18:41:19 --> Warning - Missing argument 2 for Model_Level::points_to_level(), called in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 345 and defined in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 60
+ERROR - 2013-07-29 18:41:21 --> Warning - Missing argument 2 for Model_Level::points_to_level(), called in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 345 and defined in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 60
+ERROR - 2013-07-29 18:41:40 --> Warning - Missing argument 2 for Model_Level::points_to_level(), called in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 345 and defined in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 60
+ERROR - 2013-07-29 18:42:19 --> Notice - Undefined variable: points in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 61
+ERROR - 2013-07-29 18:42:19 --> Notice - Undefined variable: points in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 61
+ERROR - 2013-07-29 18:42:26 --> Notice - Undefined variable: points in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 61
+ERROR - 2013-07-29 18:42:26 --> Notice - Undefined variable: points in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 61
+ERROR - 2013-07-29 18:42:26 --> Notice - Undefined variable: points in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 61
+ERROR - 2013-07-29 18:42:27 --> Notice - Undefined variable: points in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 61
+ERROR - 2013-07-29 18:42:27 --> Notice - Undefined variable: points in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 61
+ERROR - 2013-07-29 18:42:27 --> Notice - Undefined variable: points in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 61
+ERROR - 2013-07-29 18:42:27 --> Notice - Undefined variable: points in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/dashboard.php on line 61
+ERROR - 2013-07-29 18:45:45 --> Warning - Creating default object from empty value in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/level.php on line 72
+ERROR - 2013-07-29 18:46:59 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:46:59 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:46:59 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:47:00 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:47:00 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:47:00 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:47:01 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:47:01 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:47:01 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:47:01 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:47:02 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:47:02 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:47:02 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:47:02 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:47:03 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:47:03 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:47:03 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27
+ERROR - 2013-07-29 18:48:53 --> 4096 - Object of class Model_Level could not be converted to string in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/dashboard/achievements.php on line 27

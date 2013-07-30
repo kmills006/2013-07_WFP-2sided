@@ -1,7 +1,7 @@
 <? 
 
 	echo '<pre>';
-	var_dump($points_to_level);
+	// var_dump($level->re);
 	echo '</pre>';
 ?>
 
@@ -24,7 +24,7 @@
 					 	<h3>StudyPoints</h3>
 					 	
 					 	<p>Total Points: <span class="total-points"><?= $points->total_points ?></span></p>
-					 	<p><?= $points_to_level ?> points needed to reach level 3</p>
+					 	<p><span class="points-till" data-points="<?= $points_to_level->points_between ?>" data-required="<?= $level->required_score ?>"><?= $points_to_level->points_till ?></span> points needed to reach level <?= $level->level + 1; ?></p>
 					 	
 					 	<div class="level-progress">
 					 		<span><span></span></span>

@@ -57,12 +57,29 @@ class Controller_Dashboard extends Controller_App
 		{
 			Response::redirect('user/login');
 		}
+
+		$points = $user->get_points();
+
+		if(!isset($points))
+		{
+			// echo 'No points, try again.';
+
+			$level = 1;
+			$points_to_level = 50;
+		}
+		else
+		{
+			// echo 'POINTS HOOORAY!';
+
+			$level = $user->check_level($user->get_points()->total_points);
+			$points_to_level = $user->points_to_level($user->get_points()->total_points, $user->check_level($user->get_points()->total_points));
+		}
 		
 		$this->template->content = View::forge('dashboard/achievements', array(
-			'username' => $user->username,
-			'points'   => $user->get_points(),
-			'level'    => $user->check_level($user->get_points()->total_points),
-			'points_to_level' => $user->points_to_level($user->get_points()->total_points, $user->check_level($user->get_points()->total_points)),
+			'username'        => $user->username,
+			'points'          => $user->get_points(),
+			'level'           => $level,
+			'points_to_level' => $points_to_level,
 		));
 	}
 

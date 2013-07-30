@@ -81,6 +81,15 @@ class Model_Score extends \Orm\Model
 	}
 
 
+	public static function get_user_scores($user_id, $deck_id)
+	{
+		return static::query()
+							->where('user_id', $user_id)
+							->where('deck_id', $deck_id)
+							->get();
+	}
+
+
 
 	/**
 	 * [date description]

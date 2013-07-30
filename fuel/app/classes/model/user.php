@@ -239,41 +239,7 @@ class Model_User extends \Orm\Model
 	public static function get_recent_activity($user_id)
 	{
 
-		/* CREATING RECENT ACTIVITY
-		
-		(
-		 	SELECT user_id, studied_at, 'studied' AS `type`, created_at
-		 	FROM recently_studied 
-			WHERE user_id = 3
-		)
-		UNION
-		(
-			SELECT user_id, friend_id, 'friend' AS `type`, created_at
-			FROM friends
-			WHERE user_id = 3 OR friend_id = 3
-		)
-		UNION
-		(
-			SELECT user_id, score, 'score' AS `type`, created_at
-			FROM scores
-			WHERE user_id = 3
-		)
-		UNION
-		(
-			SELECT user_id, deck_id, 'liked_deck' AS `type`, created_at
-			FROM likes
-			WHERE user_id = 3
-		)
-		UNION
-		(
-			SELECT user_id, id, 'created_deck' AS `type`, created_at
-			FROM decks
-			WHERE user_id = 3
-		)
-		ORDER BY created_at DESC; */
-
-
-		$query = '(SELECT user_id, studied_at, "studied" AS `type`, created_at 
+		$query = '(SELECT user_id, deck_id, "studied" AS `type`, created_at 
 				   FROM recently_studied 
 				   WHERE user_id = ' . $user_id . '
 				  )
@@ -285,7 +251,7 @@ class Model_User extends \Orm\Model
 				  )
 				  UNION
 				  (
-					SELECT user_id, score, "score" AS `type`, created_at
+					SELECT deck_id, score, "score" AS `type`, created_at
 					FROM scores
 					WHERE user_id = ' . $user_id . '
 				  )
@@ -301,19 +267,101 @@ class Model_User extends \Orm\Model
 				  	FROM decks
 				  	WHERE user_id = ' . $user_id . '
 				)
-				ORDER BY created_at DESC'
+				ORDER BY created_at DESC
+				LIMIT 10'
 		;
 
-		// echo $query;
 
 		$results = \DB::query($query)->as_object()->execute();
 
+		// echo '<pre>';
+		// var_dump($results);
+		// echo '</pre>';
+
 		foreach($results as $r)
 		{
-			echo '<pre>';
-			var_dump($r->type);
-			echo '</pre>';
+			switch($r->type)
+			{
+				case 'studied':
+					$deck = DB::select('id', 'title', 'created_at')
+									->from('decks')
+									->where('id', '=', $r->deck_id)
+									->as_object()->execute();
+
+
+
+					$recent_activity[] = $deck;
+
+					break;
+
+				case 'friend':
+					$friends = DB::select('id', 'user_id', 'friend_id', 'created_at')
+									->from('friends')
+									->where('user_id', '=', $r->user_id)
+									->or_where('friend_id', '=', $r->user_id)
+									->as_object()->execute();
+					
+					// Return friends username
+					foreach($friends as $friend)
+					{
+						// Receieved friend request
+						if($friend->user_id != $user_id)
+						{
+							$friend_id = $friend->user_id;
+						}
+						else
+						{
+							// Sent friend request
+							$friend_id = $friend->friend_id;
+						}
+
+						$user = static::query()
+											->select('username')
+											->where('id', $friend_id)
+											->get_one();
+
+						$user->date_added = $friend->created_at;
+
+						$recent_activity[] = $user;
+					}
+
+					break;
+
+				case 'score':
+					$deck = Model_Deck::get_deck($r->user_id);
+					
+					$r->title = $deck->title;
+					
+					$recent_activity[] = $r;
+
+					break;
+
+				case 'liked_deck':
+					$deck = Model_Deck::get_deck($r->deck_id);
+
+					$r->title = $deck->title;
+					
+					$recent_activity[] = $r;
+
+					break;
+
+				case 'created_deck':
+					$deck = Model_Deck::get_deck($r->deck_id);
+
+					$r->title = $deck->title;
+					
+					$recent_activity[] = $r;
+
+					break;
+			}
 		}
+
+
+		// echo '<pre>';
+		// var_dump($recent_activity);
+		// echo '</pre>';
+
+		return $recent_activity;
 	}
 
 

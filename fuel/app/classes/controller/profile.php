@@ -23,12 +23,13 @@ class Controller_Profile extends Controller_App
 		$recent_activity = Model_User::get_recent_activity($user->id);
 
 		$this->template->content = View::forge('profile/index', array(
-			'user_info'     => $user,
-			'decks'         => $user->get_decks(),
-			'deck_count'    => $user->total_decks(),
-			'friends'       => $user->get_friends(),
-			'friend_check'  => $user->is_friends_with($this->user->id),
-			'check_pending' => $user->is_pending_friend($this->user->id),
+			'user_info'       => $user,
+			'decks'           => $user->get_decks(),
+			'deck_count'      => $user->total_decks(),
+			'friends'         => $user->get_friends(),
+			'friend_check'    => $user->is_friends_with($this->user->id),
+			'check_pending'   => $user->is_pending_friend($this->user->id),
+			'recent_activity' => $recent_activity,
 		));
 		
 		

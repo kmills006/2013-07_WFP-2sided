@@ -1,8 +1,8 @@
 <? 
 
-	// echo '<pre>';
-	// var_dump($decks);
-	// echo '</pre>';
+	echo '<pre>';
+	var_dump($recent_activity);
+	echo '</pre>';
 ?>			
 
 			<div class="content user-profile sizer">

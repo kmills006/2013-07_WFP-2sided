@@ -7250,3 +7250,623 @@ ERROR - 2013-07-30 06:36:36 --> 42000 - SQLSTATE[42000]: Syntax error or access 
 				ORDER BY created_at DESC" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
 ERROR - 2013-07-30 06:37:31 --> Parsing Error - syntax error, unexpected '}', expecting ',' or ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 315
 ERROR - 2013-07-30 06:39:09 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 314
+ERROR - 2013-07-30 06:58:26 --> Notice - Undefined property: stdClass::$deck_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:33 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:34 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:34 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:34 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:34 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:34 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:35 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:35 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:35 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:36 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:36 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:36 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:36 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:37 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:37 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:37 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:37 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:38 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:38 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:38 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:38 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:38 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:39 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:39 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:39 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:39 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:40 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:40 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:40 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:40 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:41 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:41 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:41 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:41 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:42 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:42 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:42 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:42 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:42 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:43 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:43 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:43 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:43 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:44 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:44 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:44 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:44 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:45 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:45 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:45 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:45 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:46 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:46 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:46 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:46 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:47 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:47 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:47 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:47 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:47 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:48 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:48 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:48 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:48 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:49 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:49 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:49 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:49 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:50 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:50 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:50 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:50 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:51 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:51 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:51 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:51 --> Notice - Undefined property: stdClass::$id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:58:58 --> Notice - Undefined property: stdClass::$deck_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 316
+ERROR - 2013-07-30 06:59:26 --> 21000 - SQLSTATE[21000]: Cardinality violation: 1222 The used SELECT statements have a different number of columns with query: "(SELECT user_id, deck_id, studied_at, "studied" AS `type`, created_at 
+				   FROM recently_studied 
+				   WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, friend_id, "friend" AS `type`, created_at 
+				  	FROM friends 
+				  	WHERE user_id = 3 OR friend_id =3
+				  )
+				  UNION
+				  (
+					SELECT user_id, score, "score" AS `type`, created_at
+					FROM scores
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+					SELECT user_id, deck_id, "liked_deck" AS `type`, created_at
+					FROM likes
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, id, "created_deck" AS `type`, created_at
+				  	FROM decks
+				  	WHERE user_id = 3
+				)
+				ORDER BY created_at DESC" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-30 06:59:48 --> 21000 - SQLSTATE[21000]: Cardinality violation: 1222 The used SELECT statements have a different number of columns with query: "(SELECT user_id, recently_studied.deck_id, studied_at, "studied" AS `type`, created_at 
+				   FROM recently_studied 
+				   WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, friend_id, "friend" AS `type`, created_at 
+				  	FROM friends 
+				  	WHERE user_id = 3 OR friend_id =3
+				  )
+				  UNION
+				  (
+					SELECT user_id, score, "score" AS `type`, created_at
+					FROM scores
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+					SELECT user_id, deck_id, "liked_deck" AS `type`, created_at
+					FROM likes
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, id, "created_deck" AS `type`, created_at
+				  	FROM decks
+				  	WHERE user_id = 3
+				)
+				ORDER BY created_at DESC" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-30 06:59:59 --> 21000 - SQLSTATE[21000]: Cardinality violation: 1222 The used SELECT statements have a different number of columns with query: "(SELECT user_id, recently_studied.deck_id AS studied_deck_id, studied_at, "studied" AS `type`, created_at 
+				   FROM recently_studied 
+				   WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, friend_id, "friend" AS `type`, created_at 
+				  	FROM friends 
+				  	WHERE user_id = 3 OR friend_id =3
+				  )
+				  UNION
+				  (
+					SELECT user_id, score, "score" AS `type`, created_at
+					FROM scores
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+					SELECT user_id, deck_id, "liked_deck" AS `type`, created_at
+					FROM likes
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, id, "created_deck" AS `type`, created_at
+				  	FROM decks
+				  	WHERE user_id = 3
+				)
+				ORDER BY created_at DESC" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-30 07:07:20 --> Error - Call to undefined method Orm\Query::from() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 283
+ERROR - 2013-07-30 07:07:27 --> Error - Invalid method call.  Method select does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 07:07:42 --> Error - Call to undefined method Fuel\Core\Database_Query_Builder_Select::get_one() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 285
+ERROR - 2013-07-30 07:09:31 --> Notice - Undefined variable: r in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 276
+ERROR - 2013-07-30 07:11:47 --> Parsing Error - syntax error, unexpected 'break' (T_BREAK) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 295
+ERROR - 2013-07-30 07:11:50 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id, title' in 'field list' with query: "SELECT `id, title` FROM `decks` WHERE `id` = '51c12d64eace1'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-30 07:11:50 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id, title' in 'field list' with query: "SELECT `id, title` FROM `decks` WHERE `id` = '51c12d64eace1'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-30 07:11:51 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id, title' in 'field list' with query: "SELECT `id, title` FROM `decks` WHERE `id` = '51c12d64eace1'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-30 07:11:52 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id, title' in 'field list' with query: "SELECT `id, title` FROM `decks` WHERE `id` = '51c12d64eace1'" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-30 07:14:39 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:40 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:40 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:40 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:41 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:41 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:41 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:41 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:42 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:42 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:42 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:42 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:43 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:43 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:43 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:43 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:44 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:44 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:44 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:44 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:44 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:45 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:45 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:45 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:45 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:46 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:46 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:46 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:46 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:47 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:47 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:47 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:47 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:48 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:48 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:48 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:48 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:49 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:49 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:49 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:49 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:49 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:50 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:50 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:50 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:50 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:51 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:51 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:51 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:51 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:52 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:52 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:52 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:52 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:53 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:53 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:53 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:53 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:54 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:54 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:54 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:54 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:55 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:55 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:55 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:55 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:14:55 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$created_at in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 07:15:59 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 293
+ERROR - 2013-07-30 07:16:00 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 293
+ERROR - 2013-07-30 07:16:00 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 293
+ERROR - 2013-07-30 07:16:01 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 293
+ERROR - 2013-07-30 07:16:01 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 293
+ERROR - 2013-07-30 07:16:01 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 293
+ERROR - 2013-07-30 17:21:15 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 17:21:22 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 17:21:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 17:21:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 17:21:25 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 17:21:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 17:21:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 17:21:26 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:17:20 --> Warning - Invalid argument supplied for foreach() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/query.php on line 148
+ERROR - 2013-07-30 18:25:40 --> 42000 - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY created_at DESC' at line 30 with query: "(SELECT user_id, deck_id, "studied" AS `type`, created_at 
+				   FROM recently_studied 
+				   WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, friend_id, "friend" AS `type`, created_at 
+				  	FROM friends 
+				  	WHERE user_id = 3 OR friend_id =3
+				  )
+				  UNION
+				  (
+					SELECT user_id, score, "score" AS `type`, created_at
+					FROM scores
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+					SELECT user_id, deck_id, "liked_deck" AS `type`, created_at
+					FROM likes
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, id, "created_deck" AS `type`, created_at
+				  	FROM decks
+				  	WHERE user_id = 3
+				)
+				LIMIT 10
+				ORDER BY created_at DESC" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-30 18:25:46 --> 42000 - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(10)
+				ORDER BY created_at DESC' at line 29 with query: "(SELECT user_id, deck_id, "studied" AS `type`, created_at 
+				   FROM recently_studied 
+				   WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, friend_id, "friend" AS `type`, created_at 
+				  	FROM friends 
+				  	WHERE user_id = 3 OR friend_id =3
+				  )
+				  UNION
+				  (
+					SELECT user_id, score, "score" AS `type`, created_at
+					FROM scores
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+					SELECT user_id, deck_id, "liked_deck" AS `type`, created_at
+					FROM likes
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, id, "created_deck" AS `type`, created_at
+				  	FROM decks
+				  	WHERE user_id = 3
+				)
+				LIMIT (10)
+				ORDER BY created_at DESC" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-30 18:25:47 --> 42000 - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(10)
+				ORDER BY created_at DESC' at line 29 with query: "(SELECT user_id, deck_id, "studied" AS `type`, created_at 
+				   FROM recently_studied 
+				   WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, friend_id, "friend" AS `type`, created_at 
+				  	FROM friends 
+				  	WHERE user_id = 3 OR friend_id =3
+				  )
+				  UNION
+				  (
+					SELECT user_id, score, "score" AS `type`, created_at
+					FROM scores
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+					SELECT user_id, deck_id, "liked_deck" AS `type`, created_at
+					FROM likes
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, id, "created_deck" AS `type`, created_at
+				  	FROM decks
+				  	WHERE user_id = 3
+				)
+				LIMIT (10)
+				ORDER BY created_at DESC" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-30 18:25:48 --> 42000 - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(10)
+				ORDER BY created_at DESC' at line 29 with query: "(SELECT user_id, deck_id, "studied" AS `type`, created_at 
+				   FROM recently_studied 
+				   WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, friend_id, "friend" AS `type`, created_at 
+				  	FROM friends 
+				  	WHERE user_id = 3 OR friend_id =3
+				  )
+				  UNION
+				  (
+					SELECT user_id, score, "score" AS `type`, created_at
+					FROM scores
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+					SELECT user_id, deck_id, "liked_deck" AS `type`, created_at
+					FROM likes
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, id, "created_deck" AS `type`, created_at
+				  	FROM decks
+				  	WHERE user_id = 3
+				)
+				LIMIT (10)
+				ORDER BY created_at DESC" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-30 18:25:48 --> 42000 - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(10)
+				ORDER BY created_at DESC' at line 29 with query: "(SELECT user_id, deck_id, "studied" AS `type`, created_at 
+				   FROM recently_studied 
+				   WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, friend_id, "friend" AS `type`, created_at 
+				  	FROM friends 
+				  	WHERE user_id = 3 OR friend_id =3
+				  )
+				  UNION
+				  (
+					SELECT user_id, score, "score" AS `type`, created_at
+					FROM scores
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+					SELECT user_id, deck_id, "liked_deck" AS `type`, created_at
+					FROM likes
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, id, "created_deck" AS `type`, created_at
+				  	FROM decks
+				  	WHERE user_id = 3
+				)
+				LIMIT (10)
+				ORDER BY created_at DESC" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-30 18:25:48 --> 42000 - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(10)
+				ORDER BY created_at DESC' at line 29 with query: "(SELECT user_id, deck_id, "studied" AS `type`, created_at 
+				   FROM recently_studied 
+				   WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, friend_id, "friend" AS `type`, created_at 
+				  	FROM friends 
+				  	WHERE user_id = 3 OR friend_id =3
+				  )
+				  UNION
+				  (
+					SELECT user_id, score, "score" AS `type`, created_at
+					FROM scores
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+					SELECT user_id, deck_id, "liked_deck" AS `type`, created_at
+					FROM likes
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, id, "created_deck" AS `type`, created_at
+				  	FROM decks
+				  	WHERE user_id = 3
+				)
+				LIMIT (10)
+				ORDER BY created_at DESC" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-30 18:25:48 --> 42000 - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(10)
+				ORDER BY created_at DESC' at line 29 with query: "(SELECT user_id, deck_id, "studied" AS `type`, created_at 
+				   FROM recently_studied 
+				   WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, friend_id, "friend" AS `type`, created_at 
+				  	FROM friends 
+				  	WHERE user_id = 3 OR friend_id =3
+				  )
+				  UNION
+				  (
+					SELECT user_id, score, "score" AS `type`, created_at
+					FROM scores
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+					SELECT user_id, deck_id, "liked_deck" AS `type`, created_at
+					FROM likes
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, id, "created_deck" AS `type`, created_at
+				  	FROM decks
+				  	WHERE user_id = 3
+				)
+				LIMIT (10)
+				ORDER BY created_at DESC" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-30 18:29:47 --> Parsing Error - syntax error, unexpected 'break' (T_BREAK) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 333
+ERROR - 2013-07-30 18:29:47 --> Parsing Error - syntax error, unexpected 'break' (T_BREAK) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 333
+ERROR - 2013-07-30 18:29:52 --> Error - Property "user_id" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-30 18:31:57 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:31:58 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:31:58 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:31:58 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:31:58 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:31:59 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:31:59 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:31:59 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:31:59 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:31:59 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:00 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:00 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:00 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:00 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:01 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:01 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:01 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:01 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:02 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:02 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:02 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:02 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:02 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:03 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:03 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:03 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:03 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:04 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:04 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:04 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:04 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:04 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:05 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:05 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:05 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:05 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:06 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:06 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:06 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:06 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:07 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:07 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:07 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:07 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:07 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:08 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:08 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:08 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:32:08 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:33:15 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:33:15 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:33:15 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:33:15 --> Parsing Error - syntax error, unexpected 'username' (T_STRING) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 301
+ERROR - 2013-07-30 18:33:46 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:46 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:46 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:46 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:47 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:47 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:47 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:47 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:48 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:48 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:48 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:48 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:49 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:49 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:49 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:50 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:50 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:50 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:50 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:50 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:51 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:51 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:33:51 --> Error - Invalid method call.  Method get_scores does not exist. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 612
+ERROR - 2013-07-30 18:37:42 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 332
+ERROR - 2013-07-30 18:37:44 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 332
+ERROR - 2013-07-30 18:37:44 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 332
+ERROR - 2013-07-30 18:37:44 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 332
+ERROR - 2013-07-30 18:37:45 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 332
+ERROR - 2013-07-30 18:37:45 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 332
+ERROR - 2013-07-30 18:37:45 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 332
+ERROR - 2013-07-30 18:37:45 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 332
+ERROR - 2013-07-30 18:37:46 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 332
+ERROR - 2013-07-30 18:37:46 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 332
+ERROR - 2013-07-30 18:37:46 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 332
+ERROR - 2013-07-30 18:37:46 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 332
+ERROR - 2013-07-30 18:37:47 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 332
+ERROR - 2013-07-30 18:37:47 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 332
+ERROR - 2013-07-30 18:45:33 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:37 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:37 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:37 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:37 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:38 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:39 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:40 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:40 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:40 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:40 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:41 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:41 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:52 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:52 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:52 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:52 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:47:53 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/profile.php on line 30
+ERROR - 2013-07-30 18:50:25 --> 21000 - SQLSTATE[21000]: Cardinality violation: 1222 The used SELECT statements have a different number of columns with query: "(SELECT user_id, deck_id, "studied" AS `type`, created_at 
+				   FROM recently_studied 
+				   WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, friend_id, "friend" AS `type`, created_at 
+				  	FROM friends 
+				  	WHERE user_id = 3 OR friend_id =3
+				  )
+				  UNION
+				  (
+					SELECT user_id, score, "score" AS `type`, created_at, updated_at
+					FROM scores
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+					SELECT user_id, deck_id, "liked_deck" AS `type`, created_at
+					FROM likes
+					WHERE user_id = 3
+				  )
+				  UNION
+				  (
+				  	SELECT user_id, id, "created_deck" AS `type`, created_at
+				  	FROM decks
+				  	WHERE user_id = 3
+				)
+				ORDER BY created_at DESC" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-07-30 19:03:11 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 341
+ERROR - 2013-07-30 19:03:37 --> Notice - Undefined variable: score in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 344

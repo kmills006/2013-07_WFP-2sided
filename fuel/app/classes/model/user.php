@@ -268,38 +268,43 @@ class Model_User extends \Orm\Model
 				  	WHERE user_id = ' . $user_id . '
 				)
 				ORDER BY created_at DESC
-				LIMIT 10'
+				LIMIT 6'
 		;
 
 
 		$results = \DB::query($query)->as_object()->execute();
 
-		// echo '<pre>';
-		// var_dump($results);
-		// echo '</pre>';
+
+
 
 		foreach($results as $r)
 		{
+			
+
 			switch($r->type)
 			{
 				case 'studied':
-					$deck = DB::select('id', 'title', 'created_at')
-									->from('decks')
-									->where('id', '=', $r->deck_id)
-									->as_object()->execute();
+					$deck = Model_Deck::get_deck($r->deck_id);
 
+					$r->title = $deck->title;
 
+					$r->message = ' studied ';
 
-					$recent_activity[] = $deck;
+					$recent_activity[] = $r;
 
 					break;
 
 				case 'friend':
+
 					$friends = DB::select('id', 'user_id', 'friend_id', 'created_at')
 									->from('friends')
 									->where('user_id', '=', $r->user_id)
 									->or_where('friend_id', '=', $r->user_id)
 									->as_object()->execute();
+
+					echo '<pre>';
+					var_dump($r->user_id);
+					echo '</pre>';
 					
 					// Return friends username
 					foreach($friends as $friend)
@@ -307,6 +312,7 @@ class Model_User extends \Orm\Model
 						// Receieved friend request
 						if($friend->user_id != $user_id)
 						{
+							echo 'here';
 							$friend_id = $friend->user_id;
 						}
 						else
@@ -320,7 +326,12 @@ class Model_User extends \Orm\Model
 											->where('id', $friend_id)
 											->get_one();
 
-						$user->date_added = $friend->created_at;
+						$user->created_at = date('M d, Y', $friend->created_at);
+						$user->message = 'is now friends with';
+
+						// echo '<pre>';
+						// var_dump($user);
+						// echo '</pre>';
 
 						$recent_activity[] = $user;
 					}
@@ -331,6 +342,8 @@ class Model_User extends \Orm\Model
 					$deck = Model_Deck::get_deck($r->user_id);
 					
 					$r->title = $deck->title;
+	
+					$r->message = 'scored <span class="points">' . $r->deck_id . '%</span> on';
 					
 					$recent_activity[] = $r;
 
@@ -340,6 +353,7 @@ class Model_User extends \Orm\Model
 					$deck = Model_Deck::get_deck($r->deck_id);
 
 					$r->title = $deck->title;
+					$r->message = 'liked';
 					
 					$recent_activity[] = $r;
 
@@ -349,17 +363,18 @@ class Model_User extends \Orm\Model
 					$deck = Model_Deck::get_deck($r->deck_id);
 
 					$r->title = $deck->title;
+					$r->message = 'created';
 					
 					$recent_activity[] = $r;
 
 					break;
 			}
+
+			$r->created_at = date("M d, Y", $r->created_at);
+
 		}
 
-
-		// echo '<pre>';
-		// var_dump($recent_activity);
-		// echo '</pre>';
+		
 
 		return $recent_activity;
 	}

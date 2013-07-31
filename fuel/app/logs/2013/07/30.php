@@ -7870,3 +7870,243 @@ ERROR - 2013-07-30 18:50:25 --> 21000 - SQLSTATE[21000]: Cardinality violation: 
 				ORDER BY created_at DESC" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
 ERROR - 2013-07-30 19:03:11 --> Notice - Undefined variable: scores in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 341
 ERROR - 2013-07-30 19:03:37 --> Notice - Undefined variable: score in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 344
+ERROR - 2013-07-30 19:17:01 --> Parsing Error - syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 132
+ERROR - 2013-07-30 19:18:34 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:34 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:34 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:35 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:35 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:35 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:35 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:36 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:36 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:36 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:37 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:37 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:37 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:37 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:37 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:38 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:38 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:38 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:38 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:39 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:39 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:39 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:39 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:40 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:40 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:40 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:40 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:41 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:41 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:41 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:41 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:42 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:42 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:42 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:42 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:42 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:43 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:43 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:43 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:43 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:44 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:44 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:44 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:44 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:45 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:45 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:45 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:45 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:46 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:46 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:46 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:46 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:47 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:47 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:47 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:47 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:48 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:48 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:48 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:48 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:49 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:49 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:49 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:49 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:49 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:50 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:50 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:50 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:50 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:51 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:51 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:51 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:51 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:52 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:52 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:52 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:52 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:53 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:53 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:53 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:53 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:53 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:54 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:54 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:54 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:54 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:55 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:55 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:55 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:55 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:56 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:56 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:56 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:56 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:57 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:57 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:57 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:57 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:58 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:58 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:58 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:58 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:59 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:59 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:59 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:59 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:18:59 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:00 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:00 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:00 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:00 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:01 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:01 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:01 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:01 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:02 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:02 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:02 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:02 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:03 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:03 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:03 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:03 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:04 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:04 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:04 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:04 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:04 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:05 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:05 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:05 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:05 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:06 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 287
+ERROR - 2013-07-30 19:19:32 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 19:19:32 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 19:19:33 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 19:19:33 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 19:19:51 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 19:20:01 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 19:20:01 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 19:20:01 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 19:20:02 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 19:20:02 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 19:20:02 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 19:20:03 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$title in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 289
+ERROR - 2013-07-30 19:23:23 --> Error - Property "message" not found for Model_Deck. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-30 19:23:23 --> Error - Property "message" not found for Model_Deck. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-30 19:23:24 --> Error - Property "message" not found for Model_Deck. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-30 19:23:24 --> Error - Property "message" not found for Model_Deck. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-30 19:23:24 --> Error - Property "message" not found for Model_Deck. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-30 19:23:25 --> Error - Property "message" not found for Model_Deck. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-30 19:23:25 --> Error - Property "message" not found for Model_Deck. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-30 19:23:25 --> Error - Property "message" not found for Model_Deck. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-30 19:23:26 --> Error - Property "message" not found for Model_Deck. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-30 19:23:44 --> Error - Property "message" not found for Model_Deck. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-07-30 19:23:55 --> Error - Cannot use object of type stdClass as array in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 129
+ERROR - 2013-07-30 19:23:56 --> Error - Cannot use object of type stdClass as array in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 129
+ERROR - 2013-07-30 19:27:07 --> Error - Call to undefined method stdClass::date() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 130
+ERROR - 2013-07-30 19:27:07 --> Error - Call to undefined method stdClass::date() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 130
+ERROR - 2013-07-30 19:27:07 --> Error - Call to undefined method stdClass::date() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 130
+ERROR - 2013-07-30 19:27:08 --> Error - Call to undefined method stdClass::date() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 130
+ERROR - 2013-07-30 19:27:08 --> Error - Call to undefined method stdClass::date() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 130
+ERROR - 2013-07-30 19:27:08 --> Error - Call to undefined method stdClass::date() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 130
+ERROR - 2013-07-30 19:27:09 --> Error - Call to undefined method stdClass::date() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 130
+ERROR - 2013-07-30 19:27:09 --> Error - Call to undefined method stdClass::date() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 130
+ERROR - 2013-07-30 19:27:09 --> Error - Call to undefined method stdClass::date() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 130
+ERROR - 2013-07-30 19:27:10 --> Error - Call to undefined method stdClass::date() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 130
+ERROR - 2013-07-30 19:27:10 --> Error - Call to undefined method stdClass::date() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 130
+ERROR - 2013-07-30 19:27:10 --> Error - Call to undefined method stdClass::date() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 130
+ERROR - 2013-07-30 19:27:36 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:35:34 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:33 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:33 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:33 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:34 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:34 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:34 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:35 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:35 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:35 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:36 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:36 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:36 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:37 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:37 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:37 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:38 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:38 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:38 --> Error - View variable is not set: created_ in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 430
+ERROR - 2013-07-30 19:36:43 --> Parsing Error - syntax error, unexpected '?>' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 130
+ERROR - 2013-07-30 19:40:56 --> Error - Call to undefined function format() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 357
+ERROR - 2013-07-30 19:40:56 --> Error - Call to undefined function format() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 357
+ERROR - 2013-07-30 19:54:24 --> Notice - Undefined property: stdClass::$score in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 330
+ERROR - 2013-07-30 19:54:44 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:44 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:45 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:45 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:45 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:46 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:46 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:46 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:47 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:47 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:47 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:48 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:48 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:48 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:48 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:49 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:49 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:49 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:50 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:50 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:54:50 --> Notice - Undefined property: stdClass::$message in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/views/profile/index.php on line 136
+ERROR - 2013-07-30 19:58:13 --> Error - Call to undefined function format() in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 318
+ERROR - 2013-07-30 20:07:18 --> Parsing Error - syntax error, unexpected 'foreach' (T_FOREACH), expecting ',' or ';' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 282
+ERROR - 2013-07-30 20:12:40 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:40 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:41 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:41 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:41 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:42 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:42 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:42 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:42 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:43 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:43 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:43 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:43 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:44 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:44 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:44 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:44 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:45 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:45 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:45 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:45 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:46 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306
+ERROR - 2013-07-30 20:12:46 --> Notice - Undefined property: stdClass::$user_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 306

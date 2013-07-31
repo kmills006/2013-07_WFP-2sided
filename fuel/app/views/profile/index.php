@@ -1,8 +1,8 @@
 <? 
 
-	echo '<pre>';
-	var_dump($recent_activity);
-	echo '</pre>';
+	// echo '<pre>';
+	// var_dump($recent_activity);
+	// echo '</pre>';
 ?>			
 
 			<div class="content user-profile sizer">
@@ -124,10 +124,19 @@
 					  		<div class="recent-activity">
 					  			<h3>Recent Activity</h3>
 					  			
-					  				<div class="activity">
-					  					<p><?= $user_info->username; ?> is now friends with <?= Html::anchor('profile/view/3', 'bumblebizzle86'); ?></p>
-					  					<p>March 20th, 2013</p>
-					  				</div>
+					  				<? foreach($recent_activity as $ra): ?>
+
+					  					<?
+					  				// 		echo '<pre>';
+											// var_dump($recent_activity);
+											// echo '</pre>';
+					  					?>
+
+						  				<div class="activity">
+						  					<p><?= $user_info->username . ' ' . $ra->message . ' ' . (isset($ra->title) ? Html::anchor('study/view/'.$ra->deck_id, $ra->title) : Html::anchor('profile/view/'.$ra->username, $ra->username)).'!';; ?></p>
+						  					<p><?= $ra->created_at ?></p>
+						  				</div>
+						  			<? endforeach; ?>
 					  		</div> <!-- end of recent-activity -->
 					  		
 					  		

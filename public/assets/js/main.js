@@ -93,7 +93,7 @@
 				case 'Dashboard':
 					
 					// Link to the user dashboard
-					window.location.pathname = '/2013-07_WFP-2sided/public/dashboard';
+					window.location.pathname = '/2013-07_WFP-2sided/public/dashboard/study';
 
 					break;
 

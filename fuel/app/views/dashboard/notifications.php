@@ -10,7 +10,7 @@
 
 				<div class="ud-tabs">
 					<?	
-						echo Html::anchor('dashboard', 'Study', array('class' => 'study'));
+						echo Html::anchor('dashboard/study', 'Study', array('class' => 'study'));
 						echo Html::anchor('dashboard/notifications', 'Notifications', array('class' => 'ud-tab-active notifications'));
 						echo Html::anchor('dashboard/achievements', 'Achievements', array('class' => 'achievements'));
 						echo Html::anchor('dashboard/settings', 'Settings', array('class' => 'settings'));

@@ -522,7 +522,7 @@
 		;
 
 		// Setting width of progress bar
-		var width = (user_points - $('.points-till').attr('data-required')) / points_between * 100;
+		var width = (user_points - $('.points-till').attr('data-prevrequired')) / points_between * 100;
 		progress_bar.css('width', width + '%');
 	}
 
@@ -1895,8 +1895,9 @@
 	}
 
 
+	var username = $('.user-info h2').text();
 
-	if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard/achievements'){
+	if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard/achievements' || window.location.pathname == '/2013-07_WFP-2sided/public/profile/view/' + username){
 		initAchievements();
 	}
 

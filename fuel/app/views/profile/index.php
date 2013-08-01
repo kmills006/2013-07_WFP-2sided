@@ -1,8 +1,9 @@
 <? 
 
 	// echo '<pre>';
-	// var_dump($recent_activity);
+	// var_dump($level);
 	// echo '</pre>';
+	
 ?>			
 
 			<div class="content user-profile sizer">
@@ -20,12 +21,13 @@
     					}
     				?>
     				
+    				<h2>Level <?= $level->level; ?></h2>
     				
     				<div class="level-progress">
 				 		<span><span></span></span>
 				 	</div>
-				 	
-    				<p>Total StudyPoints <span>123</span></p>
+
+    				<p>Total StudyPoints <span class="total-points points-till" data-points="<?= $points_to_level->points_between ?>" data-prevrequired="<?= $level->required_score; ?>"><?= $points->total_points; ?></span></p>
 					
 				 	
 				 	<div class="friends-list">

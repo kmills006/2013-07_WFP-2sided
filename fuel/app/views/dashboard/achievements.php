@@ -23,7 +23,7 @@
 							<h3>StudyPoints / Level <?= $level->level; ?></h3>
 					 	
 					 		<p>Total Points: <span class="total-points"><?= $points->total_points ?></span></p>
-							<p><span class="points-till" data-points="<?= $points_to_level->points_between ?>" data-required="<?= $level->required_score ?>"><?= $points_to_level->points_till ?></span> points needed to reach level <?= $level->level + 1; ?></p>
+							<p><span class="points-till" data-points="<?= $points_to_level->points_between ?>" data-prevrequired="<?= $level->required_score ?>"><?= $points_to_level->points_till ?></span> points needed to reach level <?= $level->level + 1; ?></p>
 					 	<? endif; ?>
 					 	
 					 	<div class="level-progress">

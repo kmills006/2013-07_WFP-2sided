@@ -299,12 +299,12 @@ class Model_User extends \Orm\Model
 					$friends = DB::select('id', 'user_id', 'friend_id', 'created_at')
 									->from('friends')
 									->where('user_id', '=', $r->user_id)
-									->or_where('friend_id', '=', $r->user_id)
+									->or_where('friend_id', '=', $user_id)
 									->as_object()->execute();
 
-					echo '<pre>';
-					var_dump($r->user_id);
-					echo '</pre>';
+					// echo '<pre>';
+					// var_dump($friends);
+					// echo '</pre>';
 					
 					// Return friends username
 					foreach($friends as $friend)

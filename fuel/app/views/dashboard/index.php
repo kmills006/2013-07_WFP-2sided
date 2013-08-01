@@ -1,8 +1,8 @@
 <? 
 
-	echo '<pre>';
-	var_dump($pagination);
-	echo '</pre>';
+	// echo '<pre>';
+	// var_dump($decks);
+	// echo '</pre>';
 
 ?>
 
@@ -12,7 +12,7 @@
     			
  				<div class="ud-tabs">
 					<?	
-						echo Html::anchor('dashboard', 'Study', array('class' => 'ud-tab-active study'));
+						echo Html::anchor('dashboard/study', 'Study', array('class' => 'ud-tab-active study'));
 						echo Html::anchor('dashboard/notifications', 'Notifications', array('class' => 'notifications'));
 						echo Html::anchor('dashboard/achievements', 'Achievements', array('class' => 'achievements'));
 						echo Html::anchor('dashboard/settings', 'Settings', array('class' => 'settings'));
@@ -87,6 +87,9 @@
 							  			<p class="delect-deck" data-id="<?= $deck->id; ?>" data-title="<?= $deck->title; ?>"><?= Html::anchor('#'.$deck->id, 'Delete Deck'); ?></p>
 						  			</section>
 					  			<? endforeach; ?>
+
+
+					  			<?= $pagination; ?>
 					  		</div>
 				  			
 

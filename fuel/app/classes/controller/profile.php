@@ -38,7 +38,7 @@ class Controller_Profile extends Controller_App
 
 		$this->template->content = View::forge('profile/index', array(
 			'user_info'       => $user,
-			'decks'           => $user->get_decks($user->total_decks()),
+			'decks'           => $user->get_decks($user->total_decks(), 0),
 			'deck_count'      => $user->total_decks(),
 			'friends'         => $user->get_friends(),
 			'friend_check'    => $user->is_friends_with($this->user->id),

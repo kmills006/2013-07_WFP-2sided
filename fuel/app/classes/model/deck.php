@@ -53,8 +53,9 @@ class Model_Deck extends \Orm\Model
 	 * @param  integer $user_id [description]
 	 * @return array   $decks   [description]
 	 */
-	public static function get_users_decks($user_id, $sort_by, $limit = '')
+	public static function get_users_decks($user_id, $sort_by, $limit = '', $offset)
 	{
+
 		if($user_id != Session::get('user_id'))
 		{
 			// Viewing someone else's profile page
@@ -65,6 +66,7 @@ class Model_Deck extends \Orm\Model
 								))
 								->order_by('created_at', 'desc')
 								->limit($limit)
+								->offset($offset)
 								->get();		
 		}
 		else
@@ -83,23 +85,24 @@ class Model_Deck extends \Orm\Model
 										))
 										->order_by('created_at', 'desc')
 										->limit($limit)
+										->offset($offset)
 										->get();
 
 					break;
 
 				case 'oldest':
-					$decks = static::query()->where(array('user_id' => $user_id))->order_by('created_at', 'asc')->get();
+					$decks = static::query()
+										->where(array(
+												'user_id' => $user_id
+										))
+										->order_by('created_at', 'asc')
+										->limit($limit)
+										->offset($offset)
+										->get();
 
 					break;
 
 				case 'rating':
-
-					// SELECT COUNT(d.id)
-					// FROM decks as d
-					// JOIN likes as l
-					// ON l.deck_id = d.id
-					// WHERE d.user_id = 3
-					// GROUP BY d.id;
 					
 					$exp = DB::expr('COUNT(decks.id)');
 					

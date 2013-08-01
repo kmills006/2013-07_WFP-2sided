@@ -4,10 +4,11 @@ class Controller_Dashboard extends Controller_App
 {
 
 	/**
-	 * [action_index description]
-	 * @return [type] [description]
+	 * [action_study description]
+	 * @param  integer $page_number [description]
+	 * @return [type]               [description]
 	 */
-	public function action_index()
+	public function action_study($page_number = 1)
 	{
 		$user = $this->user;
 
@@ -19,15 +20,20 @@ class Controller_Dashboard extends Controller_App
 
 		// Pagination
 		$pagination = \Pagination::forge('pagination', array(
-			'pagination_url' => Uri::base().'dashboard',
+			'pagination_url' => Uri::base().'dashboard/study',
 			'total_items'    => $user->total_decks(),
 			'per_page'       => 8,
 			'uri_segment'	 => 4,
 			'show_first'     => true,
 			'show_last'      => true,
+			'current_page'   => $page_number,
+			'template' => array(
+	            'wrapper_start' => '<div class="pagination"> ',
+	            'wrapper_end' => ' </div>',
+            ),
 		));
 
-		$decks = $user->get_decks($pagination->per_page);
+		$decks = $user->get_decks($pagination->per_page, $pagination->offset);
 
 		// echo '<pre>';
 		// var_dump($pagination->render());
@@ -38,12 +44,11 @@ class Controller_Dashboard extends Controller_App
 		// Setting up views
 		$this->template->content = View::forge('dashboard/index', array(
 			'user_info'        => $user,
-			'decks'            => $user->get_decks($pagination->per_page),
+			'decks'            => $user->get_decks($pagination->per_page, $pagination->offset),
 			'pagination'	   => $pagination->render(),
 			'total_decks'      => $user->total_decks(),
 			'recently_studied' => $user->get_recently_studied(),
 		));
-
 	}
 
 	/**

@@ -420,9 +420,9 @@ class Model_User extends \Orm\Model
 	 * [get_decks description]
 	 * @return [type] [description]
 	 */
-	public function get_decks($limit)
+	public function get_decks($limit, $offset)
 	{
-		return Model_Deck::get_users_decks($this->id, 'newest', $limit);
+		return Model_Deck::get_users_decks($this->id, 'newest', $limit, $offset);
 	}
 
 	/**

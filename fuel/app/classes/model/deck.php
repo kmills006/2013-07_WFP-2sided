@@ -53,7 +53,7 @@ class Model_Deck extends \Orm\Model
 	 * @param  integer $user_id [description]
 	 * @return array   $decks   [description]
 	 */
-	public static function get_users_decks($user_id, $sort_by)
+	public static function get_users_decks($user_id, $sort_by, $limit = '')
 	{
 		if($user_id != Session::get('user_id'))
 		{
@@ -64,6 +64,7 @@ class Model_Deck extends \Orm\Model
 									'privacy' => 0,
 								))
 								->order_by('created_at', 'desc')
+								->limit($limit)
 								->get();		
 		}
 		else
@@ -76,7 +77,13 @@ class Model_Deck extends \Orm\Model
 			switch($sort_by)
 			{
 				case 'newest':
-					$decks = static::query()->where(array('user_id' => $user_id))->order_by('created_at', 'desc')->get();
+					$decks = static::query()
+										->where(array(
+											'user_id' => $user_id
+										))
+										->order_by('created_at', 'desc')
+										->limit($limit)
+										->get();
 
 					break;
 

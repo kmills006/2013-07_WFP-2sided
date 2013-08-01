@@ -16,10 +16,30 @@ class Controller_Dashboard extends Controller_App
 			Response::redirect('user/login');
 		}
 
+
+		// Pagination
+		$pagination = \Pagination::forge('pagination', array(
+			'pagination_url' => Uri::base().'dashboard',
+			'total_items'    => $user->total_decks(),
+			'per_page'       => 8,
+			'uri_segment'	 => 4,
+			'show_first'     => true,
+			'show_last'      => true,
+		));
+
+		$decks = $user->get_decks($pagination->per_page);
+
+		// echo '<pre>';
+		// var_dump($pagination->render());
+		// echo '</pre>';
+		
+
+
 		// Setting up views
 		$this->template->content = View::forge('dashboard/index', array(
 			'user_info'        => $user,
-			'decks'            => $user->get_decks(),
+			'decks'            => $user->get_decks($pagination->per_page),
+			'pagination'	   => $pagination->render(),
 			'total_decks'      => $user->total_decks(),
 			'recently_studied' => $user->get_recently_studied(),
 		));

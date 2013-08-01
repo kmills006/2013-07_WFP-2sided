@@ -1,8 +1,8 @@
 <? 
 
-	// echo '<pre>';
-	// var_dump($recently_studied);
-	// echo '</pre>';
+	echo '<pre>';
+	var_dump($pagination);
+	echo '</pre>';
 
 ?>
 

@@ -1,8 +1,5 @@
 <? 
 
-	// echo '<pre>';
-	// var_dump($level);
-	// echo '</pre>';
 	
 ?>			
 
@@ -119,6 +116,8 @@
 								  			<!-- <p><a href="#">Edit Deck</a> -->
 							  			</div>
 						  			<? endforeach; ?>
+
+						  			<?= $pagination; ?>
 						  		</div>
 					  			
 					  		</div> <!-- end of your-decks -->

@@ -34,13 +34,6 @@ class Controller_Dashboard extends Controller_App
             ),
 		));
 
-		$decks = $user->get_decks($pagination->per_page, $pagination->offset);
-
-		// echo '<pre>';
-		// var_dump($pagination->render());
-		// echo '</pre>';
-		
-
 
 		// Setting up views
 		$this->template->content = View::forge('dashboard/index', array(

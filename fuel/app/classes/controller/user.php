@@ -48,7 +48,7 @@ class Controller_User extends Controller_App
 					));
 
 					// If successful login, direct users to their dashboard
-					Response::redirect('dashboard');
+					Response::redirect('dashboard/study');
 				}
 				else
 				{
@@ -132,7 +132,7 @@ class Controller_User extends Controller_App
 									'is_logged_in' => 1,
 						));
 
-						Response::redirect('dashboard');
+						Response::redirect('dashboard/study');
 					}
 					else
 					{
@@ -203,7 +203,7 @@ class Controller_User extends Controller_App
 									'is_logged_in' => 1,
 					));
 
-					Response::redirect('dashboard');
+					Response::redirect('dashboard/study');
 				};
 			}	
 		}

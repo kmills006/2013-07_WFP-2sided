@@ -972,6 +972,34 @@ img + span{
 	color: #E67E22;
 }
 
+.pagination{
+	clear: both;
+	float: right;
+	margin-top: 30px;
+}
+
+.pagination span, .pagination .next{
+	padding: 5px 10px;
+	margin: 0 10px;
+	background-color: #66665a;
+	width: 20px;
+	height: 20px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.pagination span.active{
+	background-color: #2C3E50;
+}
+
+.pagination span a{
+	color: #FFF;
+	text-decoration: none;
+	font-size: 12px;
+	text-align: center;
+	padding: 0;
+}
 /* ==========================================================================
    User Dashboard Notification Tab Styles
    ========================================================================== 
@@ -2244,7 +2272,7 @@ button.mastered{
 	display: block;
 }*/
 
-.skip, .next{
+.quiz-content .skip, .quiz-content .next{
 	margin-top: 20px;
 	margin-bottom: 30px;
 	height: 30px;
@@ -2252,17 +2280,17 @@ button.mastered{
 	width: 120px;
 }
 
-.skip, .next{
+.quiz-content .skip, .quiz-content .next{
 	height: 30px;
 	font-size: 14px;
 	width: 120px;
 }
 
-.skip{
+.quiz-content .skip{
 	float: left;
 }
 
-.next{
+.quiz-content .next{
 	float: right;
 }
 

@@ -7,7 +7,7 @@
 ?>			
 
             <div class="content study-deck sizer">
-                <?= Html::anchor('dashboard', 'Back to Dashboard', array('class' => 'back')); ?>
+                <?= Html::anchor('dashboard/study', 'Back to Dashboard', array('class' => 'back')); ?>
     			
     			<aside>
     			

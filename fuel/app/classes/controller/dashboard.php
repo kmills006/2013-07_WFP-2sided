@@ -23,13 +23,14 @@ class Controller_Dashboard extends Controller_App
 			'pagination_url' => Uri::base().'dashboard/study',
 			'total_items'    => $user->total_decks(),
 			'per_page'       => 8,
-			'uri_segment'	 => 4,
-			'show_first'     => true,
-			'show_last'      => true,
+			'uri_segment'    => 4,
+			'show_first'     => false,
+			'show_last'      => false,
 			'current_page'   => $page_number,
-			'template' => array(
+			'template'       => array(
 	            'wrapper_start' => '<div class="pagination"> ',
-	            'wrapper_end' => ' </div>',
+	            'wrapper_end'   => ' </div>',
+	            'active'        => 'active',
             ),
 		));
 

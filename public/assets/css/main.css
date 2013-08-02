@@ -1740,7 +1740,7 @@ img + span{
 	display: none;
 }	
 
-.term, .definition, .question{
+.flash-card .term, .flash-card  .definition,.flash-card  .question{
 	margin: 0 auto;
 	vertical-align: middle;
 	padding: 0 30px;

@@ -343,6 +343,34 @@
 		});
 	}
 
+	
+	/**
+	 * [ description]
+	 * @param  {[type]} response [description]
+	 * @return {[type]}          [description]
+	 */
+	var displayRecentlyStudied = function(response){
+		var recently_studied = $.parseJSON(response),
+			temp    		 = [],
+			rs_div  		 = $('.rs'),
+			rs_area 		 = ''
+		;
+
+
+		$.each(recently_studied, function(key, value){
+			temp.push(value);
+		});
+
+		// Resort response
+		recently_studied  = temp.sort(sortAjax);
+		
+		$.each(recently_studied, function(key, value){
+			rs_area += '<div class="rs-item"><p><span>' + value.studied_at + '</span><a href="study/view/' + value.deck_id + '">' + value.deck_info[0].title + '</a></p>';
+		});
+
+		rs_div.html(rs_area);
+	}
+
 	/**
 	 * 
 	 * Delete Deck
@@ -377,6 +405,7 @@
 						{
 							alertify.success(deck_title + ' successfully deleted');
 
+							// Reset decks in order by newest
 							$.ajax({
 								url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/newest',
 								type: 'post',
@@ -388,6 +417,21 @@
 									console.log(response.responseText);
 								}
 							});
+
+							// Reset recently studied
+							$.ajax({
+									url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/update_recently_studied',
+									type: 'post',
+									data: {
+										amount: selected_amount
+									},
+									success: function(response){
+										displayRecentlyStudied(response);
+									},
+									error: function(response){
+										console.log(response.responseText);
+									}
+								});
 						}
 					},
 					error: function(response){
@@ -404,38 +448,14 @@
 		return false;
 	});
 
-	/**
-	 * [ description]
-	 * @param  {[type]} response [description]
-	 * @return {[type]}          [description]
-	 */
-	var displayRecentlyStudied = function(response){
-		var recently_studied = $.parseJSON(response),
-			temp    		 = [],
-			rs_div  		 = $('.rs'),
-			rs_area 		 = ''
-		;
 
-		$.each(recently_studied, function(key, value){
-			temp.push(value);
-		});
-
-		// Resort response
-		recently_studied  = temp.sort(sortAjax);
-		
-		$.each(recently_studied, function(key, value){
-			rs_area += '<div class="rs-item"><p><span>' + value.studied_at + '</span><a href="study/view/' + value.deck_id + '">' + value.deck_info[0].title + '</a></p>';
-		});
-
-		rs_div.html(rs_area);
-	}
 
 	/**
 	 *
 	 * Recently Studied
 	 * 
 	 */
-	if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard')
+	if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard/study')
 	{
 		$('.recently-studied form select').change(function(e){
 			var selected_amount = $('.recently-studied form select option:selected').text();

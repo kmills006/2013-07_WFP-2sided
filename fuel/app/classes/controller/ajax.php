@@ -318,5 +318,16 @@ class Controller_Ajax extends Controller_Rest
 	}
 
 
+	/**
+	 * [post_recently_studied description]
+	 * @return [type] [description]
+	 */
+	public function post_recently_studied()
+	{
+		$recently_studied = Model_Studied::get_recently_studied(Input::post('user_id'));
+		return $this->response = \Format::forge($recently_studied)->to_json();
+	}
+
+
 
 }

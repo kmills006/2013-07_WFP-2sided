@@ -81,3 +81,10 @@ ERROR - 2013-08-02 03:09:28 --> Compile Error - Cannot redeclare Model_Deck::$_h
 ERROR - 2013-08-02 03:10:15 --> 23000 - SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`WFP_2sided`.`recently_studied`, CONSTRAINT `recently_studied_ibfk_1` FOREIGN KEY (`deck_id`) REFERENCES `decks` (`id`)) with query: "DELETE FROM `decks` WHERE `id` = '51fb50ce2615a' LIMIT 1" in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/database/pdo/connection.php on line 208
 ERROR - 2013-08-02 03:20:58 --> Error - Call to a member function delete() on a non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/studied.php on line 99
 ERROR - 2013-08-02 03:21:32 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 172
+ERROR - 2013-08-02 03:32:14 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 172
+ERROR - 2013-08-02 03:34:13 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 172
+ERROR - 2013-08-02 03:43:52 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 172
+ERROR - 2013-08-02 03:46:37 --> Notice - Use of undefined constant amount - assumed 'amount' in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/ajax.php on line 324
+ERROR - 2013-08-02 03:46:37 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 172
+ERROR - 2013-08-02 04:01:17 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 172
+ERROR - 2013-08-02 14:29:58 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 172

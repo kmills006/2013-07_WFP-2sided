@@ -7,7 +7,7 @@
 ?>
 
 
-    		<div class="content user-dashboard sizer">
+    		<div class="content user-dashboard sizer" data-id="<?= $user_info->id; ?>">
     			<h1>Dashboard</h1>
     			
  				<div class="ud-tabs">

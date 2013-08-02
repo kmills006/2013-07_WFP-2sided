@@ -33,9 +33,7 @@ class Controller_Ajax extends Controller_Rest
 	 */
 	public function post_newest()
 	{
-
-  		$data = Model_Deck::get_users_decks(Session::get('user_id'), Input::post('sort_by'));
-
+  		$data = Model_Deck::get_users_decks(Input::post('user_id'), Input::post('sort_by'), 8, 0);
   		return $this->response = \Format::forge($data)->to_json();
 	}
 
@@ -46,14 +44,14 @@ class Controller_Ajax extends Controller_Rest
 	public function post_oldest()
 	{
 
-  		$data = Model_Deck::get_users_decks(Session::get('user_id'), Input::post('sort_by'));
+  		$data = Model_Deck::get_users_decks(Input::post('user_id'), Input::post('sort_by'), 8, 0);
 
   		return $this->response = \Format::forge($data)->to_json();
 	}
 
 	public function post_rating()
 	{
-		$data = Model_Deck::get_users_decks(Session::get('user_id'), Input::post('sort_by'));
+		$data = Model_Deck::get_users_decks(Input::post('user_id'), Input::post('sort_by'), 8, 0);
 
 		return $this->response = \Format::forge($data)->to_json();
 	}

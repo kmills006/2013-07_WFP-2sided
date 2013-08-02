@@ -3,7 +3,7 @@
 	
 ?>			
 
-			<div class="content user-profile sizer">
+			<div class="content user-profile sizer" data-id="<?= $user_info->id ?>">
     			
     			<aside>
     				<!-- <img src="assets/img/profile_placeholders/kmills006_profile-placeholder.png" alt="Profile Image" width="200" height="200" /> -->

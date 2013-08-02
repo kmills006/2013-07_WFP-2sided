@@ -158,6 +158,8 @@
 			sortedDecks   = ''
 		;
 
+		console.log(decks);
+
 		$.each(decks, function(key, value){
 
 			// Formating date created
@@ -221,12 +223,12 @@
 
 			var formatedDate = month + ' ' + day + ', ' + year;
 
-			if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard')
+			if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard/study')
 			{
-				sortedDecks += '<section class="deck"><div class="deck-info"><p><a href="study/view/' + value.id +'">' + value.title + '</a></p><p>Total Cards: ' + value.card_count + '</p><p>Created on: ' + formatedDate + '</p></div><div class="deck-social"><p><img src="../../../assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p><p>' + value.likes_count + '</p><p><a href="#" class="share">Share Deck</a></p></div><p class="delect-deck">Delete Deck</p></section>';
+				sortedDecks += '<section class="deck"><div class="deck-info"><p><a href="study/view/' + value.id +'">' + value.title + '</a></p><p>Total Cards: ' + value.card_count + '</p><p>Created on: ' + formatedDate + '</p></div><div class="deck-social"><p><img src="../assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p><p>' + value.likes_count + '</p><p><a href="#" class="share">Share Deck</a></p></div><p class="delect-deck">Delete Deck</p></section>';
 			}
 			else{
-				sortedDecks += '<section class="deck"><div class="deck-info"><p><a href="study/view/' + value.id +'">' + value.title + '</a></p><p>Total Cards: ' + value.card_count + '</p><p>Created on: ' + formatedDate + '</p></div><div class="deck-social"><p><img src="../../../assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p><p>' + value.likes_count + '</p><p></p></div></section>';
+				sortedDecks += '<section class="deck"><div class="deck-info"><p><a href="study/view/' + value.id +'">' + value.title + '</a></p><p>Total Cards: ' + value.card_count + '</p><p>Created on: ' + formatedDate + '</p></div><div class="deck-social"><p><img src="../../assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p><p>' + value.likes_count + '</p><p></p></div></section>';
 			}
 
 			decksArea.html(sortedDecks);
@@ -249,7 +251,8 @@
 	 */
 	var sortDecks = function(sort_by){
 		var ajaxUrl    = '',
-		    pagination = $('.pagination')
+		    pagination = $('.pagination'),
+		    user_id    = ''
 		;
 
 		// Resetting the active class on the first number in pagination
@@ -278,10 +281,23 @@
 				break;
 		}
 
+		// Check if user is on a profile page or their own dashboard
+		if(window.location.pathname != '/2013-07_WFP-2sided/public/dashboard/study')
+		{
+			user_id = $('.user-profile').attr('data-id');
+		}
+		else
+		{
+			user_id = null;
+		}
+
 		$.ajax({
 			url:  'http://2sided.dev/2013-07_WFP-2sided/public/ajax/' + ajaxUrl,
 			type: 'post',
-			data: {sort_by: sort_by},
+			data: {
+				sort_by: sort_by,
+				user_id: user_id
+			},
 			success: function(response){
 				setDecks(response, pagination);
 			},

@@ -55,19 +55,67 @@ class Model_Deck extends \Orm\Model
 	 */
 	public static function get_users_decks($user_id, $sort_by, $limit = '', $offset)
 	{
+		if($user_id == null)
+		{
+			$user_id = Session::get('user_id');
+		}		
 
 		if($user_id != Session::get('user_id'))
 		{
 			// Viewing someone else's profile page
-			$decks = static::query()
-								->where(array(
-									'user_id' => $user_id,
-									'privacy' => 0,
-								))
-								->order_by('created_at', 'desc')
-								->limit($limit)
-								->offset($offset)
-								->get();		
+			// $decks = static::query()
+			// 					->where(array(
+			// 						'user_id' => $user_id,
+			// 						'privacy' => 0,
+			// 					))
+			// 					->order_by('created_at', 'desc')
+			// 					->limit($limit)
+			// 					->offset($offset)
+			// 					->get();
+
+			switch($sort_by)
+			{
+				case 'newest':
+					$decks = static::query()
+										->where(array(
+											'user_id' => $user_id,
+											'privacy' => 0,
+										))
+										->order_by('created_at', 'desc')
+										->limit($limit)
+										->offset($offset)
+										->get();
+
+					break;
+
+				case 'oldest':
+					$decks = static::query()
+										->where(array(
+												'user_id' => $user_id,
+												'privacy' => 0,
+										))
+										->order_by('created_at', 'asc')
+										->limit($limit)
+										->offset($offset)
+										->get();
+
+					break;
+
+				case 'rating':
+					
+					$exp = DB::expr('COUNT(decks.id)');
+					
+					$decks = DB::select($exp, 'decks.id', 'title', 'decks.created_at')
+								->from('decks')
+								->join('likes')
+								->on('likes.deck_id', '=', 'decks.id')
+								->where('decks.user_id', $user_id)
+								->where('decks.privacy', 0)
+								->group_by('decks.id')
+								->as_object()->execute();
+
+					break;
+			}		
 		}
 		else
 		{

@@ -19,6 +19,9 @@ class Controller_Profile extends Controller_App
 
 		$points = $user->get_points();
 
+		var_dump($points);
+		$level = 1;
+		
 		if(!isset($points))
 		{
 			// echo 'No points, try again.';

@@ -17,15 +17,27 @@
 							echo Asset::img('profile_photos/profile_placeholder.gif', array('alt' => $user_info->username.' profile image'));
     					}
     				?>
-    				
-    				<h2>Level <?= $level->level; ?></h2>
-    				
-    				<div class="level-progress">
-				 		<span><span></span></span>
-				 	</div>
 
-    				<p>Total StudyPoints <span class="total-points points-till" data-points="<?= $points_to_level->points_between ?>" data-prevrequired="<?= $level->required_score; ?>"><?= $points->total_points; ?></span></p>
+    				<? if(empty($points)): ?>
+    					<h2>Level <?= $level; ?></h2>
+
+    					<div class="level-progress">
+				 			<span><span></span></span>
+				 		</div>
+
+    						<p>Total StudyPoints <span class="total-points">0</span></p>
+    				<? else: ?>
+    					<h2>Level <?= $level->level; ?></h2>
+
+    					<div class="level-progress">
+				 			<span><span></span></span>
+				 		</div>
+
+    					<p>Total StudyPoints <span class="total-points points-till" data-points="<?= $points_to_level->points_between ?>" data-prevrequired="<?= $level->required_score; ?>"><?= $points->total_points; ?></span></p>
 					
+    				<? endif; ?>
+    				
+    				
 				 	
 				 	<div class="friends-list">
 					 	<h2>Friends / <? if(count($friends) > 0)

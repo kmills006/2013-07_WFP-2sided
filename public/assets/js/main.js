@@ -1051,7 +1051,6 @@
 								if(key == 0)
 								{
 									card.addClass('current').css('display', 'block');
-									$('.current .term').addClass('current-term');
 								}
 
 								card.attr('id', 'handle' + key);
@@ -1075,15 +1074,9 @@
 							$.each(cards, function(key, value){
 								var card = $(this);
 
-								// console.log(value);
-
-
 								if(key === 0)
 								{
-									// console.log('here');
-
 									card.addClass('current').css('display', 'block');
-									$('.current .term').addClass('current-term');
 								}
 
 								card.attr('id', 'handle' + key);
@@ -1121,7 +1114,7 @@
 				$.each($(e).children(), function(key, value){
 					var v = $(value);
 
-					if(v.hasClass('current-term') || v.hasClass('current-def'))
+					if(v.hasClass('term') || v.hasClass('def'))
 					{
 						term = v;
 					}
@@ -1131,22 +1124,6 @@
 
 			if(term.hasClass('term'))
 			{
-				//  term.animate({ 
-				// 		opacity: 0,
-				// 	    bottom: '+=80'
-					    
-				// 	  }, 2000, function() {
-				// 	    // Animation complete.
-				// 	    console.log('animation finished');
-				// }); 
-				// console.log(term[0]);
-				// $(term[0]).animate({
-				// 	opacity: 0,
-				// 	top: '-=15'
-				// }, 1000, function(){
-				// 	console.log('pretty');
-				// })
-				
 				$('.card').flip({
 					direction:'tb',
 					color: '#FFF',
@@ -1154,26 +1131,22 @@
 					onEnd: function(){
 							$('.card').css('background-image', 'none');
 							$('.card .term').css('display', 'none');
-							$('.card .term').removeClass('current-term');
-							$('.card .definition').addClass('current-def');
 							$('.card .definition').css('display', 'block');
 					}
 				});
-				
-
-				// $('.card .term').css('display', 'none');
-				// $('.card .term').removeClass('current-term');
-
-				// $('.card .definition').addClass('current-def');
-				// $('.card .definition').css('display', 'block');
 			}
 			if(term.hasClass('definition'))
 			{
-				$('.card .definition').css('display', 'none');
-				$('.card .definition').removeClass('current-def');
-
-				$('.card .term').addClass('current-term');
-				$('.card .term').css('display', 'block');
+				$('.card').flip({
+					direction:'bt',
+					color: '#FFF',
+					speed: 300,
+					onEnd: function(){
+							$('.card').css('background-image', 'url("../../assets/img/flashcards/flashcard.png")');
+							$('.card .term').css('display', 'block');
+							$('.card .definition').css('display', 'none');
+					}
+				});
 			}
 
 		}

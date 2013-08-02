@@ -1,7 +1,7 @@
 <? 
 
     // echo '<pre>';
-    // var_dump($resources);
+    // var_dump($tags);
     // echo '</pre>';
 
 ?>			

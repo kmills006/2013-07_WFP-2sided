@@ -41,9 +41,25 @@ class Model_Tag extends \Orm\Model
 	 */
 	public static function get_tags($deck_id)
 	{
-		return static::query()
+		$tags = static::query()
 							->where('deck_id', $deck_id)
 							->get();
+
+
+		// Check if any tags are blank and remove from array
+		foreach($tags as $tagKey => $tag)
+		{
+			foreach($tag as $valueKey => $value)
+			{
+				if($valueKey == 'tag_name' && $value == '')
+				{
+					// delete the blank tag from the array
+					unset($tags[$tagKey]);
+				}
+			}
+		}
+
+		return $tags;
 	}
 
 

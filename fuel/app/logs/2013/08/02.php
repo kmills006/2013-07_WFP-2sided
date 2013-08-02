@@ -73,3 +73,4 @@ ERROR - 2013-08-02 02:06:37 --> Notice - Undefined variable: friend_id in /Users
 ERROR - 2013-08-02 02:07:48 --> Notice - Undefined variable: friend in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 323
 ERROR - 2013-08-02 02:23:22 --> Notice - Undefined variable: deck_id in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/controller/deck.php on line 65
 ERROR - 2013-08-02 02:23:44 --> Error - The requested view could not be found: study/view/51fb5070a597b in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/core/classes/view.php on line 388
+ERROR - 2013-08-02 02:35:33 --> Notice - Trying to get property of non-object in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/tag.php on line 53

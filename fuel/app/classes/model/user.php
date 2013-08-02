@@ -251,7 +251,7 @@ class Model_User extends \Orm\Model
 				  (
 				  	SELECT user_id, friend_id, "friend" AS `type`, created_at 
 				  	FROM friends 
-				  	WHERE user_id = 3 OR friend_id =' . $user_id . '
+				  	WHERE user_id = ' . $user_id . ' OR friend_id =' . $user_id . '
 				  )
 				  UNION
 				  (
@@ -283,8 +283,6 @@ class Model_User extends \Orm\Model
 
 		foreach($results as $r)
 		{
-			
-
 			switch($r->type)
 			{
 				case 'studied':
@@ -299,46 +297,25 @@ class Model_User extends \Orm\Model
 					break;
 
 				case 'friend':
-
-					$friends = DB::select('id', 'user_id', 'friend_id', 'created_at')
-									->from('friends')
-									->where('user_id', '=', $r->user_id)
-									->or_where('friend_id', '=', $user_id)
-									->as_object()->execute();
-
-					// echo '<pre>';
-					// var_dump($friends);
-					// echo '</pre>';
-					
-					// Return friends username
-					foreach($friends as $friend)
+					if($r->user_id != $user_id)
 					{
-						// Receieved friend request
-						if($friend->user_id != $user_id)
-						{
-							echo 'here';
-							$friend_id = $friend->user_id;
-						}
-						else
-						{
-							// Sent friend request
-							$friend_id = $friend->friend_id;
-						}
-
-						$user = static::query()
-											->select('username')
-											->where('id', $friend_id)
-											->get_one();
-
-						$user->created_at = date('M d, Y', $friend->created_at);
-						$user->message = 'is now friends with';
-
-						// echo '<pre>';
-						// var_dump($user);
-						// echo '</pre>';
-
-						$recent_activity[] = $user;
+						$friend_id = $r->user_id;
 					}
+					else if($r->deck_id != $user_id)
+					{
+						$friend_id = $r->deck_id;
+					}
+
+					$user = static::query()
+										->select('username')
+										->where('id', $friend_id)
+										->get_one();
+
+					$user->created_at = date('M d, Y', $r->created_at);
+					$user->message = 'is now friends with';
+
+
+					$recent_activity[] = $user;
 
 					break;
 

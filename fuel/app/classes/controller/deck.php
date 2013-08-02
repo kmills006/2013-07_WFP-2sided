@@ -61,17 +61,7 @@ class Controller_Deck extends Controller_App
 		$new_cards = Model_Card::save_cards($cards);
 
 
-		// Setting up views
-		$this->template->head    = View::forge('includes/head');
-
-		$this->template->header  = View::forge('includes/logged_in/header', array(
-											'username'      => Model_User::get_by_id(Session::get('user_id'))->username,
-											'profile_image' => Model_User::get_by_id(Session::get('user_id'))->profile_image,
-		));
-
-		$this->template->content = View::forge('deck/save');
-
-		$this->template->footer  = View::forge('includes/footer');
+		Response::redirect('study/view/'.$deck_info['id']);
 	}
 
 
@@ -136,7 +126,7 @@ class Controller_Deck extends Controller_App
 
 		// On successful update, reload user dashboard on settings page
 		// Show success notification
-		Response::redirect('dashboard');
+		Response::redirect('study/view/'.$updated_info['id']);
 
 	}
 }

@@ -235,7 +235,11 @@ class Model_User extends \Orm\Model
 	}
 
 
-
+	/**
+	 * [get_recent_activity description]
+	 * @param  [type] $user_id [description]
+	 * @return [type]          [description]
+	 */
 	public static function get_recent_activity($user_id)
 	{
 

@@ -1822,6 +1822,19 @@
 	}
 
 
+	/**
+	 * 
+	 * CSS Edits
+	 * 
+	 */
+	
+	// If user doesn't have any decks yet, content has a set height
+	if($('.decks').children().length == 1 || $('.decks').children().length == 2)
+	{
+		$('.ud-tab-content').css('height', '400px');
+	}
+
+
 	var username = $('.user-info h2').text();
 
 	if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard/achievements' || window.location.pathname == '/2013-07_WFP-2sided/public/profile/view/' + username){

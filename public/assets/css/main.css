@@ -789,6 +789,7 @@ img + span{
 .ud-tab-content{
 	overflow: hidden;
 	width: 680px;
+	height: auto;
 	background: #FFF;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -894,6 +895,14 @@ img + span{
 .your-decks .create-new-btn a{
 	text-decoration: none;
 	color: #FFF;
+}
+
+.no-decks{
+	font-weight: 700;
+}
+
+.decks{
+	margin-top: 40px;
 }
 
 .deck{

@@ -67,26 +67,31 @@
 
 				  			<!-- Looping through all the users decks -->
 				  			<div class="decks">
-					  			<? foreach($decks as $deck): ?>
-						  			<section class="deck">
-						  				<div class="deck-info">
-							  				<p><?= Html::anchor('study/view/'.$deck->id, $deck->title, array('data-id' => $deck->id)); ?></p>
-							  				
-							  				<? Session::set_flash('deck_id', $deck->id); ?>
-							  				
-							  				<p>Total Cards: <?= $deck->card_count; ?></p>
-							  				<p>Created on: <?= $deck->date(); ?></p>
-						  				</div>
-							  				
-							  			<div class="deck-social">
-							  				<p><img src="../assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
-							  				<p><?= $deck->likes_count; ?></p>
-							  				<p><a href="#" class="share">Share Deck</a></p>
-							  			</div>
-							  				
-							  			<p class="delect-deck" data-id="<?= $deck->id; ?>" data-title="<?= $deck->title; ?>"><?= Html::anchor('#'.$deck->id, 'Delete Deck'); ?></p>
-						  			</section>
-					  			<? endforeach; ?>
+
+				  				<? if(count($decks) == 0): ?>
+				  					<p class="no-decks">You haven't created any flash card sets yet.</p>
+				  				<? else: ?>
+						  			<? foreach($decks as $deck): ?>
+							  			<section class="deck">
+							  				<div class="deck-info">
+								  				<p><?= Html::anchor('study/view/'.$deck->id, $deck->title, array('data-id' => $deck->id)); ?></p>
+								  				
+								  				<? Session::set_flash('deck_id', $deck->id); ?>
+								  				
+								  				<p>Total Cards: <?= $deck->card_count; ?></p>
+								  				<p>Created on: <?= $deck->date(); ?></p>
+							  				</div>
+								  				
+								  			<div class="deck-social">
+								  				<p><img src="../assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
+								  				<p><?= $deck->likes_count; ?></p>
+								  				<p><a href="#" class="share">Share Deck</a></p>
+								  			</div>
+								  				
+								  			<p class="delect-deck" data-id="<?= $deck->id; ?>" data-title="<?= $deck->title; ?>"><?= Html::anchor('#'.$deck->id, 'Delete Deck'); ?></p>
+							  			</section>
+						  			<? endforeach; ?>
+						  		<? endif; ?>
 
 
 					  			<?= $pagination; ?>

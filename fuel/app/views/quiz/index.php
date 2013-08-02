@@ -31,7 +31,6 @@
                             <p>Select the correct definition for the term given. At the end of the quiz you will be awarded <span>StudyPoints</span> for your correct answers.</a>
     				</div>
 
-    				<button>Start Over</button>
                     <button><?= Html::anchor('study/view/'.$deck_info->id, 'End Quiz'); ?></button>					    				
     			</aside>
     			

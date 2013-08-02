@@ -1676,57 +1676,11 @@
 			missed_questions   = [],
 			question_count     = $('.question-count'),
 			score			   = '',
-			score_display      = $('.score'),
-			start_over         = $('.quiz aside button:first')
+			score_display      = $('.score')
 		;
 
 		// Set the question number
 		question_count.text(count + 1);
-
-
-		// Start Over
-		start_over.on('click', function(e){
-			cards = shuffle(cards);
-
-			var cardArea = '',
-				cardsDiv = $('.cards');
-
-			$.each(cards, function(key, value){
-				var card = $(value);
-
-				card.attr('id', 'handle' + key);
-
-				// if(card.hasClass('current'))
-				// {
-				// 	console.log('CURRENT');
-				// 	card.removeClass('current');
-				// }
-				
-				// console.log(card.children().first().next().text() + ' ' + card.attr('data-id'));
-
-				cardArea += '<div class="card" id="handle' + key + '"data-id="' + card.attr('data-id') + '"><p class="question">' + card.children().first().text() + '</p><p class="answer">' + card.children().first().next().text() + '</p><form></form></div>';
-			});
-
-			cardsDiv.html(cardArea);
-
-			// Add current class to first question
-			$('#handle0').addClass('current').css('display', 'block');
-
-			if($('.card').hasClass('current'))
-			{
-				var current = $('#handle0');
-				getChoices(current.children().first().text(), current.children().first().next().text(), deck_id, current.attr('data-id'));
-			}
-
-			// Clear score
-			$('.correct-score').text('Correct: 0');
-			$('.skipped').text('Skipped: 0' );
-			score_display.text('Score: 0');
-			count = 0;
-			score = 0;
-			question_count.text(count + 1);
-
-		});
 
 
 		// If you are at the quiz, get choices

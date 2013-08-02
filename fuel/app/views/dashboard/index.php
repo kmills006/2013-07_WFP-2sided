@@ -79,7 +79,7 @@
 						  				</div>
 							  				
 							  			<div class="deck-social">
-							  				<p><img src="assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
+							  				<p><img src="../assets/img/icons/check_mark.png" alt="Rating Check Mark Icon" width="25" height="20"/></p>
 							  				<p><?= $deck->likes_count; ?></p>
 							  				<p><a href="#" class="share">Share Deck</a></p>
 							  			</div>

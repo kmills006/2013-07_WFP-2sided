@@ -68,7 +68,12 @@ class Model_Studied extends \Orm\Model
 	}
 
 
-
+	/**
+	 * [save_deck description]
+	 * @param  [type] $user_id [description]
+	 * @param  [type] $deck_id [description]
+	 * @return [type]          [description]
+	 */
 	public static function save_deck($user_id, $deck_id)
 	{
 		$new_deck = static::forge(array(
@@ -78,6 +83,23 @@ class Model_Studied extends \Orm\Model
 		));
 
 		$new_deck->save();
+	}
+
+	/**
+	 * [delete_deck description]
+	 * @param  [type] $deck_id [description]
+	 * @return [type]          [description]
+	 */
+	public static function delete_deck($deck_id)
+	{
+		$decks = static::query()
+							->where('deck_id', $deck_id)
+							->get();
+
+		foreach($decks as $deck)
+		{
+			$deck->delete();
+		}
 	}
 
 

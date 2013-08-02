@@ -40,9 +40,10 @@ class Model_Deck extends \Orm\Model
 	        'model_to' => 'Model_Card',
 	        'key_to' => 'deck_id',
 	        'cascade_save' => true,
-	        'cascade_delete' => false,
+	        'cascade_delete' => true,
 	    )
 	);
+
 
 	protected static $_table_name = 'decks';
 

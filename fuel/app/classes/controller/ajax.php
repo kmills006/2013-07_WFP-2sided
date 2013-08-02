@@ -20,6 +20,10 @@ class Controller_Ajax extends Controller_Rest
 	}
 
 
+	/**
+	 * [get_username description]
+	 * @return [type] [description]
+	 */
 	public function get_username()
 	{
 		$user = Model_User::get_by_id(Session::get('user_id'));
@@ -49,6 +53,10 @@ class Controller_Ajax extends Controller_Rest
   		return $this->response = \Format::forge($data)->to_json();
 	}
 
+	/**
+	 * [post_rating description]
+	 * @return [type] [description]
+	 */
 	public function post_rating()
 	{
 		$data = Model_Deck::get_users_decks(Input::post('user_id'), Input::post('sort_by'), 8, 0);
@@ -57,6 +65,10 @@ class Controller_Ajax extends Controller_Rest
 	}
 
 
+	/**
+	 * [post_get_cards description]
+	 * @return [type] [description]
+	 */
 	public function post_get_cards()
 	{
 		$data = Model_Card::get_all_cards(Input::post('deck_id'));
@@ -180,6 +192,7 @@ class Controller_Ajax extends Controller_Rest
 	public function post_delete_deck()
 	{
 
+		$recently_studied = Model_Studied::delete_deck(Input::post('deck_id'));
 		$deck = Model_Deck::delete_deck(Input::post('deck_id'));
 
 		// On succesful delete, reload user dashboard study page

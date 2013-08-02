@@ -1834,6 +1834,15 @@
 		$('.ud-tab-content').css('height', '400px');
 	}
 
+	// If user only has a few notifications match the height to other tab contents
+	if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard/notifications')
+	{
+		if($('#notifications.ud-tab-content').css('height') < '250px')
+		{
+			$('#notifications.ud-tab-content').css('height', '400px');
+		}
+	}
+
 
 	var username = $('.user-info h2').text();
 

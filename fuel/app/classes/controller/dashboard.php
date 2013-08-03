@@ -99,6 +99,7 @@ class Controller_Dashboard extends Controller_App
 			'points'          => $user->get_points(),
 			'level'           => $level,
 			'points_to_level' => $points_to_level,
+			'badges'          => $user->get_badges(),
 		));
 	}
 

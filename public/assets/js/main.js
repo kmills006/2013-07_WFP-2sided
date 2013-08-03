@@ -1894,11 +1894,11 @@
 	}
 
 	// If user only has a few notifications match the height to other tab contents
-	if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard/notifications')
+	if(window.location.pathname == '/2013-07_WFP-2sided/public/dashboard/notifications' || window.location.pathname == '/2013-07_WFP-2sided/public/dashboard/achievements')
 	{
-		if($('#notifications.ud-tab-content').css('height') < '400px')
+		if($('.ud-tab-content').css('height') < '400px')
 		{
-			$('#notifications.ud-tab-content').css('height', '400px');
+			$('.ud-tab-content').css('height', '400px');
 		}
 	}
 

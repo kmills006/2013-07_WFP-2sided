@@ -485,6 +485,12 @@ class Model_User extends \Orm\Model
 	}
 
 
+	public function get_badges()
+	{
+		return Model_Badge::get_badges($this->id);
+	}
+
+
 
 
 	/**

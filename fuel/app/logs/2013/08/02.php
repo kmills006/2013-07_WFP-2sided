@@ -88,3 +88,21 @@ ERROR - 2013-08-02 03:46:37 --> Notice - Use of undefined constant amount - assu
 ERROR - 2013-08-02 03:46:37 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 172
 ERROR - 2013-08-02 04:01:17 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 172
 ERROR - 2013-08-02 14:29:58 --> Notice - Undefined variable: decks in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/deck.php on line 172
+ERROR - 2013-08-02 14:41:53 --> Error - Property "badges" not found for Model_User. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-08-02 14:42:55 --> Error - Class 'Model_Badge' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 490
+ERROR - 2013-08-02 14:42:55 --> Error - Class 'Model_Badge' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 490
+ERROR - 2013-08-02 14:42:55 --> Error - Class 'Model_Badge' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 490
+ERROR - 2013-08-02 14:43:09 --> Error - Class 'Model_Badge' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 490
+ERROR - 2013-08-02 14:43:09 --> Error - Class 'Model_Badge' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 490
+ERROR - 2013-08-02 14:43:09 --> Error - Class 'Model_Badge' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 490
+ERROR - 2013-08-02 14:43:10 --> Error - Class 'Model_Badge' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 490
+ERROR - 2013-08-02 14:43:10 --> Error - Class 'Model_Badge' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 490
+ERROR - 2013-08-02 14:43:10 --> Error - Class 'Model_Badge' not found in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/user.php on line 490
+ERROR - 2013-08-02 14:53:08 --> Error - Property "badge_img" not found for Model_Badge. in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/packages/orm/classes/model.php on line 1038
+ERROR - 2013-08-02 14:57:18 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$badge_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/badge.php on line 50
+ERROR - 2013-08-02 14:58:10 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$badge_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/badge.php on line 51
+ERROR - 2013-08-02 14:58:11 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$badge_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/badge.php on line 51
+ERROR - 2013-08-02 14:58:17 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$badge_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/badge.php on line 51
+ERROR - 2013-08-02 14:58:17 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$badge_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/badge.php on line 51
+ERROR - 2013-08-02 14:58:17 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$badge_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/badge.php on line 51
+ERROR - 2013-08-02 14:58:19 --> Notice - Undefined property: Fuel\Core\Database_Result_Cached::$badge_name in /Users/kristymiller/Sites/2013-07_WFP-2sided/fuel/app/classes/model/badge.php on line 51

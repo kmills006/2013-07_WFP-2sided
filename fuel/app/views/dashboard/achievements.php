@@ -1,3 +1,11 @@
+<? 
+	
+	// echo '<pre>';
+	// var_dump($badges);
+	// echo '</pre>';
+
+?>
+
     		<div class="content user-dashboard sizer">
     			<h1>Dashboard</h1>
     			
@@ -33,36 +41,17 @@
 					 	<div class="badges">
 					 	
 						 	<h3>Badges Received</h3>
-						 	
-						 	<div class="badge">
-						 		<img src="../assets/img/badges/badge.png" width="70" height="59" alt="Achievement Badge" />
-						 		<p>Connected to Facebook</p>
-						 	</div>
-						 	
-						 	<div class="badge">
-						 		<img src="../assets/img/badges/badge.png" width="70" height="59" alt="Achievement Badge" />
-						 		<p>Connected to Twitter</p>
-						 	</div>
-						 	
-						 	<div class="badge">
-						 		<img src="../assets/img/badges/badge.png" width="70" height="59" alt="Achievement Badge" />
-						 		<p>1st Deck Created</p>
-						 	</div>
-						 	
-						 	<div class="badge">
-						 		<img src="../assets/img/badges/badge.png" width="70" height="59" alt="Achievement Badge" />
-						 		<p>Aced 1st Quiz</p>
-						 	</div>
-						 	
-						 	<div class="badge">
-						 		<img src="../assets/img/badges/badge.png" width="70" height="59" alt="Achievement Badge" />
-						 		<p>Won 1st Challenge</p>
-						 	</div>
-						 	
-						 	<div class="badge">
-						 		<img src="../assets/img/badges/badge.png" width="70" height="59" alt="Achievement Badge" />
-						 		<p>Won 5 Challenges Back to Back</p>
-						 	</div>
+
+						 	<? if(empty($badges)): ?>
+								<p>No badges yet, the more you study and test your knowledge the faster you will receive your first badge!</p>
+						 	<? else: ?>
+						 		<? foreach($badges as $badge): ?>
+								 	<div class="badge">
+								 		<img src="../assets/img/badges/<?= $badge->img ?>" width="70" height="59" alt="Achievement Badge" />
+								 		<p><?= $badge->name; ?></p>
+							 		</div>
+							 	<? endforeach; ?>
+							<? endif; ?>
 
 					 	</div> <!-- end of badges -->
 				  </div> <!-- end ud-tab-content -->		  
